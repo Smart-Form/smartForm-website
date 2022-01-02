@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Form - Form</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
+    <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
+    <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #eee8e5;">
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-1">
+                        <img src="img/smartForm.svg" alt="" width="40" height="40"
+                            class="d-inline-block align-text-top">
+                    </div>
+                    <small style="color:#B19F97">Smart Form</small>
+                </div>
+            </a>
+
+            <div class="row">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Eng | 繁 | 簡</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Setting</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- main body -->
+    <div class="Rectangle-28">
+        <div class="row">
+            <div class="Rectangle-10">
+                <small style="color: #987468;">Welfare Information</small>
+            </div>
+            <div class="Ellipse-3"></div>
+            <div class="Ellipse-3"></div>
+            <div class="Ellipse-3"></div>
+            <div class="Rectangle-11"></div>
+            <div class="Ellipse-3"></div>
+            <div class="Ellipse-3"></div>
+            <div class="Ellipse-3"></div>
+            <div class="Rectangle-11"></div>
+            <div class="blank-1">
+                <div class="progress-svg">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <img src="img/auto-save.svg" alt="" width="30" height="30">
+                        <br><small style="color: #fff">Auto-save is On</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="wrapper">
+        <form action="" id="wizard">
+            <!-- SECTION 1 -->
+            <h2></h2>
+            <section>
+                <div class="inner">
+                    <div class="form-content">
+                        <div class="form-header">
+                            <h3>Welfare Information</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <p class="fw-lighter small">* Must be filled</p>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <p class="fw-lighter small">^ Optional</p>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Name</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="text" placeholder="Welfare Name" class="form-control form-color2">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Introduction</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="" placeholder="Summary 50 words" class="form-control form-color2"
+                                    style="height: 100px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Welfare Website</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="text" placeholder="URL" class="form-control form-color2">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Welfare Requirements</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="text" placeholder="Target audience" class="form-control form-color2">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color">Apply Date</label>
+                            <div class="col-3">
+                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;" />
+                            </div>
+                            <label class="col-form-label"><small class="form-color">To</small></label>
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color">Deadline Date</label>
+                            <div class="col-3">
+                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color">Distribution Date</label>
+                            <div class="col-3">
+                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;" />
+                            </div>
+                            <label class="col-form-label"><small class="form-color">To</small></label>
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color">End Date</label>
+                            <div class="col-3">
+                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;" />
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">The amount involved</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="number" placeholder="HK$" class="form-control form-color2">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Privacy Policy & Disclaimer</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="" class="form-control form-color2"
+                                    style="height: 100px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Promotional Corner</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="" placeholder="Welcome, Thank you, etc"
+                                    class="form-control form-color2" style="height: 100px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Other information you want to say</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="" class="form-control form-color2"
+                                    style="height: 100px;"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color">^Attachment<br>
+                                <p class="fw-lighter">Logo</p>
+                            </label>
+                            <div class="form-holder">
+                                <div class="input-group" style="width: 20vw;">
+                                    <input type="file" class="form-control form-color2" id="inputGroupFile04"
+                                        aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                    <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
+                                </div>
+                            </div>
+                            <label class="col-2 col-form-label form-color">^Attachment<br>
+                                <p class="fw-lighter">Promotional Materials</p>
+                            </label>
+                            <div class="form-holder">
+                                <div class="input-group" style="width: 20vw;">
+                                    <input type="file" class="form-control form-color2" id="inputGroupFile04"
+                                        aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                    <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
+                            <div class="checkbox-tick">
+                                <label class="male">
+                                    <input type="radio" name="gender" value="male" checked> Male<br>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="female">
+                                    <input type="radio" name="gender" value="female"> Female<br>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2 -->
+            <h2></h2>
+            <section>
+                <div class="inner">
+                    <div class="form-content">
+                        <div class="form-header">
+                            <h3>Question Setting</h3>
+                        </div>
+                        <div class="badge bg-primary text-wrap text-start">
+                            <h6>Please set up within 20 questions (multiple choice questions are preferred) to reduce
+                                the difficulty of filling in the form for the elderly and low-educated
+                            </h6>
+                        </div>
+                        <p class="fw-lighter">*If you choose multiple choice/option question, then set the options in
+                            the array, </p>
+                        <p class="fw-lighter">e.g. Living with family, Property with mortgage, Property without
+                            mortgage, Rental apartment, Public housing</p>
+                        <div class="recipe">
+                            <!-- <div class="recipe__info">
+                                <h2 class="recipe__title">Banana muffins recipe</h2>
+                            </div> -->
+                            <div class="d-flex justify-content-center">
+                            <div class="recipe__ingredients">
+                                <table cellpadding="0" cellspacing="0" border="0" class="recipe-table" id="recipeTable">
+                                    <tbody id="recipeTableBody">
+                                        <tr>
+                                            <td class="drag-handler"></td>
+                                            <td class="recipe-table__cell">
+                                                <select class="form-select form-select-sm"
+                                                    aria-label=".form-select-sm example" id="arraySelect"
+                                                    onchange="changeInput('arraySelect', 'arrayInput')">
+                                                    <option selected>Question Types</option>
+                                                    <option value="0">Option</option>
+                                                    <option value="1">Yes/No</option>
+                                                    <option value="2">Short Answer</option>
+                                                    <option value="3">Multiple Choice</option>
+                                                    <option value="4">Correspondence Address</option>
+                                                    <option value="5">Email Address</option>
+                                                    <option value="6">Phone Number</option>
+                                                    <option value="7">Name</option>
+                                                    <option value="8">Nationality</option>
+                                                    <option value="9">Birthday</option>
+                                                    <option value="10">HKID/Passport Number</option>
+                                                    <option value="11">Employment</option>
+                                                    <option value="12">Marriage</option>
+                                                    <option value="13">Amount</option>
+                                                    <option value="14">Gender</option>
+                                                    <option value="15">Signature</option>
+                                                    <option value="16">Date</option>
+                                                    <option value="17">Number</option>
+                                                    <option value="18">District</option>
+                                                    <option value="19">Checkbox</option>
+                                                </select>
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                                <input class="form-control form-control-sm" type="text"
+                                                    placeholder="Question" aria-label=".form-control-sm example">
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                                <textarea class="form-control form-control-sm" id="" rows="1"
+                                                    placeholder="Description (Optional)"></textarea>
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                            <div id="arrayInput"></div>
+                                        </td>
+                                            <td class="recipe-table__cell">
+                                                <button class="recipe-table__del-row-btn">x</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="drag-handler"></td>
+                                            <td class="recipe-table__cell">
+                                                <select class="form-select form-select-sm"
+                                                    aria-label=".form-select-sm example" id="arraySelect2"
+                                                    onchange="changeInput('arraySelect2', 'arrayInput2')">
+                                                    <option selected>Question Types</option>
+                                                    <option value="0">Option</option>
+                                                    <option value="1">Yes/No</option>
+                                                    <option value="2">Short Answer</option>
+                                                    <option value="3">Multiple Choice</option>
+                                                    <option value="4">Correspondence Address</option>
+                                                    <option value="5">Email Address</option>
+                                                    <option value="6">Phone Number</option>
+                                                    <option value="7">Name</option>
+                                                    <option value="8">Nationality</option>
+                                                    <option value="9">Birthday</option>
+                                                    <option value="10">HKID/Passport Number</option>
+                                                    <option value="11">Employment</option>
+                                                    <option value="12">Marriage</option>
+                                                    <option value="13">Amount</option>
+                                                    <option value="14">Gender</option>
+                                                    <option value="15">Signature</option>
+                                                    <option value="16">Date</option>
+                                                    <option value="17">Number</option>
+                                                    <option value="18">District</option>
+                                                    <option value="19">Checkbox</option>
+                                                </select>
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                                <input class="form-control form-control-sm" type="text"
+                                                    placeholder="Question" aria-label=".form-control-sm example">
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                                <textarea class="form-control form-control-sm" id="" rows="1"
+                                                    placeholder="Description (Optional)"></textarea>
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                            <div id="arrayInput2"></div>
+                                        </td>
+                                            <td class="recipe-table__cell">
+                                                <button class="recipe-table__del-row-btn">x</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="drag-handler"></td>
+                                            <td class="recipe-table__cell">
+                                                <select class="form-select form-select-sm"
+                                                    aria-label=".form-select-sm example" id="arraySelect3"
+                                                    onchange="changeInput('arraySelect3', 'arrayInput3')">
+                                                    <option selected>Question Types</option>
+                                                    <option value="0">Option</option>
+                                                    <option value="1">Yes/No</option>
+                                                    <option value="2">Short Answer</option>
+                                                    <option value="3">Multiple Choice</option>
+                                                    <option value="4">Correspondence Address</option>
+                                                    <option value="5">Email Address</option>
+                                                    <option value="6">Phone Number</option>
+                                                    <option value="7">Name</option>
+                                                    <option value="8">Nationality</option>
+                                                    <option value="9">Birthday</option>
+                                                    <option value="10">HKID/Passport Number</option>
+                                                    <option value="11">Employment</option>
+                                                    <option value="12">Marriage</option>
+                                                    <option value="13">Amount</option>
+                                                    <option value="14">Gender</option>
+                                                    <option value="15">Signature</option>
+                                                    <option value="16">Date</option>
+                                                    <option value="17">Number</option>
+                                                    <option value="18">District</option>
+                                                    <option value="19">Checkbox</option>
+                                                </select>
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                                <input class="form-control form-control-sm" type="text"
+                                                    placeholder="Question" aria-label=".form-control-sm example">
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                                <textarea class="form-control form-control-sm" id="" rows="1"
+                                                    placeholder="Description (Optional)"></textarea>
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                            <div id="arrayInput3"></div>
+                                        </td>
+                                            <td class="recipe-table__cell">
+                                                <button class="recipe-table__del-row-btn">x</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="drag-handler"></td>
+                                            <td class="recipe-table__cell">
+                                                <select class="form-select form-select-sm"
+                                                    aria-label=".form-select-sm example" id="arraySelect4"
+                                                    onchange="changeInput('arraySelect4', 'arrayInput4')">
+                                                    <option selected>Question Types</option>
+                                                    <option value="0">Option</option>
+                                                    <option value="1">Yes/No</option>
+                                                    <option value="2">Short Answer</option>
+                                                    <option value="3">Multiple Choice</option>
+                                                    <option value="4">Correspondence Address</option>
+                                                    <option value="5">Email Address</option>
+                                                    <option value="6">Phone Number</option>
+                                                    <option value="7">Name</option>
+                                                    <option value="8">Nationality</option>
+                                                    <option value="9">Birthday</option>
+                                                    <option value="10">HKID/Passport Number</option>
+                                                    <option value="11">Employment</option>
+                                                    <option value="12">Marriage</option>
+                                                    <option value="13">Amount</option>
+                                                    <option value="14">Gender</option>
+                                                    <option value="15">Signature</option>
+                                                    <option value="16">Date</option>
+                                                    <option value="17">Number</option>
+                                                    <option value="18">District</option>
+                                                    <option value="19">Checkbox</option>
+                                                </select>
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                                <input class="form-control form-control-sm" type="text"
+                                                    placeholder="Question" aria-label=".form-control-sm example">
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                                <textarea class="form-control form-control-sm" id="" rows="1"
+                                                    placeholder="Description (Optional)"></textarea>
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                            <div id="arrayInput4"></div>
+                                        </td>
+                                            <td class="recipe-table__cell">
+                                                <button class="recipe-table__del-row-btn">x</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="drag-handler"></td>
+                                            <td class="recipe-table__cell">
+                                                <select class="form-select form-select-sm"
+                                                    aria-label=".form-select-sm example" id="arraySelect5"
+                                                    onchange="changeInput('arraySelect5', 'arrayInput5')">
+                                                    <option selected>Question Types</option>
+                                                    <option value="0">Option</option>
+                                                    <option value="1">Yes/No</option>
+                                                    <option value="2">Short Answer</option>
+                                                    <option value="3">Multiple Choice</option>
+                                                    <option value="4">Correspondence Address</option>
+                                                    <option value="5">Email Address</option>
+                                                    <option value="6">Phone Number</option>
+                                                    <option value="7">Name</option>
+                                                    <option value="8">Nationality</option>
+                                                    <option value="9">Birthday</option>
+                                                    <option value="10">HKID/Passport Number</option>
+                                                    <option value="11">Employment</option>
+                                                    <option value="12">Marriage</option>
+                                                    <option value="13">Amount</option>
+                                                    <option value="14">Gender</option>
+                                                    <option value="15">Signature</option>
+                                                    <option value="16">Date</option>
+                                                    <option value="17">Number</option>
+                                                    <option value="18">District</option>
+                                                    <option value="19">Checkbox</option>
+                                                </select>
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                                <input class="form-control form-control-sm" type="text"
+                                                    placeholder="Question" aria-label=".form-control-sm example">
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                                <textarea class="form-control form-control-sm" id="" rows="1"
+                                                    placeholder="Description (Optional)"></textarea>
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                            <div id="arrayInput5"></div>
+                                            </td>
+                                            <td class="recipe-table__cell">
+                                                <button class="recipe-table__del-row-btn">x</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="recipe-table__add-row">
+                                    <span class="recipe-table__add-row-btn">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- addRow -->
+            <script id="rowTemplate" type="text/template">
+                <tr>
+                    <td class="drag-handler"></td>
+                    <td class="recipe-table__cell">
+                        <select class="form-select form-select-sm"
+                            aria-label=".form-select-sm example" id="{arraySelectID}" onchange="changeInput('{arraySelectID}', '{arrayInputID}')">
+                            <option selected>Question Types</option>
+                            <option value="0">Option</option>
+                            <option value="1">Yes/No</option>
+                            <option value="2">Short Answer</option>
+                            <option value="3">Multiple Choice</option>
+                            <option value="4">Correspondence Address</option>
+                            <option value="5">Email Address</option>
+                            <option value="6">Phone Number</option>
+                            <option value="7">Name</option>
+                            <option value="8">Nationality</option>
+                            <option value="9">Birthday</option>
+                            <option value="10">HKID/Passport Number</option>
+                            <option value="11">Employment</option>
+                            <option value="12">Marriage</option>
+                            <option value="13">Amount</option>
+                            <option value="14">Gender</option>
+                            <option value="15">Signature</option>
+                            <option value="16">Date</option>
+                            <option value="17">Number</option>
+                            <option value="18">District</option>
+                            <option value="19">Checkbox</option>
+                        </select>
+                    </td>
+                    <td class="recipe-table__cell">
+                        <input class="form-control form-control-sm" type="text"
+                            placeholder="Question" aria-label=".form-control-sm example">
+                    </td>
+                    <td class="recipe-table__cell">
+                        <textarea class="form-control form-control-sm" id="" rows="1"
+                            placeholder="Description (Optional)"></textarea>
+                    </td>
+                    <td class="recipe-table__cell">
+                        <div id="{arrayInputID}"></div>
+                    </td>
+                    <td class="recipe-table__cell">
+                        <button class="recipe-table__del-row-btn">x</button>
+                    </td>
+                </tr>
+        </script>
+            <!-- addInput -->
+            <script id="addInput" type="text/template">
+                    <input class="form-control form-control-sm" list="datalistOptions"
+                    id="{arrayInputChild}" placeholder="Array">
+                    <datalist id="datalistOptions">
+                    <option value="Living with family, Property with mortgage, Property without
+                    mortgage, Rental apartment, Public housing">
+                    <option value="18-29, 30-49, 50-64">
+                    <option
+                        value="HK$0-10,000, HK$10,001-30,000, HK$30,001-70,000, HK$70,001 or above">
+                    </datalist>
+            </script>
+
+            <!-- SECTION 3 -->
+            <h2></h2>
+            <section>
+                <div class="inner">
+                    <div class="form-content">
+                        <div class="form-header">
+                            <h3>Confirm Form</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <p class="fw-lighter small">* Must be filled</p>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <p class="fw-lighter small">^ Optional</p>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Welfare Requirements</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="text" placeholder="Target audience" class="form-control form-color2"
+                                    disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Introduction</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="" placeholder="Summary 50 words" class="form-control form-color2"
+                                    style="height: 100px;" disabled></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Welfare Website</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="text" placeholder="URL" class="form-control form-color2" disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Welfare Requirements</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="text" placeholder="Target audience" class="form-control form-color2"
+                                    disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color">Distribution Date</label>
+                            <div class="col-1"></div>
+                            <div class="col-3">
+                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;"
+                                    disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color">^Attachment<br>
+                                <p class="fw-lighter">Logo</p>
+                            </label>
+                            <div class="form-holder">
+                                <div class="input-group" style="width: 20vw;">
+                                    <input type="file" class="form-control form-color2" id="inputGroupFile04"
+                                        aria-describedby="inputGroupFileAddon04" aria-label="Upload" disabled>
+                                    <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
+                                </div>
+                            </div>
+                            <label class="col-2 col-form-label form-color">^Attachment<br>
+                                <p class="fw-lighter">Promotional Materials</p>
+                            </label>
+                            <div class="form-holder">
+                                <div class="input-group" style="width: 20vw;">
+                                    <input type="file" class="form-control form-color2" id="inputGroupFile04"
+                                        aria-describedby="inputGroupFileAddon04" aria-label="Upload" disabled>
+                                    <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-1"><input type="checkbox" checked></div>
+                            <div class="col-5">We agree with the <a href="#">terms and conditions</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </div>
+
+    <link rel="stylesheet" href="plugins/material-design-iconic-font/css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/createform.css">
+    <link rel="stylesheet" href="css/createform_form.css">
+    <script src="plugins/jquery-3.3.1-dist/jquery.steps.js"></script>
+    <script src="js/createform_form.js"></script>
+    <script src="js/Sortable.js"></script>
+    <!-- main body end -->
+
+    <!-- footer -->
+    <p></p>
+    <footer class="py-5" style="background-color: #fff;">
+        <div class="row">
+            <div class="col-1"></div>
+
+            <div class="col-5">
+                <p>Contact Us : Phone 852 6838 7368 | Email smartformcs@sf.com</p>
+                <small>Copyright &copy; 2021 Smart Form Limited. All rights reserved.</small>
+            </div>
+
+            <div class="col-4 offset-1">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of whats new and exciting from us.</p>
+                    <div class="d-flex w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button"
+                            style="background-color: #987468;">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
