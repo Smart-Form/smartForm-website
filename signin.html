@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <title>Sign In</title>
+    <style>
+
+        .button {
+          border: none;
+          color: #8A5122;
+          padding: 5px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 18px;
+          font-family: Arial Black;
+          margin: 4px 20px;
+          cursor: pointer;
+        }
+
+        .button1 {
+            background-color: #ffffff;  /* White */
+            border-radius: 20px;
+        }
+
+        .button1:hover {
+            background-color: #8A5122;
+            color: white;
+        }
+
+        /* Bordered form */
+        form {
+        border: none;
+        border-radius: 15px;
+        background-color: #FBF9F8;
+        margin: 150px 340px;
+        /* margin: 452px 270px;
+        max-width: 1016px;
+        max-height: 541px; */
+        }
+
+        /* Full-width inputs */
+        input[type=text], input[type=password] {
+        border: none;
+        border-radius: 15px;
+        width: 100%;
+        padding: 8px 10px;
+        margin: 8px 0;
+        display: inline-block;
+        box-sizing: border-box;
+        }
+
+        /* Add padding to containers */
+        .container {
+        padding: 12px 40px;
+        }
+
+</style>
+</head>
+
+<body style="background-color:#EEE8E5;">
+<div class="w3-top" style="font-family:Marcellus;">
+    <ul class="w3-navbar w3-white w3-border w3-padding-10">
+        <li class="w3-left"><a href="Homepage.html"><img src="Images/Icons(1).png" class="w3-round" alt="Logo" style="width:100%;max-width:55px"></a></li>
+        <li class="w3-right"><a href="#"><h4 style="color:#B19F97;">Setting</h4></a></li>
+        <li class="w3-right"><a href="SignIn.html"><h4 style="color:#B19F97;">Sign In</h4></a></li>
+        <li class="w3-right"><a href="#"><h4 style="color:#B19F97;">簡</h4></a></li>
+        <li class="w3-right"><a href="#"><h4 style="color:#B19F97;">繁</h4></a></li>
+        <li class="w3-right"><a href="#"><h4 style="color:#B19F97;">Eng</h4></a></li>
+      </ul>
+</div>
+
+<form action="action_page.php" method="post">
+<div class="container w3-content">
+    <h5 style="font-size:150%; color:#B19F97;" class="container w3-center">Sign In</h5>
+    <p>
+        <label for="uname" style="color:#B19F97;">ID number:</label>
+        <!-- <input type="text" placeholder="Enter your ID number" name="uname" required> -->
+        <input type="text" name="uname" required>
+        <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot ID?</a></label>
+    </p>
+
+    <p>
+        <label for="psw" style="color:#B19F97;">Password:</label>
+        <!-- <input type="password" placeholder="Enter your password" name="psw" required> -->
+        <input type="password" name="psw" required>
+        <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot password?</a></label>
+    </p>
+
+    <p class="w3-center">
+        <button type="submit" class="button button1"><a href="#" style="text-decoration: none;">&nbsp;Sign In&nbsp;</a></button>
+        <br>
+        <label style="font-size:80%; color:#2715FF;"><a href="Register.html" style="text-decoration: none;">No account? Click here to Sign Up</a></label>
+    </p>
+  </div>
+
+
+</form>
+
+<div class="w3-bottom" style="font-family:Marcellus;">
+    <ul class="w3-navbar w3-white w3-border">
+        <li class="w3-left"><p style="color:#865F45;"> <b>&nbsp;&nbsp;&nbsp;Contact Us </b>: Phone +852 6838 7368  |  Email smartformcs@sf.com 
+            <span style="color:#817D7D;"><br>&nbsp;&nbsp;&nbsp;Copyright © 2021 Smart Form Limited. All rights reserved.</span></p></li>
+      </ul>
+</div>
+    
+</body>
+
+</html>

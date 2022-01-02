@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <title>Register</title>
+    <style>
+
+        .button {
+          border: none;
+          color: #8A5122;
+          padding: 5px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 18px;
+          font-family: Arial Black;
+          margin: 4px 20px;
+          cursor: pointer;
+        }
+
+        .button1 {
+            background-color: #ffffff;  /* White */
+            border-radius: 20px;
+        }
+
+        .button1:hover {
+            background-color: #8A5122;
+            color: white;
+        }
+
+        .button2{
+            background-color: #987468; 
+            color: white; 
+            border: none; 
+            cursor: pointer;
+        }
+
+        .button2:hover {
+            background-color: #8A5122;
+            color: white;
+        }
+
+        /* Bordered form */
+        form {
+        /* border: none;
+        border-radius: 15px; */
+        /* background-color: #FBF9F8; */
+        margin: 50px 500px;
+        /* margin: 452px 270px;
+        max-width: 1016px;
+        max-height: 541px; */
+        }
+
+        /* Full-width inputs */
+        input[type=text], input[type=password], input[type=number]  {
+        /* border: none; */
+        width: 100%;
+        padding: 2px 10px;
+        /* margin: 8px 0; */
+        display: inline-block;
+        box-sizing: border-box;
+        }
+
+        /* Add padding to containers */
+        .container {
+        padding: 12px 40px;
+        }
+
+        select {
+        width: 100%;
+        padding: 4px 10px;
+        /* border: none; */
+        }
+
+</style>
+</head>
+
+<body style="background-color:#EEE8E5;">
+<div class="w3-top" style="font-family:Marcellus;">
+    <ul class="w3-navbar w3-white w3-border w3-padding-10">
+        <li class="w3-left"><a href="Homepage.html"><img src="Images/Icons(1).png" class="w3-round" alt="Logo" style="width:100%;max-width:55px"></a></li>
+        <li class="w3-right"><a href="#"><h4 style="color:#B19F97;">Setting</h4></a></li>
+        <li class="w3-right"><a href="SignIn.html"><h4 style="color:#B19F97;">Sign In</h4></a></li>
+        <li class="w3-right"><a href="#"><h4 style="color:#B19F97;">簡</h4></a></li>
+        <li class="w3-right"><a href="#"><h4 style="color:#B19F97;">繁</h4></a></li>
+        <li class="w3-right"><a href="#"><h4 style="color:#B19F97;">Eng</h4></a></li>
+      </ul>
+</div>
+
+<form action="action_page.php" method="post">
+<div class="container w3-content">
+    <h5 style="font-size:150%; color:#B19F97;" class="container w3-center">Register</h5>
+    <p>
+        <label for="uname" style="color:#B19F97;">*Name</label>
+        <input type="text" placeholder="Organization Name" name="uname" required>
+    </p>
+
+    <p>
+        <label for="pnum" style="color:#B19F97;">*Phone Number</label>
+        <!-- <input type="password" placeholder="Enter your password" name="psw" required> -->
+        <input type="number" name="pnum" required>
+    </p>
+
+    <p>
+        <label for="email" style="color:#B19F97;">*Email Address</label>
+        <input type="text" name="email" required> 
+        <button type="button" class="button2" onclick="">Verify</button>
+    </p>
+
+    <p>
+        <label for="fnum" style="color:#B19F97;">Fax</label>
+        <input type="number" name="fnum">
+    </p>
+
+    <p>
+        <label for="weblink" style="color:#B19F97;">Website Link</label>
+        <input type="text" name="weblink">
+    </p>
+
+    <p>
+        <label for="brnum" style="color:#B19F97;">*BR number</label>
+        <input type="number" placeholder="12 Number" name="brnum" required>
+    </p>
+
+    <p>
+        <label for="address" style="color:#B19F97;">*Address</label>
+        <input type="text" name="address" required> 
+    </p>
+
+    <p>
+        <label for="organization" style="color:#B19F97;">*Types of Organization</label>
+        <select id="organization" name="organization" required>
+            <option value="gov">Government</option>
+            <option value="corporations">Corporations</option>
+            <option value="ngo">Non-Government Organization</option>
+            </select>
+    </p>
+
+    <p>
+        <label for="service" style="color:#B19F97;">*Types of Service</label>
+        <select id="service" name="service" required>
+            <option value="finaid">Financial Aid</option>
+            <option value="health">Health</option>
+            <option value="counselling">Counselling</option>
+            <option value="leicul">Leisure and Cultural</option>
+            <option value="legalaid">Legal Aid</option>
+            <option value="education">Education</option>
+            <option value="other">Other Type</option>
+            </select>
+    </p>
+
+    <p>
+        <label for="psw" style="color:#B19F97;">*Password:</label>
+        <!-- <input type="password" placeholder="Enter your password" name="psw" required> -->
+        <input type="password" name="psw" required>
+        <label style="font-size:80%; color:#987468;">*At least 12 symbol + Capital letter + number</label>
+
+    </p>
+
+    <p>
+        <label for="psw-confirm" style="color:#B19F97;">*Confirm Password</label>
+        <input type="password" name="psw-confirm" required>
+    </p>
+
+    <p>
+        <label for="aboutOrganization" style="color:#B19F97;">*About Organization</label>
+        <!-- <input type="text" name="aboutOrganization" required> -->
+        <textarea id="aboutOrganization" name="aboutOrganization" rows="4" cols="50" required></textarea>
+    </p>
+
+    <p>
+        <label for="promotional" style="color:#B19F97;">Promotional Materials</label>
+        <input type="file" id="myFile" name="filename">
+    </p>
+
+    <p>
+        <label for="attachments" style="color:#B19F97;">*Attachments (E.g.Logo)</label>
+        <input type="file" id="myFile" name="filename" required>
+    </p>
+
+    <p class="w3-center">
+        <button type="submit" class="button button1"><a href="Confirm.html" style="text-decoration: none;">&nbsp;Confirm&nbsp;</a></button>
+    </p>
+    <br>
+  </div>
+
+
+</form>
+
+<div class="w3-bottom" style="font-family:Marcellus;">
+    <ul class="w3-navbar w3-white w3-border">
+        <li class="w3-left"><p style="color:#865F45;"> <b>&nbsp;&nbsp;&nbsp;Contact Us </b>: Phone +852 6838 7368  |  Email smartformcs@sf.com 
+            <span style="color:#817D7D;"><br>&nbsp;&nbsp;&nbsp;Copyright © 2021 Smart Form Limited. All rights reserved.</span></p></li>
+      </ul>
+</div>
+    
+</body>
+
+</html>
