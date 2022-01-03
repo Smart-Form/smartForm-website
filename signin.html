@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <title>Sign In</title>
+    <title>Smart Form - Sign In</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
+    <link rel="stylesheet" href="plugins/w3/w3.css">
+    <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
+    <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <style>
-
         .button {
-          border: none;
-          color: #8A5122;
-          padding: 5px 20px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 18px;
-          font-family: Arial Black;
-          margin: 4px 20px;
-          cursor: pointer;
+            border: none;
+            color: #8A5122;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            font-family: Arial Black;
+            margin: 4px 20px;
+            cursor: pointer;
         }
 
         .button1 {
-            background-color: #ffffff;  /* White */
+            background-color: #ffffff;
+            /* White */
             border-radius: 20px;
         }
 
@@ -33,80 +38,136 @@
 
         /* Bordered form */
         form {
-        border: none;
-        border-radius: 15px;
-        background-color: #FBF9F8;
-        margin: 150px 340px;
-        /* margin: 452px 270px;
+            border: none;
+            border-radius: 15px;
+            background-color: #FBF9F8;
+            margin: 150px 340px;
+            /* margin: 452px 270px;
         max-width: 1016px;
         max-height: 541px; */
         }
 
         /* Full-width inputs */
-        input[type=text], input[type=password] {
-        border: none;
-        border-radius: 15px;
-        width: 100%;
-        padding: 8px 10px;
-        margin: 8px 0;
-        display: inline-block;
-        box-sizing: border-box;
+        input[type=text],
+        input[type=password] {
+            border: none;
+            border-radius: 15px;
+            width: 100%;
+            padding: 8px 10px;
+            margin: 8px 0;
+            display: inline-block;
+            box-sizing: border-box;
         }
 
         /* Add padding to containers */
         .container {
-        padding: 12px 40px;
+            padding: 12px 40px;
         }
-
-</style>
+    </style>
 </head>
 
 <body style="background-color:#EEE8E5;">
-<div class="w3-top" style="font-family:Marcellus;">
-    <ul class="w3-navbar w3-white w3-border w3-padding-10">
-        <li class="w3-left"><a href="Homepage.html"><img src="Images/Icons(1).png" class="w3-round" alt="Logo" style="width:100%;max-width:55px"></a></li>
-        <li class="w3-right"><a href="#"><h4 style="color:#B19F97;">Setting</h4></a></li>
-        <li class="w3-right"><a href="SignIn.html"><h4 style="color:#B19F97;">Sign In</h4></a></li>
-        <li class="w3-right"><a href="#"><h4 style="color:#B19F97;">簡</h4></a></li>
-        <li class="w3-right"><a href="#"><h4 style="color:#B19F97;">繁</h4></a></li>
-        <li class="w3-right"><a href="#"><h4 style="color:#B19F97;">Eng</h4></a></li>
-      </ul>
-</div>
 
-<form action="action_page.php" method="post">
-<div class="container w3-content">
-    <h5 style="font-size:150%; color:#B19F97;" class="container w3-center">Sign In</h5>
-    <p>
-        <label for="uname" style="color:#B19F97;">ID number:</label>
-        <!-- <input type="text" placeholder="Enter your ID number" name="uname" required> -->
-        <input type="text" name="uname" required>
-        <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot ID?</a></label>
-    </p>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
+        <div class="container-fluid">
 
-    <p>
-        <label for="psw" style="color:#B19F97;">Password:</label>
-        <!-- <input type="password" placeholder="Enter your password" name="psw" required> -->
-        <input type="password" name="psw" required>
-        <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot password?</a></label>
-    </p>
+            <a class="navbar-brand" href="index.html">
+                <div class="row">
+                    <div class="col col-lg-2"></div>
+                    <div class="col-md-auto"><img src="img/IconsPSD.png" alt="" width="50" height="50" class=""></div>
+                </div>
+            </a>
 
-    <p class="w3-center">
-        <button type="submit" class="button button1"><a href="#" style="text-decoration: none;">&nbsp;Sign In&nbsp;</a></button>
-        <br>
-        <label style="font-size:80%; color:#2715FF;"><a href="Register.html" style="text-decoration: none;">No account? Click here to Sign Up</a></label>
-    </p>
-  </div>
+            <div class="row">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><small>Eng</small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><small>繁</small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><small>簡</small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html"><small>Profile</small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><small>Setting</small></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <form action="action_page.php" method="post">
+        <div class="container w3-content">
+            <h5 style="font-size:150%; color:#B19F97;" class="container w3-center">Sign In</h5>
+            <p>
+                <label for="uname" style="color:#B19F97;">ID number:</label>
+                <!-- <input type="text" placeholder="Enter your ID number" name="uname" required> -->
+                <input type="text" name="uname" required>
+                <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot
+                        ID?</a></label>
+            </p>
+
+            <p>
+                <label for="psw" style="color:#B19F97;">Password:</label>
+                <!-- <input type="password" placeholder="Enter your password" name="psw" required> -->
+                <input type="password" name="psw" required>
+                <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot
+                        password?</a></label>
+            </p>
+
+            <p class="w3-center">
+                <button type="submit" class="button button1"><a href="#" style="text-decoration: none;">&nbsp;Sign
+                        In&nbsp;</a></button>
+                <br>
+                <label style="font-size:80%; color:#2715FF;"><a href="Register.html" style="text-decoration: none;">No
+                        account? Click here to Sign Up</a></label>
+            </p>
+        </div>
 
 
-</form>
+    </form>
 
-<div class="w3-bottom" style="font-family:Marcellus;">
-    <ul class="w3-navbar w3-white w3-border">
-        <li class="w3-left"><p style="color:#865F45;"> <b>&nbsp;&nbsp;&nbsp;Contact Us </b>: Phone +852 6838 7368  |  Email smartformcs@sf.com 
-            <span style="color:#817D7D;"><br>&nbsp;&nbsp;&nbsp;Copyright © 2021 Smart Form Limited. All rights reserved.</span></p></li>
-      </ul>
-</div>
-    
+    <!-- footer -->
+    <p></p>
+    <footer class="py-5" style="background-color: #fff;">
+        <div class="row">
+            <div class="col-1"></div>
+
+            <div class="col-5">
+                <p>Contact Us : Phone 852 6838 7368 | Email cs@smartform.com</p>
+                <small>Copyright &copy; 2022 Smart Form Limited. All rights reserved.</small>
+            </div>
+
+            <div class="col-4 offset-1">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of whats new and exciting from us.</p>
+                    <div class="d-flex w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button"
+                            style="background-color: #987468;">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
 </body>
 
 </html>
