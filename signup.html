@@ -11,6 +11,7 @@
     <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
     <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <style>
         .button {
             border: none;
@@ -23,40 +24,18 @@
             font-family: Arial Black;
             margin: 4px 20px;
             cursor: pointer;
-        }
-
-        .button1 {
             background-color: #ffffff;
-            /* White */
             border-radius: 20px;
         }
 
-        .button1:hover {
-            background-color: #8A5122;
-            color: white;
-        }
-
-        .button2 {
-            background-color: #987468;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        .button2:hover {
+        .button:hover {
             background-color: #8A5122;
             color: white;
         }
 
         /* Bordered form */
-        form {
-            /* border: none;
-        border-radius: 15px; */
-            /* background-color: #FBF9F8; */
+        .form2 {
             margin: 50px 500px;
-            /* margin: 452px 270px;
-        max-width: 1016px;
-        max-height: 541px; */
         }
 
         /* Full-width inputs */
@@ -128,9 +107,8 @@
     </nav>
     <!-- nav end -->
 
-    <form action="action_page.php" method="post">
-        <div class="container w3-content">
-            <h5 style="font-size:150%; color:#B19F97;" class="container w3-center">Register</h5>
+    <form action="action_page.php" method="post" class="form2">
+            <h5 style="font-size:150%; color:#B19F97;" class="container w3-center">Sign Up</h5>
             <p>
                 <label for="uname" style="color:#B19F97;">*Name</label>
                 <input type="text" placeholder="Organization Name" name="uname" required>
@@ -145,7 +123,6 @@
             <p>
                 <label for="email" style="color:#B19F97;">*Email Address</label>
                 <input type="text" name="email" required>
-                <button type="button" class="button2" onclick="">Verify</button>
             </p>
 
             <p>
@@ -194,7 +171,7 @@
                 <label for="psw" style="color:#B19F97;">*Password:</label>
                 <!-- <input type="password" placeholder="Enter your password" name="psw" required> -->
                 <input type="password" name="psw" required>
-                <label style="font-size:80%; color:#987468;">*At least 12 symbol + Capital letter + number</label>
+                <label style="font-size:80%; color:#987468;">*At least 12 letter + number</label>
 
             </p>
 
@@ -220,11 +197,10 @@
             </p>
 
             <p class="w3-center">
-                <button type="submit" class="button button1"><a href="Confirm.html"
-                        style="text-decoration: none;">&nbsp;Confirm&nbsp;</a></button>
+                <button type="submit" class="button"><a href="confirmation.html"
+                        style="text-decoration: none;" id="aBtn">&nbsp;Confirm&nbsp;</a></button>
             </p>
             <br>
-        </div>
 
 
     </form>
