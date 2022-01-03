@@ -34,7 +34,7 @@
 
         /* Bordered form */
         .form2 {
-            margin: 50px 400px;
+            margin: 50px 350px;
             border: none;
             border-radius: 15px;
             background-color: #FBF9F8;
@@ -116,42 +116,42 @@
             <p class="fw-lighter small">* Must be filled</p>
             <p>
                 <label for="uname" style="color:#B19F97;">*Organization Name</label>
-                <input type="text" placeholder="e.g. " name="uname" class="form-control" required>
+                <input type="text" name="uname" class="form-control" placeholder="e.g. Social Welfare Department" required>
             </p>
 
             <p>
                 <label for="pnum" style="color:#B19F97;">*Phone Number</label>
-                <input type="number" name="pnum" class="form-control" required>
+                <input type="number" name="pnum" class="form-control" placeholder="e.g. 23432255" required>
             </p>
 
             <p>
                 <label for="email" style="color:#B19F97;">*Email Address</label>
-                <input type="text" name="email" class="form-control" required>
+                <input type="text" pname="email" class="form-control" placeholder="e.g. swdenq@swd.gov.hk" required>
             </p>
 
             <p>
                 <label for="fnum" style="color:#B19F97;">Fax Number</label>
-                <input type="number" name="fnum" class="form-control">
+                <input type="number" name="fnum" class="form-control" placeholder="e.g. 28380125">
             </p>
 
             <p>
                 <label for="weblink" style="color:#B19F97;">Website URL</label>
-                <input type="text" name="weblink" class="form-control">
+                <input type="text" name="weblink" class="form-control" placeholder="e.g. swd.gov.hk">
             </p>
 
             <p>
-                <label for="brnum" style="color:#B19F97;">*BR Number</label>
-                <input type="number" placeholder="12 Number" name="brnum" class="form-control" required>
+                <label for="brnum" style="color:#B19F97;">*BR Number (the first 11 digits)</label>
+                <input type="number" name="brnum" class="form-control" placeholder="e.g. 12345678123" required>
             </p>
 
             <p>
                 <label for="address" style="color:#B19F97;">*Address</label>
-                <input type="text" name="address" class="form-control" required>
+                <input type="text" name="address" class="form-control" placeholder="e.g. 7/F - 10/F, WU CHUNG HSE, 213 QUEEN'S RD EAST, WAN CHAI, HK" required>
             </p>
 
             <p>
                 <label for="organization" style="color:#B19F97;">*Types of Organization</label>
-                <select id="organization" name="organization" class="form-control" required>
+                <select id="organization" name="organization" class="form-select" required>
                     <option value="gov">Government</option>
                     <option value="corporations">Corporations</option>
                     <option value="ngo">Non-Government Organization</option>
@@ -160,7 +160,7 @@
 
             <p>
                 <label for="service" style="color:#B19F97;">*Types of Service</label>
-                <select id="service" name="service" class="form-control" required>
+                <select id="service" name="service" class="form-select" required>
                     <option value="finaid">Financial Aid</option>
                     <option value="health">Health</option>
                     <option value="counselling">Counselling</option>
@@ -172,10 +172,9 @@
             </p>
 
             <p>
-                <label for="pw" style="color:#B19F97;">*Password:</label>
+                <label for="pw" style="color:#B19F97;">*Password</label>
                 <input type="password" name="pw" class="form-control" required>
-                <label style="font-size:80%; color:#987468;">At least 12 letter + number</label>
-
+                <label style="font-size:80%; color:#987468;">Use 12 or more characters with a mix of letters, numbers & symbols</label>
             </p>
 
             <p>
@@ -186,18 +185,45 @@
             <p>
                 <label for="aboutOrganization" style="color:#B19F97;">*About Organization</label>
                 <br>
-                <textarea id="aboutOrganization" name="aboutOrganization" rows="4" cols="57.5" style="min-height:100px;" class="form-control" required></textarea>
+                <textarea id="aboutOrganization" name="aboutOrganization" rows="4" cols="57.5" style="min-height:100px;" class="form-control" placeholder="VISION
+Together we build a caring community with self-sufficiency, dignity, harmony, happiness.
+
+MISSION
+For our customers, to provide quality social welfare services to enable them to meet life's challenges.
+ 
+For the Community
+To promote social and family responsibilities.
+ 
+For our Staff
+To develop individual potential and reward results; and to empower and build an innovative, cohesive and professional team.
+ 
+For Welfare Organizations
+To promote synergy conducive to efficient and effective service delivery.
+
+OUR VALUES
+Professionalism, we will embrace the highest standards of integrity, endurance, knowledge and skills.
+ 
+People-oriented Service
+We will always be sensitive to people's needs and provide timely services with respect, fairness and confidentiality.
+ 
+Community Participation
+We will involve the community in attaining our service goals.
+ 
+Effective Communication
+We will strive to understand and to be understood.
+ 
+Continuous Improvement
+We will continuously strive for excellence." required></textarea>
             </p>
 
             <p>
-                <label for="promotional" style="color:#B19F97;">Promotional Materials</label>
+                <label for="promotional" style="color:#B19F97;">Promotional Materials<br><small>Acceptable file format: jpg, jpeg, png, tiff, svg<br>File size: &lt;10MB<br>For a Portrait Poster Size:<br>&nbsp;&nbsp;A4 size in pixels 300dpi: 3508 x 2480 px (without bleed area)<br>For a Landscape Banner Size:<br>&nbsp;&nbsp;3508 x 1240 px (without bleed area)</small></label>
                 <br>
-                
-                <input type="file" id="myFile" name="filename" class="form-control form-color">
+                <input type="file" id="myFile" name="filename" class="form-control form-color" accept=".xls,.xlsx">
             </p>
 
             <p>
-                <label for="attachments" style="color:#B19F97;">*Attachments (e.g. Logo)</label>
+                <label for="attachments" style="color:#B19F97;">*Attachments (e.g. Logo)<br><small>Acceptable file format: jpg, jpeg, png, tiff, svg<br>File size: &lt;10MB<br>Size: 512 x 512 px / 1024 x 1024 px / 2048 x 2048 px</label>
                 <br>
                 <input type="file" id="myFile" name="filename" class="form-control form-color" required>
             </p>
