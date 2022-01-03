@@ -12,6 +12,7 @@
     <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
     <style>
         .button {
             border: none;
@@ -68,6 +69,7 @@
 </head>
 
 <body style="background-color:#EEE8E5;">
+    <a id="scroll"></a>
 
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
@@ -222,20 +224,24 @@ We will continuously strive for excellence." required></textarea>
             </p>
 
             <p>
-                <label for="promotional" style="color:#B19F97;">Promotional Materials<br><small>Acceptable file format:
-                        jpg, jpeg, png, tiff, svg<br>File size: &lt;10MB<br>For a Portrait Poster
-                        Size:<br>&nbsp;&nbsp;A4 size in pixels 300dpi: 3508 x 2480 px (without bleed area)<br>For a
-                        Landscape Banner Size:<br>&nbsp;&nbsp;3508 x 1240 px (without bleed area)</small></label>
+                <label for="promotional" style="color:#B19F97;">Promotional Materials
+                    Attachment<br><small>&nbsp;&nbsp;Acceptable file format:&nbsp;&nbsp;jpg, jpeg, png, tiff,
+                        svg<br>&nbsp;&nbsp;File size:&nbsp;&nbsp;&lt;10MB<br>&nbsp;&nbsp;For a Portrait Poster
+                        Size:&nbsp;&nbsp;A4 size in pixels 300dpi: 3508 x 2480 px (without bleed
+                        area)<br>&nbsp;&nbsp;For a
+                        Landscape Banner Size:&nbsp;&nbsp;3508 x 1240 px (without bleed area)</small></label>
                 <br>
-                <input type="file" name="filename" class="form-control">
+                <input type="file" name="filename" class="form-control" accept=".jpg, .jpeg, .png, .tiff, .svg">
             </p>
 
             <p>
-                <label for="attachments" style="color:#B19F97;">*Attachments (e.g. Logo)<br><small>Acceptable file
-                        format: jpg, jpeg, png, tiff, svg<br>File size: &lt;10MB<br>Size: 512 x 512 px / 1024 x 1024 px
+                <label for="attachments" style="color:#B19F97;">*Logo Attachment<br><small>&nbsp;&nbsp;Acceptable file
+                        format:&nbsp;&nbsp;jpg, jpeg, png, tiff, svg<br>&nbsp;&nbsp;File
+                        size:&nbsp;&nbsp;&lt;10MB<br>&nbsp;&nbsp;Size:&nbsp;&nbsp;512 x 512 px / 1024 x 1024 px
                         / 2048 x 2048 px</small></label>
                 <br>
-                <input type="file" name="filename" class="form-control" required>
+                <input type="file" name="filename" class="form-control" accept=".jpg, .jpeg, .png, .tiff, .svg"
+                    required>
             </p>
 
             <br>

@@ -2,7 +2,7 @@ footer {
   min-height: 40vh;
 }
 
-center {
+.center {
   margin: 2vw 15vw 0vw 15vw;
 }
 
@@ -11,6 +11,17 @@ center {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.column#sepia img {
+  -webkit-filter: sepia(0%);
+  filter: sepia(0%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.column#sepia:hover img {
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
 }
 
 .Rectangle-28 {
@@ -68,6 +79,38 @@ center {
 .form-color3 {
   color: #fff;
   background-color: #987468;
+}
+
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #987468;
+  text-indent: -9999px;
+  display: none;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+}
+#scroll span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #ffffff;
+}
+#scroll:hover {
+  background-color: #d3ac9c;
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
 }
 
 @media (max-width: 1000px) {
