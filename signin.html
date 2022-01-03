@@ -44,11 +44,11 @@
         /* Full-width inputs */
         input[type=text],
         input[type=password] {
-            border: none;
             border-radius: 15px;
+            /* border: none; */
             width: 100%;
             padding: 8px 10px;
-            margin: 8px 0;
+            /* margin: 8px 0; */
             display: inline-block;
             box-sizing: border-box;
         }
@@ -106,19 +106,17 @@
 
     <form action="action_page.php" method="post" class="form2">
         <div class="container w3-content">
-            <h5 style="font-size:150%; color:#B19F97;" class="container w3-center">Sign In</h5>
+            <h5 style="font-size:150%; color:#8A5122;" class="container w3-center"><b>Sign In</b></h5>
             <p>
-                <label for="uname" style="color:#B19F97;">ID:</label>
-                <!-- <input type="text" placeholder="Enter your ID number" name="uname" required> -->
-                <input type="text" name="uname" required>
+                <label for="uid" style="color:#B19F97;">ID:</label>
+                <input type="text" name="uid" class="form-control" required>
                 <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot
                         ID?</a></label>
             </p>
 
             <p>
-                <label for="psw" style="color:#B19F97;">Password:</label>
-                <!-- <input type="password" placeholder="Enter your password" name="psw" required> -->
-                <input type="password" name="psw" required>
+                <label for="pw" style="color:#B19F97;">Password:</label>
+                <input type="password" name="pw" class="form-control" required>
                 <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot
                         password?</a></label>
             </p>

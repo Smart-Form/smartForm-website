@@ -11,7 +11,6 @@
     <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
     <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <style>
         .button {
             border: none;
@@ -35,16 +34,20 @@
 
         /* Bordered form */
         .form2 {
-            margin: 50px 500px;
+            margin: 50px 400px;
+            border: none;
+            border-radius: 15px;
+            background-color: #FBF9F8;
         }
 
         /* Full-width inputs */
         input[type=text],
         input[type=password],
         input[type=number] {
+            border-radius: 15px;
             /* border: none; */
             width: 100%;
-            padding: 2px 10px;
+            padding: 8px 10px;
             /* margin: 8px 0; */
             display: inline-block;
             box-sizing: border-box;
@@ -52,7 +55,7 @@
 
         /* Add padding to containers */
         .container {
-            padding: 12px 40px;
+            padding: 12px 80px;
         }
 
         select {
@@ -107,47 +110,48 @@
     </nav>
     <!-- nav end -->
 
-    <form action="action_page.php" method="post" class="form2">
-            <h5 style="font-size:150%; color:#B19F97;" class="container w3-center">Sign Up</h5>
+    <form action="action_page" method="post" class="form2">
+        <div class="container w3-content">
+            <h5 style="font-size:150%; color:#8A5122;" class="container w3-center"><b>Sign Up</b></h5>
+            <p class="fw-lighter small">* Must be filled</p>
             <p>
-                <label for="uname" style="color:#B19F97;">*Name</label>
-                <input type="text" placeholder="Organization Name" name="uname" required>
+                <label for="uname" style="color:#B19F97;">*Organization Name</label>
+                <input type="text" placeholder="e.g. " name="uname" class="form-control" required>
             </p>
 
             <p>
                 <label for="pnum" style="color:#B19F97;">*Phone Number</label>
-                <!-- <input type="password" placeholder="Enter your password" name="psw" required> -->
-                <input type="number" name="pnum" required>
+                <input type="number" name="pnum" class="form-control" required>
             </p>
 
             <p>
                 <label for="email" style="color:#B19F97;">*Email Address</label>
-                <input type="text" name="email" required>
+                <input type="text" name="email" class="form-control" required>
             </p>
 
             <p>
-                <label for="fnum" style="color:#B19F97;">Fax</label>
-                <input type="number" name="fnum">
+                <label for="fnum" style="color:#B19F97;">Fax Number</label>
+                <input type="number" name="fnum" class="form-control">
             </p>
 
             <p>
-                <label for="weblink" style="color:#B19F97;">Website Link</label>
-                <input type="text" name="weblink">
+                <label for="weblink" style="color:#B19F97;">Website URL</label>
+                <input type="text" name="weblink" class="form-control">
             </p>
 
             <p>
-                <label for="brnum" style="color:#B19F97;">*BR number</label>
-                <input type="number" placeholder="12 Number" name="brnum" required>
+                <label for="brnum" style="color:#B19F97;">*BR Number</label>
+                <input type="number" placeholder="12 Number" name="brnum" class="form-control" required>
             </p>
 
             <p>
                 <label for="address" style="color:#B19F97;">*Address</label>
-                <input type="text" name="address" required>
+                <input type="text" name="address" class="form-control" required>
             </p>
 
             <p>
                 <label for="organization" style="color:#B19F97;">*Types of Organization</label>
-                <select id="organization" name="organization" required>
+                <select id="organization" name="organization" class="form-control" required>
                     <option value="gov">Government</option>
                     <option value="corporations">Corporations</option>
                     <option value="ngo">Non-Government Organization</option>
@@ -156,7 +160,7 @@
 
             <p>
                 <label for="service" style="color:#B19F97;">*Types of Service</label>
-                <select id="service" name="service" required>
+                <select id="service" name="service" class="form-control" required>
                     <option value="finaid">Financial Aid</option>
                     <option value="health">Health</option>
                     <option value="counselling">Counselling</option>
@@ -168,42 +172,44 @@
             </p>
 
             <p>
-                <label for="psw" style="color:#B19F97;">*Password:</label>
-                <!-- <input type="password" placeholder="Enter your password" name="psw" required> -->
-                <input type="password" name="psw" required>
-                <label style="font-size:80%; color:#987468;">*At least 12 letter + number</label>
+                <label for="pw" style="color:#B19F97;">*Password:</label>
+                <input type="password" name="pw" class="form-control" required>
+                <label style="font-size:80%; color:#987468;">At least 12 letter + number</label>
 
             </p>
 
             <p>
-                <label for="psw-confirm" style="color:#B19F97;">*Confirm Password</label>
-                <input type="password" name="psw-confirm" required>
+                <label for="pw-confirm" style="color:#B19F97;">*Confirm Password</label>
+                <input type="password" name="pw-confirm" class="form-control" required>
             </p>
 
             <p>
                 <label for="aboutOrganization" style="color:#B19F97;">*About Organization</label>
-                <!-- <input type="text" name="aboutOrganization" required> -->
-                <textarea id="aboutOrganization" name="aboutOrganization" rows="4" cols="50" required></textarea>
+                <br>
+                <textarea id="aboutOrganization" name="aboutOrganization" rows="4" cols="57.5" style="min-height:100px;" class="form-control" required></textarea>
             </p>
 
             <p>
                 <label for="promotional" style="color:#B19F97;">Promotional Materials</label>
-                <input type="file" id="myFile" name="filename">
+                <br>
+                
+                <input type="file" id="myFile" name="filename" class="form-control form-color">
             </p>
 
             <p>
-                <label for="attachments" style="color:#B19F97;">*Attachments (E.g.Logo)</label>
-                <input type="file" id="myFile" name="filename" required>
+                <label for="attachments" style="color:#B19F97;">*Attachments (e.g. Logo)</label>
+                <br>
+                <input type="file" id="myFile" name="filename" class="form-control form-color" required>
             </p>
 
+            <br>
             <p class="w3-center">
-                <button type="submit" class="button"><a href="confirmation.html"
-                        style="text-decoration: none;" id="aBtn">&nbsp;Confirm&nbsp;</a></button>
+                <button type="submit" class="button">&nbsp;Confirm&nbsp;</button>
             </p>
             <br>
-
-
+        </div>
     </form>
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- footer -->
     <p></p>
