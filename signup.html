@@ -11,6 +11,7 @@
     <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
     <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <style>
         .button {
             border: none;
@@ -34,10 +35,10 @@
 
         /* Bordered form */
         .form2 {
-            margin: 50px 350px;
             border: none;
             border-radius: 15px;
             background-color: #FBF9F8;
+            margin: 3.5vw 15vw;
         }
 
         /* Full-width inputs */
@@ -55,7 +56,7 @@
 
         /* Add padding to containers */
         .container {
-            padding: 12px 80px;
+            padding: 1vw 7.5vw;
         }
 
         select {
@@ -116,7 +117,8 @@
             <p class="fw-lighter small">* Must be filled</p>
             <p>
                 <label for="uname" style="color:#B19F97;">*Organization Name</label>
-                <input type="text" name="uname" class="form-control" placeholder="e.g. Social Welfare Department" required>
+                <input type="text" name="uname" class="form-control" placeholder="e.g. Social Welfare Department"
+                    required>
             </p>
 
             <p>
@@ -146,7 +148,8 @@
 
             <p>
                 <label for="address" style="color:#B19F97;">*Address</label>
-                <input type="text" name="address" class="form-control" placeholder="e.g. 7/F - 10/F, WU CHUNG HSE, 213 QUEEN'S RD EAST, WAN CHAI, HK" required>
+                <input type="text" name="address" class="form-control"
+                    placeholder="e.g. 7/F - 10/F, WU CHUNG HSE, 213 QUEEN'S RD EAST, WAN CHAI, HK" required>
             </p>
 
             <p>
@@ -174,7 +177,8 @@
             <p>
                 <label for="pw" style="color:#B19F97;">*Password</label>
                 <input type="password" name="pw" class="form-control" required>
-                <label style="font-size:80%; color:#987468;">Use 12 or more characters with a mix of letters, numbers & symbols</label>
+                <label style="font-size:80%; color:#987468;">Use 12 or more characters with a mix of letters, numbers &
+                    symbols</label>
             </p>
 
             <p>
@@ -185,7 +189,8 @@
             <p>
                 <label for="aboutOrganization" style="color:#B19F97;">*About Organization</label>
                 <br>
-                <textarea id="aboutOrganization" name="aboutOrganization" rows="4" cols="57.5" style="min-height:100px;" class="form-control" placeholder="VISION
+                <textarea id="aboutOrganization" name="aboutOrganization" rows="4" cols="57.5" style="min-height:100px;"
+                    class="form-control" placeholder="VISION
 Together we build a caring community with self-sufficiency, dignity, harmony, happiness.
 
 MISSION
@@ -217,15 +222,20 @@ We will continuously strive for excellence." required></textarea>
             </p>
 
             <p>
-                <label for="promotional" style="color:#B19F97;">Promotional Materials<br><small>Acceptable file format: jpg, jpeg, png, tiff, svg<br>File size: &lt;10MB<br>For a Portrait Poster Size:<br>&nbsp;&nbsp;A4 size in pixels 300dpi: 3508 x 2480 px (without bleed area)<br>For a Landscape Banner Size:<br>&nbsp;&nbsp;3508 x 1240 px (without bleed area)</small></label>
+                <label for="promotional" style="color:#B19F97;">Promotional Materials<br><small>Acceptable file format:
+                        jpg, jpeg, png, tiff, svg<br>File size: &lt;10MB<br>For a Portrait Poster
+                        Size:<br>&nbsp;&nbsp;A4 size in pixels 300dpi: 3508 x 2480 px (without bleed area)<br>For a
+                        Landscape Banner Size:<br>&nbsp;&nbsp;3508 x 1240 px (without bleed area)</small></label>
                 <br>
-                <input type="file" id="myFile" name="filename" class="form-control form-color" accept=".xls,.xlsx">
+                <input type="file" name="filename" class="form-control">
             </p>
 
             <p>
-                <label for="attachments" style="color:#B19F97;">*Attachments (e.g. Logo)<br><small>Acceptable file format: jpg, jpeg, png, tiff, svg<br>File size: &lt;10MB<br>Size: 512 x 512 px / 1024 x 1024 px / 2048 x 2048 px</label>
+                <label for="attachments" style="color:#B19F97;">*Attachments (e.g. Logo)<br><small>Acceptable file
+                        format: jpg, jpeg, png, tiff, svg<br>File size: &lt;10MB<br>Size: 512 x 512 px / 1024 x 1024 px
+                        / 2048 x 2048 px</small></label>
                 <br>
-                <input type="file" id="myFile" name="filename" class="form-control form-color" required>
+                <input type="file" name="filename" class="form-control" required>
             </p>
 
             <br>
@@ -235,7 +245,6 @@ We will continuously strive for excellence." required></textarea>
             <br>
         </div>
     </form>
-    <link rel="stylesheet" href="css/main.css">
 
     <!-- footer -->
     <p></p>

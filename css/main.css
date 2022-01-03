@@ -1,4 +1,8 @@
-.center {
+footer {
+  min-height: 40vh;
+}
+
+center {
   margin: 2vw 15vw 0vw 15vw;
 }
 
@@ -60,6 +64,10 @@
 }
 
 @media (max-width: 900px) {
+  footer {
+    min-height: 45vh;
+  }
+
   .Rectangle-28 {
     width: 80vw;
     height: 125px;
