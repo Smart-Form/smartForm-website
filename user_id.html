@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Form - Sign In</title>
+    <title>Smart Form - User ID</title>
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
     <link rel="stylesheet" href="plugins/w3/w3.css">
     <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
@@ -39,7 +39,7 @@
             border: none;
             border-radius: 15px;
             background-color: #FBF9F8;
-            margin: 3.5vw 20vw;
+            margin: 10vw 20vw;
         }
 
         /* Full-width inputs */
@@ -108,25 +108,16 @@
 
     <form action="action.php" method="post" class="form2">
         <div class="container w3-content">
-            <h5 style="font-size:150%; color:#8A5122;" class="container w3-center"><b>Sign In</b></h5>
-            <p>
-                <label for="uid" style="color:#B19F97;">ID:</label>
-                <input type="text" name="uid" class="form-control" required>
-                <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot
-                        ID?</a></label>
-            </p>
-
-            <p>
-                <label for="pw" style="color:#B19F97;">Password:</label>
-                <input type="password" name="pw" class="form-control" required>
-                <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot
-                        password?</a></label>
+            <h5 style="font-size:150%; color:#B19F97;" class="container w3-center">Your ID number</h5>
+            <p class="container w3-center">
+                <span style="font-size:90%; color:#B19F97;">Please save the ID number for log in.</span><br>
+                <span style="font-size:200%; color:#B19F97;">1234566879</span>
             </p>
 
             <p class="w3-center">
-                <button type="submit" class="button">&nbsp;Sign In&nbsp;</button>
-                <br><br><hr><br><br>
-                New user? <label style="color:#2715FF;"><a href="signup.html" style="text-decoration: none;">Create an account</a></label>
+                <button type="submit" class="button button1">&nbsp;Confirm&nbsp;</button>
+                <br>
+                <br>
             </p>
         </div>
     </form>
@@ -138,7 +129,8 @@
             <div class="col-1"></div>
 
             <div class="col-5">
-                <p>Contact Us : Phone 852 6838 7368 | Email cs@smartform.com</p>
+                <p><b>Contact Us</b></p>
+                <p>Phone: +852 6838 7368 | Email: cs@smartform.com</p>
                 <small>Copyright &copy; 2022 Smart Form Limited. All rights reserved.</small>
             </div>
 
