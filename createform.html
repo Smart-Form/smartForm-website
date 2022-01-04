@@ -10,8 +10,6 @@
     <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
     <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
 </head>
 
 <body style="background-color: #eee8e5;">
@@ -29,29 +27,38 @@
             </a>
 
             <div class="row">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><small>Eng</small></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><small>繁</small></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><small>簡</small></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="signin.html"><small>Profile</small></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><small>Setting</small></a>
-                        </li>
-                    </ul>
+                <div class="col d-flex align-items-center">
+                    <a href="form.html" class="btn btn-primary" style="background-color: #987468; min-width: 17.5vh;">Back to Panel</a>
+                </div>
+                <div class="col">
+                    <img src="img/published_with_changes_black_24dp.svg" height="20" id="loading">
+                    <br><small style="color: #999;">Auto-save is On</small>
+                </div>
+                <div class="col">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><small>Eng</small></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><small>繁</small></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><small>簡</small></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="signin.html"><small>Profile</small></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><small>Setting</small></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -60,36 +67,12 @@
     <!-- nav end -->
 
     <!-- main body -->
-    <div class="Rectangle-28">
-        <div class="row">
-            <div class="Rectangle-10">
-                <small style="color: #987468;">Welfare Information</small>
-            </div>
-            <div class="Ellipse-3"></div>
-            <div class="Ellipse-3"></div>
-            <div class="Ellipse-3"></div>
-            <div class="Rectangle-11"></div>
-            <div class="Ellipse-3"></div>
-            <div class="Ellipse-3"></div>
-            <div class="Ellipse-3"></div>
-            <div class="Rectangle-11"></div>
-            <div class="blank-1">
-                <div class="progress-svg">
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <img src="img/auto-save.svg" alt="" width="30" height="30">
-                        <br><small style="color: #fff">Auto-save is On</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <br>
     <div class="wrapper">
-        <form action="" id="wizard">
+        <form id="wizard">
             <!-- SECTION 1 -->
             <h2></h2>
+            <br>
             <section>
                 <div class="inner">
                     <div class="form-content">
@@ -122,7 +105,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="" placeholder="Summary 50 words" class="form-control form-color2"
-                                    style="height: 100px;"></textarea>
+                                    style="height: 100px; min-height:100px;"></textarea>
                             </div>
                         </div>
                         <div class="form-row">
@@ -191,7 +174,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="" class="form-control form-color2"
-                                    style="height: 100px;"></textarea>
+                                    style="height: 100px; min-height:100px;"></textarea>
                             </div>
                         </div>
                         <div class="form-row">
@@ -202,7 +185,8 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="" placeholder="Welcome, Thank you, etc"
-                                    class="form-control form-color2" style="height: 100px;"></textarea>
+                                    class="form-control form-color2"
+                                    style="height: 100px; min-height:100px;"></textarea>
                             </div>
                         </div>
                         <div class="form-row">
@@ -213,7 +197,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="" class="form-control form-color2"
-                                    style="height: 100px;"></textarea>
+                                    style="height: 100px; min-height:100px;"></textarea>
                             </div>
                         </div>
                         <br>
@@ -223,33 +207,33 @@
                                 <p class="fw-lighter">Logo</p>
                             </label>
                             <div class="form-holder">
-                                <div class="input-group" style="width: 20vw;">
+                                <div class="input-group" style="min-width: 20vw;">
                                     <input type="file" class="form-control form-color2" id="inputGroupFile04"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
                                         accept=".jpg, .jpeg, .png, .tiff, .svg">
-                                    <br><br><small><b>Acceptable file
-                                            format:</b><br>&nbsp;&nbsp;jpg, jpeg, png, tiff, svg<br><b>File
-                                            size:</b><br>&nbsp;&nbsp;&lt;10MB<br><b>Size:</b><br>&nbsp;&nbsp;512 x 512
-                                        px / 1024 x 1024 px
-                                        / 2048 x 2048 px</small>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
+                                <br><br><small><b>Acceptable file
+                                        format:</b><br>&nbsp;&nbsp;jpg, jpeg, png, tiff, svg<br><b>File
+                                        size:</b><br>&nbsp;&nbsp;&lt;10MB<br><b>Size:</b><br>&nbsp;&nbsp;512 x 512
+                                    px / 1024 x 1024 px
+                                    / 2048 x 2048 px</small>
                             </div>
                             <label class="col-2 col-form-label form-color">^Attachment<br>
                                 <p class="fw-lighter">Promotional Materials</p>
                             </label>
                             <div class="form-holder">
-                                <div class="input-group" style="width: 20vw;">
+                                <div class="input-group" style="min-width: 20vw;">
                                     <input type="file" class="form-control form-color2" id="inputGroupFile04"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
                                         accept=".jpg, .jpeg, .png, .tiff, .svg">
-                                    <br><br><small><b>Acceptable file format:</b><br>&nbsp;&nbsp;jpg, jpeg, png, tiff,
-                                        svg<br><b>File size:</b><br>&nbsp;&nbsp;&lt;10MB<br><b>For a Portrait Poster
-                                            Size:</b><br>&nbsp;&nbsp;A4 size in pixels 300dpi: 3508 x 2480
-                                        px (without bleed area)<br><b>For a Landscape Banner
-                                            Size:</b><br>&nbsp;&nbsp;3508 x 1240 px (without bleed area)</small>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
+                                <br><br><small><b>Acceptable file format:</b><br>&nbsp;&nbsp;jpg, jpeg, png, tiff,
+                                    svg<br><b>File size:</b><br>&nbsp;&nbsp;&lt;10MB<br><b>For a Portrait Poster
+                                        Size:</b><br>&nbsp;&nbsp;A4 size in pixels 300dpi: 3508 x 2480
+                                    px (without bleed area)<br><b>For a Landscape Banner
+                                        Size:</b><br>&nbsp;&nbsp;3508 x 1240 px (without bleed area)</small>
                             </div>
                         </div>
                         <!-- <div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
@@ -649,11 +633,77 @@
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color">Distribution Date</label>
-                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color">Apply Date</label>
                             <div class="col-3">
                                 <input type="date" class="form-control form-color2" id="date" style="width: 20vh;"
                                     disabled>
+                            </div>
+                            <label class="col-form-label"><small class="form-color">To</small></label>
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color">Deadline Date</label>
+                            <div class="col-3">
+                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;"
+                                    disabled>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color">Distribution Date</label>
+                            <div class="col-3">
+                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;"
+                                    disabled>
+                            </div>
+                            <label class="col-form-label"><small class="form-color">To</small></label>
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color">End Date</label>
+                            <div class="col-3">
+                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;"
+                                    disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">The amount involved</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="number" placeholder="HK$" class="form-control form-color2" disabled>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">*Privacy Policy & Disclaimer</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="" class="form-control form-color2"
+                                    style="height: 100px; min-height:100px;" disabled></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Promotional Corner<br>(to Applicant)</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="" placeholder="Welcome, Thank you, etc"
+                                    class="form-control form-color2" style="height: 100px; min-height:100px;"
+                                    disabled></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="text-start form-color">Supplementary Information if need<br>(to SmartForm)</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="" class="form-control form-color2"
+                                    style="height: 100px; min-height:100px;" disabled></textarea>
                             </div>
                         </div>
                         <br>
@@ -663,7 +713,7 @@
                                 <p class="fw-lighter">Logo</p>
                             </label>
                             <div class="form-holder">
-                                <div class="input-group" style="width: 20vw;">
+                                <div class="input-group" style="min-width: 20vw;">
                                     <input type="file" class="form-control form-color2" id="inputGroupFile04"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload" disabled>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
@@ -673,7 +723,7 @@
                                 <p class="fw-lighter">Promotional Materials</p>
                             </label>
                             <div class="form-holder">
-                                <div class="input-group" style="width: 20vw;">
+                                <div class="input-group" style="min-width: 20vw;">
                                     <input type="file" class="form-control form-color2" id="inputGroupFile04"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload" disabled>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
@@ -692,12 +742,6 @@
 
         </form>
     </div>
-
-    <link rel="stylesheet" href="plugins/material-design-iconic-font/css/material-design-iconic-font.css">
-    <link rel="stylesheet" href="css/createform_form.css">
-    <script src="plugins/jquery-3.3.1-dist/jquery.steps.js"></script>
-    <script src="js/createform_form.js"></script>
-    <script src="js/Sortable.js"></script>
     <!-- main body end -->
 
     <!-- footer -->
@@ -715,6 +759,7 @@
                 <form>
                     <h5>Subscribe to our newsletter</h5>
                     <p>Monthly digest of whats new and exciting from us.</p>
+                    <br>
                     <div class="d-flex w-100 gap-2">
                         <label for="newsletter1" class="visually-hidden">Email address</label>
                         <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
@@ -729,5 +774,11 @@
 
 
 </body>
-
+<link rel="stylesheet" href="plugins/material-design-iconic-font/css/material-design-iconic-font.css">
+<link rel="stylesheet" href="css/createform_form.css">
+<script src="plugins/jquery-3.3.1-dist/jquery.steps.js"></script>
+<script src="js/createform_form.js"></script>
+<script src="js/Sortable.js"></script>
+<link rel="stylesheet" href="css/main.css">
+<script src="js/main.js"></script>
 </html>

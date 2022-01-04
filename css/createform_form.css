@@ -62,12 +62,19 @@ a {
   position: relative;
 }
 
+/* stepper border */
 .wizard > .steps {
   position: relative;
   top: 12.5%;
   right: 50%;
   transform: translateX(50%);
   /* z-index: 9; */
+  width: 70vw;
+  height: 8vh;
+  margin: 0vw 0vw 0vw 4.5vw;
+  padding: 1.25vw 0vw 0vw 0vw;
+  border-radius: 4vw;
+  background-color: #d3ac9c;
 }
 
 .wizard > .steps .current-info,
@@ -82,40 +89,40 @@ a {
 
 .wizard > .steps li a {
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #e9e0cf;
-  margin-right: 78px;
+  margin-right: 10vw;
   position: relative;
+  width: 12.5vw;
+  height: 3vh;
+  border-radius: 4vw;
+  background-color: #999;
 }
 .wizard > .steps li a:before {
-  content: "";
-  width: 58px;
-  height: 2px;
-  background: #e9e0cf;
-  position: absolute;
-  right: 22px;
-  top: 5px;
+  width: 2vh;
+  height: 20vh;
+  border-radius: 4vw;
+  background-color: #dfdcd8;
 }
+/* line */
 .wizard > .steps li a:after {
   content: "";
-  width: 0;
-  height: 2px;
-  background: #6d7f52;
+  width: 8vw;
+  height: 0.5vh;
+  border-radius: 10px;
+  background: #dfdcd8;
   position: absolute;
-  left: -68px;
-  top: 5px;
+  left: -9vw;
+  top: 1.25vh;
   transition: all 0.6s ease;
 }
 .wizard > .steps li.first a {
-  background: #6d7f52;
+  background: #fff;
 }
 .wizard > .steps li.checked a {
-  background: #6d7f52;
+  background: #fff;
 }
+/* line */
 .wizard > .steps li.checked a:after {
-  width: 58px;
+  background: #fff;
 }
 .wizard > .steps li:last-child a {
   margin-right: 0;
@@ -127,9 +134,16 @@ a {
   display: none;
 }
 
+.form-content {
+  width: 100%;
+  height: 1800px;
+  padding-top: 65px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
 .wizard > .content {
   position: relative;
-  height: 1500px;
+  height: 1850px;
 }
 
 .inner {
@@ -140,14 +154,6 @@ a {
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-}
-
-.form-content {
-  width: 100%;
-  height: 1500px;
-  padding-top: 65px;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .form-header {
@@ -453,6 +459,10 @@ form system – mobile layout
     padding: 50px 20px 30px;
     height: 3000px;
   }
+  .wizard > .content {
+    position: relative;
+    height: 3050px;
+  }
 
   .form-row {
     display: block;
@@ -472,14 +482,17 @@ form system – mobile layout
     height: 100%;
     width: 95vw;
   }
+  /* stepper border */
   .wizard > .steps {
     right: 50%;
     top: 52%;
     transform: translateX(50%);
-  }
-  .wizard > .content {
-    position: relative;
-    height: 3000px;
+    width: 90vw;
+    height: 8vh;
+    margin: 0vw 0vw 0vw 5vw;
+    padding: 4vw 0vw 0vw 0vw;
+    border-radius: 4vw;
+    background-color: #d3ac9c;
   }
 
   .actions {

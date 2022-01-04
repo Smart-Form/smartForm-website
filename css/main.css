@@ -5,12 +5,36 @@ footer {
 .center {
   margin: 2vw 15vw 0vw 15vw;
 }
-
 .sth-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.form-color {
+  color: #987468;
+}
+.form-color2 {
+  background-color: #EEE8E5;
+}
+.form-color3 {
+  color: #fff;
+  background-color: #987468;
+}
+
+#loading {
+  animation-name: rotation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
 }
 
 .column#sepia img {
@@ -22,63 +46,6 @@ footer {
 .column#sepia:hover img {
   -webkit-filter: sepia(100%);
   filter: sepia(100%);
-}
-
-.Rectangle-28 {
-  width: 60vw;
-  height: 60px;
-  margin: 2vw 0vw 0vw 20vw;
-  padding: 0.75vw 0vw 0vw 5vw;
-  border-radius: 4vw;
-  background-color: #d3ac9c;
-}
-
-.Rectangle-10 {
-  width: 15vw;
-  height: 35px;
-  padding: 0.25vw 0vw 0vw 3vw;
-  border-radius: 4vw;
-  background-color: #fff;
-}
-
-.Ellipse-3 {
-  width: 1vw;
-  height: 15px;
-  margin: 0.65vw 0vw 0vw 1vw;
-  padding: 0vw 0vw 0vw 0vw;
-  border-radius: 4vw;
-  background-color: #dfdcd8;
-}
-
-.Rectangle-11 {
-  width: 2.5vw;
-  height: 35px;
-  margin: 0vw 0vw 0vw 1vw;
-  padding: 0.25vw 0vw 0vw 0vw;
-  border-radius: 4vw;
-  background-color: #fff;
-}
-
-.progress-svg {
-  margin: 0vw 0vw 0vw 1vw;
-}
-
-.blank-1 {
-  width: 10vw;
-  margin: -0.5vw 0vw 0vw 5vw;
-}
-
-.form-color {
-  color: #987468;
-}
-
-.form-color2 {
-  background-color: #EEE8E5;
-}
-
-.form-color3 {
-  color: #fff;
-  background-color: #987468;
 }
 
 #scroll {
@@ -122,45 +89,6 @@ footer {
 @media (max-width: 900px) {
   footer {
     min-height: 45vh;
-  }
-
-  .Rectangle-28 {
-    width: 80vw;
-    height: 125px;
-    margin: 2vw 0vw 0vw 10vw;
-    border-radius: 4vw;
-    background-color: #d3ac9c;
-  }
-
-  .Rectangle-10 {
-    width: 20vw;
-    height: 50px;
-    padding: 0.25vw 0vw 0vw 3vw;
-    border-radius: 4vw;
-    background-color: #fff;
-  }
-
-  .Ellipse-3 {
-    width: 2vw;
-    height: 15px;
-    margin: 4vw 0vw 0vw 1vw;
-    padding: 0vw 0vw 0vw 0vw;
-    border-radius: 4vw;
-    background-color: #dfdcd8;
-  }
-
-  .Rectangle-11 {
-    width: 7.5vw;
-    height: 50px;
-    margin: 0vw 0vw 0vw 1vw;
-    padding: 0.25vw 0vw 0vw 0vw;
-    border-radius: 4vw;
-    background-color: #fff;
-  }
-
-  .blank-1 {
-    width: 10vw;
-    margin: -0.5vw 0vw 0vw 5vw;
   }
 }
 
