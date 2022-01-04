@@ -176,13 +176,13 @@
 
             <p>
                 <label for="pw" style="color:#B19F97;">*Password</label>
-                <input type="password" name="pw" class="form-control" pattern="(?=.*\d)(?=.*[a-z]).{12,}" id="myInput"
+                <input type="password" name="pw" class="form-control" pattern="(?=.*\d)(?=.*[a-z]).{12,}" id="password_input"
                     required>
                 <!-- An element to toggle between password visibility -->
                 <input type="checkbox" onclick="myFunction()">&nbsp;&nbsp;Show Password<br>
                 <script>
                     function myFunction() {
-                        var x = document.getElementById("myInput");
+                        var x = document.getElementById("password_input");
                         if (x.type === "password") {
                             x.type = "text";
                         } else {
@@ -196,7 +196,17 @@
 
             <p>
                 <label for="pw-confirm" style="color:#B19F97;">*Confirm Password</label>
-                <input type="password" name="pw-confirm" class="form-control" required>
+                <input type="password" name="pw-confirm" class="form-control" oninput="check(this)" required>
+                <script>
+                    function check(input) {
+                        if (input.value != document.getElementById('password_input').value) {
+                            input.setCustomValidity('Password Must be Matching.');
+                        } else {
+                            // input is valid -- reset the error message
+                            input.setCustomValidity('');
+                        }
+                    }
+                </script>
             </p>
 
             <p>
