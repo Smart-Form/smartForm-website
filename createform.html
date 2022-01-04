@@ -28,7 +28,8 @@
 
             <div class="row">
                 <div class="col d-flex align-items-center">
-                    <a href="form.html" class="btn btn-primary" style="background-color: #987468; min-width: 17.5vh;">Back to Panel</a>
+                    <a href="form.html" class="btn btn-primary"
+                        style="background-color: #987468; min-width: 17.5vh;">Back to Panel</a>
                 </div>
                 <div class="col">
                     <img src="img/published_with_changes_black_24dp.svg" height="20" id="loading">
@@ -69,7 +70,7 @@
     <!-- main body -->
     <br>
     <div class="wrapper">
-        <form id="wizard">
+        <form id="wizard" action="form_id.html" method="" class="needs-validation" novalidate>
             <!-- SECTION 1 -->
             <h2></h2>
             <br>
@@ -94,7 +95,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" placeholder="Welfare Name" class="form-control form-color2">
+                                <input type="text" placeholder="Welfare Name" class="form-control form-color2" required>
                             </div>
                         </div>
                         <div class="form-row">
@@ -105,7 +106,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="" placeholder="Summary 50 words" class="form-control form-color2"
-                                    style="height: 100px; min-height:100px;"></textarea>
+                                    style="height: 100px; min-height:100px;" required></textarea>
                             </div>
                         </div>
                         <div class="form-row">
@@ -125,7 +126,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" placeholder="Target audience" class="form-control form-color2">
+                                <input type="text" placeholder="Target audience" class="form-control form-color2" required>
                             </div>
                         </div>
                         <br>
@@ -174,7 +175,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="" class="form-control form-color2"
-                                    style="height: 100px; min-height:100px;"></textarea>
+                                    style="height: 100px; min-height:100px;" required></textarea>
                             </div>
                         </div>
                         <div class="form-row">
@@ -204,22 +205,6 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color">^Attachment<br>
-                                <p class="fw-lighter">Logo</p>
-                            </label>
-                            <div class="form-holder">
-                                <div class="input-group" style="min-width: 20vw;">
-                                    <input type="file" class="form-control form-color2" id="inputGroupFile04"
-                                        aria-describedby="inputGroupFileAddon04" aria-label="Upload"
-                                        accept=".jpg, .jpeg, .png, .tiff, .svg">
-                                    <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
-                                </div>
-                                <br><br><small><b>Acceptable file
-                                        format:</b><br>&nbsp;&nbsp;jpg, jpeg, png, tiff, svg<br><b>File
-                                        size:</b><br>&nbsp;&nbsp;&lt;10MB<br><b>Size:</b><br>&nbsp;&nbsp;512 x 512
-                                    px / 1024 x 1024 px
-                                    / 2048 x 2048 px</small>
-                            </div>
-                            <label class="col-2 col-form-label form-color">^Attachment<br>
                                 <p class="fw-lighter">Promotional Materials</p>
                             </label>
                             <div class="form-holder">
@@ -234,6 +219,22 @@
                                         Size:</b><br>&nbsp;&nbsp;A4 size in pixels 300dpi: 3508 x 2480
                                     px (without bleed area)<br><b>For a Landscape Banner
                                         Size:</b><br>&nbsp;&nbsp;3508 x 1240 px (without bleed area)</small>
+                            </div>
+                            <label class="col-2 col-form-label form-color">*Attachment<br>
+                                <p class="fw-lighter">Logo</p>
+                            </label>
+                            <div class="form-holder">
+                                <div class="input-group" style="min-width: 20vw;">
+                                    <input type="file" class="form-control form-color2" id="inputGroupFile04"
+                                        aria-describedby="inputGroupFileAddon04" aria-label="Upload"
+                                        accept=".jpg, .jpeg, .png, .tiff, .svg" required>
+                                    <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
+                                </div>
+                                <br><br><small><b>Acceptable file
+                                        format:</b><br>&nbsp;&nbsp;jpg, jpeg, png, tiff, svg<br><b>File
+                                        size:</b><br>&nbsp;&nbsp;&lt;10MB<br><b>Size:</b><br>&nbsp;&nbsp;512 x 512
+                                    px / 1024 x 1024 px
+                                    / 2048 x 2048 px</small>
                             </div>
                         </div>
                         <!-- <div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
@@ -710,7 +711,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color">^Attachment<br>
-                                <p class="fw-lighter">Logo</p>
+                                <p class="fw-lighter">Promotional Materials</p>
                             </label>
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
@@ -719,8 +720,8 @@
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
                             </div>
-                            <label class="col-2 col-form-label form-color">^Attachment<br>
-                                <p class="fw-lighter">Promotional Materials</p>
+                            <label class="col-2 col-form-label form-color">*Attachment<br>
+                                <p class="fw-lighter">Logo</p>
                             </label>
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
@@ -772,7 +773,6 @@
     </footer>
     <!-- footer end -->
 
-
 </body>
 <link rel="stylesheet" href="plugins/material-design-iconic-font/css/material-design-iconic-font.css">
 <link rel="stylesheet" href="css/createform_form.css">
@@ -781,4 +781,5 @@
 <script src="js/Sortable.js"></script>
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js"></script>
+
 </html>
