@@ -457,7 +457,7 @@ form system – mobile layout
   .form-content {
     width: 100%;
     padding: 50px 20px 30px;
-    height: 2450px;
+    height: 3000px;
   }
 
   .form-row {
@@ -485,7 +485,7 @@ form system – mobile layout
   }
   .wizard > .content {
     position: relative;
-    height: 2450px;
+    height: 3000px;
   }
 
   .actions {
