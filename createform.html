@@ -70,7 +70,7 @@
     <!-- main body -->
     <br>
     <div class="wrapper">
-        <form id="wizard" action="form_id.html" method="" class="needs-validation" novalidate>
+        <form id="wizard" action="form_id.html" method="" class="was-validated">
             <!-- SECTION 1 -->
             <h2></h2>
             <br>
@@ -116,7 +116,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" placeholder="URL" class="form-control form-color2">
+                                <input type="text" placeholder="URL" class="form-control form-color2" required>
                             </div>
                         </div>
                         <div class="form-row">
@@ -126,7 +126,8 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" placeholder="Target audience" class="form-control form-color2" required>
+                                <input type="text" placeholder="Target audience" class="form-control form-color2"
+                                    required>
                             </div>
                         </div>
                         <br>
@@ -134,26 +135,30 @@
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color">Apply Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;" />
+                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;"
+                                    required>
                             </div>
                             <label class="col-form-label"><small class="form-color">To</small></label>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color">Deadline Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;" />
+                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;"
+                                    required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color">Distribution Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;" />
+                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;"
+                                    required>
                             </div>
                             <label class="col-form-label"><small class="form-color">To</small></label>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color">End Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;" />
+                                <input type="date" class="form-control form-color2" id="date" style="width: 20vh;"
+                                    required>
                             </div>
                         </div>
                         <br>
@@ -164,7 +169,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="number" placeholder="HK$" class="form-control form-color2">
+                                <input type="number" placeholder="HK$" class="form-control form-color2" required>
                             </div>
                         </div>
                         <div class="form-row">
@@ -186,8 +191,8 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="" placeholder="Welcome, Thank you, etc"
-                                    class="form-control form-color2"
-                                    style="height: 100px; min-height:100px;"></textarea>
+                                    class="form-control form-color2" style="height: 100px; min-height:100px;"
+                                    required></textarea>
                             </div>
                         </div>
                         <div class="form-row">
@@ -198,7 +203,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="" class="form-control form-color2"
-                                    style="height: 100px; min-height:100px;"></textarea>
+                                    style="height: 100px; min-height:100px;" required></textarea>
                             </div>
                         </div>
                         <br>
@@ -211,7 +216,7 @@
                                 <div class="input-group" style="min-width: 20vw;">
                                     <input type="file" class="form-control form-color2" id="inputGroupFile04"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
-                                        accept=".jpg, .jpeg, .png, .tiff, .svg">
+                                        accept=".jpg, .jpeg, .png, .tiff, .svg" required>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
                                 <br><br><small><b>Acceptable file format:</b><br>&nbsp;&nbsp;jpg, jpeg, png, tiff,
@@ -284,7 +289,7 @@
                                                 <td class="recipe-table__cell">
                                                     <select class="form-select form-select-sm"
                                                         aria-label=".form-select-sm example" id="arraySelect"
-                                                        onchange="changeInput('arraySelect', 'arrayInput')">
+                                                        onchange="changeInput('arraySelect', 'arrayInput')" required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -310,11 +315,12 @@
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <input class="form-control form-control-sm" type="text"
-                                                        placeholder="Question" aria-label=".form-control-sm example">
+                                                        placeholder="Question" aria-label=".form-control-sm example"
+                                                        required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)"></textarea>
+                                                        placeholder="Description (Optional)" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput"></div>
@@ -328,7 +334,7 @@
                                                 <td class="recipe-table__cell">
                                                     <select class="form-select form-select-sm"
                                                         aria-label=".form-select-sm example" id="arraySelect2"
-                                                        onchange="changeInput('arraySelect2', 'arrayInput2')">
+                                                        onchange="changeInput('arraySelect2', 'arrayInput2')" required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -354,11 +360,12 @@
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <input class="form-control form-control-sm" type="text"
-                                                        placeholder="Question" aria-label=".form-control-sm example">
+                                                        placeholder="Question" aria-label=".form-control-sm example"
+                                                        required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)"></textarea>
+                                                        placeholder="Description (Optional)" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput2"></div>
@@ -372,7 +379,7 @@
                                                 <td class="recipe-table__cell">
                                                     <select class="form-select form-select-sm"
                                                         aria-label=".form-select-sm example" id="arraySelect3"
-                                                        onchange="changeInput('arraySelect3', 'arrayInput3')">
+                                                        onchange="changeInput('arraySelect3', 'arrayInput3')" required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -398,11 +405,12 @@
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <input class="form-control form-control-sm" type="text"
-                                                        placeholder="Question" aria-label=".form-control-sm example">
+                                                        placeholder="Question" aria-label=".form-control-sm example"
+                                                        required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)"></textarea>
+                                                        placeholder="Description (Optional)" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput3"></div>
@@ -416,7 +424,7 @@
                                                 <td class="recipe-table__cell">
                                                     <select class="form-select form-select-sm"
                                                         aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')">
+                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -442,11 +450,12 @@
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <input class="form-control form-control-sm" type="text"
-                                                        placeholder="Question" aria-label=".form-control-sm example">
+                                                        placeholder="Question" aria-label=".form-control-sm example"
+                                                        required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)"></textarea>
+                                                        placeholder="Description (Optional)" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput4"></div>
@@ -460,7 +469,7 @@
                                                 <td class="recipe-table__cell">
                                                     <select class="form-select form-select-sm"
                                                         aria-label=".form-select-sm example" id="arraySelect5"
-                                                        onchange="changeInput('arraySelect5', 'arrayInput5')">
+                                                        onchange="changeInput('arraySelect5', 'arrayInput5')" required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -486,11 +495,12 @@
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <input class="form-control form-control-sm" type="text"
-                                                        placeholder="Question" aria-label=".form-control-sm example">
+                                                        placeholder="Question" aria-label=".form-control-sm example"
+                                                        required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)"></textarea>
+                                                        placeholder="Description (Optional)" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput5"></div>
@@ -516,7 +526,7 @@
                     <td class="drag-handler"></td>
                     <td class="recipe-table__cell">
                         <select class="form-select form-select-sm"
-                            aria-label=".form-select-sm example" id="{arraySelectID}" onchange="changeInput('{arraySelectID}', '{arrayInputID}')">
+                            aria-label=".form-select-sm example" id="{arraySelectID}" onchange="changeInput('{arraySelectID}', '{arrayInputID}')" required>
                             <option selected>Question Types</option>
                             <option value="0">Option</option>
                             <option value="1">Yes/No</option>
@@ -542,11 +552,11 @@
                     </td>
                     <td class="recipe-table__cell">
                         <input class="form-control form-control-sm" type="text"
-                            placeholder="Question" aria-label=".form-control-sm example">
+                            placeholder="Question" aria-label=".form-control-sm example" required>
                     </td>
                     <td class="recipe-table__cell">
                         <textarea class="form-control form-control-sm" id="" rows="1"
-                            placeholder="Description (Optional)"></textarea>
+                            placeholder="Description (Optional)" required></textarea>
                     </td>
                     <td class="recipe-table__cell">
                         <div id="{arrayInputID}"></div>
@@ -559,7 +569,7 @@
             <!-- addInput -->
             <script id="addInput" type="text/template">
                     <input class="form-control form-control-sm" list="datalistOptions"
-                    id="{arrayInputChild}" placeholder="Array">
+                    id="{arrayInputChild}" placeholder="Array" required>
                     <datalist id="datalistOptions">
                     <option value="Living with family, Property with mortgage, Property without
                     mortgage, Rental apartment, Public housing">
@@ -733,9 +743,18 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-1"></div>
-                            <div class="col-1"><input type="checkbox" checked></div>
-                            <div class="col-5">We agree with the <a href="#">terms and conditions</a></div>
+                            <div class="form-check">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                                    type="checkbox" for="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    &nbsp;We agree with the <a href="#">terms and conditions</a>
+                                </label>
+                                <div class="invalid-feedback">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You
+                                    must agree before
+                                    submitting.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
