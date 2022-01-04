@@ -176,7 +176,20 @@
 
             <p>
                 <label for="pw" style="color:#B19F97;">*Password</label>
-                <input type="password" name="pw" class="form-control" required>
+                <input type="password" name="pw" class="form-control" pattern="(?=.*\d)(?=.*[a-z]).{12,}" id="myInput"
+                    required>
+                <!-- An element to toggle between password visibility -->
+                <input type="checkbox" onclick="myFunction()">&nbsp;&nbsp;Show Password<br>
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myInput");
+                        if (x.type === "password") {
+                            x.type = "text";
+                        } else {
+                            x.type = "password";
+                        }
+                    }
+                </script>
                 <label style="font-size:80%; color:#987468;">Use 12 or more characters with a mix of letters, numbers &
                     symbols</label>
             </p>
@@ -280,4 +293,5 @@ We will continuously strive for excellence." required></textarea>
 </body>
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js"></script>
+
 </html>
