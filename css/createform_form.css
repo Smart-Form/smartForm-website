@@ -25,7 +25,7 @@ button {
   /* font-family: "Muli-Regular"; */
   font-size: 15px;
 }
-textarea{
+textarea {
   max-height: 1000px;
 }
 
@@ -262,6 +262,7 @@ select.form-control option[value=""][disabled] {
   display: none;
 } */
 
+/* button */
 .actions {
   position: absolute;
   bottom: 55px;
@@ -427,12 +428,6 @@ select.form-control option[value=""][disabled] {
   display: none;
 } */
 
-
-
-
-
-
-
 /* 
 
 form system – mobile layout
@@ -442,7 +437,6 @@ form system – mobile layout
   .wizard {
     max-width: 768px;
   }
-
 }
 @media (max-width: 900px) {
   .inner {
@@ -495,19 +489,13 @@ form system – mobile layout
   }
 }
 
-
-
-
-
-
-
 /* 
 
 question system
 
 */
 
-.recipe { 
+.recipe {
   padding: 1em;
 }
 /* .recipe__title {
@@ -531,10 +519,10 @@ question system
 .recipe-table {
   position: relative;
   /* padding:  0vw; */
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
   /* z-index: 10; */
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .recipe-table__cell {
@@ -546,7 +534,7 @@ question system
 .recipe-table__add-row {
   margin-top: 0;
   position: relative;
-  border-top: 1px solid #EEE;
+  border-top: 1px solid #eee;
   /* z-index: 8; */
 }
 
@@ -558,8 +546,8 @@ question system
   left: 0;
   width: 50vw;
   margin: 0 auto;
-  -webkit-transition: all .2s easy-in;
-  transition: all .2s easy-in;
+  -webkit-transition: all 0.2s easy-in;
+  transition: all 0.2s easy-in;
   text-align: center;
   opacity: 0.5;
   color: #fff;
@@ -581,32 +569,79 @@ question system
   padding: 0.25vw 1vw;
   font-size: 1em;
   line-height: 1.4;
-  border: 1px solid #F39C12;
-  color: #F39C12;
+  border: 1px solid #f39c12;
+  color: #f39c12;
   text-decoration: none;
-  transition: all .3s;
+  transition: all 0.3s;
   text-align: center;
   background-color: #fff;
 }
 .recipe-table__del-row-btn:hover {
-  background: #F39C12;
+  background: #f39c12;
   color: #fff;
 }
-
 
 .drag-handler {
   width: 4vw;
   position: relative;
-  background-color: #E4E6EB;
-  background-image: linear-gradient(45deg, #E4E6EB, #E4E6EB 2px, #fff 2px, #fff 4px, #E4E6EB 4px, #E4E6EB 9px, #fff 9px, #fff 11px, #E4E6EB 11px, #E4E6EB 16px, #fff 16px, #fff 18px, #E4E6EB 18px, #E4E6EB 22px);
-  background-size: 5vw; 
+  background-color: #e4e6eb;
+  background-image: linear-gradient(
+    45deg,
+    #e4e6eb,
+    #e4e6eb 2px,
+    #fff 2px,
+    #fff 4px,
+    #e4e6eb 4px,
+    #e4e6eb 9px,
+    #fff 9px,
+    #fff 11px,
+    #e4e6eb 11px,
+    #e4e6eb 16px,
+    #fff 16px,
+    #fff 18px,
+    #e4e6eb 18px,
+    #e4e6eb 22px
+  );
+  background-size: 5vw;
   cursor: move;
-  border-top: 2px solid #FFF;
-  border-bottom: 2px solid #FFF;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .drag-handler:hover {
-  background-image: linear-gradient(45deg, #bab86c, #bab86c 2px, #fff 2px, #fff 4px, #bab86c 4px, #bab86c 9px, #fff 9px, #fff 11px, #bab86c 11px, #bab86c 16px, #fff 16px, #fff 18px, #bab86c 18px, #bab86c 22px);
+  background-image: linear-gradient(
+    45deg,
+    #bab86c,
+    #bab86c 2px,
+    #fff 2px,
+    #fff 4px,
+    #bab86c 4px,
+    #bab86c 9px,
+    #fff 9px,
+    #fff 11px,
+    #bab86c 11px,
+    #bab86c 16px,
+    #fff 16px,
+    #fff 18px,
+    #bab86c 18px,
+    #bab86c 22px
+  );
 }
 .drag-handler:active {
-  background-image: linear-gradient(45deg, #bab86c, #bab86c 2px, #fff 2px, #fff 4px, #bab86c 4px, #bab86c 9px, #fff 9px, #fff 11px, #bab86c 11px, #bab86c 16px, #fff 16px, #fff 18px, #bab86c 18px, #bab86c 22px);
+  background-image: linear-gradient(
+    45deg,
+    #bab86c,
+    #bab86c 2px,
+    #fff 2px,
+    #fff 4px,
+    #bab86c 4px,
+    #bab86c 9px,
+    #fff 9px,
+    #fff 11px,
+    #bab86c 11px,
+    #bab86c 16px,
+    #fff 16px,
+    #fff 18px,
+    #bab86c 18px,
+    #bab86c 22px
+  );
 }
