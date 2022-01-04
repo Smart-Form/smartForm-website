@@ -31,14 +31,81 @@
             background-color: #8A5122;
             color: white;
         }
+
+        /* Animations */
+        @-webkit-keyframes bg-scrolling-reverse {
+            100% {
+                background-position: 50px 50px;
+            }
+        }
+
+        @-moz-keyframes bg-scrolling-reverse {
+            100% {
+                background-position: 50px 50px;
+            }
+        }
+
+        @-o-keyframes bg-scrolling-reverse {
+            100% {
+                background-position: 50px 50px;
+            }
+        }
+
+        @keyframes bg-scrolling-reverse {
+            100% {
+                background-position: 50px 50px;
+            }
+        }
+
+        @-webkit-keyframes bg-scrolling {
+            0% {
+                background-position: 50px 50px;
+            }
+        }
+
+        @-moz-keyframes bg-scrolling {
+            0% {
+                background-position: 50px 50px;
+            }
+        }
+
+        @-o-keyframes bg-scrolling {
+            0% {
+                background-position: 50px 50px;
+            }
+        }
+
+        @keyframes bg-scrolling {
+            0% {
+                background-position: 50px 50px;
+            }
+        }
+
+        /* Main styles */
+        body {
+            /* img size is 50x50 */
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+            -webkit-animation: bg-scrolling-reverse 5s infinite;
+            /* Safari 4+ */
+            -moz-animation: bg-scrolling-reverse 5s infinite;
+            /* Fx 5+ */
+            -o-animation: bg-scrolling-reverse 5s infinite;
+            /* Opera 12+ */
+            animation: bg-scrolling-reverse 5s infinite;
+            /* IE 10+ */
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+            -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
     </style>
 </head>
 
-<body style="background-color:#EEE8E5;">
+<body>
     <a id="scroll" style="display: none;"><span class="material-icons-outlined">expand_less</span></a>
 
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #EEE8E5;">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="index.html">
@@ -90,12 +157,17 @@
                     <br><br><br>
                     <p style="font-size:90%; color:#595959;">
                         S&nbsp;m&nbsp;a&nbsp;r&nbsp;t&nbsp;&nbsp;F&nbsp;o&nbsp;r&nbsp;m<br>
-                        <span style="font-size:250%; color:#987468;"><b>One for All, Smart for Care</b></span><br><br>
-                        <span style="font-size:120%; color:#603832;"><b>Corporate social responsibility
-                                (CSR)</b> is a self-regulating business model that helps a company be socially
-                            accountable.
-                            <br><br> We provide a platform for you to create welfare that changing the world.</span>
-                        <br><br>
+                    <div class="wrapperTyping">
+                        <div class="typing-demo">
+                            <span style="font-size:500%; color:#987468;"><b>One for All, Smart for
+                                    Care</b></span><br><br>
+                        </div>
+                    </div>
+                    <span style="font-size:120%; color:#603832;"><b>Corporate social responsibility
+                            (CSR)</b> is a self-regulating business model that helps a company be socially
+                        accountable.
+                        <br><br> We provide a platform for you to create welfare that changing the world.</span>
+                    <br><br>
                     <form action="signup.html">
                         <button class="button w3-right">&nbsp;Manage Form&nbsp;</button>
                     </form>
@@ -146,7 +218,7 @@
 
     <!-- footer -->
     <p></p>
-    <footer class="py-5" style="background-color: #fff;">
+    <footer class="py-5" style="background-color: #EEE8E5;">
         <div class="row">
             <div class="col-1"></div>
 
@@ -175,4 +247,5 @@
 
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js"></script>
+
 </html>
