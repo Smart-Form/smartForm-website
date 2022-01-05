@@ -50,6 +50,10 @@ a {
   text-decoration: none;
 }
 
+.form-row-h{
+  min-height: 10vh;
+}
+
 .wrapper {
   margin: 0vw 0vw 1vh 0vw;
   display: flex;
@@ -445,6 +449,10 @@ form system – mobile layout
   }
 }
 @media (max-width: 900px) {
+  .form-row-h{
+    min-height: 20vh;
+  }
+
   .inner {
     display: block;
     box-shadow: none;
@@ -568,7 +576,7 @@ question system
   border-bottom-right-radius: 1em;
   border-bottom-left-radius: 1em;
   background: #987468;
-  height: 5vh;
+  height: 10vh;
   line-height: 1.5em;
 }
 .recipe-table__add-row-btn:hover {

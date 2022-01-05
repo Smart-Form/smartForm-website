@@ -12,27 +12,7 @@
     <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <style>
-        .button {
-            border: none;
-            color: #8A5122;
-            padding: 5px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 18px;
-            font-family: Arial Black;
-            margin: 4px 2px;
-            cursor: pointer;
-            background-color: #d3ac9c;
-            border-radius: 20px;
-        }
-
-        .button:hover {
-            background-color: #8A5122;
-            color: white;
-        }
-
-        /* Animations */
+        /* BG Animations */
         @-webkit-keyframes bg-scrolling-reverse {
             100% {
                 background-position: 50px 50px;
@@ -102,7 +82,7 @@
 </head>
 
 <body>
-    <a id="scroll" style="display: none;"><span class="material-icons-outlined">expand_less</span></a>
+    <a id="scroll" style="display: none;"><span></span></a>
 
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #EEE8E5;">
@@ -149,7 +129,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="img/MachineDesignOutlook.png" alt="Machine Design Outlook" style="width:500px;">
+                <img src="img/MachineDesignOutlook.png" alt="Machine Design Outlook" class="index-machineOutlook">
             </div>
 
             <div class="col col-min-width">
@@ -169,10 +149,10 @@
                         <br><br> We provide a platform for you to create welfare that changing the world.</span>
                     <br><br>
                     <form action="signup.html">
-                        <button class="button w3-right">&nbsp;Manage Form&nbsp;</button>
+                        <button class="button-smartform w3-right">&nbsp;Manage Form&nbsp;</button>
                     </form>
                     <form action="signin.html">
-                        <button class="button w3-right">&nbsp;Join Us!&nbsp;</button>
+                        <button class="button-smartform w3-right">&nbsp;Join Us!&nbsp;</button>
                     </form>
                     </p>
                     <br><br>

@@ -98,7 +98,7 @@ function changeInput(select_val, input_id) {
 $(document).ready(function () {
     var $tableBody = $('#recipeTableBody');
     // var $menu = $('#menu');
-    let i = 6;
+    let i = 13;
     $(document).on('click', '.recipe-table__add-row-btn', function (e) {
         var $el = $(e.currentTarget);
         var htmlString = $('#rowTemplate').html()

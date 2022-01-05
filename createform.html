@@ -13,16 +13,17 @@
 </head>
 
 <body style="background-color: #eee8e5;">
-    <a id="scroll" style="display: none;"><span class="material-icons-outlined">expand_less</span></a>
+    <a id="scroll" style="display: none;"><span></span></a>
 
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand logo-mobile-field-center" href="index.html">
                 <div class="row">
                     <div class="col col-lg-2"></div>
-                    <div class="col-md-auto"><img src="img/IconsPSD.png" alt="" width="50" height="50" class=""></div>
+                    <div class="col-md-auto"><img src="img/IconsPSD.png" alt="" width="50" height="50"
+                            class="logo-mobile"></div>
                 </div>
             </a>
 
@@ -31,9 +32,9 @@
                     <a href="form.html" class="btn btn-primary"
                         style="background-color: #987468; min-width: 17.5vh;">Back to Panel</a>
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center">
                     <img src="img/published_with_changes_black_24dp.svg" height="20" id="loading">
-                    <br><small style="color: #999;">Auto-save is On</small>
+                    <br><small style="color: #999;">&nbsp;Auto-save is On</small>
                 </div>
                 <div class="col">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -281,16 +282,15 @@
                             </div> -->
                             <div class="d-flex justify-content-center">
                                 <div class="recipe__ingredients">
-                                    <table cellpadding="0" cellspacing="0" border="0" class="recipe-table"
-                                        id="recipeTable">
+                                    <table cellpadding="0" cellspacing="0" class="recipe-table" id="recipeTable">
                                         <tbody id="recipeTableBody">
-                                            
+
                                             <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
-                                                        aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
+                                                    <select class="form-select form-select-sm form-row-h"
+                                                        aria-label=".form-select-sm example" id="arraySelect"
+                                                        onchange="changeInput('arraySelect', 'arrayInput')" required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -315,26 +315,30 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
+                                                    <input class="form-control form-control-sm form-row-h" type="text"
                                                         placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
+                                                         required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                                                        placeholder="Description (Optional)" style="min-height: 10vh;"
+                                                        required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <div id="arrayInput4"></div>
+                                                    <div id="arrayInput"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
+                                                    <button class="recipe-table__del-row-btn form-row-h"
+                                                        >x</button>
                                                 </td>
-                                            </tr><tr>
+                                            </tr>
+                                            <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
-                                                        aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
+                                                    <select class="form-select form-select-sm form-row-h"
+                                                        aria-label=".form-select-sm example" id="arraySelect2"
+                                                        onchange="changeInput('arraySelect2', 'arrayInput2')"
+                                                         required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -359,26 +363,30 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
+                                                    <input class="form-control form-control-sm form-row-h" type="text"
                                                         placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
+                                                         required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                                                        placeholder="Description (Optional)" style="min-height: 10vh;"
+                                                        required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <div id="arrayInput4"></div>
+                                                    <div id="arrayInput2"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
+                                                    <button class="recipe-table__del-row-btn form-row-h"
+                                                        >x</button>
                                                 </td>
-                                            </tr><tr>
+                                            </tr>
+                                            <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
-                                                        aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
+                                                    <select class="form-select form-select-sm form-row-h"
+                                                        aria-label=".form-select-sm example" id="arraySelect3"
+                                                        onchange="changeInput('arraySelect3', 'arrayInput3')"
+                                                         required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -403,26 +411,30 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
+                                                    <input class="form-control form-control-sm form-row-h" type="text"
                                                         placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
+                                                         required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                                                        placeholder="Description (Optional)" style="min-height: 10vh;"
+                                                        required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <div id="arrayInput4"></div>
+                                                    <div id="arrayInput3"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
+                                                    <button class="recipe-table__del-row-btn form-row-h"
+                                                        >x</button>
                                                 </td>
-                                            </tr><tr>
+                                            </tr>
+                                            <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
+                                                    <select class="form-select form-select-sm form-row-h"
                                                         aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
+                                                        onchange="changeInput('arraySelect4', 'arrayInput4')"
+                                                         required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -447,26 +459,30 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
+                                                    <input class="form-control form-control-sm form-row-h" type="text"
                                                         placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
+                                                         required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                                                        placeholder="Description (Optional)" style="min-height: 10vh;"
+                                                        required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput4"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
+                                                    <button class="recipe-table__del-row-btn form-row-h"
+                                                        >x</button>
                                                 </td>
-                                            </tr><tr>
+                                            </tr>
+                                            <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
-                                                        aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
+                                                    <select class="form-select form-select-sm form-row-h"
+                                                        aria-label=".form-select-sm example" id="arraySelect5"
+                                                        onchange="changeInput('arraySelect5', 'arrayInput5')"
+                                                         required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -491,26 +507,30 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
+                                                    <input class="form-control form-control-sm form-row-h" type="text"
                                                         placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
+                                                         required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                                                        placeholder="Description (Optional)" style="min-height: 10vh;"
+                                                        required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <div id="arrayInput4"></div>
+                                                    <div id="arrayInput5"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
+                                                    <button class="recipe-table__del-row-btn form-row-h"
+                                                        >x</button>
                                                 </td>
-                                            </tr><tr>
+                                            </tr>
+                                            <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
-                                                        aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
+                                                    <select class="form-select form-select-sm form-row-h"
+                                                        aria-label=".form-select-sm example" id="arraySelect6"
+                                                        onchange="changeInput('arraySelect6', 'arrayInput6')"
+                                                         required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -535,26 +555,30 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
+                                                    <input class="form-control form-control-sm form-row-h" type="text"
                                                         placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
+                                                         required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                                                        placeholder="Description (Optional)" style="min-height: 10vh;"
+                                                        required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <div id="arrayInput4"></div>
+                                                    <div id="arrayInput6"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
+                                                    <button class="recipe-table__del-row-btn form-row-h"
+                                                        >x</button>
                                                 </td>
-                                            </tr><tr>
+                                            </tr>
+                                            <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
-                                                        aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
+                                                    <select class="form-select form-select-sm form-row-h"
+                                                        aria-label=".form-select-sm example" id="arraySelect7"
+                                                        onchange="changeInput('arraySelect7', 'arrayInput7')"
+                                                         required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -579,26 +603,30 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
+                                                    <input class="form-control form-control-sm form-row-h" type="text"
                                                         placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
+                                                         required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                                                        placeholder="Description (Optional)" style="min-height: 10vh;"
+                                                        required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <div id="arrayInput4"></div>
+                                                    <div id="arrayInput7"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
+                                                    <button class="recipe-table__del-row-btn form-row-h"
+                                                        >x</button>
                                                 </td>
-                                            </tr><tr>
+                                            </tr>
+                                            <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
-                                                        aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
+                                                    <select class="form-select form-select-sm form-row-h"
+                                                        aria-label=".form-select-sm example" id="arraySelect8"
+                                                        onchange="changeInput('arraySelect8', 'arrayInput8')"
+                                                         required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -623,26 +651,30 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
+                                                    <input class="form-control form-control-sm form-row-h" type="text"
                                                         placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
+                                                         required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                                                        placeholder="Description (Optional)" style="min-height: 10vh;"
+                                                        required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <div id="arrayInput4"></div>
+                                                    <div id="arrayInput8"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
+                                                    <button class="recipe-table__del-row-btn form-row-h"
+                                                        >x</button>
                                                 </td>
-                                            </tr><tr>
+                                            </tr>
+                                            <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
-                                                        aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
+                                                    <select class="form-select form-select-sm form-row-h"
+                                                        aria-label=".form-select-sm example" id="arraySelect9"
+                                                        onchange="changeInput('arraySelect9', 'arrayInput9')"
+                                                         required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -667,26 +699,30 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
+                                                    <input class="form-control form-control-sm form-row-h" type="text"
                                                         placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
+                                                         required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                                                        placeholder="Description (Optional)" style="min-height: 10vh;"
+                                                        required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <div id="arrayInput4"></div>
+                                                    <div id="arrayInput9"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
+                                                    <button class="recipe-table__del-row-btn form-row-h"
+                                                        >x</button>
                                                 </td>
-                                            </tr><tr>
+                                            </tr>
+                                            <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
-                                                        aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
+                                                    <select class="form-select form-select-sm form-row-h"
+                                                        aria-label=".form-select-sm example" id="arraySelect10"
+                                                        onchange="changeInput('arraySelect10', 'arrayInput10')"
+                                                         required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -711,26 +747,30 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
+                                                    <input class="form-control form-control-sm form-row-h" type="text"
                                                         placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
+                                                         required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                                                        placeholder="Description (Optional)" style="min-height: 10vh;"
+                                                        required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <div id="arrayInput4"></div>
+                                                    <div id="arrayInput10"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
+                                                    <button class="recipe-table__del-row-btn form-row-h"
+                                                        >x</button>
                                                 </td>
-                                            </tr><tr>
+                                            </tr>
+                                            <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
-                                                        aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
+                                                    <select class="form-select form-select-sm form-row-h"
+                                                        aria-label=".form-select-sm example" id="arraySelect11"
+                                                        onchange="changeInput('arraySelect11', 'arrayInput11')"
+                                                         required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -755,26 +795,30 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
+                                                    <input class="form-control form-control-sm form-row-h" type="text"
                                                         placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
+                                                         required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                                                        placeholder="Description (Optional)" style="min-height: 10vh;"
+                                                        required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <div id="arrayInput4"></div>
+                                                    <div id="arrayInput11"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
+                                                    <button class="recipe-table__del-row-btn form-row-h"
+                                                        >x</button>
                                                 </td>
-                                            </tr><tr>
+                                            </tr>
+                                            <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
-                                                        aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
+                                                    <select class="form-select form-select-sm form-row-h"
+                                                        aria-label=".form-select-sm example" id="arraySelect12"
+                                                        onchange="changeInput('arraySelect12', 'arrayInput12')"
+                                                         required>
                                                         <option selected>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -799,26 +843,28 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
+                                                    <input class="form-control form-control-sm form-row-h" type="text"
                                                         placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
+                                                         required>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                                                        placeholder="Description (Optional)" style="min-height: 10vh;"
+                                                        required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <div id="arrayInput4"></div>
+                                                    <div id="arrayInput12"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
+                                                    <button class="recipe-table__del-row-btn form-row-h"
+                                                        >x</button>
                                                 </td>
                                             </tr>
 
                                         </tbody>
                                     </table>
                                     <div class="recipe-table__add-row">
-                                        <span class="recipe-table__add-row-btn">+</span>
+                                        <span class="recipe-table__add-row-btn"><br><b>+</b></span>
                                     </div>
                                 </div>
                             </div>
@@ -829,55 +875,55 @@
             <!-- addRow -->
             <script id="rowTemplate" type="text/template">
                 <tr>
-                                                <td class="drag-handler"></td>
-                                                <td class="recipe-table__cell">
-                                                    <select class="form-select form-select-sm"
-                                                        aria-label=".form-select-sm example" id="arraySelect4"
-                                                        onchange="changeInput('arraySelect4', 'arrayInput4')" style="min-height: 10vh;" required>
-                                                        <option selected>Question Types</option>
-                                                        <option value="0">Option</option>
-                                                        <option value="1">Yes/No</option>
-                                                        <option value="2">Short Answer</option>
-                                                        <option value="3">Multiple Choice</option>
-                                                        <option value="4">Correspondence Address</option>
-                                                        <option value="5">Email Address</option>
-                                                        <option value="6">Phone Number</option>
-                                                        <option value="7">Name</option>
-                                                        <option value="8">Nationality</option>
-                                                        <option value="9">Birthday</option>
-                                                        <option value="10">HKID/Passport Number</option>
-                                                        <option value="11">Employment</option>
-                                                        <option value="12">Marriage</option>
-                                                        <option value="13">Amount</option>
-                                                        <option value="14">Gender</option>
-                                                        <option value="15">Signature</option>
-                                                        <option value="16">Date</option>
-                                                        <option value="17">Number</option>
-                                                        <option value="18">District</option>
-                                                        <option value="19">Checkbox</option>
-                                                    </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <input class="form-control form-control-sm" type="text"
-                                                        placeholder="Question" aria-label=".form-control-sm example"
-                                                        style="min-height: 10vh;" required>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm" id="" rows="1"
-                                                        placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <div id="arrayInput4"></div>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="min-height: 10vh;">x</button>
-                                                </td>
-                                            </tr>
+                    <td class="drag-handler"></td>
+                    <td class="recipe-table__cell">
+                        <select class="form-select form-select-sm form-row-h"
+                            aria-label=".form-select-sm example" id="{arraySelectID}"
+                            onchange="changeInput('{arraySelectID}', '{arrayInputID}')"  required>
+                            <option selected>Question Types</option>
+                            <option value="0">Option</option>
+                            <option value="1">Yes/No</option>
+                            <option value="2">Short Answer</option>
+                            <option value="3">Multiple Choice</option>
+                            <option value="4">Correspondence Address</option>
+                            <option value="5">Email Address</option>
+                            <option value="6">Phone Number</option>
+                            <option value="7">Name</option>
+                            <option value="8">Nationality</option>
+                            <option value="9">Birthday</option>
+                            <option value="10">HKID/Passport Number</option>
+                            <option value="11">Employment</option>
+                            <option value="12">Marriage</option>
+                            <option value="13">Amount</option>
+                            <option value="14">Gender</option>
+                            <option value="15">Signature</option>
+                            <option value="16">Date</option>
+                            <option value="17">Number</option>
+                            <option value="18">District</option>
+                            <option value="19">Checkbox</option>
+                        </select>
+                    </td>
+                    <td class="recipe-table__cell">
+                        <input class="form-control form-control-sm form-row-h" type="text"
+                            placeholder="Question" aria-label=".form-control-sm example"
+                             required>
+                    </td>
+                    <td class="recipe-table__cell">
+                        <textarea class="form-control form-control-sm" id="" rows="1"
+                            placeholder="Description (Optional)" style="min-height: 10vh;" required></textarea>
+                    </td>
+                    <td class="recipe-table__cell">
+                        <div id="{arrayInputID}"></div>
+                    </td>
+                    <td class="recipe-table__cell">
+                        <button class="recipe-table__del-row-btn form-row-h" >x</button>
+                    </td>
+                </tr>
             </script>
             <!-- addInput -->
             <script id="addInput" type="text/template">
                     <input class="form-control form-control-sm" list="datalistOptions"
-                    id="{arrayInputChild}" placeholder="Array" required>
+                    id="{arrayInputChild}" placeholder="Array"  required>
                     <datalist id="datalistOptions">
                     <option value="Living with family, Property with mortgage, Property without
                     mortgage, Rental apartment, Public housing">
