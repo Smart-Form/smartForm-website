@@ -73,11 +73,11 @@ a {
   right: 50%;
   transform: translateX(50%);
   /* z-index: 9; */
-  width: 70vw;
-  height: 8vh;
-  margin: 0vw 0vw 0vw 4.5vw;
-  padding: 1.25vw 0vw 0vw 0vw;
-  border-radius: 4vw;
+  width: 74vw;
+  height: 5vh;
+  margin: 0vw 0vw 0vw 1vw;
+  padding: 0.75vw 0vw 0vw 0vw;
+  border-radius: 1vw;
   background-color: #d3ac9c;
 }
 
@@ -96,14 +96,14 @@ a {
   margin-right: 10vw;
   position: relative;
   width: 12.5vw;
-  height: 3vh;
-  border-radius: 4vw;
+  height: 2vh;
+  border-radius: 0.5vw;
   background-color: #999;
 }
 .wizard > .steps li a:before {
   width: 2vh;
   height: 20vh;
-  border-radius: 4vw;
+  border-radius: 0.5vw;
   background-color: #dfdcd8;
 }
 /* line */
@@ -115,7 +115,7 @@ a {
   background: #dfdcd8;
   position: absolute;
   left: -9vw;
-  top: 1.25vh;
+  top: 0.75vh;
   transition: all 0.6s ease;
 }
 .wizard > .steps li.first a {
@@ -165,7 +165,6 @@ a {
 }
 
 h3 {
-  /* font-family: "Muli-SemiBold"; */
   font-size: 22px;
   color: #453e79;
   text-transform: uppercase;
@@ -200,35 +199,6 @@ h3 {
   margin-right: 0;
 }
 
-/* .select {
-  position: relative;
-}
-.select .select-control {
-  height: 37px;
-  border-bottom: 2px solid #e6e6e6;
-  width: 100%;
-  color: #999;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.select .dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  background: #fff;
-  z-index: 9;
-  border: 1px solid #81acee;
-}
-.select .dropdown li {
-  padding: 5px 10px;
-}
-.select .dropdown li:hover {
-  background: #81acee;
-  color: #fff;
-} */
-
 .form-holder {
   position: relative;
 }
@@ -262,16 +232,6 @@ h3 {
   color: #999;
 }
 
-/* select.form-control {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  cursor: pointer;
-  color: #999;
-}
-select.form-control option[value=""][disabled] {
-  display: none;
-} */
-
 /* button */
 .actions {
   position: absolute;
@@ -289,7 +249,6 @@ select.form-control option[value=""][disabled] {
   width: 135px;
   align-items: center;
   background: #e9e0cf;
-  /* font-family: "Muli-SemiBold"; */
   color: #666;
   cursor: pointer;
   position: relative;
@@ -347,97 +306,6 @@ select.form-control option[value=""][disabled] {
   background: #849963;
 }
 
-/* .checkbox-tick label {
-  cursor: pointer;
-  display: inline-block;
-  padding-left: 23px;
-  position: relative;
-}
-.checkbox-tick label.male {
-  margin-right: 26px;
-}
-.checkbox-tick input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-.checkbox-tick input:checked ~ .checkmark {
-  background: #999;
-}
-.checkbox-tick input:checked ~ .checkmark:after {
-  display: block;
-}
-.checkbox-tick .checkmark {
-  position: absolute;
-  top: 3px;
-  left: 0;
-  height: 13px;
-  width: 13px;
-  border: 1px solid #999;
-  border-radius: 50%;
-  font-family: Material-Design-Iconic-Font;
-  color: #fff;
-  font-size: 11px;
-}
-.checkbox-tick .checkmark:after {
-  top: 0;
-  left: 2px;
-  position: absolute;
-  display: none;
-  content: "\f26b";
-}
-
-.checkbox-circle {
-  position: relative;
-  padding-left: 23px;
-  margin-top: 41px;
-  width: 63%;
-}
-.checkbox-circle.mt-24 {
-  margin-top: 24px;
-}
-.checkbox-circle label {
-  cursor: pointer;
-  color: #999;
-  font-size: 13px;
-  line-height: 1.9;
-  transform: translateY(-5px);
-}
-.checkbox-circle label a {
-  color: #6d7f52;
-}
-.checkbox-circle label a:hover {
-  color: #89b843;
-}
-.checkbox-circle input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-.checkbox-circle input:checked ~ .checkmark:after {
-  display: block;
-}
-.checkbox-circle .checkmark {
-  position: absolute;
-  top: 6px;
-  left: 0;
-  height: 13px;
-  width: 13px;
-  border-radius: 50%;
-  border: 1px solid #999;
-}
-.checkbox-circle .checkmark:after {
-  content: "";
-  top: 2px;
-  left: 2px;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #999;
-  position: absolute;
-  display: none;
-} */
-
 /* 
 
 form system – mobile layout
@@ -490,19 +358,34 @@ form system – mobile layout
     height: 100%;
     width: 95vw;
   }
+  
   /* stepper border */
   .wizard > .steps {
     right: 50%;
     top: 52%;
     transform: translateX(50%);
-    width: 90vw;
-    height: 8vh;
-    margin: 0vw 0vw 0vw 5vw;
-    padding: 4vw 0vw 0vw 0vw;
-    border-radius: 4vw;
+    width: 94vw;
+    height: 5vh;
+    margin: 0vw 0vw 0vw 1vw;
+    padding: 2vw 0vw 0vw 0vw;
+    border-radius: 2vw;
     background-color: #d3ac9c;
   }
-
+  .wizard > .steps li a {
+    display: inline-block;
+    margin-right: 10vw;
+    position: relative;
+    width: 15vw;
+    height: 2vh;
+    border-radius: 1vw;
+    background-color: #999;
+  }
+  .wizard > .steps li a:before {
+    width: 2vh;
+    height: 20vh;
+    border-radius: 1vw;
+    background-color: #dfdcd8;
+  }
   .actions {
     right: 50%;
     transform: translateX(50%);
@@ -519,10 +402,10 @@ question system
 .recipe {
   padding: 1em;
 }
-/* .recipe__title {
+.recipe__title {
   margin-top: 0;
 }
-.recipe__info {
+/* .recipe__info {
   vertical-align: top;
   text-align: right;
   padding: 0 1em 0 0;

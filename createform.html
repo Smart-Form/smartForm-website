@@ -23,19 +23,16 @@
         <div class="container-fluid">
     
             <a class="navbar-brand" href="index.html">
-                <div class="row">
-                    <div class="col col-lg-2"></div>
-                    <div class="col-md-auto"><img src="img/IconsPSD.png" alt="" width="50" height="50" class=""></div>
+                <div class="row ms-auto">
+                    <div class="col"><img src="img/IconsPSD.png" alt="" width="50" height="50" class=""></div>
                 </div>
             </a>
-            <div class="row ms-5">
-                <a href="form.html" class="btn btn-primary btn-smartform3" style="min-width: 17.5vh;">Back to
-                    Panel</a>
+            <div class="row ms-auto">
+                <a href="form.html" class="btn btn-primary btn-smartform3"><small>Back to Panel</small></a>
             </div>
-            <div class="col d-flex">
-                <div class="col-2"></div>
-                <img src="img/published_with_changes_black_24dp.svg" height="20" id="loading">
-                <small style="color: #999;">&nbsp;Auto-save is On</small>
+            <div class="col mx-4">
+                <img src="img/published_with_changes_black_24dp.svg" height="20" id="loading" style="margin: 0vw 0vw 0vw 1vw;">
+                <small style="color: #999; min-width: 23vw;">&nbsp;Auto-save is On</small>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -938,7 +935,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="" placeholder="Summary 50 words" class="form-control form-color2"
-                                    style="height: 100px;" disabled></textarea>
+                                    style="height: 100px; min-height:100px;" disabled></textarea>
                             </div>
                         </div>
                         <br>
@@ -1067,9 +1064,9 @@
                         <br>
                         <div class="row">
                             <div class="form-check">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
-                                    type="checkbox" for="invalidCheck" required>
-                                <label class="form-check-label" for="invalidCheck">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="form-check-label">
+                                    <input type="checkbox" for="invalidCheck" required>
                                     &nbsp;We agree with the <a href="#">terms and conditions</a>
                                 </label>
                                 <div class="invalid-feedback">
@@ -1113,10 +1110,14 @@
                     <h5>Subscribe to our newsletter</h5>
                     <p>Monthly digest of whats new and exciting from us.</p>
                     <br>
-                    <div class="d-flex w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-primary btn-smartform3" type="button">Subscribe</button>
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <div class="row">
+                        <div class="col">
+                            <input id="newsletter1" type="text" class="form-control" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary btn-smartform3" type="button">Subscribe</button>
+                        </div>
                     </div>
                 </form>
             </div>

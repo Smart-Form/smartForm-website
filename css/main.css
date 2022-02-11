@@ -13,12 +13,12 @@ footer {
 }
 
 .index-machineOutlook {
-  width:500px;
+  width: 500px;
 }
 
 .button-smartform {
   border: none;
-  color: #8A5122;
+  color: #8a5122;
   padding: 5px 20px;
   text-align: center;
   text-decoration: none;
@@ -31,12 +31,12 @@ footer {
   border-radius: 20px;
 }
 .button-smartform:hover {
-  background-color: #8A5122;
+  background-color: #8a5122;
   color: white;
 }
 .button-smartform2 {
   border: none;
-  color: #8A5122;
+  color: #8a5122;
   padding: 5px 20px;
   text-align: center;
   text-decoration: none;
@@ -50,7 +50,7 @@ footer {
 }
 .button-smartform2:hover {
   color: white;
-  background-color: #8A5122;
+  background-color: #8a5122;
   border-color: white;
 }
 .btn-smartform3 {
@@ -58,14 +58,14 @@ footer {
   border-color: #987468;
 }
 .btn-smartform3:hover {
-  background-color: #8A5122;
+  background-color: #8a5122;
   border-color: white;
 }
 .form-color {
   color: #987468;
 }
 .form-color2 {
-  background-color: #EEE8E5;
+  background-color: #eee8e5;
 }
 .form-color3 {
   color: #fff;
@@ -82,7 +82,7 @@ footer {
 }
 .typing-demo {
   width: 100%;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid;
@@ -90,12 +90,12 @@ footer {
 }
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
@@ -165,17 +165,17 @@ footer {
     min-height: 45vh;
   }
   .index-machineOutlook {
-    width:400px;
+    width: 400px;
   }
 }
 
-@media (max-width: 450px){
-  .logo-mobile-field-center{
+@media (max-width: 450px) {
+  .logo-mobile-field-center {
     margin-left: 40%;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .logo-mobile{
+  .logo-mobile {
     width: 75px;
     height: 75px;
   }
