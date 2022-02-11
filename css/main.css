@@ -49,8 +49,17 @@ footer {
   border-radius: 20px;
 }
 .button-smartform2:hover {
-  background-color: #8A5122;
   color: white;
+  background-color: #8A5122;
+  border-color: white;
+}
+.btn-smartform3 {
+  background-color: #987468;
+  border-color: #987468;
+}
+.btn-smartform3:hover {
+  background-color: #8A5122;
+  border-color: white;
 }
 .form-color {
   color: #987468;
