@@ -179,4 +179,11 @@ footer {
     width: 75px;
     height: 75px;
   }
+  .index-machineOutlook {
+    width: 200px;
+    margin-left: 20%;
+  }
+  .typing-smartform {
+    font-size: 11px;
+  }
 }
