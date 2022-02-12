@@ -50,8 +50,17 @@ a {
   text-decoration: none;
 }
 
-.form-row-h{
-  min-height: 10vh;
+h3 {
+  font-size: 3vw;
+  color: #8a5122;
+  background-color: #fff;
+  /* text-transform: uppercase; */
+  letter-spacing: 7px;
+  padding: 10px 30px;
+  display: inline-block;
+  border: 1px solid #dad8e4;
+  margin-top: -2vw;
+  margin-bottom: 4vw;
 }
 
 .wrapper {
@@ -160,19 +169,6 @@ a {
 
 .form-header {
   text-align: center;
-}
-
-h3 {
-  font-size: 3vw;
-  color: #453e79;
-  background-color: #fff;
-  /* text-transform: uppercase; */
-  letter-spacing: 7px;
-  padding: 10px 30px;
-  display: inline-block;
-  border: 1px solid #dad8e4;
-  margin-top: -2vw;
-  margin-bottom: 4vw;
 }
 
 .form-row {
@@ -315,7 +311,7 @@ form system – mobile layout
 
   h3 {
     font-size: 7vw;
-    color: #453e79;
+    color: #8a5122;
     background-color: #fff;
     /* text-transform: uppercase; */
     letter-spacing: 7px;
@@ -397,23 +393,14 @@ question system
 
 */
 
+.vertical-align-center {
+  vertical-align: top;
+  text-align: center;
+}
+
 .recipe {
   padding: 1em;
 }
-.recipe__title {
-  margin-top: 0;
-}
-/* .recipe__info {
-  vertical-align: top;
-  text-align: right;
-  padding: 0 1em 0 0;
-  margin: 0 1.3em 0 0;
-  font-weight: bold;
-  color: #454545;
-  border-right: 1px dotted #EEE;
-  width: 50vw;
-  float: left;
-} */
 .recipe__ingredients {
   float: left;
   width: auto;
