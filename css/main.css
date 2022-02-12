@@ -18,7 +18,6 @@ footer {
 
 .banner-smartform {
   background-image: url("../img/banner.png");
-  opacity: 50%;
   width: 100%;
   height: 10vw;
   background-color: #cccccc;
@@ -28,7 +27,6 @@ footer {
 }
 .banner-smartform2 {
   background-image: url("../img/banner2.png");
-  opacity: 50%;
   width: 100%;
   height: 10vw;
   background-color: #cccccc;
@@ -38,7 +36,6 @@ footer {
 }
 .banner-smartform3 {
   background-image: url("../img/banner3.png");
-  opacity: 50%;
   width: 100%;
   height: 10vw;
   background-color: #cccccc;
