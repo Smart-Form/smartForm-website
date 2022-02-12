@@ -70,14 +70,14 @@ a {
 .wizard > .steps {
   position: relative;
   top: 12.5%;
-  right: 50%;
+  right: 51.5%;
   transform: translateX(50%);
   /* z-index: 9; */
-  width: 74vw;
+  width: 75vw;
   height: 2.75vw;
   margin: 0vw 0vw 0vw 1vw;
   padding: 0.75vw 0vw 0vw 0vw;
-  border-radius: 1vw;
+  border-radius: 0.75vw;
   background-color: #d3ac9c;
 }
 
@@ -109,7 +109,7 @@ a {
   content: "";
   width: 8vw;
   height: 0.25vw;
-  border-radius: 10px;
+  border-radius: 2px;
   background: #dfdcd8;
   position: absolute;
   left: -9vw;
@@ -372,8 +372,8 @@ form system – mobile layout
   
   /* stepper border */
   .wizard > .steps {
+    right: 50%;
     width: 94vw;
-    height: 2.75vw;
     min-height: 30px;
     padding: 0.5vw 0vw 0vw 0vw;
   }
