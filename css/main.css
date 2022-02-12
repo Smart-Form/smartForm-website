@@ -16,6 +16,36 @@ footer {
   width: 500px;
 }
 
+.banner-smartform {
+  background-image: url("../img/banner.png");
+  opacity: 50%;
+  width: 100%;
+  height: 10vw;
+  background-color: #cccccc;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.banner-smartform2 {
+  background-image: url("../img/banner2.png");
+  opacity: 50%;
+  width: 100%;
+  height: 10vw;
+  background-color: #cccccc;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.banner-smartform3 {
+  background-image: url("../img/banner3.png");
+  opacity: 50%;
+  width: 100%;
+  height: 10vw;
+  background-color: #cccccc;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 .button-smartform {
   border: none;
   color: #8a5122;
@@ -178,5 +208,12 @@ footer {
   .logo-mobile {
     width: 75px;
     height: 75px;
+  }
+  .index-machineOutlook {
+    width: 200px;
+    margin-left: 20%;
+  }
+  .typing-smartform {
+    font-size: 11px;
   }
 }

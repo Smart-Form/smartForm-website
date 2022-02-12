@@ -74,7 +74,7 @@ a {
   transform: translateX(50%);
   /* z-index: 9; */
   width: 74vw;
-  height: 5vh;
+  height: 2.75vw;
   margin: 0vw 0vw 0vw 1vw;
   padding: 0.75vw 0vw 0vw 0vw;
   border-radius: 1vw;
@@ -96,13 +96,11 @@ a {
   margin-right: 10vw;
   position: relative;
   width: 12.5vw;
-  height: 2vh;
+  height: 1vw;
   border-radius: 0.5vw;
   background-color: #999;
 }
 .wizard > .steps li a:before {
-  width: 2vh;
-  height: 20vh;
   border-radius: 0.5vw;
   background-color: #dfdcd8;
 }
@@ -110,12 +108,12 @@ a {
 .wizard > .steps li a:after {
   content: "";
   width: 8vw;
-  height: 0.5vh;
+  height: 0.25vw;
   border-radius: 10px;
   background: #dfdcd8;
   position: absolute;
   left: -9vw;
-  top: 0.75vh;
+  top: 0.4vw;
   transition: all 0.6s ease;
 }
 .wizard > .steps li.first a {
@@ -141,9 +139,9 @@ a {
 .form-content {
   width: 100%;
   height: 1800px;
-  padding-top: 65px;
-  padding-left: 40px;
-  padding-right: 40px;
+  /* padding-top: 65px; */
+  /* padding-left: 40px; */
+  /* padding-right: 40px; */
 }
 .wizard > .content {
   position: relative;
@@ -165,14 +163,16 @@ a {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 3vw;
   color: #453e79;
-  text-transform: uppercase;
+  background-color: #fff;
+  /* text-transform: uppercase; */
   letter-spacing: 7px;
-  padding: 5px 15px;
+  padding: 10px 30px;
   display: inline-block;
   border: 1px solid #dad8e4;
-  margin-bottom: 75px;
+  margin-top: -2vw;
+  margin-bottom: 4vw;
 }
 
 .form-row {
@@ -311,12 +311,21 @@ h3 {
 form system – mobile layout
 
 */
-@media (max-width: 991px) {
-  .wizard {
-    max-width: 768px;
+@media (max-width: 1280px) {
+
+  h3 {
+    font-size: 7vw;
+    color: #453e79;
+    background-color: #fff;
+    /* text-transform: uppercase; */
+    letter-spacing: 7px;
+    padding: 10px 30px;
+    display: inline-block;
+    border: 1px solid #dad8e4;
+    margin-top: -2vw;
+    margin-bottom: 4vw;
   }
-}
-@media (max-width: 900px) {
+
   .form-row-h{
     min-height: 20vh;
   }
@@ -332,7 +341,9 @@ form system – mobile layout
 
   .form-content {
     width: 100%;
-    padding: 50px 20px 30px;
+    /* padding: 50px 20px 30px; */
+    padding-left: 10px;
+    padding-right: 10px;
     height: 3000px;
   }
   .wizard > .content {
@@ -361,30 +372,17 @@ form system – mobile layout
   
   /* stepper border */
   .wizard > .steps {
-    right: 50%;
-    top: 52%;
-    transform: translateX(50%);
     width: 94vw;
-    height: 5vh;
-    margin: 0vw 0vw 0vw 1vw;
-    padding: 2vw 0vw 0vw 0vw;
-    border-radius: 2vw;
-    background-color: #d3ac9c;
+    height: 2.75vw;
+    min-height: 30px;
+    padding: 0.5vw 0vw 0vw 0vw;
   }
   .wizard > .steps li a {
-    display: inline-block;
-    margin-right: 10vw;
-    position: relative;
-    width: 15vw;
-    height: 2vh;
-    border-radius: 1vw;
-    background-color: #999;
+    min-height: 10px;
   }
-  .wizard > .steps li a:before {
-    width: 2vh;
-    height: 20vh;
-    border-radius: 1vw;
-    background-color: #dfdcd8;
+  /* line */
+  .wizard > .steps li a:after {
+    min-height: 3px;
   }
   .actions {
     right: 50%;
