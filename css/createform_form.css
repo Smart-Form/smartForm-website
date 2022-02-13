@@ -408,7 +408,7 @@ question system
 .recipe-table__cell {
   vertical-align: top;
   width: auto;
-  padding: 3px 5px 75px 0px;
+  padding: 3px 5px 0px 0px;
 }
 .recipe-table__cell2 {
   vertical-align: top;
@@ -468,7 +468,7 @@ question system
 }
 
 .drag-handler {
-  width: 4vw;
+  width: 5vw;
   position: relative;
   background-color: #e4e6eb;
   background-image: linear-gradient(
@@ -488,7 +488,6 @@ question system
     #e4e6eb 18px,
     #e4e6eb 22px
   );
-  background-size: 5vw;
   cursor: move;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;

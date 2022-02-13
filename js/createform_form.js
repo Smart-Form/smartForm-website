@@ -1,6 +1,6 @@
 // 
 // 
-// form system
+// stepper
 // 
 // 
 $(function () {
@@ -71,16 +71,18 @@ $(function () {
 //addInput
 //
 //
-function changeInput(select_val, input_id) {
+function addInput(select_val, input_id) {
     var obj = document.createElement('div');
     var e = document.getElementById(select_val);
     var strUser = e.options[e.selectedIndex].value;
     if (strUser === '0' || strUser === '3') {
-        var obj2 = document.getElementById(input_id  + 'child');
-        if (obj2 == null){
+        var obj2 = document.getElementById(input_id + 'child');
+        if (obj2 == null){  // Avoid duplication
             obj.innerHTML = document.getElementById('addInput').innerHTML
-                .replace(/{arrayInputChild}/g, input_id + 'child');
+                .replace(/{arrayInputChild}/g, input_id + 'child'); // g for any
             document.getElementById(input_id).appendChild(obj);
+            $('#' + input_id + 'child').animate({opacity: '0.75'});
+            $('#' + input_id + 'child').animate({opacity: '1'});
         }
     } else {
         document.getElementById(input_id + 'child').remove();
@@ -92,19 +94,22 @@ function changeInput(select_val, input_id) {
 
 // 
 // 
-// question system
+// question
 // 
 // 
 $(document).ready(function () {
+
     var $tableBody = $('#recipeTableBody');
-    // var $menu = $('#menu');
     let i = 13;
+
     $(document).on('click', '.recipe-table__add-row-btn', function (e) {
-        var $el = $(e.currentTarget);
         var htmlString = $('#rowTemplate').html()
             .replace(/{arraySelectID}/g, 'arraySelect'+i)
-            .replace(/{arrayInputID}/g, 'arrayInput'+i);
+            .replace(/{arrayInputID}/g, 'arrayInput'+i)
+            .replace(/{newRowID}/g, 'newRow'+  i);
         $tableBody.append(htmlString);
+        $('#newRow' + i).animate({opacity: '0.1'});
+        $('#newRow' + i).animate({opacity: '1'});
         i++;
         return false;
     });
@@ -116,6 +121,7 @@ $(document).ready(function () {
         i--;
         return false;
     });
+
     Sortable.create(
         $tableBody[0],
         {

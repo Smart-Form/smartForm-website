@@ -1,4 +1,8 @@
-//scroll
+//
+//
+//scrollToTop
+//
+//
 $(document).ready(function(){ 
     $(window).scroll(function(){ 
         if ($(this).scrollTop() > 100) { 
@@ -13,7 +17,11 @@ $(document).ready(function(){
     }); 
 });
 
+//
+//
 //form-validation
+//
+//
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
     'use strict'
