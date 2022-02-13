@@ -50,8 +50,17 @@ a {
   text-decoration: none;
 }
 
-.form-row-h{
-  min-height: 10vh;
+h3 {
+  font-size: 3vw;
+  color: #8a5122;
+  background-color: #fff;
+  /* text-transform: uppercase; */
+  letter-spacing: 7px;
+  padding: 10px 30px;
+  display: inline-block;
+  border: 1px solid #dad8e4;
+  margin-top: -2vw;
+  margin-bottom: 4vw;
 }
 
 .wrapper {
@@ -70,14 +79,14 @@ a {
 .wizard > .steps {
   position: relative;
   top: 12.5%;
-  right: 50%;
+  right: 51.5%;
   transform: translateX(50%);
   /* z-index: 9; */
-  width: 74vw;
+  width: 75vw;
   height: 2.75vw;
   margin: 0vw 0vw 0vw 1vw;
   padding: 0.75vw 0vw 0vw 0vw;
-  border-radius: 1vw;
+  border-radius: 0.75vw;
   background-color: #d3ac9c;
 }
 
@@ -109,12 +118,12 @@ a {
   content: "";
   width: 8vw;
   height: 0.25vw;
-  border-radius: 10px;
+  border-radius: 2px;
   background: #dfdcd8;
   position: absolute;
   left: -9vw;
   top: 0.4vw;
-  transition: all 0.6s ease;
+  transition: all 1s ease;
 }
 .wizard > .steps li.first a {
   background: #fff;
@@ -162,19 +171,6 @@ a {
   text-align: center;
 }
 
-h3 {
-  font-size: 3vw;
-  color: #453e79;
-  background-color: #fff;
-  /* text-transform: uppercase; */
-  letter-spacing: 7px;
-  padding: 10px 30px;
-  display: inline-block;
-  border: 1px solid #dad8e4;
-  margin-top: -2vw;
-  margin-bottom: 4vw;
-}
-
 .form-row {
   display: flex;
   margin-bottom: 18px;
@@ -213,7 +209,6 @@ h3 {
   height: 37px;
   border: none;
   border-bottom: 2px solid #e6e6e6;
-  width: 100%;
   color: #666;
 }
 .form-control:focus {
@@ -315,7 +310,7 @@ form system – mobile layout
 
   h3 {
     font-size: 7vw;
-    color: #453e79;
+    color: #8a5122;
     background-color: #fff;
     /* text-transform: uppercase; */
     letter-spacing: 7px;
@@ -372,17 +367,19 @@ form system – mobile layout
   
   /* stepper border */
   .wizard > .steps {
+    right: 50%;
     width: 94vw;
-    height: 2.75vw;
     min-height: 30px;
     padding: 0.5vw 0vw 0vw 0vw;
   }
   .wizard > .steps li a {
+    width: 17.5vw;
     min-height: 10px;
   }
   /* line */
   .wizard > .steps li a:after {
     min-height: 3px;
+    top: 0.5vw;
   }
   .actions {
     right: 50%;
@@ -396,26 +393,7 @@ form system – mobile layout
 question system
 
 */
-
-.recipe {
-  padding: 1em;
-}
-.recipe__title {
-  margin-top: 0;
-}
-/* .recipe__info {
-  vertical-align: top;
-  text-align: right;
-  padding: 0 1em 0 0;
-  margin: 0 1.3em 0 0;
-  font-weight: bold;
-  color: #454545;
-  border-right: 1px dotted #EEE;
-  width: 50vw;
-  float: left;
-} */
 .recipe__ingredients {
-  float: left;
   width: auto;
 }
 .recipe-table {
@@ -430,6 +408,11 @@ question system
 .recipe-table__cell {
   vertical-align: top;
   width: auto;
+  padding: 3px 5px 75px 0px;
+}
+.recipe-table__cell2 {
+  vertical-align: top;
+  width: 15vw;
   padding: 3px 5px;
 }
 
@@ -457,7 +440,8 @@ question system
   border-bottom-right-radius: 1em;
   border-bottom-left-radius: 1em;
   background: #987468;
-  height: 10vh;
+  height: 5vw;
+  min-height: 50px;
   line-height: 1.5em;
 }
 .recipe-table__add-row-btn:hover {
@@ -546,4 +530,15 @@ question system
     #bab86c 18px,
     #bab86c 22px
   );
+}
+
+.form-item-focus:focus {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+}
+
+.vertical-align-center {
+  vertical-align: top;
+  text-align: center;
 }
