@@ -341,11 +341,11 @@ form system – mobile layout
     /* padding: 50px 20px 30px; */
     padding-left: 10px;
     padding-right: 10px;
-    height: 3000px;
+    height: 2700px;
   }
   .wizard > .content {
     position: relative;
-    height: 3050px;
+    height: 2750px;
   }
 
   .form-row {
