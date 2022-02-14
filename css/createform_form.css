@@ -145,6 +145,7 @@ h3 {
   display: none;
 }
 
+ /* form canvas */
 .form-content {
   width: 100%;
   height: 1800px;
@@ -333,7 +334,8 @@ form system – mobile layout
     -ms-box-shadow: none;
     -o-box-shadow: none;
   }
-
+  
+   /* form canvas */
   .form-content {
     width: 100%;
     /* padding: 50px 20px 30px; */
@@ -408,12 +410,12 @@ question system
 .recipe-table__cell {
   vertical-align: top;
   width: auto;
-  padding: 3px 5px 75px 0px;
+  padding: 30px 5px 30px 0px;
 }
 .recipe-table__cell2 {
   vertical-align: top;
   width: 15vw;
-  padding: 3px 5px;
+  padding: 30px 5px 30px 0px;
 }
 
 .recipe-table__add-row {
@@ -468,7 +470,7 @@ question system
 }
 
 .drag-handler {
-  width: 4vw;
+  width: 5vw;
   position: relative;
   background-color: #e4e6eb;
   background-image: linear-gradient(
@@ -488,7 +490,6 @@ question system
     #e4e6eb 18px,
     #e4e6eb 22px
   );
-  background-size: 5vw;
   cursor: move;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
@@ -541,4 +542,13 @@ question system
 .vertical-align-center {
   vertical-align: top;
   text-align: center;
+}
+
+@media (max-width: 1280px) {
+  .recipe-table__cell {
+    padding: 60px 5px 60px 0px;
+  }
+  .recipe-table__cell2 {
+    padding: 60px 5px 60px 0px;
+  }
 }

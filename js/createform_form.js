@@ -1,6 +1,6 @@
 // 
 // 
-// form system
+// stepper
 // 
 // 
 $(function () {
@@ -71,16 +71,18 @@ $(function () {
 //addInput
 //
 //
-function changeInput(select_val, input_id) {
+function addInput(select_val, input_id) {
     var obj = document.createElement('div');
     var e = document.getElementById(select_val);
     var strUser = e.options[e.selectedIndex].value;
     if (strUser === '0' || strUser === '3') {
-        var obj2 = document.getElementById(input_id  + 'child');
-        if (obj2 == null){
+        var obj2 = document.getElementById(input_id + 'child');
+        if (obj2 == null){  // Avoid duplication
             obj.innerHTML = document.getElementById('addInput').innerHTML
-                .replace(/{arrayInputChild}/g, input_id + 'child');
+                .replace(/{arrayInputChild}/g, input_id + 'child'); // g for any
             document.getElementById(input_id).appendChild(obj);
+            $('#' + input_id + 'child').animate({opacity: '0.5'});
+            $('#' + input_id + 'child').animate({opacity: '1'});
         }
     } else {
         document.getElementById(input_id + 'child').remove();
@@ -92,30 +94,68 @@ function changeInput(select_val, input_id) {
 
 // 
 // 
-// question system
+// question
 // 
 // 
 $(document).ready(function () {
+
     var $tableBody = $('#recipeTableBody');
-    // var $menu = $('#menu');
-    let i = 13;
+    let i = 6;
+    let n = 160.5;
+    let n2 = 160.5;
+    let h = 1800;
+    let h2 = 1850;
+
     $(document).on('click', '.recipe-table__add-row-btn', function (e) {
-        var $el = $(e.currentTarget);
-        var htmlString = $('#rowTemplate').html()
-            .replace(/{arraySelectID}/g, 'arraySelect'+i)
-            .replace(/{arrayInputID}/g, 'arrayInput'+i);
-        $tableBody.append(htmlString);
         i++;
+        var htmlString = $('#rowTemplate').html()
+            .replace(/{arraySelectID}/g, 'arraySelect' + i)
+            .replace(/{arrayInputID}/g, 'arrayInput' + i)
+            .replace(/{newRowID}/g, 'newRow' + i);
+        $tableBody.append(htmlString);
+        $('#newRow' + i).animate({opacity: '0.1'});
+        $('#newRow' + i).animate({opacity: '1'});
+
+        // Increase height
+        if (i >= 7){
+            var cols = document.getElementsByClassName('form-content');
+            for(x = 0; x < cols.length; x++) {  // All cols in the document will be looped
+                cols[x].style.height = h + n + 'px';
+            }
+            h = h + n;
+            var cols = document.getElementsByClassName('content');
+            for(x = 0; x < cols.length; x++) {  // All cols in the document will be looped
+                cols[x].style.height = h2 + n + 'px';
+            }
+            h2 = h2 + n;
+        }
+
         return false;
     });
 
     $tableBody.on('click', '.recipe-table__del-row-btn', function (e) {
+        i--;
         var $el = $(e.currentTarget);
         var $row = $el.closest('tr');
         $row.remove();
-        i--;
+
+        // Decrease height
+        if (i >= 6) { // If exceed the initial canvas height
+            var cols = document.getElementsByClassName('form-content');
+            for(x = 0; x < cols.length; x++) {  // All cols in the document will be looped
+                cols[x].style.height = h - n2 + 'px';
+            }
+            h = h - n2;
+            var cols = document.getElementsByClassName('content');
+            for(x = 0; x < cols.length; x++) {  // All cols in the document will be looped
+                cols[x].style.height = h2 - n2 + 'px';
+            }
+            h2 = h2 - n2;
+        }
+
         return false;
     });
+
     Sortable.create(
         $tableBody[0],
         {
