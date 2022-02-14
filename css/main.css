@@ -99,7 +99,7 @@ footer {
   background-color: #987468;
 }
 
-/* typing */
+/* typingAnimation */
 .wrapperTyping {
   height: 8vh;
   /*This part is important for centering*/
@@ -126,6 +126,7 @@ footer {
   }
 }
 
+/* loadingAnimation */
 #loading {
   animation-name: rotation;
   animation-duration: 3s;
@@ -140,6 +141,7 @@ footer {
   }
 }
 
+/* thumbnailHoverAnimation */
 .column#sepia img {
   -webkit-filter: sepia(0%);
   filter: sepia(0%);
@@ -151,6 +153,7 @@ footer {
   filter: sepia(100%);
 }
 
+/* scrollToTop */
 #scroll {
   position: fixed;
   right: 10px;
@@ -184,6 +187,11 @@ footer {
   -ms-filter: "alpha(opacity=100)";
 }
 
+.thumbnail{
+  width: 33vw; 
+  padding: 10px 0px 10px 10px;
+}
+
 @media (max-width: 1080px) {
   .col-min-width {
     min-width: 75vw;
@@ -193,6 +201,10 @@ footer {
   }
   .index-machineOutlook {
     width: 400px;
+  }
+  .thumbnail{
+    width: 60vw; 
+    padding: 10px 0px 10px 10px;
   }
 }
 
