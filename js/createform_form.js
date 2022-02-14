@@ -81,7 +81,7 @@ function addInput(select_val, input_id) {
             obj.innerHTML = document.getElementById('addInput').innerHTML
                 .replace(/{arrayInputChild}/g, input_id + 'child'); // g for any
             document.getElementById(input_id).appendChild(obj);
-            $('#' + input_id + 'child').animate({opacity: '0.75'});
+            $('#' + input_id + 'child').animate({opacity: '0.5'});
             $('#' + input_id + 'child').animate({opacity: '1'});
         }
     } else {
@@ -100,16 +100,23 @@ function addInput(select_val, input_id) {
 $(document).ready(function () {
 
     var $tableBody = $('#recipeTableBody');
-    let i = 13;
+    let i = 9;
 
     $(document).on('click', '.recipe-table__add-row-btn', function (e) {
         var htmlString = $('#rowTemplate').html()
-            .replace(/{arraySelectID}/g, 'arraySelect'+i)
-            .replace(/{arrayInputID}/g, 'arrayInput'+i)
-            .replace(/{newRowID}/g, 'newRow'+  i);
+            .replace(/{arraySelectID}/g, 'arraySelect' + i)
+            .replace(/{arrayInputID}/g, 'arrayInput' + i)
+            .replace(/{newRowID}/g, 'newRow' + i);
         $tableBody.append(htmlString);
         $('#newRow' + i).animate({opacity: '0.1'});
         $('#newRow' + i).animate({opacity: '1'});
+
+        // Increase height
+        var cols = document.getElementsByClassName('form-content');
+        for(x = 0; x < cols.length; x++) {
+            cols[x].style.height = 'height: 1800px';
+        }
+
         i++;
         return false;
     });
