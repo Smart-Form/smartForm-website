@@ -98,15 +98,20 @@ function addInput(select_val, input_id) {
 // 
 // 
 $(document).ready(function () {
-
     var $tableBody = $('#recipeTableBody');
-    let i = 6;
-    let n = 160.5;
-    let n2 = 160.5;
-    let h = 1800;
-    let h2 = 1850;
+    var i = 6;
+    // Mobile
+    var n = 160.5;
+    var h = 1800;
+    var h2 = 1850;
+    // Desktop
+    var n2 = 220.5;
+    var h3 = 2700;
+    var h4 = 2750;
 
     $(document).on('click', '.recipe-table__add-row-btn', function (e) {
+
+        // Add row
         i++;
         var htmlString = $('#rowTemplate').html()
             .replace(/{arraySelectID}/g, 'arraySelect' + i)
@@ -116,42 +121,84 @@ $(document).ready(function () {
         $('#newRow' + i).animate({ opacity: '0.1' });
         $('#newRow' + i).animate({ opacity: '1' });
 
-        // Increase height
-        if (i >= 7) {
-            var cols = document.getElementsByClassName('form-content');
-            for (x = 0; x < cols.length; x++) {  // All cols in the document will be looped
-                cols[x].style.height = h + n + 'px';
+        // If within specific width
+        $(function() {      
+            let isMobile = window.matchMedia("only screen and (max-width: 1280px)").matches;
+            if (isMobile) {
+                // Increase height
+                if (i >= 7) {
+                    var cols = document.getElementsByClassName('form-content');
+                    for (x = 0; x < cols.length; x++) {  // All cols in the document will be looped
+                        cols[x].style.height = h3 + n2 + 'px';
+                    }
+                    h3 = h3 + n2;
+                    var cols = document.getElementsByClassName('content');
+                    for (x = 0; x < cols.length; x++) {  // All cols in the document will be looped
+                        cols[x].style.height = h4 + n2 + 'px';
+                    }
+                    h4 = h4 + n2;
+                }
+            } else {
+                // Increase height
+                if (i >= 7) {
+                    var cols = document.getElementsByClassName('form-content');
+                    for (x = 0; x < cols.length; x++) {  // All cols in the document will be looped
+                        cols[x].style.height = h + n + 'px';
+                    }
+                    h = h + n;
+                    var cols = document.getElementsByClassName('content');
+                    for (x = 0; x < cols.length; x++) {  // All cols in the document will be looped
+                        cols[x].style.height = h2 + n + 'px';
+                    }
+                    h2 = h2 + n;
+                }
             }
-            h = h + n;
-            var cols = document.getElementsByClassName('content');
-            for (x = 0; x < cols.length; x++) {  // All cols in the document will be looped
-                cols[x].style.height = h2 + n + 'px';
-            }
-            h2 = h2 + n;
-        }
+         });
 
         return false;
     });
 
     $tableBody.on('click', '.recipe-table__del-row-btn', function (e) {
+
+        // Del row
         i--;
         var $el = $(e.currentTarget);
         var $row = $el.closest('tr');
         $row.remove();
 
-        // Decrease height
-        if (i >= 6) { // If exceed the initial canvas height
-            var cols = document.getElementsByClassName('form-content');
-            for (x = 0; x < cols.length; x++) {  // All cols in the document will be looped
-                cols[x].style.height = h - n2 + 'px';
+        // If within specific width
+        $(function() {
+            let isMobile = window.matchMedia("only screen and (max-width: 1280px)").matches;    
+            if (isMobile) {
+                // Decrease height
+                if (i >= 6) { // If exceed the initial canvas height
+                    var cols = document.getElementsByClassName('form-content');
+                    for (x = 0; x < cols.length; x++) {  // All cols in the document will be looped
+                        cols[x].style.height = h3 - n2 + 'px';
+                    }
+                    h3 = h3 - n2;
+                    var cols = document.getElementsByClassName('content');
+                    for (x = 0; x < cols.length; x++) {  // All cols in the document will be looped
+                        cols[x].style.height = h4 - n2 + 'px';
+                    }
+                    h4 = h4 - n2;
+                }
+            } else {
+                // Decrease height
+                if (i >= 6) { // If exceed the initial canvas height
+                    var cols = document.getElementsByClassName('form-content');
+                    for (x = 0; x < cols.length; x++) {  // All cols in the document will be looped
+                        cols[x].style.height = h - n + 'px';
+                    }
+                    h = h - n;
+                    var cols = document.getElementsByClassName('content');
+                    for (x = 0; x < cols.length; x++) {  // All cols in the document will be looped
+                        cols[x].style.height = h2 - n + 'px';
+                    }
+                    h2 = h2 - n;
+                }
             }
-            h = h - n2;
-            var cols = document.getElementsByClassName('content');
-            for (x = 0; x < cols.length; x++) {  // All cols in the document will be looped
-                cols[x].style.height = h2 - n2 + 'px';
-            }
-            h2 = h2 - n2;
-        }
+        });
 
         return false;
     });
