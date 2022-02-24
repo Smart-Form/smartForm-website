@@ -15,11 +15,11 @@
     <script src="js/main.js"></script>
 </head>
 
-<body style="background-color: #eee8e5;">
+<body class="theme-bg-color4">
     <a id="scroll" style="display: none;"><span></span></a>
 
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #fff;">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color6">
         <div class="container-fluid">
     
             <a class="navbar-brand" href="index.html">
@@ -70,11 +70,11 @@
             <h2></h2>
             <br>
             <section>
-                <div class="inner">
+                <div class="inner theme-bg-color8">
                     <div class="form-content">
                         <div class="form-header">
                             <img alt="" class="banner-smartform">
-                            <h3>Welfare Information</h3>
+                            <h3 class="theme-color6">Welfare Information</h3>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
@@ -249,19 +249,20 @@
                     <div class="form-content">
                         <div class="form-header">
                             <img alt="" class="banner-smartform2">
-                            <h3>Question Setting</h3>
+                            <h3 class="theme-color6">Question Setting</h3>
                         </div>
                         <div class="recipe">
-                            <div class="vertical-align-center">
+                            <div style="padding: 2vw;">
                                 <div class="badge bg-primary text-wrap text-start">
                                     <h6>Please set up within 20 questions (multiple choice questions are preferred) to reduce
                                         the difficulty of filling in the form for the elderly and low-educated
                                     </h6>
                                 </div>
-                                <p class="fw-lighter">*If you select multiple-choice/option, set options as an array. 
+                                <p class="fw-lighte form-color">*If you select multiple-choice/option, set options as an array. 
                                     e.g. Living with family, Property with a mortgage, Property without mortgage, Rental apartment, Public housing</p><br>
                             </div>
-                            <div class="d-flex justify-content-center">
+                            
+                            <div class="d-flex justify-content-center form-color">
                                 <div class="recipe__ingredients">
                                     <table cellpadding="0" cellspacing="0" class="recipe-table" id="recipeTable">
                                         <tbody id="recipeTableBody">
@@ -269,7 +270,7 @@
                                             <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus"
+                                                    <select class="form-select form-select-sm form-item-focus form-color2"
                                                          id="arraySelect"
                                                         onchange="addInput('arraySelect', 'arrayInput')" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
@@ -296,11 +297,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                                                     placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
@@ -313,7 +314,7 @@
                                             <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus"
+                                                    <select class="form-select form-select-sm form-item-focus form-color2"
                                                          id="arraySelect2"
                                                         onchange="addInput('arraySelect2', 'arrayInput2')" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
@@ -340,11 +341,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm  form-item-focus" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm  form-item-focus form-color2" id="" rows="1"
                                                     placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
@@ -357,7 +358,7 @@
                                             <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus"
+                                                    <select class="form-select form-select-sm form-item-focus form-color2"
                                                          id="arraySelect3"
                                                         onchange="addInput('arraySelect3', 'arrayInput3')" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
@@ -384,11 +385,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                                                     placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
@@ -401,7 +402,7 @@
                                             <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus"
+                                                    <select class="form-select form-select-sm form-item-focus form-color2"
                                                          id="arraySelect4"
                                                         onchange="addInput('arraySelect4', 'arrayInput4')" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
@@ -428,11 +429,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                                                     placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
@@ -445,7 +446,7 @@
                                             <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm"
+                                                    <select class="form-select form-select-sm form-item-focus form-color2"
                                                          id="arraySelect5"
                                                         onchange="addInput('arraySelect5', 'arrayInput5')" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
@@ -472,11 +473,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                                                     placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
@@ -489,7 +490,7 @@
                                             <tr>
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus"
+                                                    <select class="form-select form-select-sm form-item-focus form-color2"
                                                          id="arraySelect6"
                                                         onchange="addInput('arraySelect6', 'arrayInput6')" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
@@ -516,11 +517,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                                                     placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
@@ -547,7 +548,7 @@
                 <tr id="{newRowID}">
                     <td class="drag-handler"></td>
                     <td class="recipe-table__cell2">
-                        <select class="form-select form-select-sm form-item-focus"
+                        <select class="form-select form-select-sm form-item-focus form-color2"
                              id="{arraySelectID}"
                             onchange="addInput('{arraySelectID}', '{arrayInputID}')" style="height: 100px; min-height:100px;" required>
                             <option value="" selected hidden>Question Types</option>
@@ -574,11 +575,11 @@
                         </select>
                     </td>
                     <td class="recipe-table__cell">
-                        <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                        <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                         placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                     </td>
                     <td class="recipe-table__cell">
-                        <textarea class="form-control form-control-sm form-item-focus" id="" rows="1"
+                        <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
                             placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                     </td>
                     <td class="recipe-table__cell">
@@ -591,7 +592,7 @@
             </script>
             <!-- addInput -->
             <script id="addInput" type="text/template">
-                    <input class="form-control form-control-sm form-item-focus" list="datalistOptions"
+                    <input class="form-control form-control-sm form-item-focus form-color2" list="datalistOptions"
                     id="{arrayInputChild}" placeholder="Array" style="height: 100px; min-height:100px;" required>
                     <datalist id="datalistOptions">
                     <option value="Living with family, Property with mortgage, Property without
@@ -609,7 +610,7 @@
                     <div class="form-content">
                         <div class="form-header">
                             <img alt="" class="banner-smartform3">
-                            <h3>Confirm Form</h3>
+                            <h3 class="theme-color6">Confirm Form</h3>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
@@ -791,25 +792,27 @@
 
     <!-- footer -->
     <p></p>
-    <footer class="py-5" style="background-color: #fff;">
+    <footer class="py-5 theme-bg-color6 theme-color">
         <div class="row">
             <div class="col-1"></div>
 
             <div class="col-5">
-                <p><b>Contact Us</b></p>
+                <h5><b>Contact Us</b></h5>
+                <br>
                 <p>Phone +852 0000 0000 | Email cs@xxxxxxxxx.com</p>
                 <small>Copyright &copy; 2022 XXXXX XXXX Limited. All rights reserved.</small>
             </div>
 
             <div class="col-4 offset-1">
                 <form>
-                    <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of whats new and exciting from us.</p>
+                    <h5><b>Subscribe to our newsletter</b></h5>
                     <br>
+                    <p>Monthly digest of whats new and exciting from us.</p>
                     <label for="newsletter1" class="visually-hidden">Email address</label>
                     <div class="row">
                         <div class="col">
-                            <input id="newsletter1" type="text" class="form-control" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
+                            <input id="newsletter1" type="text" class="form-control"
+                                style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
                         </div>
                         <div class="col">
                             <button class="btn btn-primary btn-smartform3" type="button">Subscribe</button>
