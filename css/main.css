@@ -1,3 +1,52 @@
+.theme-color{
+  color: #E7E2DE;
+}
+.theme-color2{
+  color: #9F9CAD;
+}
+.theme-color3{
+  color: #B7A5A5;
+}
+.theme-color4{
+  color: #E7D5BF;
+}
+.theme-color5{
+  color: #C39C7F;
+}
+.theme-color6{
+  color: #313C3E;
+}
+.theme-color7{
+  color: #AD9D72;
+}
+.theme-color8{
+  color: #ffffff;
+}
+.theme-bg-color{
+  background-color: #E7E2DE;
+}
+.theme-bg-color2{
+  background-color: #9F9CAD;
+}
+.theme-bg-color3{
+  background-color: #B7A5A5;
+}
+.theme-bg-color4{
+  background-color: #E7D5BF;
+}
+.theme-bg-color5{
+  background-color: #C39C7F;
+}
+.theme-bg-color6{
+  background-color: #313C3E;
+}
+.theme-bg-color7{
+  background-color: #AD9D72;
+}
+.theme-bg-color8{
+  background-color: #ffffff;
+}
+
 footer {
   min-height: 40vh;
 }
@@ -43,10 +92,10 @@ footer {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
-.button-smartform {
+.btn-smartform {
   border: none;
-  color: #8a5122;
-  padding: 5px 20px;
+  color: #ffffff;
+  padding: 7px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -54,28 +103,28 @@ footer {
   font-family: Arial Black;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: #d3ac9c;
-  border-radius: 20px;
+  background-color: #313C3E;
+  border-radius: 13px;
 }
-.button-smartform:hover {
-  background-color: #8a5122;
+.btn-smartform:hover {
+  background-color: #C39C7F;
   color: white;
 }
-.button-smartform2 {
+.btn-smartform2 {
   border: none;
-  color: #8a5122;
-  padding: 5px 20px;
+  color: #313C3E;
+  padding: 7px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
   font-family: Arial Black;
-  margin: 4px 20px;
   cursor: pointer;
-  background-color: #ffffff;
-  border-radius: 20px;
+  background-color: #E7E2DE;
+  border-radius: 13px;
+  width: 54vw;
 }
-.button-smartform2:hover {
+.btn-smartform2:hover {
   color: white;
   background-color: #8a5122;
   border-color: white;
@@ -89,10 +138,10 @@ footer {
   border-color: white;
 }
 .form-color {
-  color: #987468;
+  color: #313C3E;
 }
 .form-color2 {
-  background-color: #eee8e5;
+  background-color: #fcfbfa;
 }
 .form-color3 {
   color: #fff;

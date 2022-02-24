@@ -87,7 +87,7 @@ h3 {
   margin: 0vw 0vw 0vw 1vw;
   padding: 0.75vw 0vw 0vw 0vw;
   border-radius: 0.75vw;
-  background-color: #d3ac9c;
+  background-color: #fff;
 }
 
 .wizard > .steps .current-info,
@@ -107,7 +107,7 @@ h3 {
   width: 12.5vw;
   height: 1vw;
   border-radius: 0.5vw;
-  background-color: #999;
+  background-color: #9F9CAD;
 }
 .wizard > .steps li a:before {
   border-radius: 0.5vw;
@@ -126,14 +126,14 @@ h3 {
   transition: all 1s ease;
 }
 .wizard > .steps li.first a {
-  background: #fff;
+  background: #E7D5BF;
 }
 .wizard > .steps li.checked a {
-  background: #fff;
+  background: #E7D5BF;
 }
 /* line */
 .wizard > .steps li.checked a:after {
-  background: #fff;
+  background: #E7D5BF;
 }
 .wizard > .steps li:last-child a {
   margin-right: 0;
@@ -275,14 +275,6 @@ h3 {
 .actions li:last-child a {
   margin-left: 20px;
 }
-.actions li:last-child a {
-  width: 124px;
-  background: #6d7f52;
-  color: #fff;
-}
-.actions li:last-child a:hover {
-  background: #849963;
-}
 .actions li:last-child a:before {
   content: "\f26b";
   position: absolute;
@@ -295,11 +287,11 @@ h3 {
   transition: all 1s;
 }
 .actions li[aria-disabled="false"] ~ li a {
-  background: #6d7f52;
+  background: #AD9D72;
   color: #fff;
 }
 .actions li[aria-disabled="false"] ~ li a:hover {
-  background: #849963;
+  background: #936D56;
 }
 
 /* 

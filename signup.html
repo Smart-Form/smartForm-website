@@ -38,28 +38,22 @@
             padding: 1vw 7.5vw;
         }
 
-        select {
-            width: 100%;
-            padding: 4px 10px;
-            /* border: none; */
-        }
-
         @media (max-width: 1280px) {
             .form2 {
                 border: none;
                 border-radius: 15px;
                 background-color: #FBF9F8;
-                margin: 3.5vw 7.5vw;
+                margin: 5vw 7.5vw;
             }
         }
     </style>
 </head>
 
-<body style="background-color:#EEE8E5;">
+<body class="theme-bg-color4">
     <a id="scroll" style="display: none;"><span></span></a>
 
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #fff;">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm theme-color6 theme-bg-color8">
         <div class="container-fluid">
     
             <a class="navbar-brand" href="index.html">
@@ -98,49 +92,48 @@
     </nav>
     <!-- nav end -->
 
-    <form action="user_id.html" method="" class="form2 needs-validation" novalidate>
+    <form action="user_id.html" method="" class="form2 needs-validation theme-color6 theme-bg-color8" novalidate>
         <div class="container">
-            <h5 style="font-size:150%; color:#8A5122;" class="container w3-center"><b>Sign Up</b></h5>
-            <p class="fw-lighter small">* Must be filled</p>
+            <h5 style="font-size:150%" class="container w3-center"><b>Sign Up</b></h5>
             <p>
-                <label for="uname" style="color:#B19F97;">*Organization Name</label>
+                <label for="uname">*Organization Name</label>
                 <input type="text" name="uname" class="form-control" placeholder="e.g. Social Welfare Department"
                     required>
             </p>
 
             <p>
-                <label for="pnum" style="color:#B19F97;">*Phone Number</label>
+                <label for="pnum">*Phone Number</label>
                 <input type="number" name="pnum" class="form-control" placeholder="e.g. 23432255" required>
             </p>
 
             <p>
-                <label for="email" style="color:#B19F97;">*Email Address</label>
+                <label for="email">*Email Address</label>
                 <input type="text" pname="email" class="form-control" placeholder="e.g. swdenq@swd.gov.hk" required>
             </p>
 
             <p>
-                <label for="fnum" style="color:#B19F97;">Fax Number</label>
+                <label for="fnum">Fax Number</label>
                 <input type="number" name="fnum" class="form-control" placeholder="e.g. 28380125">
             </p>
 
             <p>
-                <label for="weblink" style="color:#B19F97;">Website URL</label>
+                <label for="weblink">Website URL</label>
                 <input type="text" name="weblink" class="form-control" placeholder="e.g. swd.gov.hk">
             </p>
 
             <p>
-                <label for="brnum" style="color:#B19F97;">*BR Number (the first 11 digits)</label>
+                <label for="brnum">*BR Number (the first 11 digits)</label>
                 <input type="number" name="brnum" class="form-control" placeholder="e.g. 12345678123" required>
             </p>
 
             <p>
-                <label for="address" style="color:#B19F97;">*Address</label>
+                <label for="address">*Address</label>
                 <input type="text" name="address" class="form-control"
                     placeholder="e.g. 7/F - 10/F, WU CHUNG HSE, 213 QUEEN'S RD EAST, WAN CHAI, HK" required>
             </p>
 
             <p>
-                <label for="organization" style="color:#B19F97;">*Types of Organization</label>
+                <label for="organization">*Types of Organization</label>
                 <select id="organization" name="organization" class="form-select" required>
                     <option value="gov">Government</option>
                     <option value="corporations">Corporations</option>
@@ -149,7 +142,7 @@
             </p>
 
             <p>
-                <label for="service" style="color:#B19F97;">*Types of Service</label>
+                <label for="service">*Types of Service</label>
                 <select id="service" name="service" class="form-select" required>
                     <option value="finaid">Financial Aid</option>
                     <option value="health">Health</option>
@@ -162,7 +155,7 @@
             </p>
 
             <p>
-                <label for="pw" style="color:#B19F97;">*Password</label>
+                <label for="pw">*Password</label>
                 <input type="password" name="pw" class="form-control" pattern="(?=.*\d)(?=.*[a-z]).{12,}" id="password_input"
                     required>
                 <!-- An element to toggle between password visibility -->
@@ -182,7 +175,7 @@
             </p>
 
             <p>
-                <label for="pw-confirm" style="color:#B19F97;">*Confirm Password</label>
+                <label for="pw-confirm">*Confirm Password</label>
                 <input type="password" name="pw-confirm" class="form-control" oninput="check(this)" required>
                 <script>
                     function check(input) {
@@ -197,7 +190,7 @@
             </p>
 
             <p>
-                <label for="aboutOrganization" style="color:#B19F97;">*About Organization</label>
+                <label for="aboutOrganization">*About Organization</label>
                 <br>
                 <textarea id="aboutOrganization" name="aboutOrganization" rows="4" cols="57.5" style="min-height:100px;"
                     class="form-control" placeholder="VISION
@@ -232,7 +225,7 @@ We will continuously strive for excellence." required></textarea>
             </p>
 
             <p>
-                <label for="promotional" style="color:#B19F97;">Promotional Materials
+                <label for="promotional">Promotional Materials
                     Attachment<br><small>&nbsp;&nbsp;Acceptable file format:&nbsp;&nbsp;jpg, jpeg, png, tiff,
                         svg<br>&nbsp;&nbsp;File size:&nbsp;&nbsp;&lt;10MB<br>&nbsp;&nbsp;For a Portrait Poster
                         Size:&nbsp;&nbsp;A4 size in pixels 300dpi: 3508 x 2480 px (without bleed
@@ -243,7 +236,7 @@ We will continuously strive for excellence." required></textarea>
             </p>
 
             <p>
-                <label for="attachments" style="color:#B19F97;">*Logo Attachment<br><small>&nbsp;&nbsp;Acceptable file
+                <label for="attachments">*Logo Attachment<br><small>&nbsp;&nbsp;Acceptable file
                         format:&nbsp;&nbsp;jpg, jpeg, png, tiff, svg<br>&nbsp;&nbsp;File
                         size:&nbsp;&nbsp;&lt;10MB<br>&nbsp;&nbsp;Size:&nbsp;&nbsp;512 x 512 px / 1024 x 1024 px
                         / 2048 x 2048 px</small></label>
@@ -251,46 +244,49 @@ We will continuously strive for excellence." required></textarea>
                 <input type="file" name="filename" class="form-control" accept=".jpg, .jpeg, .png, .tiff, .svg"
                     required>
             </p>
-
+            <br>
+            <p class="fw-lighter small">* Must be filled</p>
             <br>
             <p class="w3-center">
-                <button type="submit" class="button-smartform2">&nbsp;Submit&nbsp;</button>
+                <button type="submit" class="btn-smartform2">&nbsp;Submit&nbsp;</button>
             </p>
             <br>
         </div>
     </form>
 
         <!-- footer -->
-        <p></p>
-        <footer class="py-5" style="background-color: #fff;">
-            <div class="row">
-                <div class="col-1"></div>
-    
-                <div class="col-5">
-                    <p><b>Contact Us</b></p>
-                    <p>Phone +852 0000 0000 | Email cs@xxxxxxxxx.com</p>
-                    <small>Copyright &copy; 2022 XXXXX XXXX Limited. All rights reserved.</small>
-                </div>
-    
-                <div class="col-4 offset-1">
-                    <form>
-                        <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of whats new and exciting from us.</p>
-                        <br>
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <div class="row">
-                            <div class="col">
-                                <input id="newsletter1" type="text" class="form-control" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
-                            </div>
-                            <div class="col">
-                                <button class="btn btn-primary btn-smartform3" type="button">Subscribe</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+    <p></p>
+    <footer class="py-5 theme-bg-color6 theme-color">
+        <div class="row">
+            <div class="col-1"></div>
+
+            <div class="col-5">
+                <h5><b>Contact Us</b></h5>
+                <br>
+                <p>Phone +852 0000 0000 | Email cs@xxxxxxxxx.com</p>
+                <small>Copyright &copy; 2022 XXXXX XXXX Limited. All rights reserved.</small>
             </div>
-        </footer>
-        <!-- footer end -->
+
+            <div class="col-4 offset-1">
+                <form>
+                    <h5><b>Subscribe to our newsletter</b></h5>
+                    <br>
+                    <p>Monthly digest of whats new and exciting from us.</p>
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <div class="row">
+                        <div class="col">
+                            <input id="newsletter1" type="text" class="form-control"
+                                style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary btn-smartform3" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
 
 </body>
 <link rel="stylesheet" href="css/main.css">

@@ -16,34 +16,21 @@
         .form2 {
             border: none;
             border-radius: 15px;
-            background-color: #FBF9F8;
-            margin: 10vw 20vw;
-        }
-
-        /* Full-width inputs */
-        input[type=text],
-        input[type=password] {
-            border-radius: 15px;
-            /* border: none; */
-            width: 100%;
-            padding: 8px 10px;
-            /* margin: 8px 0; */
-            display: inline-block;
-            box-sizing: border-box;
+            margin: 10vw 10vw;
         }
 
         /* Add padding to containers */
         .container {
-            padding: 12px 40px;
+            padding: 20px;
         }
     </style>
 </head>
 
-<body style="background-color:#EEE8E5;">
+<body class="theme-bg-color4">
     <a id="scroll" style="display: none;"><span></span></a>
 
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #fff;">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color6">
         <div class="container-fluid">
     
             <a class="navbar-brand" href="index.html">
@@ -82,53 +69,57 @@
     </nav>
     <!-- nav end -->
 
-    <form action="signin.html" method="" class="form2">
-        <div class="container w3-content">
-            <h5 style="font-size:150%; color:#B19F97;" class="container w3-center">Your ID number</h5>
+    <form action="signin.html" method="" class="form2 theme-color6 theme-bg-color8">
+        <div class="container">
+            <h5 style="font-size:200%;" class="container w3-center">Your ID number</h5>
             <p class="container w3-center">
-                <span style="font-size:90%; color:#B19F97;">Please save the ID number for log in.</span><br>
-                <span style="font-size:200%; color:#B19F97;">1234566879</span>
+                <span style="font-size:90%;">Please save the ID number for log in.</span>
+            </p>
+            <p class="container w3-center">
+                <b><span style="font-size:200%;" class="theme-color7">1234566879</span></b>
             </p>
 
             <p class="w3-center">
-                <button type="submit" class="button-smartform2">&nbsp;Confirm&nbsp;</button>
+                <button type="submit" class="btn-smartform2">&nbsp;Confirm&nbsp;</button>
                 <br>
                 <br>
             </p>
         </div>
     </form>
 
-        <!-- footer -->
-        <p></p>
-        <footer class="py-5" style="background-color: #fff;">
-            <div class="row">
-                <div class="col-1"></div>
-    
-                <div class="col-5">
-                    <p><b>Contact Us</b></p>
-                    <p>Phone +852 0000 0000 | Email cs@xxxxxxxxx.com</p>
-                    <small>Copyright &copy; 2022 XXXXX XXXX Limited. All rights reserved.</small>
-                </div>
-    
-                <div class="col-4 offset-1">
-                    <form>
-                        <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of whats new and exciting from us.</p>
-                        <br>
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <div class="row">
-                            <div class="col">
-                                <input id="newsletter1" type="text" class="form-control" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
-                            </div>
-                            <div class="col">
-                                <button class="btn btn-primary btn-smartform3" type="button">Subscribe</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+    <!-- footer -->
+    <p></p>
+    <footer class="py-5 theme-bg-color6 theme-color">
+        <div class="row">
+            <div class="col-1"></div>
+
+            <div class="col-5">
+                <h5><b>Contact Us</b></h5>
+                <br>
+                <p>Phone +852 0000 0000 | Email cs@xxxxxxxxx.com</p>
+                <small>Copyright &copy; 2022 XXXXX XXXX Limited. All rights reserved.</small>
             </div>
-        </footer>
-        <!-- footer end -->
+
+            <div class="col-4 offset-1">
+                <form>
+                    <h5><b>Subscribe to our newsletter</b></h5>
+                    <br>
+                    <p>Monthly digest of whats new and exciting from us.</p>
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <div class="row">
+                        <div class="col">
+                            <input id="newsletter1" type="text" class="form-control"
+                                style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary btn-smartform3" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
 
 </body>
 
