@@ -1,3 +1,40 @@
+.theme-color{
+  color: #E7E2DE;
+}
+.theme-color2{
+  color: #9F9CAD;
+}
+.theme-color3{
+  color: #B7A5A5;
+}
+.theme-color4{
+  color: #E7D5BF;
+}
+.theme-color5{
+  color: #C39C7F;
+}
+.theme-color6{
+  color: #313C3E;
+}
+.theme-bg-color{
+  background-color: #E7E2DE;
+}
+.theme-bg-color2{
+  background-color: #313C3E;
+}
+.theme-bg-color3{
+  background-color: #B7A5A5;
+}
+.theme-bg-color4{
+  background-color: #E7D5BF;
+}
+.theme-bg-color5{
+  background-color: #C39C7F;
+}
+.theme-bg-color6{
+  background-color: #313C3E;
+}
+
 footer {
   min-height: 40vh;
 }
@@ -45,7 +82,7 @@ footer {
 }
 .button-smartform {
   border: none;
-  color: #8a5122;
+  color: #ffffff;
   padding: 5px 20px;
   text-align: center;
   text-decoration: none;
@@ -54,11 +91,11 @@ footer {
   font-family: Arial Black;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: #d3ac9c;
+  background-color: #313C3E;
   border-radius: 20px;
 }
 .button-smartform:hover {
-  background-color: #8a5122;
+  background-color: #C39C7F;
   color: white;
 }
 .button-smartform2 {
