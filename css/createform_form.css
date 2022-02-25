@@ -171,6 +171,9 @@ h3 {
 .form-header {
   text-align: center;
 }
+.form-title {
+  width: 75vw;
+}
 
 .form-row {
   display: flex;
