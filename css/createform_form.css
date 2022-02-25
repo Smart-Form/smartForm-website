@@ -145,9 +145,11 @@ h3 {
 /* .form-content {
   height: 1800px;
 } */
-/* .wizard > .content {
-  height: 1850px;
-} */
+.wizard > .content {
+  /* height: 1850px; */
+  /* position: relative; */
+  padding: 0vh 0vh 20vh 0vh;
+}
 
 .inner {
   display: flex;
@@ -163,7 +165,7 @@ h3 {
   text-align: center;
 }
 .form-title {
-  width: 71vw;
+  width: 75vw;
 }
 
 .form-row {
@@ -322,15 +324,12 @@ form system – mobile layout
   }
   
    /* form canvas */
-  .form-content {
-    padding: 0vw 1vw;
-    /* height: 2700px; */
-  }
-  .wizard > .content {
-    /* position: relative; */
-    margin-bottom: 2vw;
-    /* height: 2750px; */
-  }
+  /* .form-content {
+    height: 2700px;
+  } */
+  /* .wizard > .content {
+    height: 2750px;
+  } */
 
   .form-row {
     display: block;
