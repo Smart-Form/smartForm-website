@@ -280,6 +280,6 @@ footer {
 input:hover, textarea:hover, select:hover {
   box-shadow: 0 0 0 9999px #000000b0;
   opacity: 0.25;
-  -webkit-transition: 5s ease-in-out;
-  transition: 5s ease-in-out;
+  -webkit-transition: 7s ease-in-out;
+  transition: 7s ease-in-out;
 }
