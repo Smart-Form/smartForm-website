@@ -16,6 +16,7 @@
 </head>
 
 <body class="theme-bg-color4">
+
     <a id="scroll" style="display: none;"><span></span></a>
 
     <!-- nav -->
@@ -61,7 +62,7 @@
         </div>
     </nav>
     <!-- nav end -->
-
+    
     <!-- main body -->
     <br>
     <div class="wrapper">
@@ -259,6 +260,7 @@
                                         the difficulty of filling in the form for the elderly and low-educated
                                     </h6>
                                 </div>
+                                <br><br>
                                 <p class="fw-lighte form-color">*If you select multiple-choice/option, set options as an array. 
                                     e.g. Living with family, Property with a mortgage, Property without mortgage, Rental apartment, Public housing</p><br>
                             </div>
@@ -597,11 +599,11 @@
                     <input class="form-control form-control-sm form-item-focus form-color2" list="datalistOptions"
                     id="{arrayInputChild}" placeholder="Array" style="height: 100px; min-height:100px;" required>
                     <datalist id="datalistOptions">
+                    <option value="New Array">
                     <option value="Living with family, Property with mortgage, Property without
                     mortgage, Rental apartment, Public housing">
                     <option value="18-29, 30-49, 50-64">
-                    <option
-                        value="HK$0-10,000, HK$10,001-30,000, HK$30,001-70,000, HK$70,001 or above">
+                    <option value="HK$0-10,000, HK$10,001-30,000, HK$30,001-70,000, HK$70,001 or above">
                     </datalist>
             </script>
 
@@ -819,7 +821,7 @@
                                 style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
                         </div>
                         <div class="col">
-                            <button class="btn btn-primary btn-smartform3" type="button">Subscribe</button>
+                            <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="button">Subscribe</button>
                         </div>
                     </div>
                 </form>

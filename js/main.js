@@ -42,3 +42,17 @@ $(document).ready(function(){
         }, false)
       })
   })()
+
+//
+//
+//emailSubscribeBtn
+//
+//
+jQuery(function($) {
+  $('#emailSubcribeBtn').on('click', function() {
+    var $el = $(this),
+      textNode = this.lastChild;
+    textNode.nodeValue = ($el.hasClass('showSubscription') ? 'Subscribed' : 'Subscribed')
+    $el.toggleClass('showSubscription');
+  });
+});
