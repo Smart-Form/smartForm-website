@@ -142,7 +142,8 @@ footer {
   cursor: pointer;
   background-color: #9F9CAD;
   border-radius: 13px;
-  width: 45vw;
+  width: 55vw;
+  min-width: 32vh;
 }
 .btn-smartform2:hover {
   color: white;
