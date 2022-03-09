@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Form - Form</title>
+    <title>Smart Form - Create Form</title>
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
     <link rel="stylesheet" href="plugins/w3/w3.css">
     <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
@@ -16,6 +16,7 @@
 </head>
 
 <body class="theme-bg-color4">
+
     <a id="scroll" style="display: none;"><span></span></a>
 
     <!-- nav -->
@@ -61,7 +62,7 @@
         </div>
     </nav>
     <!-- nav end -->
-
+    
     <!-- main body -->
     <br>
     <div class="wrapper">
@@ -78,165 +79,178 @@
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">*Name</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">*Name</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" placeholder="Welfare Name" class="form-control form-color2" required>
+                                <input type="text" id="v" placeholder="Welfare Name" class="form-control form-color2 dim" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">*Introduction</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">*Introduction</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="" placeholder="Summary 50 words" class="form-control form-color2"
+                                <textarea name="" id="v2" placeholder="Summary 50 words" class="form-control form-color2 dim"
                                     style="height: 100px; min-height:100px;" required></textarea>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">Welfare Website</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">Welfare Website</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" placeholder="URL" class="form-control form-color2" required>
+                                <input type="text" id="v3" placeholder="URL" class="form-control form-color2 dim" >
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">*Welfare Requirements</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">*Welfare Requirements</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" placeholder="Target audience" class="form-control form-color2"
+                                <input type="text" id="v4" placeholder="Target audience" class="form-control form-color2 dim"
                                     required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">Age Limit</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="text" id="v5" placeholder="Age" class="form-control form-color2 dim">
+                                <div class="addPadding">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="v6">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                          or after
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="v7">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                          or under
+                                        </label>
+                                        </div>
+                                      </div>
                             </div>
                         </div>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color">Apply Date</label>
+                            <label class="col-2 col-form-label form-color minWidth2 addPadding">Apply Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-color2" id="date" style="max-width: 27vh; min-width: 27vh;"
-                                    required>
+                                <input type="date" class="form-control form-color2 dim" id="v8" style="max-width: 25vh; min-width: 25vh;">
                             </div>
-                            <label class="col-form-label"><small class="form-color">To</small></label>
+                            <label class="col-form-label addPadding"><small class="form-color">To</small></label>
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color">Deadline Date</label>
+                            <label class="col-2 col-form-label form-color minWidth2 addPadding">Deadline Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-color2" id="date" style="max-width: 27vh; min-width: 27vh;"
-                                    required>
+                                <input type="date" class="form-control form-color2 dim" id="v9" style="max-width: 25vh; min-width: 25vh;">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color">Distribution Date</label>
+                            <label class="col-2 col-form-label form-color minWidth2 addPadding">Distribution Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-color2" id="date" style="max-width: 27vh; min-width: 27vh;"
-                                    required>
+                                <input type="date" class="form-control form-color2 dim" id="v10" style="max-width: 25vh; min-width: 25vh;">
                             </div>
-                            <label class="col-form-label"><small class="form-color">To</small></label>
+                            <label class="col-form-label addPadding"><small class="form-color">To</small></label>
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color">End Date</label>
+                            <label class="col-2 col-form-label form-color minWidth2 addPadding">End Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-color2" id="date" style="max-width: 27vh; min-width: 27vh;"
-                                    required>
+                                <input type="date" class="form-control form-color2 dim" id="v11" style="max-width: 25vh; min-width: 25vh;">
                             </div>
                         </div>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">The amount involved</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">The amount involved</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="number" placeholder="HK$" class="form-control form-color2" required>
+                                <input type="number" id="v12" placeholder="HK$" class="form-control form-color2 dim" >
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">*Privacy Policy & Disclaimer</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">*Privacy Policy & Disclaimer</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="" class="form-control form-color2"
+                                <textarea name="" id="v13" class="form-control form-color2 dim"
                                     style="height: 100px; min-height:100px;" required></textarea>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">Promotional Corner<br>(to Applicant)</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">Promotional Corner<br>(to Applicant)</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="" placeholder="Welcome, Thank you, etc"
-                                    class="form-control form-color2" style="height: 100px; min-height:100px;"
-                                    required></textarea>
+                                <textarea name="" id="v14" placeholder="Welcome, Thank you, etc"
+                                    class="form-control form-color2 dim" style="height: 100px; min-height:100px;"></textarea>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">Supplementary Information if need<br>(to SmartForm)</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">Supplementary Information<br>(to SmartForm)</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="" class="form-control form-color2"
-                                    style="height: 100px; min-height:100px;" required></textarea>
+                                <textarea name="" id="v15" class="form-control form-color2 dim"
+                                    style="height: 100px; min-height:100px;"></textarea>
                             </div>
                         </div>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color">^Attachment<br>
+                            <label class="col-2 col-form-label form-color minWidth2 addPadding">Attachment<br>
                                 <p class="fw-lighter">Promotional Materials</p>
                             </label>
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
-                                    <input type="file" class="form-control form-color2" id="inputGroupFile04"
+                                    <input type="file" class="form-control form-color2 dim" id="v16"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
-                                        accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 20vw; min-width: 30vh;" required>
+                                        accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 18vw; min-width: 30vh;">
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
-                                <br><br><small><b>Acceptable file format:</b><br>jpg, jpeg, png, tiff,
+                                <br><br><div class="addPadding"><small class="form-color"><b>Acceptable file format:</b><br>jpg, jpeg, png, tiff,
                                     svg<br><b>File size:</b><br>&lt;10MB<br><b>For a Portrait Poster
-                                        Size:</b><br>A4 size in pixels 300dpi: 3508 x 2480
-                                    px (without bleed area)<br><b>For a Landscape Banner
-                                        Size:</b><br>3508 x 1240 px (without bleed area)</small>
+                                        Size:</b><br>A4 size in pixels 300dpi: 3508x2480px (without bleed area)<br><b>For a Landscape Banner
+                                        Size:</b><br>3508x1240px (without bleed area)</small></div>
                             </div>
-                            <label class="col-2 col-form-label form-color">*Attachment<br>
+                            <label class="col-2 col-form-label form-color minWidth2 addPadding">*Attachment<br>
                                 <p class="fw-lighter">Logo</p>
                             </label>
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
-                                    <input type="file" class="form-control form-color2" id="inputGroupFile04"
+                                    <input type="file" class="form-control form-color2 dim" id="v17"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
-                                        accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 20vw; min-width: 30vh;" required>
+                                        accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 18vw; min-width: 30vh;" 
+                                        onclick="updateConfirmPageFields()" required>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
-                                <br><br><small><b>Acceptable file
+                                <br><br><div class="addPadding"><small class="form-color"><b>Acceptable file
                                         format:</b><br>jpg, jpeg, png, tiff, svg<br><b>File
-                                        size:</b><br>&lt;10MB<br><b>Size:</b><br>512 x 512
-                                    px / 1024 x 1024 px
-                                    / 2048 x 2048 px</small>
+                                        size:</b><br>&lt;10MB<br><b>Size:</b><br>512x512px / 1024x1024px / 2048x2048px</small></div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <p class="fw-lighter small">* Must be filled</p>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-1"></div>
-                            <p class="fw-lighter small">^ Optional</p>
+                            <p class="fw-lighter small addPadding">* Must be filled</p>
                         </div>
                         <div style="height: 4vw;"></div>
                     </div>
@@ -253,25 +267,57 @@
                             <h3 class="theme-color6 form-title">Question Setting</h3>
                         </div>
                         <div class="recipe">
-                            <div style="padding: 2vw;">
+                            <div class="addPadding">
                                 <div class="badge bg-primary text-wrap text-start">
                                     <h6>Please set up within 20 questions (multiple choice questions are preferred) to reduce
                                         the difficulty of filling in the form for the elderly and low-educated
                                     </h6>
                                 </div>
-                                <p class="fw-lighte form-color">*If you select multiple-choice/option, set options as an array. 
+                                <br><br>
+                                <p class="fw-lighte form-color">If you select multiple-choice/option, set options as an array. 
                                     e.g. Living with family, Property with a mortgage, Property without mortgage, Rental apartment, Public housing</p><br>
                             </div>
+
+                            <div class="form-row addPadding">
+                                <div class="col-1"></div>
+                                <div class="col-2 minWidth">
+                                    <p class="text-start form-color">Basic Information</p>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class="form-holder">
+                                        <input class="form-check-input form-color2 dim" type="checkbox" value="" id="b1" checked>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          HKID number
+                                        </label>
+                                        <input class="form-check-input form-color2 dim" type="checkbox" value="" id="b2" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          English name
+                                        </label>
+                                        <input class="form-check-input form-color2 dim" type="checkbox" value="" id="b3" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          Chinese name
+                                        </label>
+                                        <input class="form-check-input form-color2 dim" type="checkbox" value="" id="b4" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          Birthday
+                                        </label>
+                                        <input class="form-check-input form-color2 dim" type="checkbox" value="" id="b5" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          Gender
+                                        </label>
+                                </div>
+                            </div>
                             
+                            <br>
                             <div class="d-flex justify-content-center form-color">
                                 <div class="recipe__ingredients">
                                     <table cellpadding="0" cellspacing="0" class="recipe-table" id="recipeTable">
                                         <tbody id="recipeTableBody">
 
-                                            <tr>
+                                            <tr id="tr1">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus form-color2"
+                                                    <select class="form-select form-select-sm form-item-focus form-color2 dim"
                                                          id="arraySelect"
                                                         onchange="addInput('arraySelect', 'arrayInput')" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
@@ -298,11 +344,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b6" rows="1"
                                                     placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b7" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
@@ -312,10 +358,10 @@
                                                     <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr id="tr2">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus form-color2"
+                                                    <select class="form-select form-select-sm form-item-focus form-color2 dim"
                                                          id="arraySelect2"
                                                         onchange="addInput('arraySelect2', 'arrayInput2')" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
@@ -342,11 +388,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm  form-item-focus form-color2" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm  form-item-focus form-color2 dim" id="b8" rows="1"
                                                     placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b9" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
@@ -356,10 +402,10 @@
                                                     <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr id="tr3">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus form-color2"
+                                                    <select class="form-select form-select-sm form-item-focus form-color2 dim"
                                                          id="arraySelect3"
                                                         onchange="addInput('arraySelect3', 'arrayInput3')" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
@@ -386,11 +432,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b10" rows="1"
                                                     placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b11" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
@@ -400,10 +446,10 @@
                                                     <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr id="tr4">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus form-color2"
+                                                    <select class="form-select form-select-sm form-item-focus form-color2 dim"
                                                          id="arraySelect4"
                                                         onchange="addInput('arraySelect4', 'arrayInput4')" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
@@ -430,11 +476,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b12" rows="1"
                                                     placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b13" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
@@ -444,10 +490,10 @@
                                                     <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr id="tr5">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus form-color2"
+                                                    <select class="form-select form-select-sm form-item-focus form-color2 dim"
                                                          id="arraySelect5"
                                                         onchange="addInput('arraySelect5', 'arrayInput5')" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
@@ -474,11 +520,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b14" rows="1"
                                                     placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b15" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
@@ -488,10 +534,10 @@
                                                     <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr id="tr6">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus form-color2"
+                                                    <select class="form-select form-select-sm form-item-focus form-color2 dim"
                                                          id="arraySelect6"
                                                         onchange="addInput('arraySelect6', 'arrayInput6')" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
@@ -518,11 +564,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b16" rows="1"
                                                     placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b17" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
@@ -550,7 +596,7 @@
                 <tr id="{newRowID}">
                     <td class="drag-handler"></td>
                     <td class="recipe-table__cell2">
-                        <select class="form-select form-select-sm form-item-focus form-color2"
+                        <select class="form-select form-select-sm form-item-focus form-color2 dim"
                              id="{arraySelectID}"
                             onchange="addInput('{arraySelectID}', '{arrayInputID}')" style="height: 100px; min-height:100px;" required>
                             <option value="" selected hidden>Question Types</option>
@@ -577,11 +623,11 @@
                         </select>
                     </td>
                     <td class="recipe-table__cell">
-                        <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                        <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="{n}" rows="1"
                         placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
                     </td>
                     <td class="recipe-table__cell">
-                        <textarea class="form-control form-control-sm form-item-focus form-color2" id="" rows="1"
+                        <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="{m}" rows="1"
                             placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
                     </td>
                     <td class="recipe-table__cell">
@@ -592,16 +638,59 @@
                     </td>
                 </tr>
             </script>
+            <!-- addRow2 -->
+            <script id="rowTemplate2" type="text/template">
+                <tr id="{newRowID}">
+                    <td class="recipe-table__cell2">
+                        <select class="form-select form-select-sm form-item-focus form-color2 dim"
+                             id="{arraySelectID}"
+                            onchange="addInput('{arraySelectID}', '{arrayInputID}')" style="height: 100px; min-height:100px;" disabled>
+                            <option value="" selected hidden>Question Types</option>
+                            <option value="0">Option</option>
+                            <option value="1">Yes/No</option>
+                            <option value="2">Short Answer</option>
+                            <option value="3">Multiple Choice</option>
+                            <option value="4">Correspondence Address</option>
+                            <option value="5">Email Address</option>
+                            <option value="6">Phone Number</option>
+                            <option value="7">Name</option>
+                            <option value="8">Nationality</option>
+                            <option value="9">Birthday</option>
+                            <option value="10">HKID/Passport Number</option>
+                            <option value="11">Employment</option>
+                            <option value="12">Marriage</option>
+                            <option value="13">Amount</option>
+                            <option value="14">Gender</option>
+                            <option value="15">Signature</option>
+                            <option value="16">Date</option>
+                            <option value="17">Number</option>
+                            <option value="18">District</option>
+                            <option value="19">Checkbox</option>
+                        </select>
+                    </td>
+                    <td class="recipe-table__cell">
+                        <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="{n}" rows="1"
+                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
+                    </td>
+                    <td class="recipe-table__cell">
+                        <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="{m}" rows="1"
+                            placeholder="Description (Optional)" style="height: 100px; min-height:100px;" disabled></textarea>
+                    </td>
+                    <td class="recipe-table__cell">
+                        <div id="{arrayInputID}" disabled></div>
+                    </td>
+                </tr>
+            </script>
             <!-- addInput -->
             <script id="addInput" type="text/template">
-                    <input class="form-control form-control-sm form-item-focus form-color2" list="datalistOptions"
+                    <input class="form-control form-control-sm form-item-focus form-color2 dim" list="datalistOptions"
                     id="{arrayInputChild}" placeholder="Array" style="height: 100px; min-height:100px;" required>
                     <datalist id="datalistOptions">
+                    <option value="New Array">
                     <option value="Living with family, Property with mortgage, Property without
                     mortgage, Rental apartment, Public housing">
                     <option value="18-29, 30-49, 50-64">
-                    <option
-                        value="HK$0-10,000, HK$10,001-30,000, HK$30,001-70,000, HK$70,001 or above">
+                    <option value="HK$0-10,000, HK$10,001-30,000, HK$30,001-70,000, HK$70,001 or above">
                     </datalist>
             </script>
 
@@ -616,177 +705,502 @@
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">Welfare Requirements</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">*Name</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" placeholder="Target audience" class="form-control form-color2"
-                                    disabled>
+                                <input type="text" id="c" placeholder="Welfare Name" class="form-control form-color2 dim" disabled>
                             </div>
                         </div>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">Introduction</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">Introduction</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="" placeholder="Summary 50 words" class="form-control form-color2"
+                                <textarea name="" id="c2" placeholder="Summary 50 words"  class="form-control form-color2 dim"
                                     style="height: 100px; min-height:100px;" disabled></textarea>
                             </div>
                         </div>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">Welfare Website</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">Welfare Website</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" placeholder="URL" class="form-control form-color2" disabled>
+                                <input type="text" id="c3"  placeholder="URL" class="form-control form-color2 dim" disabled>
                             </div>
                         </div>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">Welfare Requirements</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">Welfare Requirements</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" placeholder="Target audience" class="form-control form-color2"
-                                    disabled>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="form-row">
-                            <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color">Apply Date</label>
-                            <div class="col-3">
-                                <input type="date" class="form-control form-color2" id="date" style="max-width: 27vh; min-width: 27vh;"
-                                    disabled>
-                            </div>
-                            <label class="col-form-label"><small class="form-color">To</small></label>
-                            <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color">Deadline Date</label>
-                            <div class="col-3">
-                                <input type="date" class="form-control form-color2" id="date" style="max-width: 27vh; min-width: 27vh;"
-                                    disabled>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color">Distribution Date</label>
-                            <div class="col-3">
-                                <input type="date" class="form-control form-color2" id="date" style="max-width: 27vh; min-width: 27vh;"
-                                    disabled>
-                            </div>
-                            <label class="col-form-label"><small class="form-color">To</small></label>
-                            <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color">End Date</label>
-                            <div class="col-3">
-                                <input type="date" class="form-control form-color2" id="date" style="max-width: 27vh; min-width: 27vh;"
+                                <input type="text" id="c4"  placeholder="Target audience" class="form-control form-color2 dim"
                                     disabled>
                             </div>
                         </div>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">The amount involved</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">Age Limit</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="number" placeholder="HK$" class="form-control form-color2" disabled>
+                                <input type="text" placeholder="Age" id="c5" class="form-control form-color2 dim" disabled>
+                                <div class="addPadding">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="c6" disabled>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                          or after
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="c7" disabled>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                          or under
+                                        </label>
+                                        </div>
+                                      </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color minWidth2 addPadding">Apply Date</label>
+                            <div class="col-3">
+                                <input type="date" class="form-control form-color2 dim" id="c8" style="max-width: 25vh; min-width: 25vh;"
+                                    disabled>
+                            </div>
+                            <label class="col-form-label"><small class="form-color addPadding">To</small></label>
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color minWidth2 addPadding">Deadline Date</label>
+                            <div class="col-3">
+                                <input type="date" class="form-control form-color2 dim" id="c9" style="max-width: 25vh; min-width: 25vh;"
+                                    disabled>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">*Privacy Policy & Disclaimer</p>
+                            <label class="col-2 col-form-label form-color minWidth2 addPadding">Distribution Date</label>
+                            <div class="col-3">
+                                <input type="date" class="form-control form-color2 dim" id="c10" style="max-width: 25vh; min-width: 25vh;"
+                                    disabled>
+                            </div>
+                            <label class="col-form-label"><small class="form-color addPadding">To</small></label>
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color minWidth2 addPadding">End Date</label>
+                            <div class="col-3">
+                                <input type="date" class="form-control form-color2 dim" id="c11" style="max-width: 25vh; min-width: 25vh;"
+                                    disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">The amount involved</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="" class="form-control form-color2"
+                                <input type="number" id="c12" placeholder="HK$" class="form-control form-color2 dim" disabled>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">*Privacy Policy & Disclaimer</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="c13" class="form-control form-color2 dim"
                                     style="height: 100px; min-height:100px;" disabled></textarea>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">Promotional Corner<br>(to Applicant)</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">Promotional Corner<br>(to Applicant)</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="" placeholder="Welcome, Thank you, etc"
-                                    class="form-control form-color2" style="height: 100px; min-height:100px;"
+                                <textarea name="" id="c14" placeholder="Welcome, Thank you, etc"
+                                    class="form-control form-color2 dim" style="height: 100px; min-height:100px;"
                                     disabled></textarea>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <div class="col-2">
-                                <p class="text-start form-color">Supplementary Information if need<br>(to SmartForm)</p>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPadding">Supplementary Information<br>(to SmartForm)</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="" class="form-control form-color2"
+                                <textarea name="" id="c15" class="form-control form-color2 dim"
                                     style="height: 100px; min-height:100px;" disabled></textarea>
                             </div>
                         </div>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color">^Attachment<br>
+                            <label class="col-2 col-form-label form-color minWidth2 addPadding">Attachment<br>
                                 <p class="fw-lighter">Promotional Materials</p>
                             </label>
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
-                                    <input type="file" class="form-control form-color2" id="inputGroupFile04"
+                                    <input type="file" class="form-control form-color2 dim" id="c16"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload" style="max-width: 20vw; min-width: 30vh;" disabled>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
                             </div>
-                            <label class="col-2 col-form-label form-color">*Attachment<br>
+                            <label class="col-2 col-form-label form-color minWidth2 addPadding">*Attachment<br>
                                 <p class="fw-lighter">Logo</p>
                             </label>
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
-                                    <input type="file" class="form-control form-color2" id="inputGroupFile04"
+                                    <input type="file" class="form-control form-color2 dim" id="c17"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload" style="max-width: 20vw; min-width: 30vh;" disabled>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
                             </div>
                         </div>
                         <br>
-                        <div class="row">
-                            <div class="form-check">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <label class="form-check-label">
-                                    <input type="checkbox" for="invalidCheck" required>
-                                    &nbsp;We agree with the <a href="#">terms and conditions</a>
-                                </label>
-                                <div class="invalid-feedback">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You
-                                    must agree before
-                                    submitting.
+                        
+                        <div style="height: 15vw;"></div>
+                        <!-- Section 3 2nd part -->
+                        <div class="form-header">
+                            <img alt="" class="banner-smartform2">
+                            <h3 class="theme-color6 form-title">Question Setting</h3>
+                            </div>
+                            <div class="recipe">
+                                <div class="addPadding">
+                                    <div class="badge bg-primary text-wrap text-start">
+                                        <h6>Please set up within 20 questions (multiple choice questions are preferred) to reduce
+                                            the difficulty of filling in the form for the elderly and low-educated
+                                        </h6>
+                                    </div>
+                                    <br><br>
+                                    <p class="fw-lighte form-color">If you select multiple-choice/option, set options as an array.
+                                        e.g. Living with family, Property with a mortgage, Property without mortgage, Rental apartment, Public
+                                        housing</p><br>
+                                </div>
+                        
+                            <div class="form-row addPadding">
+                                <div class="col-1"></div>
+                                <div class="col-2 minWidth">
+                                    <p class="text-start form-color">Basic Information</p>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class="form-holder">
+                                    <input class="form-check-input form-color2 dim" type="checkbox" value="" id="b1" disabled>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        HKID number
+                                    </label>
+                                    <input class="form-check-input form-color2 dim" type="checkbox" value="" id="b2" disabled>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        English name
+                                    </label>
+                                    <input class="form-check-input form-color2 dim" type="checkbox" value="" id="b3" disabled>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Chinese name
+                                    </label>
+                                    <input class="form-check-input form-color2 dim" type="checkbox" value="" id="b4" disabled>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Birthday
+                                    </label>
+                                    <input class="form-check-input form-color2 dim" type="checkbox" value="" id="b5" disabled>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Gender
+                                    </label>
+                                </div>
+                            </div>
+                        
+                            <br>
+                            <div class="d-flex justify-content-center form-color">
+                                <div class="recipe__ingredients">
+                                    <table cellpadding="0" cellspacing="0" class="recipe-table" id="recipeTable">
+                                        <tbody id="recipeTableBody2">
+                                            <tr id="tr1">
+                                                <td class="recipe-table__cell2">
+                                                    <select class="form-select form-select-sm form-item-focus form-color2 dim" id="arraySelect"
+                                                        onchange="addInput('arraySelect', 'arrayInput')"
+                                                        style="height: 100px; min-height:100px;" disabled>
+                                                        <option value="" selected hidden>Question Types</option>
+                                                        <option value="0">Option</option>
+                                                        <option value="1">Yes/No</option>
+                                                        <option value="2">Short Answer</option>
+                                                        <option value="3">Multiple Choice</option>
+                                                        <option value="4">Correspondence Address</option>
+                                                        <option value="5">Email Address</option>
+                                                        <option value="6">Phone Number</option>
+                                                        <option value="7">Name</option>
+                                                        <option value="8">Nationality</option>
+                                                        <option value="9">Birthday</option>
+                                                        <option value="10">HKID/Passport Number</option>
+                                                        <option value="11">Employment</option>
+                                                        <option value="12">Marriage</option>
+                                                        <option value="13">Amount</option>
+                                                        <option value="14">Gender</option>
+                                                        <option value="15">Signature</option>
+                                                        <option value="16">Date</option>
+                                                        <option value="17">Number</option>
+                                                        <option value="18">District</option>
+                                                        <option value="19">Checkbox</option>
+                                                    </select>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b6" rows="1"
+                                                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b7" rows="1"
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
+                                                        disabled></textarea>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <div id="arrayInput"></div>
+                                                </td>
+                                            </tr>
+                                            <tr id="tr2">
+                                                <td class="recipe-table__cell2">
+                                                    <select class="form-select form-select-sm form-item-focus form-color2 dim" id="arraySelect2"
+                                                        onchange="addInput('arraySelect2', 'arrayInput2')"
+                                                        style="height: 100px; min-height:100px;" disabled>
+                                                        <option value="" selected hidden>Question Types</option>
+                                                        <option value="0">Option</option>
+                                                        <option value="1">Yes/No</option>
+                                                        <option value="2">Short Answer</option>
+                                                        <option value="3">Multiple Choice</option>
+                                                        <option value="4">Correspondence Address</option>
+                                                        <option value="5">Email Address</option>
+                                                        <option value="6">Phone Number</option>
+                                                        <option value="7">Name</option>
+                                                        <option value="8">Nationality</option>
+                                                        <option value="9">Birthday</option>
+                                                        <option value="10">HKID/Passport Number</option>
+                                                        <option value="11">Employment</option>
+                                                        <option value="12">Marriage</option>
+                                                        <option value="13">Amount</option>
+                                                        <option value="14">Gender</option>
+                                                        <option value="15">Signature</option>
+                                                        <option value="16">Date</option>
+                                                        <option value="17">Number</option>
+                                                        <option value="18">District</option>
+                                                        <option value="19">Checkbox</option>
+                                                    </select>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <textarea class="form-control form-control-sm  form-item-focus form-color2 dim" id="b8" rows="1"
+                                                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b9" rows="1"
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
+                                                        disabled></textarea>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <div id="arrayInput2"></div>
+                                                </td>
+                                            </tr>
+                                            <tr id="tr3">
+                                                <td class="recipe-table__cell2">
+                                                    <select class="form-select form-select-sm form-item-focus form-color2 dim" id="arraySelect3"
+                                                        onchange="addInput('arraySelect3', 'arrayInput3')"
+                                                        style="height: 100px; min-height:100px;" disabled>
+                                                        <option value="" selected hidden>Question Types</option>
+                                                        <option value="0">Option</option>
+                                                        <option value="1">Yes/No</option>
+                                                        <option value="2">Short Answer</option>
+                                                        <option value="3">Multiple Choice</option>
+                                                        <option value="4">Correspondence Address</option>
+                                                        <option value="5">Email Address</option>
+                                                        <option value="6">Phone Number</option>
+                                                        <option value="7">Name</option>
+                                                        <option value="8">Nationality</option>
+                                                        <option value="9">Birthday</option>
+                                                        <option value="10">HKID/Passport Number</option>
+                                                        <option value="11">Employment</option>
+                                                        <option value="12">Marriage</option>
+                                                        <option value="13">Amount</option>
+                                                        <option value="14">Gender</option>
+                                                        <option value="15">Signature</option>
+                                                        <option value="16">Date</option>
+                                                        <option value="17">Number</option>
+                                                        <option value="18">District</option>
+                                                        <option value="19">Checkbox</option>
+                                                    </select>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b10" rows="1"
+                                                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b11" rows="1"
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
+                                                        disabled></textarea>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <div id="arrayInput3"></div>
+                                                </td>
+                                            </tr>
+                                            <tr id="tr4">
+                                                <td class="recipe-table__cell2">
+                                                    <select class="form-select form-select-sm form-item-focus form-color2 dim" id="arraySelect4"
+                                                        onchange="addInput('arraySelect4', 'arrayInput4')"
+                                                        style="height: 100px; min-height:100px;" disabled>
+                                                        <option value="" selected hidden>Question Types</option>
+                                                        <option value="0">Option</option>
+                                                        <option value="1">Yes/No</option>
+                                                        <option value="2">Short Answer</option>
+                                                        <option value="3">Multiple Choice</option>
+                                                        <option value="4">Correspondence Address</option>
+                                                        <option value="5">Email Address</option>
+                                                        <option value="6">Phone Number</option>
+                                                        <option value="7">Name</option>
+                                                        <option value="8">Nationality</option>
+                                                        <option value="9">Birthday</option>
+                                                        <option value="10">HKID/Passport Number</option>
+                                                        <option value="11">Employment</option>
+                                                        <option value="12">Marriage</option>
+                                                        <option value="13">Amount</option>
+                                                        <option value="14">Gender</option>
+                                                        <option value="15">Signature</option>
+                                                        <option value="16">Date</option>
+                                                        <option value="17">Number</option>
+                                                        <option value="18">District</option>
+                                                        <option value="19">Checkbox</option>
+                                                    </select>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b12" rows="1"
+                                                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b13" rows="1"
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
+                                                        disabled></textarea>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <div id="arrayInput4"></div>
+                                                </td>
+                                            </tr>
+                                            <tr id="tr5">
+                                                <td class="recipe-table__cell2">
+                                                    <select class="form-select form-select-sm form-item-focus form-color2 dim" id="arraySelect5"
+                                                        onchange="addInput('arraySelect5', 'arrayInput5')"
+                                                        style="height: 100px; min-height:100px;" disabled>
+                                                        <option value="" selected hidden>Question Types</option>
+                                                        <option value="0">Option</option>
+                                                        <option value="1">Yes/No</option>
+                                                        <option value="2">Short Answer</option>
+                                                        <option value="3">Multiple Choice</option>
+                                                        <option value="4">Correspondence Address</option>
+                                                        <option value="5">Email Address</option>
+                                                        <option value="6">Phone Number</option>
+                                                        <option value="7">Name</option>
+                                                        <option value="8">Nationality</option>
+                                                        <option value="9">Birthday</option>
+                                                        <option value="10">HKID/Passport Number</option>
+                                                        <option value="11">Employment</option>
+                                                        <option value="12">Marriage</option>
+                                                        <option value="13">Amount</option>
+                                                        <option value="14">Gender</option>
+                                                        <option value="15">Signature</option>
+                                                        <option value="16">Date</option>
+                                                        <option value="17">Number</option>
+                                                        <option value="18">District</option>
+                                                        <option value="19">Checkbox</option>
+                                                    </select>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b14" rows="1"
+                                                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b15" rows="1"
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
+                                                        disabled></textarea>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <div id="arrayInput5"></div>
+                                                </td>
+                                            </tr>
+                                            <tr id="tr6">
+                                                <td class="recipe-table__cell2">
+                                                    <select class="form-select form-select-sm form-item-focus form-color2 dim" id="arraySelect6"
+                                                        onchange="addInput('arraySelect6', 'arrayInput6')"
+                                                        style="height: 100px; min-height:100px;" disabled>
+                                                        <option value="" selected hidden>Question Types</option>
+                                                        <option value="0">Option</option>
+                                                        <option value="1">Yes/No</option>
+                                                        <option value="2">Short Answer</option>
+                                                        <option value="3">Multiple Choice</option>
+                                                        <option value="4">Correspondence Address</option>
+                                                        <option value="5">Email Address</option>
+                                                        <option value="6">Phone Number</option>
+                                                        <option value="7">Name</option>
+                                                        <option value="8">Nationality</option>
+                                                        <option value="9">Birthday</option>
+                                                        <option value="10">HKID/Passport Number</option>
+                                                        <option value="11">Employment</option>
+                                                        <option value="12">Marriage</option>
+                                                        <option value="13">Amount</option>
+                                                        <option value="14">Gender</option>
+                                                        <option value="15">Signature</option>
+                                                        <option value="16">Date</option>
+                                                        <option value="17">Number</option>
+                                                        <option value="18">District</option>
+                                                        <option value="19">Checkbox</option>
+                                                    </select>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b16" rows="1"
+                                                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <textarea class="form-control form-control-sm form-item-focus form-color2 dim" id="b17" rows="1"
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
+                                                        disabled></textarea>
+                                                </td>
+                                                <td class="recipe-table__cell">
+                                                    <div id="arrayInput6"></div>
+                                                </td>
+                                            </tr>
+                        
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
-                        <br>
-                        <div class="form-row">
-                            <div class="col-1"></div>
-                            <p class="fw-lighter small">* Must be filled</p>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-1"></div>
-                            <p class="fw-lighter small">^ Optional</p>
-                        </div>
-                        <div style="height: 4vw;"></div>
+
+            <div style="height: 15vw;"></div>
+            <div class="row">
+                <div class="form-check">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label class="form-check-label">
+                        <input type="checkbox" for="invalidCheck" required>
+                        &nbsp;We agree with the <a href="#">terms and conditions</a>
+                    </label>
+                    <div class="invalid-feedback">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You
+                        must agree before
+                        submitting.
                     </div>
                 </div>
+            </div>
+
+            <div style="height: 15vw;"></div>
+            </div>
+            </div>
             </section>
 
         </form>
@@ -819,7 +1233,7 @@
                                 style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
                         </div>
                         <div class="col">
-                            <button class="btn btn-primary btn-smartform3" type="button">Subscribe</button>
+                            <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="button">Subscribe</button>
                         </div>
                     </div>
                 </form>
@@ -827,6 +1241,7 @@
         </div>
     </footer>
     <!-- footer end -->
+
 
 </body>
 <link rel="stylesheet" href="plugins/material-design-iconic-font/css/material-design-iconic-font.css">

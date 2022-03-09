@@ -275,3 +275,14 @@ footer {
     font-size: 11px;
   }
 }
+
+.addPadding{
+  padding: 0vw 0vw 0vw 2vw;
+}
+/* Dim the screen when focusing */
+.dim:focus {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}

@@ -364,12 +364,16 @@ form system – mobile layout
   /* stepper line */
   .wizard > .steps li a:after {
     min-height: 3px;
-    top: 0.5vw;
+    top: 0.8vw;
   }
   .actions {
     right: 50%;
     transform: translateX(50%);
     bottom: 3%;
+  }
+
+  .form-title {
+    width: 100%;
   }
 }
 
@@ -534,4 +538,11 @@ question system
   .recipe-table__cell2 {
     padding: 60px 5px 60px 0px;
   }
+}
+
+.minWidth{
+  min-width: 200px;
+}
+.minWidth2{
+  min-width: 150px;
 }

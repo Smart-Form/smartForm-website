@@ -1,6 +1,6 @@
 //
 //
-//scrollToTop
+//  scrollToTop
 //
 //
 $(document).ready(function(){ 
@@ -12,14 +12,14 @@ $(document).ready(function(){
         } 
     }); 
     $('#scroll').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 600); 
+        $("html, body").animate({ scrollTop: 0 }, 150); 
         return false; 
     }); 
 });
 
 //
 //
-//form-validation
+//  form-validation
 //
 //
 // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -42,3 +42,18 @@ $(document).ready(function(){
         }, false)
       })
   })()
+
+//
+//
+//  emailSubscribeBtn
+//
+//
+jQuery(function ($) {
+  $('#emailSubcribeBtn').on('click', function () {
+    var $el = $(this),
+      textNode = this.lastChild;
+    $el.find('span').toggleClass('glyphicon glyphicon-ok');
+    textNode.nodeValue = ($el.hasClass('showSubscription') ? 'Subscribed' : 'Subscribed')
+    $el.toggleClass('showSubscription');
+  });
+});
