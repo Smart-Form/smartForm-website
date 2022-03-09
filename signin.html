@@ -11,40 +11,6 @@
     <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
     <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <style>
-        /* Bordered form */
-        .form2 {
-            border: none;
-            border-radius: 15px;
-            background-color: #FBF9F8;
-            margin: 3.5vw 20vw;
-        }
-
-        /* Full-width inputs */
-        input[type=text],
-        input[type=password] {
-            border-radius: 15px;
-            /* border: none; */
-            width: 100%;
-            padding: 8px 10px;
-            /* margin: 8px 0; */
-            display: inline-block;
-            box-sizing: border-box;
-        }
-
-        /* Add padding to containers */
-        .container {
-            padding: 12px 40px;
-        }
-
-        @media (max-width: 1280px) {
-            .form2 {
-                border: none;
-                border-radius: 15px;
-                margin: 3.5vw 10vw;
-            }
-        }
-    </style>
 </head>
 
 <body class="theme-bg-color4">
@@ -94,14 +60,14 @@
             <h5 style="font-size:150%;" class="container w3-center theme-color6"><b>Sign In</b></h5>
             <p>
                 <label for="uid" class="theme-color6">ID</label>
-                <input type="text" name="uid" class="form-control" required>
+                <input type="text" name="uid" class="form-control dim" required>
                 <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot
                         ID?</a></label>
             </p>
 
             <p>
                 <label for="pw" class="theme-color6">Password</label>
-                <input type="password" name="pw" class="form-control" required>
+                <input type="password" name="pw" class="form-control dim" required>
                 <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot
                         password?</a></label>
             </p>
@@ -149,7 +115,7 @@
 <!-- footer end -->
 
 </body>
-
+<link rel="stylesheet" href="css/createform_form.css">
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js"></script>
 </html>

@@ -11,42 +11,6 @@
     <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
     <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <style>
-        /* Bordered form */
-        .form2 {
-            border: none;
-            border-radius: 15px;
-            background-color: #FBF9F8;
-            margin: 3.5vw 15vw;
-        }
-
-        /* Full-width inputs */
-        input[type=text],
-        input[type=password],
-        input[type=number] {
-            border-radius: 15px;
-            /* border: none; */
-            width: 100%;
-            padding: 8px 10px;
-            /* margin: 8px 0; */
-            display: inline-block;
-            box-sizing: border-box;
-        }
-
-        /* Add padding to containers */
-        .container {
-            padding: 1vw 7.5vw;
-        }
-
-        @media (max-width: 1280px) {
-            .form2 {
-                border: none;
-                border-radius: 15px;
-                background-color: #FBF9F8;
-                margin: 5vw 7.5vw;
-            }
-        }
-    </style>
 </head>
 
 <body class="theme-bg-color4">
@@ -97,44 +61,44 @@
             <h5 style="font-size:150%" class="container w3-center"><b>Sign Up</b></h5>
             <p>
                 <label for="uname">*Organization Name</label>
-                <input type="text" name="uname" class="form-control" placeholder="e.g. Social Welfare Department"
+                <input type="text" name="uname" class="form-control dim" placeholder="e.g. Social Welfare Department"
                     required>
             </p>
 
             <p>
                 <label for="pnum">*Phone Number</label>
-                <input type="number" name="pnum" class="form-control" placeholder="e.g. 23432255" required>
+                <input type="number" name="pnum" class="form-control dim" placeholder="e.g. 23432255" required>
             </p>
 
             <p>
                 <label for="email">*Email Address</label>
-                <input type="text" pname="email" class="form-control" placeholder="e.g. swdenq@swd.gov.hk" required>
+                <input type="text" pname="email" class="form-control dim" placeholder="e.g. swdenq@swd.gov.hk" required>
             </p>
 
             <p>
                 <label for="fnum">Fax Number</label>
-                <input type="number" name="fnum" class="form-control" placeholder="e.g. 28380125">
+                <input type="number" name="fnum" class="form-control dim" placeholder="e.g. 28380125">
             </p>
 
             <p>
                 <label for="weblink">Website URL</label>
-                <input type="text" name="weblink" class="form-control" placeholder="e.g. swd.gov.hk">
+                <input type="text" name="weblink" class="form-control dim" placeholder="e.g. swd.gov.hk">
             </p>
 
             <p>
                 <label for="brnum">*BR Number (the first 11 digits)</label>
-                <input type="number" name="brnum" class="form-control" placeholder="e.g. 12345678123" required>
+                <input type="number" name="brnum" class="form-control dim" placeholder="e.g. 12345678123" required>
             </p>
 
             <p>
                 <label for="address">*Address</label>
-                <input type="text" name="address" class="form-control"
+                <input type="text" name="address" class="form-control dim"
                     placeholder="e.g. 7/F - 10/F, WU CHUNG HSE, 213 QUEEN'S RD EAST, WAN CHAI, HK" required>
             </p>
 
             <p>
                 <label for="organization">*Types of Organization</label>
-                <select id="organization" name="organization" class="form-select" required>
+                <select id="organization" name="organization" class="form-control dim" required>
                     <option value="gov">Government</option>
                     <option value="corporations">Corporations</option>
                     <option value="ngo">Non-Government Organization</option>
@@ -143,7 +107,7 @@
 
             <p>
                 <label for="service">*Types of Service</label>
-                <select id="service" name="service" class="form-select" required>
+                <select id="service" name="service" class="form-control dim" required>
                     <option value="finaid">Financial Aid</option>
                     <option value="health">Health</option>
                     <option value="counselling">Counselling</option>
@@ -156,7 +120,7 @@
 
             <p>
                 <label for="pw">*Password</label>
-                <input type="password" name="pw" class="form-control" pattern="(?=.*\d)(?=.*[a-z]).{12,}" id="password_input"
+                <input type="password" name="pw" class="form-control dim" pattern="(?=.*\d)(?=.*[a-z]).{12,}" id="password_input"
                     required>
                 <!-- An element to toggle between password visibility -->
                 <input type="checkbox" onclick="myFunction()">&nbsp;&nbsp;Show Password<br>
@@ -176,7 +140,7 @@
 
             <p>
                 <label for="pw-confirm">*Confirm Password</label>
-                <input type="password" name="pw-confirm" class="form-control" oninput="check(this)" required>
+                <input type="password" name="pw-confirm" class="form-control dim" oninput="check(this)" required>
                 <script>
                     function check(input) {
                         if (input.value != document.getElementById('password_input').value) {
@@ -192,8 +156,8 @@
             <p>
                 <label for="aboutOrganization">*About Organization</label>
                 <br>
-                <textarea id="aboutOrganization" name="aboutOrganization" rows="4" cols="57.5" style="min-height:100px;"
-                    class="form-control" placeholder="VISION
+                <textarea id="aboutOrganization" name="aboutOrganization" rows="4" cols="57.5" style="min-height:200px;"
+                    class="form-control dim" placeholder="VISION
 Together we build a caring community with self-sufficiency, dignity, harmony, happiness.
 
 MISSION
@@ -232,7 +196,7 @@ We will continuously strive for excellence." required></textarea>
                         area)<br>&nbsp;&nbsp;For a
                         Landscape Banner Size:&nbsp;&nbsp;3508 x 1240 px (without bleed area)</small></label>
                 <br>
-                <input type="file" name="filename" class="form-control" accept=".jpg, .jpeg, .png, .tiff, .svg">
+                <input type="file" name="filename" class="form-control dim" accept=".jpg, .jpeg, .png, .tiff, .svg">
             </p>
 
             <p>
@@ -241,7 +205,7 @@ We will continuously strive for excellence." required></textarea>
                         size:&nbsp;&nbsp;&lt;10MB<br>&nbsp;&nbsp;Size:&nbsp;&nbsp;512 x 512 px / 1024 x 1024 px
                         / 2048 x 2048 px</small></label>
                 <br>
-                <input type="file" name="filename" class="form-control" accept=".jpg, .jpeg, .png, .tiff, .svg"
+                <input type="file" name="filename" class="form-control dim" accept=".jpg, .jpeg, .png, .tiff, .svg"
                     required>
             </p>
             <br>
@@ -289,7 +253,7 @@ We will continuously strive for excellence." required></textarea>
 <!-- footer end -->
 
 </body>
+<link rel="stylesheet" href="css/createform_form.css">
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js"></script>
-
 </html>

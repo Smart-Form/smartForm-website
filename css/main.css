@@ -61,6 +61,26 @@ footer {
   width: 50%;
 }
 
+/* Sign in / Sign up page */
+/* Bordered form */
+.form2 {
+  border: none;
+  border-radius: 15px;
+  background-color: #FBF9F8;
+  margin: 3.5vw 15vw;
+}
+/* Add padding to containers */
+.container {
+    padding: 1vw 7.5vw;
+}
+@media (max-width: 1280px) {
+    .form2 {
+        border: none;
+        border-radius: 15px;
+        margin: 5vw 7.5vw;
+    }
+}
+
 .index-machineOutlook {
   width: 500px;
 }
@@ -122,7 +142,7 @@ footer {
   cursor: pointer;
   background-color: #9F9CAD;
   border-radius: 13px;
-  width: 54vw;
+  width: 45vw;
 }
 .btn-smartform2:hover {
   color: white;
