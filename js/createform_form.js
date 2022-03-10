@@ -101,6 +101,8 @@ $(document).ready(function () {
     var $tableBody = $('#recipeTableBody');
     var $tableBody2 = $('#recipeTableBody2');
     var i = 6; // Initial total number of rows
+    var n = 16;
+    var m = n + 1;
 
     // Mobile
     // var n = 160.5;
@@ -116,15 +118,21 @@ $(document).ready(function () {
 
         // Add row
         i++;
+        n++;
+        m++;
         var htmlString = $('#rowTemplate').html()
             .replace(/{arraySelectID}/g, 'arraySelect' + i)
             .replace(/{arrayInputID}/g, 'arrayInput' + i)
+            .replace(/{n}/g, 'b' + n)
+            .replace(/{m}/g, 'b' + m)
             .replace(/{newRowID}/g, 'tr' + i);
         $tableBody.append(htmlString);
         var htmlString2 = $('#rowTemplate2').html()
-            .replace(/{arraySelectID}/g, 'arraySelect' + i)
-            .replace(/{arrayInputID}/g, 'arrayInput' + i)
-            .replace(/{newRowID}/g, 'tr' + i);
+            .replace(/{arraySelectID_check}/g, 'arraySelect' + i + '_check')
+            .replace(/{arrayInputID_check}/g, 'arrayInput' + i + '_check')
+            .replace(/{n}/g, 'b' + n)
+            .replace(/{m}/g, 'b' + m)
+            .replace(/{newRowID_check}/g, 'tr' + i + '_check');
         $tableBody2.append(htmlString2);
         $('#tr' + i).animate({ opacity: '0.1' });
         $('#tr' + i).animate({ opacity: '1' });
@@ -170,9 +178,15 @@ $(document).ready(function () {
 
         // Del row
         i--;
+        n--;
+        m--;
         var $el = $(e.currentTarget);
-        var $row = $el.closest('tr');
-        $row.remove();
+        alert($el);
+        var $tr = $('#'+el+'_check');
+        $tr.remove();
+
+        // var $row = $el.closest('tr');
+        // $row.remove();
 
         // // If within specific width
         // $(function() {
