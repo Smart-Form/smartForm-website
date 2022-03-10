@@ -100,7 +100,6 @@ function addInput(select_val, input_id) {
 $(document).ready(function () {
     var $tableBody = $('#recipeTableBody');
     var $tableBody2 = $('#recipeTableBody2');
-    var i = 6; // Initial total number of rows
     var n = 16;
     var m = n + 1;
 
@@ -114,12 +113,21 @@ $(document).ready(function () {
     // var h3 = 2700;
     // var h4 = 2750;
 
+    function getRandomString(length) {
+        var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        var result = '';
+        for ( var i = 0; i < length; i++ ) {
+            result += randomChars.charAt(Math.floor(Math.random() * randomChars.length));
+        }
+        return result;
+    }
+    //usage: getRandomString(20); // pass desired length of random string
+
     $(document).on('click', '.recipe-table__add-row-btn', function (e) {
 
         // Add row
-        i++;
         n++;
-        m++;
+        let i = getRandomString(5)
         var htmlString = $('#rowTemplate').html()
             .replace(/{arraySelectID}/g, 'arraySelect' + i)
             .replace(/{arrayInputID}/g, 'arrayInput' + i)
@@ -177,16 +185,15 @@ $(document).ready(function () {
     $tableBody.on('click', '.recipe-table__del-row-btn', function (e) {
 
         // Del row
-        i--;
         n--;
-        m--;
         var $el = $(e.currentTarget);
-        alert($el);
-        var $tr = $('#'+el+'_check');
-        $tr.remove();
 
-        // var $row = $el.closest('tr');
-        // $row.remove();
+        // alert($el);
+        // var $tr = $('#'+el+'_check');
+        // $tr.remove();
+
+        var $row = $el.closest('tr');
+        $row.remove();
 
         // // If within specific width
         // $(function() {
