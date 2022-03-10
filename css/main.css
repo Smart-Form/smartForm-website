@@ -276,6 +276,10 @@ footer {
     width: 60vw; 
     padding: 10px 0px 10px 10px;
   }
+  .navBarBtn{
+    width: 10rem;
+    text-align-last: center;
+  }
 }
 
 @media (max-width: 450px) {
@@ -310,4 +314,8 @@ footer {
 
 .addShadow{
   box-shadow: 0rem 0rem 0.5rem #ccc;
+}
+
+.navBarBtn{
+  border-radius: 1rem 1rem 1rem 1rem;
 }
