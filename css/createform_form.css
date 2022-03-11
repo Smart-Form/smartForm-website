@@ -524,6 +524,8 @@ question system
   width: 80%;
   position: absolute;
   left: 10%;
+  -webkit-transition: step-start;
+  transition: step-start;
 }
 
 .vertical-align-center {
