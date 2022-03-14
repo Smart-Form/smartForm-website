@@ -277,7 +277,7 @@ footer {
     padding: 10px 0px 10px 10px;
   }
   .navBarBtn{
-    width: 22.5rem;
+    width: 15rem;
     text-align-last: center;
   }
 }
@@ -307,8 +307,8 @@ footer {
 /* Dim the screen when focusing */
 .dimmer:focus {
   box-shadow: 0px 0px 0px 9999px #000;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
   opacity: 0.75;
 }
 
