@@ -203,8 +203,8 @@ h3 {
 }
 
 .form-control {
-  height: 37px;
-  border: none;
+  /* height: 37px; */
+  /* border: none; */
   border-bottom: 2px solid #e6e6e6;
   color: #666;
 }
@@ -348,6 +348,9 @@ form system – mobile layout
   .wizard {
     height: 100%;
     width: 95vw;
+  }
+  .wizard > .content {
+    padding: 0vh 0vh 25vh 0vh;
   }
   
   /* stepper border */
@@ -546,5 +549,5 @@ question system
   min-width: 23vh;
 }
 .minWidth2{
-  min-width: 14vw;
+  min-width: 1
 }
