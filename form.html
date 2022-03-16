@@ -152,32 +152,36 @@
     <!-- footer -->
     <p></p>
     <footer class="py-5 theme-bg-color6 theme-color">
-        <div class="row" style="text-overflow: hidden;">
-            <div class="col-1" style="width: 13vw;"></div>
-            <div class="col-4">
-                <h5><b>Contact Us</b></h5>
-                <br>
-                <p>Phone +852 0000 0000</p>
-                <p>Email cs@xxxxxxxxx.com</p>
-                <br>
-                <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.</small>
-            </div>
-            <div class="col-4 offset-1">
-                <form>
-                    <h5><b>Subscribe to our newsletter</b></h5>
-                    <br>
-                    <p>Monthly digest of whats new and exciting from us.</p>
-                    <div class="row">
-                        <div class="col">
-                            <input id="newsletter1" type="text" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
-                        </div>
-                        <div class="col">
-                            <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="button">Subscribe</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+      <div class="row" style="text-overflow: hidden;">
+        <div class="col-1" style="width: 13vw;"></div>
+        <div class="col-4">
+          <h5><b>Contact Us</b></h5>
+          <br>
+          <p>Phone +852 0000 0000</p>
+          <p>Email cs@xxxxxxxxx.com</p>
+          <br>
+          <small>Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.
+          </small>
         </div>
+        <div class="col-4 offset-1 addPadding">
+          <form action="#" class="needs-validation">
+            <h5><b>Subscribe to our newsletter</b></h5>
+            <br>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="row">
+              <div class="col">
+                <input id="newsletter1" type="email" class="form-control dimmer"
+                  style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
+              </div>
+              <div class="col">
+                <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription"
+                  type="submit">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </footer>
     <!-- footer end -->
 

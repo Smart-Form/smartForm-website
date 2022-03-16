@@ -146,17 +146,17 @@
                 <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.</small>
             </div>
             <div class="col-4 offset-1">
-                <form>
+                <form action="#" class="needs-validation addPadding">
                     <h5><b>Subscribe to our newsletter</b></h5>
                     <br>
                     <p>Monthly digest of whats new and exciting from us.</p>
                     <div class="row">
-                        <div class="col">
-                            <input id="newsletter1" type="text" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
-                        </div>
-                        <div class="col">
-                            <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="button">Subscribe</button>
-                        </div>
+                            <div class="col">
+                                <input id="newsletter1" type="email" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
+                            </div>
+                            <div class="col">
+                                <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit">Subscribe</button>
+                            </div>
                     </div>
                 </form>
             </div>

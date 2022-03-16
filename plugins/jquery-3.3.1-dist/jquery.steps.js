@@ -779,7 +779,9 @@ function paginationClick(wizard, options, state, index)
  */
 function paginationClickHandler(event)
 {
-    event.preventDefault();
+    event.preventDefault(); // The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
+
+    var requiredInputXY = 0;
 
     var anchor = $(this),
         wizard = anchor.parent().parent().parent().parent(),
@@ -859,8 +861,21 @@ function paginationClickHandler(event)
             //submit the form
             //submit the form
             //submit the form
+            function validateForm() {
+                let v = document.forms["wizard"]["tc_checkbox"];
+                if ( v.checked == false) {
+                    alert("You must agree before submitting.");
+                    return false;
+                } else {
+                    return true;
+                }
+            }
             //action, button, finish, submit, form, next, ok...
-            document.getElementById("wizard").submit();
+            let validation = validateForm();
+            if (validation == true) {
+                document.getElementById("wizard").submit();
+            }
+            document.forms['wizard'].reportValidity();
             //submit the form
             //submit the form
             //submit the form
@@ -928,7 +943,24 @@ function paginationClickHandler(event)
             break;
 
         case "next":
-            goToNextStep(wizard, options, state);
+            function validateForm2() {
+                const pg0_requiredInputs = ["v0", "v1", "v3", "v12", "v16"];
+                for (let i = 0; i < pg0_requiredInputs.length; i++){
+                    let v = document.forms["wizard"][pg0_requiredInputs[i]].value;
+                    if ( v == null || v == "") {
+                        alert("All required field(s) must be filled in.");
+                        requiredInputXY = $("#" + pg0_requiredInputs[i]).offset();
+                        return false;
+                    }
+                }
+                return true;
+            }
+            let validation2 = validateForm2();
+            if (validation2 == true) {
+                goToNextStep(wizard, options, state);
+            } else {
+                window.scrollTo(requiredInputXY);
+            }
             break;
 
         case "previous":

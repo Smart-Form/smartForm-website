@@ -73,7 +73,8 @@
     <!-- main body -->
     <br>
     <div class="wrapper">
-        <form id="wizard" action="form_id.html" method="" class="was-validated needs-validation">
+        <!-- Submit action created in jquery.steps.js line 863 -->
+        <form id="wizard" action="form_id.html" method="post" class="was-validated needs-validation">
             <!-- SECTION 1 -->
             <h2></h2>
             <br>
@@ -1265,15 +1266,10 @@
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" for="invalidCheck" required>
-                            &nbsp;We agree with the <a href="terms_and_conditions.html">terms and conditions</a>
-                        </label>
-                        <div class="invalid-feedback">
-                            You must agree before submitting.
-                        </div>
-                    </div>
+                    <label class="form-check-label">
+                        <input type="checkbox" for="invalidCheck" id="tc_checkbox" required>
+                        &nbsp;We agree with the <a href="terms_and_conditions.html">terms and conditions</a>
+                    </label>
                 </div>
                 <div class="col-1"></div>
             </div>
@@ -1311,18 +1307,18 @@
                 <br>
                 <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.</small>
             </div>
-            <div class="col-4 offset-1">
-                <form>
+            <div class="col-4 offset-1 addPadding">
+                <form action="#" class="needs-validation">
                     <h5><b>Subscribe to our newsletter</b></h5>
                     <br>
                     <p>Monthly digest of whats new and exciting from us.</p>
                     <div class="row">
-                        <div class="col">
-                            <input id="newsletter1" type="text" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
-                        </div>
-                        <div class="col">
-                            <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="button">Subscribe</button>
-                        </div>
+                            <div class="col">
+                                <input id="newsletter1" type="email" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
+                            </div>
+                            <div class="col">
+                                <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit">Subscribe</button>
+                            </div>
                     </div>
                 </form>
             </div>

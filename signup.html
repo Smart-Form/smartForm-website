@@ -62,7 +62,7 @@
     </nav>
     <!-- nav end -->
 
-    <form action="user_id.html" method="" class="form2 needs-validation theme-color6 theme-bg-color8 was-validated">
+    <form action="user_id.html" method="post" class="form2 needs-validation theme-color6 theme-bg-color8 was-validated">
         <div class="w3_container">
             <h5 style="font-size:150%" class="w3_container w3-center"><b>Sign Up</b></h5>
             <br>
@@ -81,7 +81,7 @@
 
             <p>
                 <label for="email">*Email Address</label>
-                <input type="text" pname="email" class="form-control dimmer" placeholder="e.g. swdenq@swd.gov.hk" required>
+                <input type="email" pname="email" class="form-control dimmer" placeholder="e.g. swdenq@swd.gov.hk" required>
             </p>
             <br>
 
@@ -93,7 +93,7 @@
 
             <p>
                 <label for="weblink">Website URL</label>
-                <input type="text" name="weblink" class="form-control dimmer" placeholder="e.g. swd.gov.hk">
+                <input type="url" name="weblink" class="form-control dimmer" placeholder="e.g. swd.gov.hk" pattern="https?://.+">
             </p>
             <br>
 
@@ -254,17 +254,17 @@ We will continuously strive for excellence." required></textarea>
                 <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.</small>
             </div>
             <div class="col-4 offset-1">
-                <form>
+                <form action="#" class="needs-validation addPadding">
                     <h5><b>Subscribe to our newsletter</b></h5>
                     <br>
                     <p>Monthly digest of whats new and exciting from us.</p>
                     <div class="row">
-                        <div class="col">
-                            <input id="newsletter1" type="text" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address">
-                        </div>
-                        <div class="col">
-                            <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="button">Subscribe</button>
-                        </div>
+                            <div class="col">
+                                <input id="newsletter1" type="email" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
+                            </div>
+                            <div class="col">
+                                <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit">Subscribe</button>
+                            </div>
                     </div>
                 </form>
             </div>
