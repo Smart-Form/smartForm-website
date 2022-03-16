@@ -141,7 +141,7 @@ h3 {
   display: none;
 }
 
- /* form canvas */
+/* form canvas */
 /* .form-content {
   height: 1800px;
 } */
@@ -192,9 +192,9 @@ h3 {
   margin-right: 0;
 }
 
-.form-holder {
+/* .form-holder {
   position: relative;
-}
+} */
 .form-holder i {
   position: absolute;
   bottom: 7px;
@@ -202,7 +202,7 @@ h3 {
   font-size: 17px;
 }
 
-/* add elements beside Boostrap */
+/* add properties beside Boostrap */
 .form-control {
   /* height: 37px; */
   /* border: none; */
