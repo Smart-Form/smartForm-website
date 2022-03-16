@@ -202,6 +202,7 @@ h3 {
   font-size: 17px;
 }
 
+/* add elements beside Boostrap */
 .form-control {
   /* height: 37px; */
   /* border: none; */
@@ -527,8 +528,8 @@ question system
   width: 80%;
   position: absolute;
   left: 10%;
-  -webkit-transition: step-start;
-  transition: step-start;
+  /* -webkit-transition: step-start;
+  transition: step-start; */
 }
 
 .vertical-align-center {

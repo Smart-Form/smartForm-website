@@ -302,10 +302,13 @@ footer {
 }
 /* Dim the screen when focusing */
 .dimmer:focus {
-  box-shadow: 0px 0px 0px 9999px #000;
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
-  opacity: 0.75;
+  box-shadow: 0px 0px 0px 9999px rgb(0 0 0 / 0.15);
+  /* -webkit-transition: 0.1s ease-out; */
+  /* transition: 0.1s ease-out; */
+  -webkit-transition: step-end;
+  transition: step-end;
+  /* Set the opacity to 0.999 to apply better effects to the input in footer */
+  opacity: 0.999;
 }
 
 .addShadow{
