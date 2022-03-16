@@ -782,6 +782,44 @@ function paginationClickHandler(event)
     event.preventDefault(); // The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
 
     var requiredInputXY = 0;
+    function validateForm() {
+        let v = document.forms["tc_checkbox_form"]["tc_checkbox"];
+        if ( v.checked == false) {
+            // alert("You must agree before submitting.");
+            return false;
+        } else {
+            return true;
+        }
+    }
+    function validateForm2() {
+        const pg0_requiredInputsID = ["v0", "v1", "v3", "v12", "v16"];
+        for (let i = 0; i < pg0_requiredInputsID.length; i++){
+            let v = document.forms["wizard"][pg0_requiredInputsID[i]].value;
+            if ( v == null || v == "") {
+                alert("All required field(s) must be filled in.");
+                requiredInputXY = $("#" + pg0_requiredInputsID[i]).offset();
+                return false;
+            }
+        }
+        return true;
+    }
+    function validateForm3() {
+        var pg1_requiredInputs = document.getElementById("wizard").querySelectorAll("[required]:not(.checkbox)");
+        // console.log(pg1_requiredInputs);
+        // console.log(pg1_requiredInputs[0].id);
+        for (let i = 0; i < pg1_requiredInputs.length; i++){
+            let v = document.forms["wizard"][pg1_requiredInputs[i].id].value;
+            if ( v == null || v == "") {
+                // alert("All required field(s) must be filled in.");
+                requiredInputXY = $("#" + pg1_requiredInputs[i].id).offset();
+                return false;
+            }
+        }
+        return true;
+    }
+    let validation = validateForm();
+    let validation2 = validateForm2();
+    let validation3 = validateForm3();
 
     var anchor = $(this),
         wizard = anchor.parent().parent().parent().parent(),
@@ -861,21 +899,11 @@ function paginationClickHandler(event)
             //submit the form
             //submit the form
             //submit the form
-            function validateForm() {
-                let v = document.forms["wizard"]["tc_checkbox"];
-                if ( v.checked == false) {
-                    alert("You must agree before submitting.");
-                    return false;
-                } else {
-                    return true;
-                }
-            }
             //action, button, finish, submit, form, next, ok...
-            let validation = validateForm();
-            if (validation == true) {
+            if (validation == true && validation3 == true) {
                 document.getElementById("wizard").submit();
             }
-            document.forms['wizard'].reportValidity();
+            document.forms['tc_checkbox_form'].reportValidity();
             //submit the form
             //submit the form
             //submit the form
@@ -943,23 +971,20 @@ function paginationClickHandler(event)
             break;
 
         case "next":
-            function validateForm2() {
-                const pg0_requiredInputs = ["v0", "v1", "v3", "v12", "v16"];
-                for (let i = 0; i < pg0_requiredInputs.length; i++){
-                    let v = document.forms["wizard"][pg0_requiredInputs[i]].value;
-                    if ( v == null || v == "") {
-                        alert("All required field(s) must be filled in.");
-                        requiredInputXY = $("#" + pg0_requiredInputs[i]).offset();
-                        return false;
-                    }
+            // console.log(state.currentIndex);
+            if (state.currentIndex == 0) {
+                if (validation2 == true) {
+                    goToNextStep(wizard, options, state);
+                } else {
+                    // console.log(requiredInputXY);
+                    window.scrollTo(requiredInputXY);
                 }
-                return true;
-            }
-            let validation2 = validateForm2();
-            if (validation2 == true) {
-                goToNextStep(wizard, options, state);
-            } else {
-                window.scrollTo(requiredInputXY);
+            } else if (state.currentIndex == 1) {
+                if (validation3 == true) {
+                    goToNextStep(wizard, options, state);
+                } else {
+                    window.scrollTo(requiredInputXY);
+                }
             }
             break;
 
