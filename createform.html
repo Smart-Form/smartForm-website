@@ -240,7 +240,7 @@
                             </label>
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
-                                    <input type="file" class="form-control form-bg-color dimmer" id="v15"
+                                    <input type="file" class="form-control form-bg-color" id="v15"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
                                         accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 18rem; min-width: 18rem; z-index: 0;">
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
@@ -255,7 +255,7 @@
                             </label>
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
-                                    <input type="file" class="form-control form-bg-color dimmer" id="v16"
+                                    <input type="file" class="form-control form-bg-color" id="v16"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
                                         accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 18rem; min-width: 18rem; z-index: 0;" 
                                         onclick="updateConfirmPageFields()" required>
@@ -303,52 +303,51 @@
                                 <div class="col">
                                     <table>
                                         <tr style="height: 2.5rem;">
-                                            <th>
-                                                <div class="minWidth2">
-                                                    <p class="text-start form-color">Basic Information</p>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <div class="minWidth2"></div>
-                                            </th>
-                                            <th>
-                                                <div class="minWidth2"></div>
+                                            <th colspan="3">
+                                                <p class="text-start form-color">Basic Information</p>
                                             </th>
                                         </tr>
                                         <tr style="height: 2.5rem;">
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color dimmer" type="checkbox" value="" id="b0" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b0" checked>
                                                 HKID number
                                                 </label>
+                                                <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color dimmer" type="checkbox" value="" id="b1" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b1" checked>
                                                 English name
                                                 </label>
+                                                <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color dimmer" type="checkbox" value="" id="b2" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b2" checked>
                                                 Chinese name
                                                 </label>
+                                                <div style="width: 14vw"></div>
                                             </td>
                                         </tr>
                                         <tr style="height: 2.5rem;">
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color dimmer" type="checkbox" value="" id="b3" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b3" checked>
                                                 Birthday
                                                 </label>
+                                                <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color dimmer" type="checkbox" value="" id="b4" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b4" checked>
                                                 Gender
                                                 </label>
+                                                <div style="width: 14vw"></div>
                                             </td>
-                                            <td></td>
+                                            <td>
+                                                <div style="width: 14vw"></div>
+                                            </td>
                                         </tr>
                                     </table>
                                 </div>
@@ -949,61 +948,60 @@
                                 </div>
                         
                                 <br>
-                                <div class="form-row addPadding">
-                                    <div class="col-3"></div>
-                                    <div class="col">
-                                        <table>
-                                            <tr style="height: 2.5rem;">
-                                                <th>
-                                                    <div class="minWidth2">
-                                                        <p class="text-start form-color">Basic Information</p>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="minWidth2"></div>
-                                                </th>
-                                                <th>
-                                                    <div class="minWidth2"></div>
-                                                </th>
-                                            </tr>
-                                            <tr style="height: 2.5rem;">
-                                                <td>
-                                                    <input class="form-check-input form-bg-color dimmer" type="checkbox" value="" id="b0_check" disabled>
-                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                    HKID number
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <input class="form-check-input form-bg-color dimmer" type="checkbox" value="" id="b1_check" disabled>
-                                                    <label class="form-check-label" for="flexCheckChecked">
-                                                    English name
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <input class="form-check-input form-bg-color dimmer" type="checkbox" value="" id="b2_check" disabled>
-                                                    <label class="form-check-label" for="flexCheckChecked">
-                                                    Chinese name
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr style="height: 2.5rem;">
-                                                <td>
-                                                    <input class="form-check-input form-bg-color dimmer" type="checkbox" value="" id="b3_check" disabled>
-                                                    <label class="form-check-label" for="flexCheckChecked">
-                                                    Birthday
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <input class="form-check-input form-bg-color dimmer" type="checkbox" value="" id="b4_check" disabled>
-                                                    <label class="form-check-label" for="flexCheckChecked">
-                                                    Gender
-                                                    </label>
-                                                </td>
-                                                <td></td>
-                                            </tr>
-                                        </table>
-                                    </div>
+                            <div class="form-row addPadding">
+                                <div class="col-3"></div>
+                                <div class="col">
+                                    <table>
+                                        <tr style="height: 2.5rem;">
+                                            <th colspan="3">
+                                                <p class="text-start form-color">Basic Information</p>
+                                            </th>
+                                        </tr>
+                                        <tr style="height: 2.5rem;">
+                                            <td>
+                                                <label class="form-check-label">
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b0_check" checked>
+                                                HKID number
+                                                </label>
+                                                <div style="width: 14vw"></div>
+                                            </td>
+                                            <td>
+                                                <label class="form-check-label">
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b1_check" checked>
+                                                English name
+                                                </label>
+                                                <div style="width: 14vw"></div>
+                                            </td>
+                                            <td>
+                                                <label class="form-check-label">
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b2_check" checked>
+                                                Chinese name
+                                                </label>
+                                                <div style="width: 14vw"></div>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 2.5rem;">
+                                            <td>
+                                                <label class="form-check-label">
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b3_check" checked>
+                                                Birthday
+                                                </label>
+                                                <div style="width: 14vw"></div>
+                                            </td>
+                                            <td>
+                                                <label class="form-check-label">
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b4_check" checked>
+                                                Gender
+                                                </label>
+                                                <div style="width: 14vw"></div>
+                                            </td>
+                                            <td>
+                                                <div style="width: 14vw"></div>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
+                            </div>
                         
                             <br>
                             <div class="d-flex justify-content-center form-color">
