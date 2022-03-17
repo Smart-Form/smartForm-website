@@ -910,7 +910,7 @@
                                             <tr id="tr0_check">
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect_check"
-                                                        onchange="addInput('arraySelect_check', 'arrayInput_check')"
+                                                        onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
                                                         <option value="" selected hidden>Option</option>
                                                         <option value="0">Option</option>
@@ -951,7 +951,7 @@
                                             <tr id="tr1_check">
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect2_check"
-                                                        onchange="addInput('arraySelect2_check', 'arrayInput2_check')"
+                                                        onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
                                                         <option value="" selected hidden>Option</option>
                                                         <option value="0">Option</option>
@@ -992,7 +992,7 @@
                                             <tr id="tr2_check">
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect3_check"
-                                                        onchange="addInput('arraySelect3_check', 'arrayInput3_check')"
+                                                        onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
                                                         <option value="" selected hidden>Option</option>
                                                         <option value="0">Option</option>
@@ -1033,7 +1033,7 @@
                                             <tr id="tr3_check">
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect4_check"
-                                                        onchange="addInput('arraySelect4_check', 'arrayInput4_check')"
+                                                        onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
                                                         <option value="" selected hidden>Option</option>
                                                         <option value="0">Option</option>
@@ -1074,7 +1074,7 @@
                                             <tr id="tr4_check">
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect5_check"
-                                                        onchange="addInput('arraySelect5_check', 'arrayInput5_check')"
+                                                        onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
                                                         <option value="" selected hidden>Option</option>
                                                         <option value="0">Option</option>
@@ -1115,7 +1115,7 @@
                                             <tr id="tr5_check">
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect6_check"
-                                                        onchange="addInput('arraySelect6_check', 'arrayInput6_check')"
+                                                        onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
                                                         <option value="" selected hidden>Option</option>
                                                         <option value="0">Option</option>
@@ -1352,11 +1352,11 @@
         </td>
         <td class="recipe-table__cell">
             <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{n}" rows="1"
-            placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
+            placeholder="Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
         </td>
         <td class="recipe-table__cell">
             <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{m}" rows="1"
-                placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
+                placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
         </td>
         <td class="recipe-table__cell">
             <div id="{arrayInputID}"></div>
