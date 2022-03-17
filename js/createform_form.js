@@ -85,17 +85,17 @@ function addInput(select_val, input_id) {
             document.getElementById(input_id).appendChild(obj);
              // Add input in confirmation page
             obj3.innerHTML = document.getElementById('addInput2').innerHTML
-                .replace(/{arrayInputChild_check}/g, input_id + '_check_child'); // g for any
+                .replace(/{arrayInputChild}/g, input_id + '_child_check'); // g for any
             document.getElementById(input_id + '_check').appendChild(obj3);
             // Animation
             $('#' + input_id + '_child').animate({ opacity: '0.5' });
-            $('#' + input_id + '_check_child').animate({ opacity: '0.5' });
+            $('#' + input_id + '_child_check').animate({ opacity: '0.5' });
             $('#' + input_id + '_child').animate({ opacity: '1' });
-            $('#' + input_id + '_check_child').animate({ opacity: '1' });
+            $('#' + input_id + '_child_check').animate({ opacity: '1' });
         }
     } else {
         document.getElementById(input_id + '_child').remove();
-        document.getElementById(input_id + '_check_child').remove();
+        document.getElementById(input_id + '_child_check').remove();
     }
 }
 

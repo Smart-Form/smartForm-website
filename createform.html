@@ -912,7 +912,7 @@
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect_check"
                                                         onchange="addInput('arraySelect_check', 'arrayInput_check')"
                                                         style="height: 100px; min-height:100px;" disabled>
-                                                        <option value="" selected hidden>Question Types</option>
+                                                        <option value="" selected hidden>Option</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
                                                         <option value="2">Short Answer</option>
@@ -953,7 +953,7 @@
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect2_check"
                                                         onchange="addInput('arraySelect2_check', 'arrayInput2_check')"
                                                         style="height: 100px; min-height:100px;" disabled>
-                                                        <option value="" selected hidden>Question Types</option>
+                                                        <option value="" selected hidden>Option</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
                                                         <option value="2">Short Answer</option>
@@ -994,7 +994,7 @@
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect3_check"
                                                         onchange="addInput('arraySelect3_check', 'arrayInput3_check')"
                                                         style="height: 100px; min-height:100px;" disabled>
-                                                        <option value="" selected hidden>Question Types</option>
+                                                        <option value="" selected hidden>Option</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
                                                         <option value="2">Short Answer</option>
@@ -1035,7 +1035,7 @@
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect4_check"
                                                         onchange="addInput('arraySelect4_check', 'arrayInput4_check')"
                                                         style="height: 100px; min-height:100px;" disabled>
-                                                        <option value="" selected hidden>Question Types</option>
+                                                        <option value="" selected hidden>Option</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
                                                         <option value="2">Short Answer</option>
@@ -1076,7 +1076,7 @@
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect5_check"
                                                         onchange="addInput('arraySelect5_check', 'arrayInput5_check')"
                                                         style="height: 100px; min-height:100px;" disabled>
-                                                        <option value="" selected hidden>Question Types</option>
+                                                        <option value="" selected hidden>Option</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
                                                         <option value="2">Short Answer</option>
@@ -1117,7 +1117,7 @@
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect6_check"
                                                         onchange="addInput('arraySelect6_check', 'arrayInput6_check')"
                                                         style="height: 100px; min-height:100px;" disabled>
-                                                        <option value="" selected hidden>Question Types</option>
+                                                        <option value="" selected hidden>Option</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
                                                         <option value="2">Short Answer</option>
@@ -1280,121 +1280,6 @@
                     </div>
                 </div>
             </section> -->
-        
-        <!-- addRow -->
-        <script id="rowTemplate" type="text/template">
-            <tr id="{newRowID}">
-                <td class="drag-handler"></td>
-                <td class="recipe-table__cell2">
-                    <select class="form-select form-select-sm form-item-focus form-bg-color dimmer"
-                         id="{arraySelectID}"
-                        onchange="addInput('{arraySelectID}', '{arrayInputID}')" style="height: 100px; min-height:100px;" required>
-                        <option value="" selected hidden>Question Types</option>
-                        <option value="0">Option</option>
-                        <option value="1">Yes/No</option>
-                        <option value="2">Short Answer</option>
-                        <option value="3">Multiple Choice</option>
-                        <option value="4">Correspondence Address</option>
-                        <option value="5">Email Address</option>
-                        <option value="6">Phone Number</option>
-                        <option value="7">Name</option>
-                        <option value="8">Nationality</option>
-                        <option value="9">Birthday</option>
-                        <option value="10">HKID/Passport Number</option>
-                        <option value="11">Employment</option>
-                        <option value="12">Marriage</option>
-                        <option value="13">Amount</option>
-                        <option value="14">Gender</option>
-                        <option value="15">Signature</option>
-                        <option value="16">Date</option>
-                        <option value="17">Number</option>
-                        <option value="18">District</option>
-                        <option value="19">Checkbox</option>
-                    </select>
-                </td>
-                <td class="recipe-table__cell">
-                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{n}" rows="1"
-                    placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
-                </td>
-                <td class="recipe-table__cell">
-                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{m}" rows="1"
-                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
-                </td>
-                <td class="recipe-table__cell">
-                    <div id="{arrayInputID}"></div>
-                </td>
-                <td class="recipe-table__cell">
-                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
-                </td>
-            </tr>
-        </script>
-        <!-- addRow_check -->
-        <script id="rowTemplate2" type="text/template">
-            <tr id="{newRowID_check}">
-                <td class="recipe-table__cell2">
-                    <select class="form-select form-select-sm form-item-focus form-bg-color dimmer"
-                         id="{arraySelectID_check}"
-                        onchange="addInput('{arraySelectID_check}', '{arrayInputID_check}')" style="height: 100px; min-height:100px;" disabled>
-                        <option value="" selected hidden>Question Types</option>
-                        <option value="0">Option</option>
-                        <option value="1">Yes/No</option>
-                        <option value="2">Short Answer</option>
-                        <option value="3">Multiple Choice</option>
-                        <option value="4">Correspondence Address</option>
-                        <option value="5">Email Address</option>
-                        <option value="6">Phone Number</option>
-                        <option value="7">Name</option>
-                        <option value="8">Nationality</option>
-                        <option value="9">Birthday</option>
-                        <option value="10">HKID/Passport Number</option>
-                        <option value="11">Employment</option>
-                        <option value="12">Marriage</option>
-                        <option value="13">Amount</option>
-                        <option value="14">Gender</option>
-                        <option value="15">Signature</option>
-                        <option value="16">Date</option>
-                        <option value="17">Number</option>
-                        <option value="18">District</option>
-                        <option value="19">Checkbox</option>
-                    </select>
-                </td>
-                <td class="recipe-table__cell">
-                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{n}" rows="1"
-                    placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
-                </td>
-                <td class="recipe-table__cell">
-                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{m}" rows="1"
-                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" disabled></textarea>
-                </td>
-                <td class="recipe-table__cell">
-                    <div id="{arrayInputID_check}" disabled></div>
-                </td>
-            </tr>
-        </script>
-        <!-- addInput -->
-        <script id="addInput" type="text/template">
-                <input class="form-control form-control-sm form-item-focus form-bg-color dimmer" list="datalistOptions"
-                id="{arrayInputChild}" placeholder="Array" style="height: 100px; min-height:100px;" required>
-                <datalist id="datalistOptions">
-                <option value="New Array">
-                <option value="Living with family, Property with mortgage, Property without
-                mortgage, Rental apartment, Public housing">
-                <option value="18-29, 30-49, 50-64">
-                <option value="HK$0-10,000, HK$10,001-30,000, HK$30,001-70,000, HK$70,001 or above">
-                </datalist>
-        </script>
-        <!-- addInput_check-->
-        <script id="addInput2" type="text/template">
-            <input class="form-control form-control-sm form-item-focus form-bg-color dimmer" list="datalistOptions"
-            id="{arrayInputChild_check}" placeholder="Array" style="height: 100px; min-height:100px;" disabled>
-            <datalist id="datalistOptions">
-            <option value="New Array">
-            <option value="Living with family, Property with mortgage, Property without
-            mortgage, Rental apartment, Public housing">
-            <option value="18-29, 30-49, 50-64">
-            <option value="HK$0-10,000, HK$10,001-30,000, HK$30,001-70,000, HK$70,001 or above">
-            </datalist>
-    </script>
 
     </div>
     <br>
@@ -1433,6 +1318,122 @@
     <!-- footer end -->
 
 </body>
+
+<!-- addRow -->
+<script id="rowTemplate" type="text/template">
+    <tr id="{newRowID}">
+        <td class="drag-handler"></td>
+        <td class="recipe-table__cell2">
+            <select class="form-select form-select-sm form-item-focus form-bg-color dimmer"
+                 id="{arraySelectID}"
+                onchange="addInput('{arraySelectID}', '{arrayInputID}'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
+                <option value="" selected hidden>Question Types</option>
+                <option value="0">Option</option>
+                <option value="1">Yes/No</option>
+                <option value="2">Short Answer</option>
+                <option value="3">Multiple Choice</option>
+                <option value="4">Correspondence Address</option>
+                <option value="5">Email Address</option>
+                <option value="6">Phone Number</option>
+                <option value="7">Name</option>
+                <option value="8">Nationality</option>
+                <option value="9">Birthday</option>
+                <option value="10">HKID/Passport Number</option>
+                <option value="11">Employment</option>
+                <option value="12">Marriage</option>
+                <option value="13">Amount</option>
+                <option value="14">Gender</option>
+                <option value="15">Signature</option>
+                <option value="16">Date</option>
+                <option value="17">Number</option>
+                <option value="18">District</option>
+                <option value="19">Checkbox</option>
+            </select>
+        </td>
+        <td class="recipe-table__cell">
+            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{n}" rows="1"
+            placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
+        </td>
+        <td class="recipe-table__cell">
+            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{m}" rows="1"
+                placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
+        </td>
+        <td class="recipe-table__cell">
+            <div id="{arrayInputID}"></div>
+        </td>
+        <td class="recipe-table__cell">
+            <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
+        </td>
+    </tr>
+</script>
+<!-- addRow_check -->
+<script id="rowTemplate2" type="text/template">
+    <tr id="{newRowID_check}">
+        <td class="recipe-table__cell2">
+            <select class="form-select form-select-sm form-item-focus form-bg-color dimmer"
+                 id="{arraySelectID_check}"
+                onchange="addInput('{arraySelectID_check}', '{arrayInputID_check}')" style="height: 100px; min-height:100px;" disabled>
+                <option value="" selected hidden>Question Types</option>
+                <option value="0">Option</option>
+                <option value="1">Yes/No</option>
+                <option value="2">Short Answer</option>
+                <option value="3">Multiple Choice</option>
+                <option value="4">Correspondence Address</option>
+                <option value="5">Email Address</option>
+                <option value="6">Phone Number</option>
+                <option value="7">Name</option>
+                <option value="8">Nationality</option>
+                <option value="9">Birthday</option>
+                <option value="10">HKID/Passport Number</option>
+                <option value="11">Employment</option>
+                <option value="12">Marriage</option>
+                <option value="13">Amount</option>
+                <option value="14">Gender</option>
+                <option value="15">Signature</option>
+                <option value="16">Date</option>
+                <option value="17">Number</option>
+                <option value="18">District</option>
+                <option value="19">Checkbox</option>
+            </select>
+        </td>
+        <td class="recipe-table__cell">
+            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{n}" rows="1"
+            placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
+        </td>
+        <td class="recipe-table__cell">
+            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{m}" rows="1"
+                placeholder="Description (Optional)" style="height: 100px; min-height:100px;" disabled></textarea>
+        </td>
+        <td class="recipe-table__cell">
+            <div id="{arrayInputID_check}" disabled></div>
+        </td>
+    </tr>
+</script>
+<!-- addInput -->
+<script id="addInput" type="text/template">
+        <input class="form-control form-control-sm form-item-focus form-bg-color dimmer" list="datalistOptions"
+        id="{arrayInputChild}" placeholder="Array" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required>
+        <datalist id="datalistOptions">
+        <option value="New Array"></option>
+        <option value="Living with family, Property with mortgage, Property without
+        mortgage, Rental apartment, Public housing"></option>
+        <option value="18-29, 30-49, 50-64"></option>
+        <option value="HK$0-10,000, HK$10,001-30,000, HK$30,001-70,000, HK$70,001 or above"></option>
+        </datalist>
+</script>
+<!-- addInput_check-->
+<script id="addInput2" type="text/template">
+    <input class="form-control form-control-sm form-item-focus form-bg-color dimmer" list="datalistOptions"
+    id="{arrayInputChild}" placeholder="Array" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" disabled>
+    <datalist id="datalistOptions">
+    <option value="New Array"></option>
+    <option value="Living with family, Property with mortgage, Property without
+    mortgage, Rental apartment, Public housing"></option>
+    <option value="18-29, 30-49, 50-64"></option>
+    <option value="HK$0-10,000, HK$10,001-30,000, HK$30,001-70,000, HK$70,001 or above"></option>
+    </datalist>
+</script>
+
 <link rel="stylesheet" href="plugins/material-design-iconic-font/css/material-design-iconic-font.css">
 <link rel="stylesheet" href="css/createform_form.css">
 <script src="plugins/jquery-3.3.1-dist/jquery.steps.js"></script>
