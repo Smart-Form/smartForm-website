@@ -92,7 +92,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="v0" placeholder="Welfare Name" class="form-control form-bg-color dimmer" required>
+                                <input type="text" id="v0" placeholder="Welfare Name" class="form-control form-bg-color dimmer" onchange="updateConfirmationPgFields(this);" required>
                             </div>
                         </div>
                         <br>
@@ -104,7 +104,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="v1" placeholder="Summary 50 words" class="form-control form-bg-color dimmer"
-                                    style="height: 100px; min-height:100px;" required></textarea>
+                                    style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                             </div>
                         </div>
                         <br>
@@ -115,7 +115,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="v2" placeholder="URL" class="form-control form-bg-color dimmer" >
+                                <input type="text" id="v2" placeholder="URL" class="form-control form-bg-color dimmer" onchange="updateConfirmationPgFields(this);" >
                             </div>
                         </div>
                         <br>
@@ -126,7 +126,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="v3" placeholder="Target audience" class="form-control form-bg-color dimmer"
+                                <input type="text" id="v3" placeholder="Target audience" class="form-control form-bg-color dimmer" onchange="updateConfirmationPgFields(this);"
                                     required>
                             </div>
                         </div>
@@ -141,13 +141,13 @@
                                 <input type="text" id="v4" placeholder="Age" class="form-control form-bg-color dimmer">
                                 <div class="addPadding">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="v5">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="v5" onchange="updateConfirmationPgFields(this);">
                                         <label class="form-check-label" for="flexRadioDefault1">
                                           or after
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="v6">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="v6" onchange="updateConfirmationPgFields(this);">
                                         <label class="form-check-label" for="flexRadioDefault2">
                                           or under
                                         </label>
@@ -161,13 +161,13 @@
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPadding">Apply Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v7" style="max-width: 13rem; min-width: 13rem;">
+                                <input type="date" class="form-control form-bg-color dimmer" id="v7" style="max-width: 13rem; min-width: 13rem;" onchange="updateConfirmationPgFields(this);">
                             </div>
                             <label class="col-form-label addPadding"><small class="form-color">To</small></label>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPadding">Deadline Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v8" style="max-width: 13rem; min-width: 13rem;">
+                                <input type="date" class="form-control form-bg-color dimmer" id="v8" style="max-width: 13rem; min-width: 13rem;" onchange="updateConfirmationPgFields(this);">
                             </div>
                         </div>
                         <br>
@@ -175,13 +175,13 @@
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPadding">Distribution Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v9" style="max-width: 13rem; min-width: 13rem;">
+                                <input type="date" class="form-control form-bg-color dimmer" id="v9" style="max-width: 13rem; min-width: 13rem;" onchange="updateConfirmationPgFields(this);">
                             </div>
                             <label class="col-form-label addPadding"><small class="form-color">To</small></label>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPadding">End Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v10" style="max-width: 13rem; min-width: 13rem;">
+                                <input type="date" class="form-control form-bg-color dimmer" id="v10" style="max-width: 13rem; min-width: 13rem;" onchange="updateConfirmationPgFields(this);">
                             </div>
                         </div>
                         <br>
@@ -193,7 +193,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="number" id="v11" placeholder="HK$" class="form-control form-bg-color dimmer" >
+                                <input type="number" id="v11" placeholder="HK$" class="form-control form-bg-color dimmer" onchange="updateConfirmationPgFields(this);" >
                             </div>
                         </div>
                         <br>
@@ -205,7 +205,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="v12" class="form-control form-bg-color dimmer"
-                                    style="height: 100px; min-height:100px;" required></textarea>
+                                    style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                             </div>
                         </div>
                         <br>
@@ -217,7 +217,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="v13" placeholder="Welcome, Thank you, etc"
-                                    class="form-control form-bg-color dimmer" style="height: 100px; min-height:100px;"></textarea>
+                                    class="form-control form-bg-color dimmer" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"></textarea>
                             </div>
                         </div>
                         <br>
@@ -229,7 +229,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="v14" class="form-control form-bg-color dimmer"
-                                    style="height: 100px; min-height:100px;"></textarea>
+                                    style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"></textarea>
                             </div>
                         </div>
                         <br>
@@ -243,7 +243,7 @@
                                 <div class="input-group" style="min-width: 20vw;">
                                     <input type="file" class="form-control form-bg-color" id="v15"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
-                                        accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 18rem; min-width: 18rem; z-index: 0;">
+                                        accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 18rem; min-width: 18rem; z-index: 0;" onchange="updateConfirmationPgFields(this);">
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
                                 <br><br><div class="addPadding"><small class="form-color"><b>Acceptable file format:</b><br>jpg, jpeg, png, tiff,
@@ -258,8 +258,8 @@
                                 <div class="input-group" style="min-width: 20vw;">
                                     <input type="file" class="form-control form-bg-color" id="v16"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
-                                        accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 18rem; min-width: 18rem; z-index: 0;" 
-                                        onclick="" required>
+                                        accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 18rem; min-width: 18rem; z-index: 0;" onchange="updateConfirmationPgFields(this);"
+                                        required>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
                                 <br><br><div class="addPadding"><small class="form-color"><b>Acceptable file
@@ -311,21 +311,21 @@
                                         <tr style="height: 2.5rem;">
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b0" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b0" onchange="updateConfirmationPgFields(this);" checked>
                                                 HKID number
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b1" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b1" onchange="updateConfirmationPgFields(this);" checked>
                                                 English name
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b2" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b2" onchange="updateConfirmationPgFields(this);" checked>
                                                 Chinese name
                                                 </label>
                                                 <div style="width: 14vw"></div>
@@ -334,14 +334,14 @@
                                         <tr style="height: 2.5rem;">
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b3" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b3" onchange="updateConfirmationPgFields(this);" checked>
                                                 Birthday
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b4" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b4" onchange="updateConfirmationPgFields(this);" checked>
                                                 Gender
                                                 </label>
                                                 <div style="width: 14vw"></div>
@@ -366,7 +366,7 @@
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
                                                          id="arraySelect"
-                                                        onchange="addInput('arraySelect', 'arrayInput')" style="height: 100px; min-height:100px;" required>
+                                                        onchange="addInput('arraySelect', 'arrayInput'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -392,11 +392,11 @@
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b5" rows="1"
-                                                    placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
+                                                    placeholder="Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b6" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput"></div>
@@ -410,7 +410,7 @@
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
                                                          id="arraySelect2"
-                                                        onchange="addInput('arraySelect2', 'arrayInput2')" style="height: 100px; min-height:100px;" required>
+                                                        onchange="addInput('arraySelect2', 'arrayInput2'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -436,11 +436,11 @@
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm  form-item-focus form-bg-color dimmer" id="b7" rows="1"
-                                                    placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
+                                                    placeholder="Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b8" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput2"></div>
@@ -454,7 +454,7 @@
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
                                                          id="arraySelect3"
-                                                        onchange="addInput('arraySelect3', 'arrayInput3')" style="height: 100px; min-height:100px;" required>
+                                                        onchange="addInput('arraySelect3', 'arrayInput3'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -480,11 +480,11 @@
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b9" rows="1"
-                                                    placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
+                                                    placeholder="Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b10" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput3"></div>
@@ -498,7 +498,7 @@
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
                                                          id="arraySelect4"
-                                                        onchange="addInput('arraySelect4', 'arrayInput4')" style="height: 100px; min-height:100px;" required>
+                                                        onchange="addInput('arraySelect4', 'arrayInput4'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -524,11 +524,11 @@
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b11" rows="1"
-                                                    placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
+                                                    placeholder="Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b12" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput4"></div>
@@ -542,7 +542,7 @@
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
                                                          id="arraySelect5"
-                                                        onchange="addInput('arraySelect5', 'arrayInput5')" style="height: 100px; min-height:100px;" required>
+                                                        onchange="addInput('arraySelect5', 'arrayInput5'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -568,11 +568,11 @@
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b13" rows="1"
-                                                    placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
+                                                    placeholder="Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b14" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput5"></div>
@@ -586,7 +586,7 @@
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
                                                          id="arraySelect6"
-                                                        onchange="addInput('arraySelect6', 'arrayInput6')" style="height: 100px; min-height:100px;" required>
+                                                        onchange="addInput('arraySelect6', 'arrayInput6'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -612,11 +612,11 @@
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b15" rows="1"
-                                                    placeholder="Question" style="height: 100px; min-height:100px;" required></textarea>
+                                                    placeholder="Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b16" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" required></textarea>
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput6"></div>
@@ -655,7 +655,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="c0" placeholder="Welfare Name" class="form-control form-bg-color dimmer" disabled>
+                                <input type="text" id="v0_check" placeholder="Welfare Name" class="form-control form-bg-color dimmer" disabled>
                             </div>
                         </div>
                         <br>
@@ -666,7 +666,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="c1" placeholder="Summary 50 words"  class="form-control form-bg-color dimmer"
+                                <textarea name="" id="v1_check" placeholder="Summary 50 words"  class="form-control form-bg-color dimmer"
                                     style="height: 100px; min-height:100px;" disabled></textarea>
                             </div>
                         </div>
@@ -678,7 +678,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="c2"  placeholder="URL" class="form-control form-bg-color dimmer" disabled>
+                                <input type="text" id="v2_check"  placeholder="URL" class="form-control form-bg-color dimmer" disabled>
                             </div>
                         </div>
                         <br>
@@ -689,7 +689,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="c3"  placeholder="Target audience" class="form-control form-bg-color dimmer"
+                                <input type="text" id="v3_check"  placeholder="Target audience" class="form-control form-bg-color dimmer"
                                     disabled>
                             </div>
                         </div>
@@ -701,16 +701,16 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" placeholder="Age" id="c4" class="form-control form-bg-color dimmer" disabled>
+                                <input type="text" placeholder="Age" id="v4_check" class="form-control form-bg-color dimmer" disabled>
                                 <div class="addPadding">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="c5" disabled>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="v5_check" disabled>
                                         <label class="form-check-label" for="flexRadioDefault1">
                                           or after
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="c6" disabled>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="v6_check" disabled>
                                         <label class="form-check-label" for="flexRadioDefault2">
                                           or under
                                         </label>
@@ -724,14 +724,14 @@
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPadding">Apply Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="c7" style="max-width: 13rem; min-width: 13rem;"
+                                <input type="date" class="form-control form-bg-color dimmer" id="v7_check" style="max-width: 13rem; min-width: 13rem;"
                                     disabled>
                             </div>
                             <label class="col-form-label"><small class="form-color addPadding">To</small></label>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPadding">Deadline Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="c8" style="max-width: 13rem; min-width: 13rem;"
+                                <input type="date" class="form-control form-bg-color dimmer" id="v8_check" style="max-width: 13rem; min-width: 13rem;"
                                     disabled>
                             </div>
                         </div>
@@ -740,14 +740,14 @@
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPadding">Distribution Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="c9" style="max-width: 13rem; min-width: 13rem;"
+                                <input type="date" class="form-control form-bg-color dimmer" id="v9_check" style="max-width: 13rem; min-width: 13rem;"
                                     disabled>
                             </div>
                             <label class="col-form-label"><small class="form-color addPadding">To</small></label>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPadding">End Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="c10" style="max-width: 13rem; min-width: 13rem;"
+                                <input type="date" class="form-control form-bg-color dimmer" id="v10_check" style="max-width: 13rem; min-width: 13rem;"
                                     disabled>
                             </div>
                         </div>
@@ -760,7 +760,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="number" id="c11" placeholder="HK$" class="form-control form-bg-color dimmer" disabled>
+                                <input type="number" id="v11_check" placeholder="HK$" class="form-control form-bg-color dimmer" disabled>
                             </div>
                         </div>
                         <br>
@@ -771,7 +771,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="c12" class="form-control form-bg-color dimmer"
+                                <textarea name="" id="v12_check" class="form-control form-bg-color dimmer"
                                     style="height: 100px; min-height:100px;" disabled></textarea>
                             </div>
                         </div>
@@ -783,7 +783,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="c13" placeholder="Welcome, Thank you, etc"
+                                <textarea name="" id="v13_check" placeholder="Welcome, Thank you, etc"
                                     class="form-control form-bg-color dimmer" style="height: 100px; min-height:100px;"
                                     disabled></textarea>
                             </div>
@@ -796,7 +796,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="c14" class="form-control form-bg-color dimmer"
+                                <textarea name="" id="v14_check" class="form-control form-bg-color dimmer"
                                     style="height: 100px; min-height:100px;" disabled></textarea>
                             </div>
                         </div>
@@ -809,7 +809,7 @@
                             </label>
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
-                                    <input type="file" class="form-control form-bg-color dimmer" id="c15"
+                                    <input type="file" class="form-control form-bg-color dimmer" id="v15_check"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload" style="max-width: 18rem; min-width: 18rem; z-index: 0;" disabled>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
@@ -819,7 +819,7 @@
                             </label>
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
-                                    <input type="file" class="form-control form-bg-color dimmer" id="c16"
+                                    <input type="file" class="form-control form-bg-color dimmer" id="v16_check"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload" style="max-width: 18rem; min-width: 18rem; z-index: 0;" disabled>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
@@ -1328,7 +1328,7 @@
                 </td>
             </tr>
         </script>
-        <!-- addRow2 -->
+        <!-- addRow_check -->
         <script id="rowTemplate2" type="text/template">
             <tr id="{newRowID_check}">
                 <td class="recipe-table__cell2">
@@ -1383,6 +1383,18 @@
                 <option value="HK$0-10,000, HK$10,001-30,000, HK$30,001-70,000, HK$70,001 or above">
                 </datalist>
         </script>
+        <!-- addInput_check-->
+        <script id="addInput2" type="text/template">
+            <input class="form-control form-control-sm form-item-focus form-bg-color dimmer" list="datalistOptions"
+            id="{arrayInputChild_check}" placeholder="Array" style="height: 100px; min-height:100px;" disabled>
+            <datalist id="datalistOptions">
+            <option value="New Array">
+            <option value="Living with family, Property with mortgage, Property without
+            mortgage, Rental apartment, Public housing">
+            <option value="18-29, 30-49, 50-64">
+            <option value="HK$0-10,000, HK$10,001-30,000, HK$30,001-70,000, HK$70,001 or above">
+            </datalist>
+    </script>
 
     </div>
     <br>
