@@ -798,6 +798,7 @@ function paginationClickHandler(event)
             if ( v == null || v == "") {
                 alert("All required field(s) must be filled in.");
                 requiredInputXY = $("#" + pg0_requiredInputsID[i]).offset();
+                document.forms['wizard'][pg0_requiredInputsID[i]].reportValidity();
                 return false;
             }
         }
@@ -812,6 +813,7 @@ function paginationClickHandler(event)
             if ( v == null || v == "") {
                 // alert("All required field(s) must be filled in.");
                 requiredInputXY = $("#" + pg1_requiredInputs[i].id).offset();
+                document.forms['wizard'][pg1_requiredInputs[i].id].reportValidity();
                 return false;
             }
         }
