@@ -525,9 +525,9 @@ question system
 }
 
 .form-item-focus:focus {
-  width: 80%;
+  width: 100%;
   position: absolute;
-  left: 10%;
+  left: 0%;
   /* -webkit-transition: step-start;
   transition: step-start; */
 }
@@ -543,6 +543,12 @@ question system
   }
   .recipe-table__cell2 {
     padding: 60px 5px 60px 0px;
+  }
+  .form-item-focus2:focus {
+    font-size: larger;
+    width: 50%;
+    position: absolute;
+    left: 0%;
   }
 }
 
