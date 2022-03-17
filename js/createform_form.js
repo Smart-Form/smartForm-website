@@ -146,8 +146,8 @@ $(document).ready(function () {
         var htmlString2 = $('#rowTemplate2').html()
             .replace(/{arraySelectID_check}/g, 'arraySelect' + i + '_check')
             .replace(/{arrayInputID_check}/g, 'arrayInput' + i + '_check')
-            .replace(/{n}/g, 'b' + i)
-            .replace(/{m}/g, 'b' + i)
+            .replace(/{n_check}/g, 'b' + i + '_check')
+            .replace(/{m_check}/g, 'b' + i + '_check')
             .replace(/{newRowID_check}/g, 'tr' + i + '_check');
             // console.log(i);
         $tableBody2.append(htmlString2);
@@ -263,9 +263,9 @@ $(document).ready(function () {
 // 
 // 
 function updateConfirmationPgFields(thisObj) {
-    console.log(thisObj.value);
-    console.log(thisObj.id);
-    console.log(document.getElementById(thisObj.id + '_check').value);
+    // console.log(thisObj.value);
+    // console.log(thisObj.id);
+    // console.log(document.getElementById(thisObj.id + '_check').value);
     document.getElementById(thisObj.id + '_check').value = thisObj.value;
 }
 function updateConfirmationPgCheckboxes(thisObj) {

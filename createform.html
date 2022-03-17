@@ -361,7 +361,7 @@
                                     <table cellpadding="0" cellspacing="0" class="recipe-table" id="recipeTable">
                                         <tbody id="recipeTableBody">
 
-                                            <tr id="tr1">
+                                            <tr id="tr0">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
@@ -405,7 +405,7 @@
                                                     <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
                                                 </td>
                                             </tr>
-                                            <tr id="tr2">
+                                            <tr id="tr1">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
@@ -449,7 +449,7 @@
                                                     <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
                                                 </td>
                                             </tr>
-                                            <tr id="tr3">
+                                            <tr id="tr2">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
@@ -493,7 +493,7 @@
                                                     <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
                                                 </td>
                                             </tr>
-                                            <tr id="tr4">
+                                            <tr id="tr3">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
@@ -537,7 +537,7 @@
                                                     <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
                                                 </td>
                                             </tr>
-                                            <tr id="tr5">
+                                            <tr id="tr4">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
@@ -581,7 +581,7 @@
                                                     <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
                                                 </td>
                                             </tr>
-                                            <tr id="tr6">
+                                            <tr id="tr5">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
                                                     <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
@@ -1372,7 +1372,7 @@
         <td class="recipe-table__cell2">
             <select class="form-select form-select-sm form-item-focus form-bg-color dimmer"
                  id="{arraySelectID_check}"
-                onchange="addInput('{arraySelectID_check}', '{arrayInputID_check}')" style="height: 100px; min-height:100px;" disabled>
+                onchange="" style="height: 100px; min-height:100px;" disabled>
                 <option value="" selected hidden>Question Types</option>
                 <option value="0">Option</option>
                 <option value="1">Yes/No</option>
@@ -1397,11 +1397,11 @@
             </select>
         </td>
         <td class="recipe-table__cell">
-            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{n}" rows="1"
+            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{n_check}" rows="1"
             placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
         </td>
         <td class="recipe-table__cell">
-            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{m}" rows="1"
+            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{m_check}" rows="1"
                 placeholder="Description (Optional)" style="height: 100px; min-height:100px;" disabled></textarea>
         </td>
         <td class="recipe-table__cell">
@@ -1424,7 +1424,7 @@
 <!-- addInput_check-->
 <script id="addInput2" type="text/template">
     <input class="form-control form-control-sm form-item-focus form-bg-color dimmer" list="datalistOptions"
-    id="{arrayInputChild}" placeholder="Array" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" disabled>
+    id="{arrayInputChild}" placeholder="Array" style="height: 100px; min-height:100px;" onchange="" disabled>
     <datalist id="datalistOptions">
     <option value="New Array"></option>
     <option value="Living with family, Property with mortgage, Property without
