@@ -115,7 +115,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="v2" placeholder="URL" class="form-control form-bg-color dimmer" onchange="updateConfirmationPgFields(this);" >
+                                <input type="url" id="v2" placeholder="URL" class="form-control form-bg-color dimmer" pattern="https?://.+" onchange="updateConfirmationPgFields(this);" >
                             </div>
                         </div>
                         <br>
@@ -138,16 +138,16 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="v4" placeholder="Age" class="form-control form-bg-color dimmer">
+                                <input type="number" id="v4" placeholder="Age" class="form-control form-bg-color dimmer" min="0" max="200" onchange="updateConfirmationPgFields(this);">
                                 <div class="addPadding">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="v5" onchange="updateConfirmationPgFields(this);">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault0" id="v5" onchange="updateConfirmationPgCheckboxes(this);">
                                         <label class="form-check-label" for="flexRadioDefault1">
                                           or after
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="v6" onchange="updateConfirmationPgFields(this);">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault0" id="v6" onchange="updateConfirmationPgCheckboxes(this);">
                                         <label class="form-check-label" for="flexRadioDefault2">
                                           or under
                                         </label>
@@ -311,21 +311,21 @@
                                         <tr style="height: 2.5rem;">
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b0" onchange="updateConfirmationPgFields(this);" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b0" onchange="updateConfirmationPgCheckboxes(this);" checked>
                                                 HKID number
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b1" onchange="updateConfirmationPgFields(this);" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b1" onchange="updateConfirmationPgCheckboxes(this);" checked>
                                                 English name
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b2" onchange="updateConfirmationPgFields(this);" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b2" onchange="updateConfirmationPgCheckboxes(this);" checked>
                                                 Chinese name
                                                 </label>
                                                 <div style="width: 14vw"></div>
@@ -334,14 +334,14 @@
                                         <tr style="height: 2.5rem;">
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b3" onchange="updateConfirmationPgFields(this);" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b3" onchange="updateConfirmationPgCheckboxes(this);" checked>
                                                 Birthday
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b4" onchange="updateConfirmationPgFields(this);" checked>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b4" onchange="updateConfirmationPgCheckboxes(this);" checked>
                                                 Gender
                                                 </label>
                                                 <div style="width: 14vw"></div>
@@ -678,7 +678,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="v2_check"  placeholder="URL" class="form-control form-bg-color dimmer" disabled>
+                                <input type="url" id="v2_check"  placeholder="URL" class="form-control form-bg-color dimmer" pattern="https?://.+" disabled>
                             </div>
                         </div>
                         <br>
@@ -701,7 +701,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" placeholder="Age" id="v4_check" class="form-control form-bg-color dimmer" disabled>
+                                <input type="number" placeholder="Age" id="v4_check" class="form-control form-bg-color dimmer" min="0" max="200" disabled>
                                 <div class="addPadding">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="v5_check" disabled>
@@ -859,21 +859,21 @@
                                         <tr style="height: 2.5rem;">
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b0_check" disabled>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b0_check" checked disabled>
                                                 HKID number
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b1_check" disabled>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b1_check" checked disabled>
                                                 English name
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b2_check" disabled>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b2_check" checked disabled>
                                                 Chinese name
                                                 </label>
                                                 <div style="width: 14vw"></div>
@@ -882,14 +882,14 @@
                                         <tr style="height: 2.5rem;">
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b3_check" disabled>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b3_check" checked disabled>
                                                 Birthday
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b4_check" disabled>
+                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b4_check" checked disabled>
                                                 Gender
                                                 </label>
                                                 <div style="width: 14vw"></div>

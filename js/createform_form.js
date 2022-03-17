@@ -263,11 +263,17 @@ $(document).ready(function () {
 // 
 // 
 function updateConfirmationPgFields(thisObj) {
-    // var v = thisObj.value;
-    // var k = document.getElementsById(thisObj.id + '_check')[0];
-    // k.value = v;
-
-    // console.log(thisObj.id);
-    // console.log(thisObj.value);
-    // console.log(k);
+    console.log(thisObj.value);
+    console.log(thisObj.id);
+    console.log(document.getElementById(thisObj.id + '_check').value);
+    document.getElementById(thisObj.id + '_check').value = thisObj.value;
+}
+function updateConfirmationPgCheckboxes(thisObj) {
+    // console.log(thisObj.checked);
+    // console.log(document.getElementById(thisObj.id + '_check').checked);
+    if (thisObj.checked == true){
+        document.getElementById(thisObj.id + '_check').checked = true;
+    } else {
+        document.getElementById(thisObj.id + '_check').checked = false;
+    }
 }
