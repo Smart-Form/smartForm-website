@@ -50,10 +50,16 @@ $(document).ready(function(){
 //
 jQuery(function ($) {
   $('#emailSubcribeBtn').on('click', function () {
-    var $el = $(this),
+    var form = document.forms['emailSubscription_form'];
+    if (!form.checkValidity()) {
+      // Form is invalid!
+    } else {
+      // Form is valid, let the user proceed or do whatever we need to
+      var $el = $(this),
       textNode = this.lastChild;
-    $el.find('span').toggleClass('glyphicon glyphicon-ok');
-    textNode.nodeValue = ($el.hasClass('showSubscription') ? 'Subscribed' : 'Subscribed')
-    $el.toggleClass('showSubscription');
+      $el.find('span').toggleClass('glyphicon glyphicon-ok');
+      textNode.nodeValue = ($el.hasClass('showSubscription') ? 'Subscribed' : 'Subscribed');
+      $el.toggleClass('showSubscription');
+    }
   });
 });
