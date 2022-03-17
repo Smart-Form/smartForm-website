@@ -1168,8 +1168,13 @@
                     <form id="tc_checkbox_form" action="#" method="post" class="needs-validation">
                         <label class="form-check-label">
                             <input type="checkbox" for="invalidCheck" id="tc_checkbox" class="checkbox" required>
-                            &nbsp;We agree with the <a href="terms_and_conditions.html">terms and conditions</a>
+                            &nbsp;We agree with the <a href="" onclick="openNewWindow()">terms and conditions</a>
                         </label>
+                        <script>
+                            function openNewWindow() {
+                              window.open("terms_and_conditions.html");
+                            }
+                        </script>
                     </form>
                 </div>
                 <div class="col-1"></div>
