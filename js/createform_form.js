@@ -277,6 +277,13 @@ function updateConfirmationPgCheckboxes(thisObj) {
         document.getElementById(thisObj.id + '_check').checked = false;
     }
 }
+function updateConfirmationPgFileInputs(thisObj) {
+    // console.log(thisObj.files[0].name);
+    document.getElementById(thisObj.id + '_check').value = thisObj.files[0].name;
+}
+// $('input[type=file]').change(function () {
+//     console.log(this.files[0].mozFullPath);
+// });
 
 function test(thisObj){
     console.log(thisObj);
