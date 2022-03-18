@@ -277,9 +277,15 @@ footer {
     width: 60vw; 
     padding: 10px 0px 10px 10px;
   }
-  .navBarBtn{
-    width: 15rem;
+  .navBarBtn3{
+    width: 20rem;
     text-align-last: center;
+  }
+  .navBarBtn{
+    width: 20rem;
+    text-align-last: center;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
   }
 }
 
@@ -320,8 +326,12 @@ footer {
   box-shadow: 0rem 0rem 0.5rem #ccc;
 }
 
-.navBarBtn{
-  border-radius: 1rem 1rem 1rem 1rem;
+.navBarBtn2{
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.navBarBtn3{
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 /* 
