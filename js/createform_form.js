@@ -277,3 +277,7 @@ function updateConfirmationPgCheckboxes(thisObj) {
         document.getElementById(thisObj.id + '_check').checked = false;
     }
 }
+
+function test(thisObj){
+    console.log(thisObj);
+}

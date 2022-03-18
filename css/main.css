@@ -278,14 +278,18 @@ footer {
     padding: 10px 0px 10px 10px;
   }
   .navBarBtn3{
-    width: 20rem;
+    width: 24rem;
     text-align-last: center;
   }
   .navBarBtn{
-    width: 20rem;
+    width: 24rem;
     text-align-last: center;
     background-color: #fff;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+  .mobile_width100 {
+    width: 100%;
+    padding: 1vw 0vw 1vw 0vw;
   }
 }
 
@@ -328,10 +332,12 @@ footer {
 
 .navBarBtn2{
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 .navBarBtn3{
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
 /* 
