@@ -139,7 +139,7 @@ $(document).ready(function () {
             .replace(/{arraySelectID}/g, 'arraySelect' + i)
             .replace(/{arrayInputID}/g, 'arrayInput' + i)
             .replace(/{n}/g, 'b' + i)
-            .replace(/{m}/g, 'b' + i)
+            .replace(/{m}/g, '2b' + i)
             .replace(/{newRowID}/g, 'tr' + i);
             // console.log(i);
         $tableBody.append(htmlString);
@@ -147,7 +147,7 @@ $(document).ready(function () {
             .replace(/{arraySelectID_check}/g, 'arraySelect' + i + '_check')
             .replace(/{arrayInputID_check}/g, 'arrayInput' + i + '_check')
             .replace(/{n_check}/g, 'b' + i + '_check')
-            .replace(/{m_check}/g, 'b' + i + '_check')
+            .replace(/{m_check}/g, '2b' + i + '_check')
             .replace(/{newRowID_check}/g, 'tr' + i + '_check');
             // console.log(i);
         $tableBody2.append(htmlString2);
