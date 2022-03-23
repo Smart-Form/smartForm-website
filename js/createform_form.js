@@ -43,7 +43,7 @@ $(function () {
     //     var text = $(this).attr('rel');
     //     $(this).parent().prev().find('div').text(text);
     // })
-})
+});
 
 
 
@@ -83,7 +83,7 @@ function addInput(select_val, input_id) {
             obj.innerHTML = document.getElementById('addInput').innerHTML
                 .replace(/{arrayInputChild}/g, input_id + '_child'); // g for any
             document.getElementById(input_id).appendChild(obj);
-             // Add input in confirmation page
+             // Add input in Confirmation page
             obj3.innerHTML = document.getElementById('addInput2').innerHTML
                 .replace(/{arrayInputChild}/g, input_id + '_child_check'); // g for any
             document.getElementById(input_id + '_check').appendChild(obj3);
@@ -247,12 +247,65 @@ $(document).ready(function () {
             scroll: true,
             handle: '.drag-handler',
             onEnd: function () {
-                console.log('Type something here...');
+                console.log('tableBody changed');
+                updateCheckTableBody($tableBody[0]);
             }
         }
     );
 });
 
+//
+//
+// Update Confirmation page tableBody simutaneously
+//
+//
+function updateCheckTableBody(thisTableBody) { // !!!!Temporary approach: modify the table instead of making rows up or down
+    // console.log(thisTableBody.getElementsByTagName("tr").length);
+
+    let tr = thisTableBody.getElementsByTagName("tr");
+    let trCheck = document.getElementById("recipeTableBody2").getElementsByTagName("tr");
+
+    let trCount = thisTableBody.getElementsByTagName("tr").length;
+    let trCountCheck = document.getElementById("recipeTableBody2").getElementsByTagName("tr").length;
+
+    if (trCount == trCountCheck) {
+        for (let i = 0; i < trCount; i++ ) {
+            // tr
+            trCheck[i].id = tr[i].id + "_check";
+            // select
+            trCheck[i].getElementsByTagName("td")[0].getElementsByTagName("select")[0].id = tr[i].getElementsByTagName("td")[1].getElementsByTagName("select")[0].id + "_check";
+            trCheck[i].getElementsByTagName("td")[0].getElementsByTagName("select")[0].value = tr[i].getElementsByTagName("td")[1].getElementsByTagName("select")[0].value;
+            // textarea
+            trCheck[i].getElementsByTagName("td")[1].getElementsByTagName("textarea")[0].id = tr[i].getElementsByTagName("td")[2].getElementsByTagName("textarea")[0].id + "_check";
+            trCheck[i].getElementsByTagName("td")[1].getElementsByTagName("textarea")[0].value = tr[i].getElementsByTagName("td")[2].getElementsByTagName("textarea")[0].value;
+            // textarea
+            trCheck[i].getElementsByTagName("td")[2].getElementsByTagName("textarea")[0].id = tr[i].getElementsByTagName("td")[3].getElementsByTagName("textarea")[0].id + "_check";
+            trCheck[i].getElementsByTagName("td")[2].getElementsByTagName("textarea")[0].value = tr[i].getElementsByTagName("td")[3].getElementsByTagName("textarea")[0].value;
+            // arrayInput wrapper
+            trCheck[i].getElementsByTagName("td")[3].getElementsByTagName("div")[0].id = tr[i].getElementsByTagName("td")[4].getElementsByTagName("div")[0].id + "_check";
+            // arrayInput itself
+            if (typeof tr[i].getElementsByTagName("td")[4].getElementsByTagName("div")[0].getElementsByTagName("div")[0] != "undefined") {
+                if (typeof trCheck[i].getElementsByTagName("td")[3].getElementsByTagName("div")[0].getElementsByTagName("div")[0] == "undefined") {
+                    var obj4 = document.createElement('div');
+                    // Add input in Confirmation page
+                    obj4.innerHTML = document.getElementById('addInput2').innerHTML
+                        .replace(/{arrayInputChild}/g, tr[i].getElementsByTagName("td")[4].getElementsByTagName("div")[0].id + '_child_check'); // g for any
+                    document.getElementById(tr[i].getElementsByTagName("td")[4].getElementsByTagName("div")[0].id + '_check').appendChild(obj4);
+                }
+                trCheck[i].getElementsByTagName("td")[3].getElementsByTagName("div")[0].getElementsByTagName("div")[0].getElementsByTagName("input")[0].id = tr[i].getElementsByTagName("td")[4].getElementsByTagName("div")[0].getElementsByTagName("div")[0].getElementsByTagName("input")[0].id + "_check";
+                trCheck[i].getElementsByTagName("td")[3].getElementsByTagName("div")[0].getElementsByTagName("div")[0].getElementsByTagName("input")[0].value = tr[i].getElementsByTagName("td")[4].getElementsByTagName("div")[0].getElementsByTagName("div")[0].getElementsByTagName("input")[0].value;
+            } else if (typeof tr[i].getElementsByTagName("td")[4].getElementsByTagName("div")[0].getElementsByTagName("div")[0] == "undefined") {
+                if (typeof trCheck[i].getElementsByTagName("td")[3].getElementsByTagName("div")[0].getElementsByTagName("div")[0] != "undefined") {
+                    document.getElementById(tr[i].getElementsByTagName("td")[4].getElementsByTagName("div")[0].id + '_child_check').remove();
+                }
+            }
+        }
+
+    } else {
+        console.log("trCount does not match trCountCheck");
+        
+    }
+}
 
 
 
@@ -284,7 +337,3 @@ function updateConfirmationPgFileInputs(thisObj) {
 // $('input[type=file]').change(function () {
 //     console.log(this.files[0].mozFullPath);
 // });
-
-function test(thisObj){
-    console.log(thisObj);
-}
