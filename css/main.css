@@ -87,10 +87,6 @@ footer {
     }
 }
 
-.index-machineOutlook {
-  width: 500px;
-}
-
 .banner-smartform {
   background-image: url("../img/banner.png");
   width: 100%;
@@ -149,7 +145,7 @@ footer {
   background-color: #9F9CAD;
   border-radius: 13px;
   width: 55vw;
-  min-width: 32vh;
+  min-width: 18rem;
 }
 .btn-smartform2:hover {
   color: white;
@@ -260,7 +256,8 @@ footer {
 }
 
 .thumbnail{
-  width: 33vw; 
+  width: 33vw;
+  min-width: 10rem;
   padding: 10px 0px 10px 10px;
 }
 
@@ -270,9 +267,6 @@ footer {
   }
   footer {
     min-height: 45vh;
-  }
-  .index-machineOutlook {
-    width: 400px;
   }
   .thumbnail{
     width: 60vw; 
@@ -292,24 +286,18 @@ footer {
     width: 100%;
     padding: 1vw 0vw 1vw 0vw;
   }
+  .navbar-toggle-icon-leftPadding {
+    margin-right: 5vw;
+  }
 }
 
 @media (max-width: 450px) {
-  .logo-mobile-field-center {
-    margin-left: 40%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .logo-mobile {
-    width: 75px;
-    height: 75px;
-  }
-  .index-machineOutlook {
-    width: 200px;
-    margin-left: 20%;
-  }
   .typing-smartform {
-    font-size: 11px;
+    font-size: 0.75rem;
+  }
+  /* Minimum device width, set to keep content aligned as much as possible */
+  body{
+    min-width: 285px;
   }
 }
 
@@ -416,4 +404,8 @@ popUpModal
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.addResponsiveHeight{
+  height: 4.75rem;
 }

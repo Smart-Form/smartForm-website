@@ -368,7 +368,7 @@ form system – mobile layout
   /* stepper line */
   .wizard > .steps li a:after {
     min-height: 3px;
-    top: 0.8vw;
+    top: 0.4vh;
   }
   .actions {
     right: 50%;
