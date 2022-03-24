@@ -22,7 +22,7 @@
     <a id="scroll" style="display: none;"><span></span></a>
 
     <!-- nav -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color6">
+    <nav class="navbar fixed-top autohide navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color6">
         <div class="container-fluid">
     
             <a class="navbar-brand" href="index.html">
@@ -299,7 +299,7 @@
                             </h3>
                         </div>
                         <div class="recipe">
-                            <div class="addPaddingLeft">
+                            <div class="addSurroundedPadding3">
                                 <div class="badge bg-primary text-wrap text-start">
                                     <h6>Please set up within 20 questions (multiple choice questions are preferred) to reduce
                                         the difficulty of filling in the form for the elderly and low-educated
@@ -311,9 +311,7 @@
                             </div>
 
                             <br>
-                            <div class="form-row addPaddingLeft">
-                                <div class="col-3"></div>
-                                <div class="col">
+                                <div class="form-row addPaddingLeft d-flex justify-content-center">
                                     <table>
                                         <tr style="height: 2.5rem;">
                                             <th colspan="3">
@@ -364,7 +362,6 @@
                                         </tr>
                                     </table>
                                 </div>
-                            </div>
                             
                             <br>
                             <br>
@@ -376,9 +373,9 @@
                                             <tr id="tr0">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
+                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr0"
                                                          id="arraySelect"
-                                                        onchange="addInput('arraySelect', 'arrayInput'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
+                                                        onchange="addInput('arraySelect', 'arrayInput', 'tr0'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;"  required>
                                                         <option value="" selected hidden>*Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -403,12 +400,12 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b5" rows="1"
-                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0" id="textarea" rows="1"
+                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"  required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b6" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"></textarea>
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0" id="2textarea" rows="1"
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" ></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput"></div>
@@ -420,9 +417,9 @@
                                             <tr id="tr1">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
+                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr1"
                                                          id="arraySelect2"
-                                                        onchange="addInput('arraySelect2', 'arrayInput2'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
+                                                        onchange="addInput('arraySelect2', 'arrayInput2'); updateConfirmationPgFields(this);"  style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>*Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -447,12 +444,12 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm  form-item-focus form-bg-color dimmer" id="b7" rows="1"
-                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
+                                                    <textarea class="form-control form-control-sm  form-item-focus form-bg-color dimmer tr1" id="textarea2" rows="1"
+                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"  required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b8" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"></textarea>
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr1" id="2textarea2" rows="1"
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" ></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput2"></div>
@@ -464,9 +461,9 @@
                                             <tr id="tr2">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
+                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr2"
                                                          id="arraySelect3"
-                                                        onchange="addInput('arraySelect3', 'arrayInput3'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
+                                                        onchange="addInput('arraySelect3', 'arrayInput3'); updateConfirmationPgFields(this);"  style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>*Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -491,12 +488,12 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b9" rows="1"
-                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2" id="textarea3" rows="1"
+                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"  required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b10" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"></textarea>
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2" id="2textarea3" rows="1"
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" ></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput3"></div>
@@ -508,9 +505,9 @@
                                             <tr id="tr3">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
+                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr3"
                                                          id="arraySelect4"
-                                                        onchange="addInput('arraySelect4', 'arrayInput4'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
+                                                        onchange="addInput('arraySelect4', 'arrayInput4'); updateConfirmationPgFields(this);"  style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>*Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -535,12 +532,12 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b11" rows="1"
-                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3" id="textarea4" rows="1"
+                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"  required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b12" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"></textarea>
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3" id="2textarea4" rows="1"
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" ></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput4"></div>
@@ -552,9 +549,9 @@
                                             <tr id="tr4">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
+                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr4"
                                                          id="arraySelect5"
-                                                        onchange="addInput('arraySelect5', 'arrayInput5'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
+                                                        onchange="addInput('arraySelect5', 'arrayInput5'); updateConfirmationPgFields(this);"  style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>*Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -579,12 +576,12 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b13" rows="1"
-                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4" id="textarea5" rows="1"
+                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"  required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b14" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"></textarea>
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4" id="2textarea5" rows="1"
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" ></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput5"></div>
@@ -596,9 +593,9 @@
                                             <tr id="tr5">
                                                 <td class="drag-handler"></td>
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer"
+                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr5"
                                                          id="arraySelect6"
-                                                        onchange="addInput('arraySelect6', 'arrayInput6'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
+                                                        onchange="addInput('arraySelect6', 'arrayInput6'); updateConfirmationPgFields(this);"  style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>*Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -623,12 +620,12 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b15" rows="1"
-                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5" id="textarea6" rows="1"
+                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"  required></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b16" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"></textarea>
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5" id="2textarea6" rows="1"
+                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" ></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
                                                     <div id="arrayInput6"></div>
@@ -924,10 +921,10 @@
                                         <tbody id="recipeTableBody2">
                                             <tr id="tr0_check">
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect_check"
+                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr0_check" id="arraySelect_check"
                                                         onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
-                                                        <option value="" selected hidden>Option</option>
+                                                        <option value="" selected hidden>Unselected</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
                                                         <option value="2">Short Answer</option>
@@ -951,11 +948,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b5_check" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0_check" id="textarea_check" rows="1"
                                                         placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b6_check" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0_check" id="2textarea_check" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
                                                         disabled></textarea>
                                                 </td>
@@ -965,10 +962,10 @@
                                             </tr>
                                             <tr id="tr1_check">
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect2_check"
+                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr1_check" id="arraySelect2_check"
                                                         onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
-                                                        <option value="" selected hidden>Option</option>
+                                                        <option value="" selected hidden>Unselected</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
                                                         <option value="2">Short Answer</option>
@@ -992,11 +989,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm  form-item-focus form-bg-color dimmer" id="b7_check" rows="1"
+                                                    <textarea class="form-control form-control-sm  form-item-focus form-bg-color dimmer tr1_check" id="textarea2_check" rows="1"
                                                         placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b8_check" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr1_check" id="2textarea2_check" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
                                                         disabled></textarea>
                                                 </td>
@@ -1006,10 +1003,10 @@
                                             </tr>
                                             <tr id="tr2_check">
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect3_check"
+                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr2_check" id="arraySelect3_check"
                                                         onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
-                                                        <option value="" selected hidden>Option</option>
+                                                        <option value="" selected hidden>Unselected</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
                                                         <option value="2">Short Answer</option>
@@ -1033,11 +1030,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b9_check" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2_check" id="textarea3_check" rows="1"
                                                         placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b10_check" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2_check" id="2textarea3_check" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
                                                         disabled></textarea>
                                                 </td>
@@ -1047,10 +1044,10 @@
                                             </tr>
                                             <tr id="tr3_check">
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect4_check"
+                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr3_check" id="arraySelect4_check"
                                                         onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
-                                                        <option value="" selected hidden>Option</option>
+                                                        <option value="" selected hidden>Unselected</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
                                                         <option value="2">Short Answer</option>
@@ -1074,11 +1071,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b11_check" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3_check" id="textarea4_check" rows="1"
                                                         placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b12_check" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3_check" id="2textarea4_check" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
                                                         disabled></textarea>
                                                 </td>
@@ -1088,10 +1085,10 @@
                                             </tr>
                                             <tr id="tr4_check">
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect5_check"
+                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr4_check" id="arraySelect5_check"
                                                         onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
-                                                        <option value="" selected hidden>Option</option>
+                                                        <option value="" selected hidden>Unselected</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
                                                         <option value="2">Short Answer</option>
@@ -1115,11 +1112,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b13_check" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4_check" id="textarea5_check" rows="1"
                                                         placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b14_check" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4_check" id="2textarea5_check" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
                                                         disabled></textarea>
                                                 </td>
@@ -1129,10 +1126,10 @@
                                             </tr>
                                             <tr id="tr5_check">
                                                 <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer" id="arraySelect6_check"
+                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr5_check" id="arraySelect6_check"
                                                         onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
-                                                        <option value="" selected hidden>Option</option>
+                                                        <option value="" selected hidden>Unselected</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
                                                         <option value="2">Short Answer</option>
@@ -1156,11 +1153,11 @@
                                                     </select>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b15_check" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5_check" id="textarea6_check" rows="1"
                                                         placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="b16_check" rows="1"
+                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5_check" id="2textarea6_check" rows="1"
                                                         placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
                                                         disabled></textarea>
                                                 </td>
@@ -1308,7 +1305,7 @@
 
     <!-- footer -->
     <p></p>
-    <footer class="py-5 theme-bg-color6 theme-color">
+    <footer class="py-5 theme-bg-color6 theme-color8">
         <div class="row" style="text-overflow: hidden;">
             <div class="col-1" style="width: 13vw;"></div>
             <div class="col-4">
@@ -1345,7 +1342,7 @@
     <tr id="{newRowID}">
         <td class="drag-handler"></td>
         <td class="recipe-table__cell2">
-            <select class="form-select form-select-sm form-item-focus form-bg-color dimmer"
+            <select class="form-select form-select-sm form-item-focus form-bg-color dimmer {newRowID}"
                  id="{arraySelectID}"
                 onchange="addInput('{arraySelectID}', '{arrayInputID}'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
                 <option value="" selected hidden>*Question Types</option>
@@ -1372,11 +1369,11 @@
             </select>
         </td>
         <td class="recipe-table__cell">
-            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{n}" rows="1"
+            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer {newRowID}" id="{n}" rows="1"
             placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
         </td>
         <td class="recipe-table__cell">
-            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{m}" rows="1"
+            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer {newRowID}" id="{m}" rows="1"
                 placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"></textarea>
         </td>
         <td class="recipe-table__cell">
@@ -1391,7 +1388,7 @@
 <script id="rowTemplate2" type="text/template">
     <tr id="{newRowID_check}">
         <td class="recipe-table__cell2">
-            <select class="form-select form-select-sm form-item-focus form-bg-color dimmer"
+            <select class="form-select form-select-sm form-item-focus form-bg-color dimmer {newRowID_check}"
                  id="{arraySelectID_check}"
                 onchange="" style="height: 100px; min-height:100px;" disabled>
                 <option value="" selected hidden>Question Types</option>
@@ -1418,11 +1415,11 @@
             </select>
         </td>
         <td class="recipe-table__cell">
-            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{n_check}" rows="1"
+            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer {newRowID_check}" id="{n_check}" rows="1"
             placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
         </td>
         <td class="recipe-table__cell">
-            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer" id="{m_check}" rows="1"
+            <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer {newRowID_check}" id="{m_check}" rows="1"
                 placeholder="Description (Optional)" style="height: 100px; min-height:100px;" disabled></textarea>
         </td>
         <td class="recipe-table__cell">
@@ -1432,7 +1429,7 @@
 </script>
 <!-- addInput -->
 <script id="addInput" type="text/template">
-        <input class="form-control form-control-sm form-item-focus form-bg-color dimmer" list="datalistOptions"
+        <input class="form-control form-control-sm form-item-focus form-bg-color dimmer {tr}" list="datalistOptions"
         id="{arrayInputChild}" placeholder="Array" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required>
         <datalist id="datalistOptions">
         <option value="New Array"></option>
@@ -1444,8 +1441,8 @@
 </script>
 <!-- addInput_check-->
 <script id="addInput2" type="text/template">
-    <input class="form-control form-control-sm form-item-focus form-bg-color dimmer" list="datalistOptions"
-    id="{arrayInputChild}" placeholder="Array" style="height: 100px; min-height:100px;" onchange="" disabled>
+    <input class="form-control form-control-sm form-item-focus form-bg-color dimmer {tr_check}" list="datalistOptions"
+    id="{arrayInputChild_check}" placeholder="Array" style="height: 100px; min-height:100px;" onchange="" disabled>
     <datalist id="datalistOptions">
     <option value="New Array"></option>
     <option value="Living with family, Property with mortgage, Property without

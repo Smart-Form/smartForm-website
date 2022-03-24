@@ -88,6 +88,7 @@ h3 {
   padding: 0.75vw 0vw 0vw 0vw;
   border-radius: 0.75vw;
   background-color: #fff;
+  box-shadow: 0rem 0rem 0.5rem #ccc;
 }
 
 .wizard > .steps .current-info,
@@ -107,6 +108,7 @@ h3 {
   width: 12.5vw;
   height: 1vw;
   border-radius: 0.5vw;
+  top: -0.15vw;
   background-color: #E7D5BF;
 }
 /* stepper line */
@@ -118,7 +120,7 @@ h3 {
   background: #E7D5BF;
   position: absolute;
   left: -9vw;
-  top: 0.4vw;
+  top: 0.35vw;
   transition: all 1s ease;
 }
 .wizard > .steps li.first a {
@@ -360,6 +362,7 @@ form system – mobile layout
     width: 94vw;
     min-height: 30px;
     padding: 0.5vw 0vw 0vw 0vw;
+
   }
   .wizard > .steps li a {
     width: 17.5vw;
@@ -396,6 +399,8 @@ question system
   box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
   z-index: 0;
   background-color: #fff;
+  width: 75vw;
+  min-width: 43vh;
 }
 
 .recipe-table__cell {
@@ -524,13 +529,11 @@ question system
   );
 }
 
-.form-item-focus:focus {
+/* .form-item-focus:focus {
   width: 100%;
   position: absolute;
   left: 0%;
-  /* -webkit-transition: step-start;
-  transition: step-start; */
-}
+} */
 
 .vertical-align-center {
   vertical-align: top;
@@ -544,12 +547,12 @@ question system
   .recipe-table__cell2 {
     padding: 60px 5px 60px 0px;
   }
-  .form-item-focus2:focus {
+  /* .form-item-focus2:focus {
     font-size: larger;
-    width: 50%;
+    width: 60%;
     position: absolute;
     left: 0%;
-  }
+  } */
 }
 
 .minWidth{

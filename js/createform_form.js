@@ -45,12 +45,6 @@ $(function () {
     // })
 });
 
-
-
-
-
-
-
 //
 //
 //  disable
@@ -71,7 +65,7 @@ $(function () {
 //  addInput
 //
 //
-function addInput(select_val, input_id) {
+function addInput(select_val, input_id, tr) {
     var obj = document.createElement('div');
     var obj3 = document.createElement('div');
     var e = document.getElementById(select_val);
@@ -81,11 +75,13 @@ function addInput(select_val, input_id) {
         if (obj2 == null) {  // Avoid duplication
             // Add input in question setting page
             obj.innerHTML = document.getElementById('addInput').innerHTML
-                .replace(/{arrayInputChild}/g, input_id + '_child'); // g for any
+                .replace(/{arrayInputChild}/g, input_id + '_child') // g for any
+                .replace(/{tr}/g, tr); // g for any
             document.getElementById(input_id).appendChild(obj);
              // Add input in Confirmation page
             obj3.innerHTML = document.getElementById('addInput2').innerHTML
-                .replace(/{arrayInputChild}/g, input_id + '_child_check'); // g for any
+                .replace(/{arrayInputChild_check}/g, input_id + '_child_check') // g for any
+                .replace(/{tr_check}/g, tr + '_check'); // g for any
             document.getElementById(input_id + '_check').appendChild(obj3);
             // Animation
             $('#' + input_id + '_child').animate({ opacity: '0.5' });
@@ -100,9 +96,6 @@ function addInput(select_val, input_id) {
         }
     }
 }
-
-
-
 
 // 
 // 
@@ -140,16 +133,16 @@ $(document).ready(function () {
         var htmlString = $('#rowTemplate').html()
             .replace(/{arraySelectID}/g, 'arraySelect' + i)
             .replace(/{arrayInputID}/g, 'arrayInput' + i)
-            .replace(/{n}/g, 'b' + i)
-            .replace(/{m}/g, '2b' + i)
+            .replace(/{n}/g, 'textarea' + i)
+            .replace(/{m}/g, '2textarea' + i)
             .replace(/{newRowID}/g, 'tr' + i);
             // console.log(i);
         $tableBody.append(htmlString);
         var htmlString2 = $('#rowTemplate2').html()
             .replace(/{arraySelectID_check}/g, 'arraySelect' + i + '_check')
             .replace(/{arrayInputID_check}/g, 'arrayInput' + i + '_check')
-            .replace(/{n_check}/g, 'b' + i + '_check')
-            .replace(/{m_check}/g, '2b' + i + '_check')
+            .replace(/{n_check}/g, 'textarea' + i + '_check')
+            .replace(/{m_check}/g, '2textarea' + i + '_check')
             .replace(/{newRowID_check}/g, 'tr' + i + '_check');
             // console.log(i);
         $tableBody2.append(htmlString2);
@@ -309,9 +302,6 @@ function updateCheckTableBody(thisTableBody) { // !!!!Temporary approach: modify
     }
 }
 
-
-
-
 // 
 // 
 // Get form data and show on "Confirmation" page
@@ -339,3 +329,22 @@ function updateConfirmationPgFileInputs(thisObj) {
 // $('input[type=file]').change(function () {
 //     console.log(this.files[0].mozFullPath);
 // });
+
+//
+//
+// focus on fields
+//
+//
+// var id = null;
+// function autoWidth(thisObj) {
+//     var siblings = document.getElementsByClassName(thisObj.closest('tr').id).length;
+//     for (let i = 0; i < siblings; i++){
+//         if (document.getElementsByClassName(thisObj.closest('tr').id)[i].id != thisObj.id) {
+//             var obj = document.getElementsByClassName(thisObj.closest('tr').id)[i].closest('td');
+//             $(obj).animate({ width: '5vw' });
+//         } else {
+//             var obj2 = thisObj.closest('td');
+//             $(obj2).animate({ width: '30vw' });
+//         }
+//     }
+// }

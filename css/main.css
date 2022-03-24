@@ -4,6 +4,13 @@
   font-family: Roboto;
 }
 
+/* To avoid overflow right side blank caused by Bootstrap */
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+
 .theme-color{
   color: #E7E2DE;
 }
@@ -306,16 +313,15 @@ footer {
 .addSurroundedPadding2{
   padding: 1.5rem 2rem 1.5rem 2rem;
 }
+.addSurroundedPadding3{
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
 .textAlignCenter{
   text-align: center;
 }
 /* Dim the screen when focusing */
 .dimmer:focus {
   box-shadow: 0px 0px 0px 9999px rgb(0 0 0 / 0.15);
-  /* -webkit-transition: 0.1s ease-out; */
-  /* transition: 0.1s ease-out; */
-  -webkit-transition: step-end;
-  transition: step-end;
   /* Set the opacity to 0.999 to apply better effects to the input in footer */
   opacity: 0.999;
 }
@@ -417,4 +423,12 @@ popUpModal
 
 .addWidth{
   width: 2vw;
+}
+
+/* Hide Bootstrap5 navbar menu on scroll down, show on scroll up */
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
 }
