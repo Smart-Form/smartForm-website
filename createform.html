@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link href="plugins/material-design-icons-3.0.1/iconfont/material-icons.css" rel="stylesheet">
 </head>
 
 <body class="theme-bg-color4">
@@ -61,7 +62,7 @@
                     </li>
                     &nbsp;&nbsp;
                     <li class="nav-item mx-auto">
-                        <a class="nav-link" href="signin.html"><span class="material-icons theme-bg-color8 navBarBtn3">manage_accounts</span></a>
+                        <a class="nav-link" href="signin.html"><span class="material-icons theme-bg-color8 navBarBtn3">account_box</span></a>
                     </li>
                     &nbsp;&nbsp;
                 </ul>
@@ -96,7 +97,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">*Name</p>
+                                <p class="text-start form-color addPaddingLeft">*Name</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -107,7 +108,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">*Introduction</p>
+                                <p class="text-start form-color addPaddingLeft">*Introduction</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -119,7 +120,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">Welfare Website</p>
+                                <p class="text-start form-color addPaddingLeft">Welfare Website</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -130,7 +131,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">*Welfare Requirements</p>
+                                <p class="text-start form-color addPaddingLeft">*Welfare Requirements</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -142,12 +143,12 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">Age Limit</p>
+                                <p class="text-start form-color addPaddingLeft">Age Limit</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <input type="number" id="v4" placeholder="Age" class="form-control form-bg-color dimmer" min="0" max="200" onchange="updateConfirmationPgFields(this);">
-                                <div class="addPadding">
+                                <div class="addPaddingLeft">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault0" id="v5" onchange="updateConfirmationPgCheckboxes(this);">
                                         <label class="form-check-label" for="flexRadioDefault1">
@@ -167,13 +168,13 @@
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPadding">Apply Date</label>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Apply Date</label>
                             <div class="col-3">
                                 <input type="date" class="form-control form-bg-color dimmer" id="v7" style="max-width: 13rem; min-width: 13rem;" onchange="updateConfirmationPgFields(this);">
                             </div>
-                            <label class="col-form-label addPadding"><small class="form-color">To</small></label>
+                            <label class="col-form-label addPaddingLeft"><small class="form-color">To</small></label>
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPadding">Deadline Date</label>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Deadline Date</label>
                             <div class="col-3">
                                 <input type="date" class="form-control form-bg-color dimmer" id="v8" style="max-width: 13rem; min-width: 13rem;" onchange="updateConfirmationPgFields(this);">
                             </div>
@@ -181,13 +182,13 @@
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPadding">Distribution Date</label>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Distribution Date</label>
                             <div class="col-3">
                                 <input type="date" class="form-control form-bg-color dimmer" id="v9" style="max-width: 13rem; min-width: 13rem;" onchange="updateConfirmationPgFields(this);">
                             </div>
-                            <label class="col-form-label addPadding"><small class="form-color">To</small></label>
+                            <label class="col-form-label addPaddingLeft"><small class="form-color">To</small></label>
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPadding">End Date</label>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">End Date</label>
                             <div class="col-3">
                                 <input type="date" class="form-control form-bg-color dimmer" id="v10" style="max-width: 13rem; min-width: 13rem;" onchange="updateConfirmationPgFields(this);">
                             </div>
@@ -197,7 +198,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">The amount involved</p>
+                                <p class="text-start form-color addPaddingLeft">The amount involved</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -208,7 +209,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">*Privacy Policy & Disclaimer</p>
+                                <p class="text-start form-color addPaddingLeft">*Privacy Policy & Disclaimer</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -220,7 +221,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">Promotional Corner<br><small>(to Applicant)</small></p>
+                                <p class="text-start form-color addPaddingLeft">Promotional Corner<br><small>(to Applicant)</small></p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -232,7 +233,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">Supplementary Information<br><small>(to SmartForm)</small></p>
+                                <p class="text-start form-color addPaddingLeft">Supplementary Information<br><small>(to SmartForm)</small></p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -244,7 +245,7 @@
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPadding">Promotional Material<br>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Promotional Material<br>
                                 <p class="fw-lighter">Attachment</p>
                             </label>
                             <div class="form-holder">
@@ -254,12 +255,12 @@
                                         accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 18rem; min-width: 18rem; z-index: 0;" onchange="updateConfirmationPgFileInputs(this);">
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
-                                <br><br><div class="addPadding"><small class="form-color"><b>Acceptable file format:</b><br>jpg, jpeg, png, tiff,
+                                <br><br><div class="addPaddingLeft"><small class="form-color"><b>Acceptable file format:</b><br>jpg, jpeg, png, tiff,
                                     svg<br><b>File size:</b><br>&lt;10MB<br><b>For a Portrait Poster
                                         Size:</b><br>A4 size in pixels 300dpi: 3508x2480px (without bleed area)<br><b>For a Landscape Banner
                                         Size:</b><br>3508x1240px (without bleed area)</small></div>
                             </div>
-                            <label class="col-2 col-form-label form-color minWidth addPadding">*Logo<br>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">*Logo<br>
                                 <p class="fw-lighter">Attachment</p>
                             </label>
                             <div class="form-holder">
@@ -269,7 +270,7 @@
                                         accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 18rem; min-width: 18rem; z-index: 0;" onchange="updateConfirmationPgFileInputs(this);" required>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
-                                <br><br><div class="addPadding"><small class="form-color"><b>Acceptable file
+                                <br><br><div class="addPaddingLeft"><small class="form-color"><b>Acceptable file
                                         format:</b><br>jpg, jpeg, png, tiff, svg<br><b>File
                                         size:</b><br>&lt;10MB<br><b>Size:</b><br>512x512px / 1024x1024px / 2048x2048px</small></div>
                             </div>
@@ -277,7 +278,7 @@
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <p class="fw-lighter small addPadding">* Must be filled</p>
+                            <p class="fw-lighter small addPaddingLeft">* Must be filled</p>
                         </div>
                         <div style="height: 4vw;"></div>
                     </div>
@@ -299,7 +300,7 @@
                             </h3>
                         </div>
                         <div class="recipe">
-                            <div class="addPadding">
+                            <div class="addPaddingLeft">
                                 <div class="badge bg-primary text-wrap text-start">
                                     <h6>Please set up within 20 questions (multiple choice questions are preferred) to reduce
                                         the difficulty of filling in the form for the elderly and low-educated
@@ -311,7 +312,7 @@
                             </div>
 
                             <br>
-                            <div class="form-row addPadding">
+                            <div class="form-row addPaddingLeft">
                                 <div class="col-3"></div>
                                 <div class="col">
                                     <table>
@@ -649,7 +650,7 @@
                         <div style="height: 17.5vw;"></div>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <p class="fw-lighter small addPadding">* Must be filled</p>
+                            <p class="fw-lighter small addPaddingLeft">* Must be filled</p>
                         </div>
                         <div style="height: 5vw;"></div>
                     </div>
@@ -673,7 +674,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">*Name</p>
+                                <p class="text-start form-color addPaddingLeft">*Name</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -684,7 +685,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">Introduction</p>
+                                <p class="text-start form-color addPaddingLeft">Introduction</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -696,7 +697,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">Welfare Website</p>
+                                <p class="text-start form-color addPaddingLeft">Welfare Website</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -707,7 +708,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">Welfare Requirements</p>
+                                <p class="text-start form-color addPaddingLeft">Welfare Requirements</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -719,12 +720,12 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">Age Limit</p>
+                                <p class="text-start form-color addPaddingLeft">Age Limit</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <input type="number" placeholder="Age" id="v4_check" class="form-control form-bg-color dimmer" min="0" max="200" disabled>
-                                <div class="addPadding">
+                                <div class="addPaddingLeft">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="v5_check" disabled>
                                         <label class="form-check-label" for="flexRadioDefault1">
@@ -744,14 +745,14 @@
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPadding">Apply Date</label>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Apply Date</label>
                             <div class="col-3">
                                 <input type="date" class="form-control form-bg-color dimmer" id="v7_check" style="max-width: 13rem; min-width: 13rem;"
                                     disabled>
                             </div>
-                            <label class="col-form-label"><small class="form-color addPadding">To</small></label>
+                            <label class="col-form-label"><small class="form-color addPaddingLeft">To</small></label>
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPadding">Deadline Date</label>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Deadline Date</label>
                             <div class="col-3">
                                 <input type="date" class="form-control form-bg-color dimmer" id="v8_check" style="max-width: 13rem; min-width: 13rem;"
                                     disabled>
@@ -760,14 +761,14 @@
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPadding">Distribution Date</label>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Distribution Date</label>
                             <div class="col-3">
                                 <input type="date" class="form-control form-bg-color dimmer" id="v9_check" style="max-width: 13rem; min-width: 13rem;"
                                     disabled>
                             </div>
-                            <label class="col-form-label"><small class="form-color addPadding">To</small></label>
+                            <label class="col-form-label"><small class="form-color addPaddingLeft">To</small></label>
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPadding">End Date</label>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">End Date</label>
                             <div class="col-3">
                                 <input type="date" class="form-control form-bg-color dimmer" id="v10_check" style="max-width: 13rem; min-width: 13rem;"
                                     disabled>
@@ -778,7 +779,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">The amount involved</p>
+                                <p class="text-start form-color addPaddingLeft">The amount involved</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -789,7 +790,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">*Privacy Policy & Disclaimer</p>
+                                <p class="text-start form-color addPaddingLeft">*Privacy Policy & Disclaimer</p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -801,7 +802,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">Promotional Corner<br><small>(to Applicant)</small></p>
+                                <p class="text-start form-color addPaddingLeft">Promotional Corner<br><small>(to Applicant)</small></p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -814,7 +815,7 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPadding">Supplementary Information<br><small>(to SmartForm)</small></p>
+                                <p class="text-start form-color addPaddingLeft">Supplementary Information<br><small>(to SmartForm)</small></p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -826,7 +827,7 @@
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPadding">Attachment<br>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Attachment<br>
                                 <p class="fw-lighter">Promotional Materials</p>
                             </label>
                             <div class="form-holder">
@@ -836,7 +837,7 @@
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
                             </div>
-                            <label class="col-2 col-form-label form-color minWidth addPadding">*Attachment<br>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">*Attachment<br>
                                 <p class="fw-lighter">Logo</p>
                             </label>
                             <div class="form-holder">
@@ -862,7 +863,7 @@
                             </div>
                             <div class="recipe">                        
                                 <br>
-                            <div class="form-row addPadding">
+                            <div class="form-row addPaddingLeft">
                                 <div class="col-3"></div>
                                 <div class="col">
                                     <table>
@@ -1313,7 +1314,7 @@
                 <br>
                 <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.</small>
             </div>
-            <div class="col-4 offset-1 addPadding">
+            <div class="col-4 offset-1 addPaddingLeft">
                 <form action="#" class="needs-validation" id="emailSubscription_form">
                     <h5><b>Subscribe to our newsletter</b></h5>
                     <br>

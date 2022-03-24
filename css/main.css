@@ -301,8 +301,11 @@ footer {
   }
 }
 
-.addPadding{
+.addPaddingLeft{
   padding: 0vw 0vw 0vw 2vw;
+}
+.addSurroundedPadding{
+  padding: 2.5vw 7.5vw 2.5vw 7.5vw;
 }
 /* Dim the screen when focusing */
 .dimmer:focus {
