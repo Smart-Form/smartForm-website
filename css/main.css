@@ -75,10 +75,6 @@ footer {
   background-color: #FBF9F8;
   margin: 3.5vw 15vw;
 }
-/* Add padding to containers */
-.w3_container {
-    padding: 1vw 7.5vw;
-}
 @media (max-width: 1280px) {
     .form2 {
         border: none;
@@ -305,7 +301,13 @@ footer {
   padding: 0vw 0vw 0vw 2vw;
 }
 .addSurroundedPadding{
-  padding: 2.5vw 7.5vw 2.5vw 7.5vw;
+  padding: 2.5rem 7.5vw 2.5rem 7.5vw;
+}
+.addSurroundedPadding2{
+  padding: 1.5rem 2rem 1.5rem 2rem;
+}
+.textAlignCenter{
+  text-align: center;
 }
 /* Dim the screen when focusing */
 .dimmer:focus {
@@ -411,4 +413,8 @@ popUpModal
 
 .addResponsiveHeight{
   height: 4.75rem;
+}
+
+.addWidth{
+  width: 2vw;
 }
