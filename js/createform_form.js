@@ -188,14 +188,19 @@ $(document).ready(function () {
         return false;
     });
 
+    var $targetDelRow;
     $tableBody.on('click', '.recipe-table__del-row-btn', function (e) {
 
         // Del row
         var $el = $(e.currentTarget);
-        var $row = $el.closest('tr');
+        $targetDelRow = $el.closest('tr');
+
+        // Old method 2
+        // var $el = $(e.currentTarget);
+        // var $row = $el.closest('tr');
         // console.log($row[0].id);
-        $('#' + $row[0].id + '_check').remove();
-        $row.remove();
+        // $('#' + $row[0].id + '_check').remove();
+        // $row.remove();
 
         // Old method
         // // If within specific width
@@ -234,6 +239,10 @@ $(document).ready(function () {
 
         return false;
     });
+    $(document).on('click', '.recipe-table__del-row-btn2', function (){
+        $targetDelRow.remove();
+    });
+    
 
     Sortable.create(
         $tableBody[0],

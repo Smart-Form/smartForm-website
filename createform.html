@@ -411,7 +411,8 @@
                                                     <div id="arrayInput"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
+                                                    <!-- Button trigger modal -->
+                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" type="button" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
                                                 </td>
                                             </tr>
                                             <tr id="tr1">
@@ -455,7 +456,7 @@
                                                     <div id="arrayInput2"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
+                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
                                                 </td>
                                             </tr>
                                             <tr id="tr2">
@@ -499,7 +500,7 @@
                                                     <div id="arrayInput3"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
+                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
                                                 </td>
                                             </tr>
                                             <tr id="tr3">
@@ -543,7 +544,7 @@
                                                     <div id="arrayInput4"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
+                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
                                                 </td>
                                             </tr>
                                             <tr id="tr4">
@@ -587,7 +588,7 @@
                                                     <div id="arrayInput5"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
+                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
                                                 </td>
                                             </tr>
                                             <tr id="tr5">
@@ -631,7 +632,7 @@
                                                     <div id="arrayInput6"></div>
                                                 </td>
                                                 <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
+                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
                                                 </td>
                                             </tr>
 
@@ -1263,18 +1264,22 @@
                                     //
                                     //
                                     $(document).ready(function() {
+                                        var requiredInputXY = 0;
+
                                         $('#tc_popUp').click(function() {
                                             $('#tc_modal-window').addClass('active');
                                         });
                                         $('.tc_modal-close').click(function() {
+                                            requiredInputXY = $("#tc_checkbox").offset();
+                                            window.scrollTo(requiredInputXY.left, requiredInputXY.top);
+
                                             $(this).parent().removeClass('active');
                                         });
                                         $('#agreeAndReturn').click(function() {
                                             document.getElementById("tc_checkbox").checked = true;
 
-                                            var requiredInputXY = 0;
                                             requiredInputXY = $("#tc_checkbox").offset();
-                                            window.scrollTo(requiredInputXY);
+                                            window.scrollTo(requiredInputXY.left, requiredInputXY.top);
 
                                             $('.tc_modal-close').parent().removeClass('active');
                                         });
@@ -1391,6 +1396,42 @@
 </footer>
 <!-- footer end -->
 
+<!-- Modal -->
+<div class="modal fade" id="modal0" tabindex="-1" aria-labelledby="modal0Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal0Label">Warning</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            You cannot undo this action.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary recipe-table__del-row-btn2" style="background-color: red;" data-bs-dismiss="modal">Delete</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Modal 2 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Warm Reminder</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            All required field(s) must be filled in.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" style="background-color: green;" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+</div>
+
 </body>
 
 <!-- addRow -->
@@ -1436,7 +1477,7 @@
             <div id="{arrayInputID}"></div>
         </td>
         <td class="recipe-table__cell">
-            <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;">x</button>
+            <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
         </td>
     </tr>
 </script>

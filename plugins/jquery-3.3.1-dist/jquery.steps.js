@@ -796,7 +796,13 @@ function paginationClickHandler(event)
         for (let i = 0; i < pg0_requiredInputsID.length; i++){
             let v = document.forms["wizard"][pg0_requiredInputsID[i]].value;
             if ( v == null || v == "") {
-                alert("All required field(s) must be filled in.");
+                // alert("All required field(s) must be filled in.");
+                var myModal = new bootstrap.Modal(document.getElementById('modal1'), {
+                    backdrop: true,
+                    keyboard: true,
+                    focus: true
+                });
+                myModal.toggle();
                 requiredInputXY = $("#" + pg0_requiredInputsID[i]).offset();
                 document.forms['wizard'][pg0_requiredInputsID[i]].reportValidity();
                 return false;
@@ -979,13 +985,13 @@ function paginationClickHandler(event)
                     goToNextStep(wizard, options, state);
                 } else {
                     // console.log(requiredInputXY);
-                    window.scrollTo(requiredInputXY);
+                    window.scrollTo(requiredInputXY.left, requiredInputXY.top - 200);
                 }
             } else if (state.currentIndex == 1) {
                 if (validation3 == true) {
                     goToNextStep(wizard, options, state);
                 } else {
-                    window.scrollTo(requiredInputXY);
+                    window.scrollTo(requiredInputXY.left, requiredInputXY.top - 200);
                 }
             }
             break;
