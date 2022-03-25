@@ -254,13 +254,28 @@ $(document).ready(function () {
             onEnd: function () {
                 console.log('tableBody changed');
                 updateCheckTableBody($tableBody[0]);
+                updateTableBodyTrCountForIndexing();
             }
         }
     );
 
-    // var trCountForIndexing = $tableBody[0].getElementsByTagName('tr').length;
-    // var trForIndexing = $tableBody[0].getElementsByTagName('tr');
-    // trForIndexing[0].
+    function updateTableBodyTrCountForIndexing(){
+        var trCountForIndexing = $tableBody[0].getElementsByTagName('tr').length;
+        var trForIndexing = $tableBody[0].getElementsByTagName('tr');
+        var times = 0;
+        for (let i = 0; i < trCountForIndexing; i++){
+            trForIndexing[i].getElementsByTagName('td')[0].innerHTML = i + 1;
+            if(times != 1){
+                trForIndexing[i].classList.add("theme-bg-color");
+                times++;
+            } else {
+                trForIndexing[i].classList.remove("theme-bg-color");
+                times--;
+            };
+        };
+    };
+    updateTableBodyTrCountForIndexing();
+
 });
 
 //
@@ -282,39 +297,39 @@ function updateCheckTableBody(thisTableBody) { // !!!!Temporary approach: modify
             // tr
             trCheck[i].id = tr[i].id + '_check';
             // select
-            trCheck[i].getElementsByTagName('span')[0].getElementsByTagName('select')[0].id = tr[i].getElementsByTagName('span')[1].getElementsByTagName('select')[0].id + '_check';
-            trCheck[i].getElementsByTagName('span')[0].getElementsByTagName('select')[0].value = tr[i].getElementsByTagName('span')[1].getElementsByTagName('select')[0].value;
+            trCheck[i].getElementsByTagName('span')[0].getElementsByTagName('select')[0].id = tr[i].getElementsByTagName('span')[0].getElementsByTagName('select')[0].id + '_check';
+            trCheck[i].getElementsByTagName('span')[0].getElementsByTagName('select')[0].value = tr[i].getElementsByTagName('span')[0].getElementsByTagName('select')[0].value;
             // textarea
-            trCheck[i].getElementsByTagName('span')[1].getElementsByTagName('textarea')[0].id = tr[i].getElementsByTagName('span')[2].getElementsByTagName('textarea')[0].id + '_check';
-            trCheck[i].getElementsByTagName('span')[1].getElementsByTagName('textarea')[0].value = tr[i].getElementsByTagName('span')[2].getElementsByTagName('textarea')[0].value;
+            trCheck[i].getElementsByTagName('span')[1].getElementsByTagName('textarea')[0].id = tr[i].getElementsByTagName('span')[1].getElementsByTagName('textarea')[0].id + '_check';
+            trCheck[i].getElementsByTagName('span')[1].getElementsByTagName('textarea')[0].value = tr[i].getElementsByTagName('span')[1].getElementsByTagName('textarea')[0].value;
             // textarea
-            trCheck[i].getElementsByTagName('span')[2].getElementsByTagName('textarea')[0].id = tr[i].getElementsByTagName('span')[3].getElementsByTagName('textarea')[0].id + '_check';
-            trCheck[i].getElementsByTagName('span')[2].getElementsByTagName('textarea')[0].value = tr[i].getElementsByTagName('span')[3].getElementsByTagName('textarea')[0].value;
+            trCheck[i].getElementsByTagName('span')[2].getElementsByTagName('textarea')[0].id = tr[i].getElementsByTagName('span')[2].getElementsByTagName('textarea')[0].id + '_check';
+            trCheck[i].getElementsByTagName('span')[2].getElementsByTagName('textarea')[0].value = tr[i].getElementsByTagName('span')[2].getElementsByTagName('textarea')[0].value;
             // arrayInput wrapper
-            trCheck[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].id = tr[i].getElementsByTagName('span')[4].getElementsByTagName('div')[0].id + '_check';
+            trCheck[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].id = tr[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].id + '_check';
             // arrayInput itself
-            if (tr[i].getElementsByTagName('span')[4].getElementsByTagName('div')[0].getElementsByTagName('input')[0] != null) {
+            if (tr[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].getElementsByTagName('input')[0] != null) {
                 if (trCheck[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].getElementsByTagName('input')[0] == null) {
                     var obj4 = document.createElement('div');
                     // Add input in Confirmation page
                     obj4.innerHTML = document.getElementById('addInput2').innerHTML
-                        .replace(/{arrayInputChild}/g, tr[i].getElementsByTagName('span')[4].getElementsByTagName('div')[0].id + '_child_check'); // g for any
-                    document.getElementById(tr[i].getElementsByTagName('span')[4].getElementsByTagName('div')[0].id + '_check').appendChild(obj4);
-                }
-                trCheck[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].getElementsByTagName('input')[0].id = tr[i].getElementsByTagName('span')[4].getElementsByTagName('div')[0].getElementsByTagName('input')[0].id + '_check';
-                trCheck[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].getElementsByTagName('input')[0].value = tr[i].getElementsByTagName('span')[4].getElementsByTagName('div')[0].getElementsByTagName('input')[0].value;
-            } else if (tr[i].getElementsByTagName('span')[4].getElementsByTagName('div')[0].getElementsByTagName('input')[0] == null) {
+                        .replace(/{arrayInputChild}/g, tr[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].id + '_child_check'); // g for any
+                    document.getElementById(tr[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].id + '_check').appendChild(obj4);
+                };
+                trCheck[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].getElementsByTagName('input')[0].id = tr[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].getElementsByTagName('input')[0].id + '_check';
+                trCheck[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].getElementsByTagName('input')[0].value = tr[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].getElementsByTagName('input')[0].value;
+            } else if (tr[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].getElementsByTagName('input')[0] == null) {
                 if (trCheck[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].getElementsByTagName('input')[0] != null) {
                     trCheck[i].getElementsByTagName('span')[3].getElementsByTagName('div')[0].getElementsByTagName('input')[0].remove();
-                }
-            }
-        }
+                };
+            };
+        };
 
     } else {
         console.log('trCount does not match trCountCheck');
         
-    }
-}
+    };
+};
 
 // 
 // 
