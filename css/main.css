@@ -95,7 +95,7 @@ footer {
   background-color: #FBF9F8;
   margin: 3.5vw 15vw;
 }
-@media only screen and (max-aspect-ratio: 4/5) and (max-width: 1280px) {
+@media only screen and (max-aspect-ratio: 3/2) {
     .form2 {
         border: none;
         border-radius: 15px;
@@ -277,7 +277,7 @@ footer {
   padding: 10px 0px 10px 10px;
 }
 
-@media only screen and (max-aspect-ratio: 4/5) and (max-width: 1080px) {
+@media only screen and (max-aspect-ratio: 3/2) {
   .col-min-width {
     min-width: 75vw;
   }
@@ -307,7 +307,7 @@ footer {
   }
 }
 
-@media only screen and (max-aspect-ratio: 4/3) and (max-width: 450px) {
+@media only screen and (max-aspect-ratio: 3/2) {
   .typing-smartform {
     font-size: 0.75rem;
   }
