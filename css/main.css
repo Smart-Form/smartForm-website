@@ -95,7 +95,7 @@ footer {
   background-color: #FBF9F8;
   margin: 3.5vw 15vw;
 }
-@media (max-width: 1280px) {
+@media only screen and (max-aspect-ratio: 4/5) and (max-width: 1280px) {
     .form2 {
         border: none;
         border-radius: 15px;
@@ -277,7 +277,7 @@ footer {
   padding: 10px 0px 10px 10px;
 }
 
-@media (max-width: 1080px) {
+@media only screen and (max-aspect-ratio: 4/5) and (max-width: 1080px) {
   .col-min-width {
     min-width: 75vw;
   }
@@ -307,7 +307,7 @@ footer {
   }
 }
 
-@media (max-width: 450px) {
+@media only screen and (max-aspect-ratio: 4/3) and (max-width: 450px) {
   .typing-smartform {
     font-size: 0.75rem;
   }
@@ -466,4 +466,20 @@ popUpModal
 
 .overflowAuto{
   overflow: auto;
+}
+
+/* BG image animation */
+bgImageAnimation {
+  display: block;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../img/iStock-1188864563.jpeg');
+  animation: animateBackground infinite ease-in-out 20s;
+}
+@keyframes animateBackground {
+  0% { background-image: url('../img/v911-a-01-b.jpg'); }
+  33% { background-image: url('../img/5d0179702500004e12df2b4e.jpeg'); }
+  66% { background-image: url('../img/iStock-1188864563.jpeg'); }
+  100% { background-image: url('../img/v911-a-01-b.jpg'); }
 }

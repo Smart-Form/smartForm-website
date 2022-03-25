@@ -298,7 +298,7 @@ h3 {
 form system – mobile layout
 
 */
-@media (max-width: 1280px) {
+@media only screen and (max-aspect-ratio: 4/5) and (max-width: 1280px) {
 
   h3 {
     font-size: 7vw;
@@ -540,7 +540,7 @@ question system
   text-align: center;
 }
 
-@media (max-width: 1280px) {
+@media only screen and (max-aspect-ratio: 4/5) and (max-width: 1280px) {
   .recipe-table__cell {
     padding: 60px 5px 60px 0px;
   }

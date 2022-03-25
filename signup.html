@@ -15,265 +15,322 @@
 </head>
 
 <body class="theme-bg-color4">
-    <a id="scroll" style="display: none;"><span></span></a>
+    <bgImageAnimation>
+        <a id="scroll" style="display: none;"><span></span></a>
 
-      <!-- nav -->
-      <nav class="navbar fixed-top autohide navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color2 navbarRadiusBorder">
-        <div class="container-fluid">
+        <!-- nav -->
+        <nav class="navbar fixed-top autohide navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color2 navbarRadiusBorder">
+            <div class="container-fluid">
 
-            <a class="navbar-brand" href="index.html">
-                <div class="row ms-auto">
-                    <div class="col"><img src="img/IconsPSD.png" alt="" width="50" height="50" class=""></div>
-                </div>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon navbar-toggle-icon-leftPadding"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    &nbsp;&nbsp;
-                    <li class="nav-item mx-auto" style="line-height: 200%;">
-                        <a class="nav-link navBarBtn" href="#"><small>Eng</small></a>
-                    </li>
-                    &nbsp;&nbsp;
-                    <li class="nav-item mx-auto" style="line-height: 200%;">
-                        <a class="nav-link navBarBtn" href="#"><small>繁</small></a>
-                    </li>
-                    &nbsp;&nbsp;
-                    <li class="nav-item mx-auto" style="line-height: 200%;">
-                        <a class="nav-link navBarBtn" href="#"><small>简</small></a>
-                    </li>
-                    &nbsp;&nbsp;
-                    <li class="nav-item mx-auto">
-                      <a class="nav-link" href="form.html"><span class="material-icons theme-bg-color8 navBarBtn3">dashboard</span></a>
-                    </li>
-                    &nbsp;&nbsp;
-                    <li class="nav-item mx-auto">
-                        <a class="nav-link" href="signin.html"><span class="material-icons theme-bg-color8 navBarBtn3">account_box</span></a>
-                    </li>
-                    &nbsp;&nbsp;
-                </ul>
-            </div>
-
-        </div>
-    </nav>
-    <!-- nav end -->
-
-    <div class="addResponsiveHeight"></div>
-
-    <form action="user_id.html" method="post" class="form2 needs-validation theme-color2 theme-bg-color8 was-validated">
-        <div class="container addSurroundedPadding">
-            <h5 style="font-size:150%" class="d-flex justify-content-center"><b>Sign Up</b></h5>
-            <br>
-            <p>
-                <label for="uname">*Organization Name</label>
-                <input type="text" name="uname" class="form-control dimmer" placeholder="e.g. Social Welfare Department"
-                    required>
-            </p>
-            <br>
-
-            <p>
-                <label for="pnum">*Phone Number</label>
-                <input type="number" name="pnum" class="form-control dimmer" placeholder="e.g. 23432255" required>
-            </p>
-            <br>
-
-            <p>
-                <label for="email">*Email Address</label>
-                <input type="email" pname="email" class="form-control dimmer" placeholder="e.g. swdenq@swd.gov.hk" required>
-            </p>
-            <br>
-
-            <p>
-                <label for="fnum">Fax Number</label>
-                <input type="number" name="fnum" class="form-control dimmer" placeholder="e.g. 28380125">
-            </p>
-            <br>
-
-            <p>
-                <label for="weblink">Website URL</label>
-                <input type="url" name="weblink" class="form-control dimmer" placeholder="e.g. swd.gov.hk" pattern="https?://.+">
-            </p>
-            <br>
-
-            <p>
-                <label for="brnum">*BR Number (the first 11 digits)</label>
-                <input type="number" name="brnum" class="form-control dimmer" placeholder="e.g. 12345678123" required>
-            </p>
-            <br>
-
-            <p>
-                <label for="address">*Address</label>
-                <input type="text" name="address" class="form-control dimmer"
-                    placeholder="e.g. 7/F - 10/F, WU CHUNG HSE, 213 QUEEN'S RD EAST, WAN CHAI, HK" required>
-            </p>
-            <br>
-
-            <p>
-                <label for="organization">*Types of Organization</label>
-                <select id="organization" name="organization" class="form-control dimmer" required>
-                    <option value="gov">Government</option>
-                    <option value="corporations">Corporations</option>
-                    <option value="ngo">Non-Government Organization</option>
-                </select>
-            </p>
-            <br>
-
-            <p>
-                <label for="service">*Types of Service</label>
-                <select id="service" name="service" class="form-control dimmer" required>
-                    <option value="finaid">Financial Aid</option>
-                    <option value="health">Health</option>
-                    <option value="counselling">Counselling</option>
-                    <option value="leicul">Leisure and Cultural</option>
-                    <option value="legalaid">Legal Aid</option>
-                    <option value="education">Education</option>
-                    <option value="other">Other Type</option>
-                </select>
-            </p>
-            <br>
-
-            <p>
-                <label for="pw">*Password</label>
-                <input type="password" name="pw" class="form-control dimmer" pattern="(?=.*\d)(?=.*[a-z]).{12,}" id="password_input"
-                    required>
-                <!-- An element to toggle between password visibility -->
-                <input type="checkbox" onclick="myFunction()">&nbsp;&nbsp;Show Password<br>
-                <script>
-                    function myFunction() {
-                        var x = document.getElementById("password_input");
-                        if (x.type === "password") {
-                            x.type = "text";
-                        } else {
-                            x.type = "password";
-                        }
-                    }
-                </script>
-                <label style="font-size:80%; color:#987468;">Use 12 or more characters with a mix of letters, numbers &
-                    symbols</label>
-            </p>
-            <br>
-
-            <p>
-                <label for="pw-confirm">*Confirm Password</label>
-                <input type="password" name="pw-confirm" class="form-control dimmer" oninput="check(this)" required>
-                <script>
-                    function check(input) {
-                        if (input.value != document.getElementById('password_input').value) {
-                            input.setCustomValidity('Password Must be Matching.');
-                        } else {
-                            // input is valid -- reset the error message
-                            input.setCustomValidity('');
-                        }
-                    }
-                </script>
-            </p>
-            <br>
-
-            <p>
-                <label for="aboutOrganization">*About Organization</label>
-                <br>
-                <textarea id="aboutOrganization" name="aboutOrganization" rows="4" cols="57.5" style="min-height:200px;"
-                    class="form-control dimmer" placeholder="VISION
-Together we build a caring community with self-sufficiency, dignity, harmony, happiness.
-
-MISSION
-For our customers, to provide quality social welfare services to enable them to meet life's challenges.
- 
-For the Community
-To promote social and family responsibilities.
- 
-For our Staff
-To develop individual potential and reward results; and to empower and build an innovative, cohesive and professional team.
- 
-For Welfare Organizations
-To promote synergy conducive to efficient and effective service delivery.
-
-OUR VALUES
-Professionalism, we will embrace the highest standards of integrity, endurance, knowledge and skills.
- 
-People-oriented Service
-We will always be sensitive to people's needs and provide timely services with respect, fairness and confidentiality.
- 
-Community Participation
-We will involve the community in attaining our service goals.
- 
-Effective Communication
-We will strive to understand and to be understood.
- 
-Continuous Improvement
-We will continuously strive for excellence." required></textarea>
-            </p>
-            <br>
-
-            <p>
-                <label for="promotional">Promotional Material Attachment</label>
-                <br>
-                <input type="file" name="filename" class="form-control dimmer" accept=".jpg, .jpeg, .png, .tiff, .svg">
-                <small>&nbsp;&nbsp;Acceptable file format:&nbsp;&nbsp;jpg, jpeg, png, tiff,
-                svg<br>&nbsp;&nbsp;File size:&nbsp;&nbsp;&lt;10MB<br>&nbsp;&nbsp;For a Portrait Poster
-                Size:&nbsp;&nbsp;A4 size in pixels 300dpi: 3508 x 2480 px (without bleed area)<br>&nbsp;&nbsp;For a
-                Landscape Banner Size:&nbsp;&nbsp;3508 x 1240 px (without bleed area)</small>
-            </p>
-            <br>
-
-            <p>
-                <label for="attachments">*Logo Attachment</label>
-                <br>
-                <input type="file" name="filename" class="form-control dimmer" accept=".jpg, .jpeg, .png, .tiff, .svg" required>
-                <small>&nbsp;&nbsp;Acceptable file format:&nbsp;&nbsp;jpg, jpeg, png, tiff, svg<br>&nbsp;&nbsp;File
-                size:&nbsp;&nbsp;&lt;10MB<br>&nbsp;&nbsp;Size:&nbsp;&nbsp;512 x 512 px / 1024 x 1024 px / 2048 x 2048 px</small>
-            </p>
-            <br>
-            <br>
-
-            <p class="fw-lighter small">* Must be filled</p>
-            <br>
-            <br>
-
-            <div class="d-flex justify-content-center">
-                <button type="submit" class="btn-smartform2 addShadow">&nbsp;Submit&nbsp;</button>
-            </div>
-            <br>
-            <br>
-        </div>
-    </form>
-
-    <!-- footer -->
-    <p></p>
-    <footer class="py-5 theme-bg-color2 theme-color8">
-        <div class="row" style="text-overflow: hidden;">
-            <div class="col-1" style="width: 13vw;"></div>
-            <div class="col-4">
-                <h5><b>Contact Us</b></h5>
-                <br>
-                <p>Phone +852 0000 0000</p>
-                <p>Email cs@xxxxxxxxx.com</p>
-                <br>
-                <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.</small>
-            </div>
-            <div class="col-4 offset-1">
-                <form action="#" class="needs-validation addPaddingLeft">
-                    <h5><b>Subscribe to our newsletter</b></h5>
-                    <br>
-                    <p>Monthly digest of whats new and exciting from us.</p>
-                    <div class="row">
-                            <div class="col">
-                                <input id="newsletter1" type="email" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
-                            </div>
-                            <div class="col">
-                                <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit">Subscribe</button>
-                            </div>
+                <a class="navbar-brand" href="index.html">
+                    <div class="row ms-auto">
+                        <div class="col"><img src="img/IconsPSD.png" alt="" width="50" height="50" class=""></div>
                     </div>
-                </form>
-            </div>
-        </div>
-    </footer>
-    <!-- footer end -->
+                </a>
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-toggle-icon-leftPadding"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        &nbsp;&nbsp;
+                        <li class="nav-item mx-auto" style="line-height: 200%;">
+                            <a class="nav-link navBarBtn" href="#"><small>Eng</small></a>
+                        </li>
+                        &nbsp;&nbsp;
+                        <li class="nav-item mx-auto" style="line-height: 200%;">
+                            <a class="nav-link navBarBtn" href="#"><small>繁</small></a>
+                        </li>
+                        &nbsp;&nbsp;
+                        <li class="nav-item mx-auto" style="line-height: 200%;">
+                            <a class="nav-link navBarBtn" href="#"><small>简</small></a>
+                        </li>
+                        &nbsp;&nbsp;
+                        <li class="nav-item mx-auto">
+                        <a class="nav-link" href="form.html"><span class="material-icons theme-bg-color8 navBarBtn3">dashboard</span></a>
+                        </li>
+                        &nbsp;&nbsp;
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="signin.html"><span class="material-icons theme-bg-color8 navBarBtn3">account_box</span></a>
+                        </li>
+                        &nbsp;&nbsp;
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- nav end -->
+
+        <div class="addResponsiveHeight"></div>
+
+        <form action="user_id.html" method="post" class="form2 needs-validation theme-color2 theme-bg-color8 was-validated">
+            <div class="container addSurroundedPadding">
+                <h5 style="font-size:150%" class="d-flex justify-content-center"><b>Sign Up</b></h5>
+                <br>
+                <p>
+                    <label for="uname">*Organization Name</label>
+                    <input type="text" name="uname" class="form-control dimmer" placeholder="e.g. Social Welfare Department"
+                        required>
+                </p>
+                <br>
+
+                <p>
+                    <label for="pnum">*Phone Number</label>
+                    <input type="number" name="pnum" class="form-control dimmer" placeholder="e.g. 23432255" required>
+                </p>
+                <br>
+
+                <p>
+                    <label for="email">*Email Address</label>
+                    <input type="email" pname="email" class="form-control dimmer" placeholder="e.g. swdenq@swd.gov.hk" required>
+                </p>
+                <br>
+
+                <p>
+                    <label for="fnum">Fax Number</label>
+                    <input type="number" name="fnum" class="form-control dimmer" placeholder="e.g. 28380125">
+                </p>
+                <br>
+
+                <p>
+                    <label for="weblink">Website URL</label>
+                    <input type="url" name="weblink" class="form-control dimmer" placeholder="e.g. swd.gov.hk" pattern="https?://.+">
+                </p>
+                <br>
+
+                <p>
+                    <label for="brnum">*BR Number (the first 11 digits)</label>
+                    <input type="number" name="brnum" class="form-control dimmer" placeholder="e.g. 12345678123" required>
+                </p>
+                <br>
+
+                <p>
+                    <label for="address">*Address</label>
+                    <input type="text" name="address" class="form-control dimmer"
+                        placeholder="e.g. 7/F - 10/F, WU CHUNG HSE, 213 QUEEN'S RD EAST, WAN CHAI, HK" required>
+                </p>
+                <br>
+
+                <p>
+                    <label for="organization">*Types of Organization</label>
+                    <select id="organization" name="organization" class="form-control dimmer" required>
+                        <option value="gov">Government</option>
+                        <option value="corporations">Corporations</option>
+                        <option value="ngo">Non-Government Organization</option>
+                    </select>
+                </p>
+                <br>
+
+                <p>
+                    <label for="service">*Types of Service</label>
+                    <select id="service" name="service" class="form-control dimmer" required>
+                        <option value="finaid">Financial Aid</option>
+                        <option value="health">Health</option>
+                        <option value="counselling">Counselling</option>
+                        <option value="leicul">Leisure and Cultural</option>
+                        <option value="legalaid">Legal Aid</option>
+                        <option value="education">Education</option>
+                        <option value="other">Other Type</option>
+                    </select>
+                </p>
+                <br>
+
+                <p>
+                    <label for="pw">*Password</label>
+                    <input type="password" name="pw" class="form-control dimmer" pattern="(?=.*\d)(?=.*[a-z]).{12,}" id="password_input"
+                        required>
+                    <!-- An element to toggle between password visibility -->
+                    <input type="checkbox" onclick="myFunction()">&nbsp;&nbsp;Show Password<br>
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("password_input");
+                            if (x.type === "password") {
+                                x.type = "text";
+                            } else {
+                                x.type = "password";
+                            }
+                        }
+                    </script>
+                    <label style="font-size:80%; color:#987468;">Use 12 or more characters with a mix of letters, numbers &
+                        symbols</label>
+                </p>
+                <br>
+
+                <p>
+                    <label for="pw-confirm">*Confirm Password</label>
+                    <input type="password" name="pw-confirm" class="form-control dimmer" oninput="check(this)" required>
+                    <script>
+                        function check(input) {
+                            if (input.value != document.getElementById('password_input').value) {
+                                input.setCustomValidity('Password Must be Matching.');
+                            } else {
+                                // input is valid -- reset the error message
+                                input.setCustomValidity('');
+                            }
+                        }
+                    </script>
+                </p>
+                <br>
+
+                <p>
+                    <label for="aboutOrganization">*About Organization</label>
+                    <br>
+                    <textarea id="aboutOrganization" name="aboutOrganization" rows="4" cols="57.5" style="min-height:200px;"
+                        class="form-control dimmer" placeholder="VISION
+    Together we build a caring community with self-sufficiency, dignity, harmony, happiness.
+
+    MISSION
+    For our customers, to provide quality social welfare services to enable them to meet life's challenges.
+    
+    For the Community
+    To promote social and family responsibilities.
+    
+    For our Staff
+    To develop individual potential and reward results; and to empower and build an innovative, cohesive and professional team.
+    
+    For Welfare Organizations
+    To promote synergy conducive to efficient and effective service delivery.
+
+    OUR VALUES
+    Professionalism, we will embrace the highest standards of integrity, endurance, knowledge and skills.
+    
+    People-oriented Service
+    We will always be sensitive to people's needs and provide timely services with respect, fairness and confidentiality.
+    
+    Community Participation
+    We will involve the community in attaining our service goals.
+    
+    Effective Communication
+    We will strive to understand and to be understood.
+    
+    Continuous Improvement
+    We will continuously strive for excellence." required></textarea>
+                </p>
+                <br>
+
+                <p>
+                    <label for="promotional">Promotional Material Attachment</label>
+                    <br>
+                    <input type="file" name="filename" class="form-control dimmer" accept=".jpg, .jpeg, .png, .tiff, .svg">
+                    <small>&nbsp;&nbsp;Acceptable file format:&nbsp;&nbsp;jpg, jpeg, png, tiff,
+                    svg<br>&nbsp;&nbsp;File size:&nbsp;&nbsp;&lt;10MB<br>&nbsp;&nbsp;For a Portrait Poster
+                    Size:&nbsp;&nbsp;A4 size in pixels 300dpi: 3508 x 2480 px (without bleed area)<br>&nbsp;&nbsp;For a
+                    Landscape Banner Size:&nbsp;&nbsp;3508 x 1240 px (without bleed area)</small>
+                </p>
+                <br>
+
+                <p>
+                    <label for="attachments">*Logo Attachment</label>
+                    <br>
+                    <input type="file" name="filename" class="form-control dimmer" accept=".jpg, .jpeg, .png, .tiff, .svg" required>
+                    <small>&nbsp;&nbsp;Acceptable file format:&nbsp;&nbsp;jpg, jpeg, png, tiff, svg<br>&nbsp;&nbsp;File
+                    size:&nbsp;&nbsp;&lt;10MB<br>&nbsp;&nbsp;Size:&nbsp;&nbsp;512 x 512 px / 1024 x 1024 px / 2048 x 2048 px</small>
+                </p>
+                <br>
+                <br>
+
+                <p class="fw-lighter small">* Must be filled</p>
+                <br>
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn-smartform2 addShadow">&nbsp;Submit&nbsp;</button>
+                </div>
+                <br>
+                <br>
+            </div>
+        </form>
+
+        <!-- footer -->
+        <footer class="theme-bg-color8 theme-color6 footerRadiusBorder addShadow">
+            <small>
+                <div class="container px-4 py-3">
+                    <div class="row g-4 py-4 row-cols-1 row-cols-lg-2">
+                        <div class="col">
+                            <form>
+                                <h5 class="pb-2 border-bottom"><b>Contact Us</b></h5>
+                                <br>
+                                <div class="row row-cols-2 d-flex justify-content-start">
+                                    <div class="col-4">
+                                        <p><span class="material-icons inline_icon">phone</span> Phone</p>
+                                        <p><span class="material-icons inline_icon">mail</span> Email</p>
+                                    </div>
+                                    <div class="col-5">
+                                        <p>+852 0000 0000</p>
+                                        <p>cs@xxxxxxxxx.com</p>
+                                    </div>
+                                </div>
+                                <small>Need service or support? Start your request now and we’ll find you a solution.</small>
+                            </form>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <form action="#" class="needs-validation">
+                                <h5 class="pb-2 border-bottom"><b>Subscribe to our newsletter</b></h5>
+                                <br>
+                                <p>Monthly digest of whats new and exciting from us.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <input id="newsletter1" type="email" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
+                                    </div>
+                                    <div class="col">
+                                        <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit"><span class="material-icons inline_icon">send</span> Subscribe</button>
+                                    </div>
+                                </div>
+                                <small>We’ll never share your email address with a third-party. </small>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom theme-bg-color3 theme-color8 footerRadiusBorder addPaddingLeft">
+                    <div class="container">
+                        <div class="row g-4 row-cols-2 row-cols-lg-3">
+                            <div class="col">
+                                <h5 class="title">Smart Form</h5>
+                                <br>
+                                <ul class="list-unstyled">
+                                    <li> <a href="#">Index</a></li>
+                                    <li> <a href="#">About Us</a></li>
+                                    <li> <a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h5 class="title">Form</h5>
+                                <br>
+                                <ul class="list-unstyled">
+                                    <li> <a href="form.html">Overview</a></li>
+                                    <li> <a href="#">Create Form</a></li>
+                                    <li> <a href="terms_and_conditions.html">Terms and Conditions</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h5 class="title">Account</h5>
+                                <br>
+                                <ul class="list-unstyled">
+                                    <li> <a href="#">Profile</a></li>
+                                    <li> <a href="signin.html">Sign In</a></li>
+                                    <li> <a href="signup.html">Sign Up</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <hr>
+                            <small>
+                                <p>
+                                    <span class="text-muted">Copyright &copy; <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.</span>
+                                    <span class="addPaddingLeft">Privacy Policy - <a href="terms_and_conditions.html">Terms and Conditions</a></span>
+                                </p>
+                            </small>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </small>
+        </footer>
+        <!-- footer end -->
+    </bgImageAnimation>
 </body>
 <link rel="stylesheet" href="css/createform_form.css">
 <link rel="stylesheet" href="css/main.css">

@@ -19,7 +19,7 @@
       height: 20vw;
     }
   
-    @media (max-width: 1280px) {
+    @media only screen and (max-aspect-ratio: 4/5) and (max-width: 1280px) {
       .typewriter-h {
         height: 55vw;
       }
@@ -28,165 +28,211 @@
 </head>
 
 <body class="theme-bg-color4">
-  <a id="scroll" style="display: none;"><span></span></a>
+    <a id="scroll" style="display: none;"><span></span></a>
 
-   <!-- nav -->
-   <nav class="navbar fixed-top autohide navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color2 navbarRadiusBorder">
-    <div class="container-fluid">
+    <!-- nav -->
+    <nav class="navbar fixed-top autohide navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color2 navbarRadiusBorder">
+      <div class="container-fluid">
 
-        <a class="navbar-brand" href="index.html">
-            <div class="row ms-auto">
-                <div class="col"><img src="img/IconsPSD.png" alt="" width="50" height="50" class=""></div>
-            </div>
-        </a>
+          <a class="navbar-brand" href="index.html">
+              <div class="row ms-auto">
+                  <div class="col"><img src="img/IconsPSD.png" alt="" width="50" height="50" class=""></div>
+              </div>
+          </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon navbar-toggle-icon-leftPadding"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                &nbsp;&nbsp;
-                <li class="nav-item mx-auto" style="line-height: 200%;">
-                    <a class="nav-link navBarBtn" href="#"><small>Eng</small></a>
-                </li>
-                &nbsp;&nbsp;
-                <li class="nav-item mx-auto" style="line-height: 200%;">
-                    <a class="nav-link navBarBtn" href="#"><small>繁</small></a>
-                </li>
-                &nbsp;&nbsp;
-                <li class="nav-item mx-auto" style="line-height: 200%;">
-                    <a class="nav-link navBarBtn" href="#"><small>简</small></a>
-                </li>
-                &nbsp;&nbsp;
-                <li class="nav-item mx-auto">
-                  <a class="nav-link" href="form.html"><span class="material-icons theme-bg-color8 navBarBtn3">dashboard</span></a>
-                </li>
-                &nbsp;&nbsp;
-                <li class="nav-item mx-auto">
-                    <a class="nav-link" href="signin.html"><span class="material-icons theme-bg-color8 navBarBtn3">account_box</span></a>
-                </li>
-                &nbsp;&nbsp;
-            </ul>
-        </div>
-
-    </div>
-</nav>
-<!-- nav end -->
-
-<div class="addResponsiveHeight"></div>
-
-  <!-- main body -->
-  <br>
-  <main>
-    <div class="center theme-color8">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <br><p style="font-size: 300%;"><b>Get started</b></p>
-            <p class="fs-5 col-md-8">Quickly and easily get started with Smart Form.</p>
-            <br>
-            <div class="mb-5">
-              <a href="createform.html" class="btn btn-primary btn-lg px-4 btn-smartform3 addShadow">Create
-                Your
-                Welfare</a>
-            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon navbar-toggle-icon-leftPadding"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  &nbsp;&nbsp;
+                  <li class="nav-item mx-auto" style="line-height: 200%;">
+                      <a class="nav-link navBarBtn" href="#"><small>Eng</small></a>
+                  </li>
+                  &nbsp;&nbsp;
+                  <li class="nav-item mx-auto" style="line-height: 200%;">
+                      <a class="nav-link navBarBtn" href="#"><small>繁</small></a>
+                  </li>
+                  &nbsp;&nbsp;
+                  <li class="nav-item mx-auto" style="line-height: 200%;">
+                      <a class="nav-link navBarBtn" href="#"><small>简</small></a>
+                  </li>
+                  &nbsp;&nbsp;
+                  <li class="nav-item mx-auto">
+                    <a class="nav-link" href="form.html"><span class="material-icons theme-bg-color8 navBarBtn3">dashboard</span></a>
+                  </li>
+                  &nbsp;&nbsp;
+                  <li class="nav-item mx-auto">
+                      <a class="nav-link" href="signin.html"><span class="material-icons theme-bg-color8 navBarBtn3">account_box</span></a>
+                  </li>
+                  &nbsp;&nbsp;
+              </ul>
           </div>
-          <div class="col">
-            <img src="img/typewriter.svg" alt="" class="typewriter-h">
-          </div>
-        </div>
+
       </div>
+  </nav>
+  <!-- nav end -->
 
-      <div class="col-3 col-md-2 mb-5"></div>
+  <div class="addResponsiveHeight"></div>
 
-      <div class="album py-5 bg-light" style="border-radius: 25px;">
+    <!-- main body -->
+    <br>
+    <main>
+      <div class="center theme-color8">
         <div class="container">
-
-          <!-- thumbnail -->
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+          <div class="row">
             <div class="col">
-              <div class="card shadow-sm">
-                <a href="#" class="column col-xs-6" id="sepia">
-                  <img src="img/oldAgeLivingAllowance.png" alt="" class="thumbnail">
-                </a>
-                <div class="card-body">
-                  <p class="card-text">Old Age Living Allowance</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">Last modified by Cyrus on DEC 2</small>
-                  </div>
-                </div>
+              <br><p style="font-size: 300%;"><b>Get started</b></p>
+              <p class="fs-5 col-md-8">Quickly and easily get started with Smart Form.</p>
+              <br>
+              <div class="mb-5">
+                <a href="createform.html" class="btn btn-primary btn-lg px-4 btn-smartform3 addShadow">Create
+                  Your
+                  Welfare</a>
               </div>
             </div>
+            <div class="col">
+              <img src="img/typewriter.svg" alt="" class="typewriter-h">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 col-md-2 mb-5"></div>
+
+        <div class="album py-5 bg-light" style="border-radius: 25px;">
+          <div class="container">
 
             <!-- thumbnail -->
-            <div class="col">
-              <div class="card shadow-sm">
-                <a href="#" class="column col-xs-6" id="sepia">
-                  <img src="img/010531200095mkopyABED.jpeg" alt="" class="thumbnail">
-                </a>
-                <div class="card-body">
-                  <p class="card-text">Senior Citizen Card</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+              <div class="col">
+                <div class="card shadow-sm addRadiusBorder">
+                  <a href="#" class="column col-xs-6" id="sepia">
+                    <img src="img/oldAgeLivingAllowance.png" alt="" class="thumbnail">
+                  </a>
+                  <div class="card-body">
+                    <p class="card-text">Old Age Living Allowance</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">Last modified by Cyrus on DEC 2</small>
                     </div>
-                    <small class="text-muted">Last modified by Cyrus on DEC 2</small>
                   </div>
                 </div>
               </div>
-            </div>
 
+              <!-- thumbnail -->
+              <div class="col">
+                <div class="card shadow-sm addRadiusBorder">
+                  <a href="#" class="column col-xs-6" id="sepia">
+                    <img src="img/010531200095mkopyABED.jpeg" alt="" class="thumbnail">
+                  </a>
+                  <div class="card-body">
+                    <p class="card-text">Senior Citizen Card</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">Last modified by Cyrus on DEC 2</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-      </div>
 
-    </div>
-  </main>
-  <br>
-  <!-- main body end -->
+      </div>
+    </main>
+    <br>
+    <!-- main body end -->
 
     <!-- footer -->
-    <p></p>
-    <footer class="py-5 theme-bg-color2 theme-color8">
-      <div class="row" style="text-overflow: hidden;">
-        <div class="col-1" style="width: 13vw;"></div>
-        <div class="col-4">
-          <h5><b>Contact Us</b></h5>
-          <br>
-          <p>Phone +852 0000 0000</p>
-          <p>Email cs@xxxxxxxxx.com</p>
-          <br>
-          <small>Copyright &copy;
-            <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.
-          </small>
-        </div>
-        <div class="col-4 offset-1 addPaddingLeft">
-          <form action="#" class="needs-validation">
-            <h5><b>Subscribe to our newsletter</b></h5>
-            <br>
-            <p>Monthly digest of whats new and exciting from us.</p>
-            <div class="row">
-              <div class="col">
-                <input id="newsletter1" type="email" class="form-control dimmer"
-                  style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
+    <footer class="theme-bg-color8 theme-color6 footerRadiusBorder addShadow">
+      <small>
+          <div class="container px-4 py-3">
+              <div class="row g-4 py-4 row-cols-1 row-cols-lg-2">
+                  <div class="col">
+                      <form>
+                          <h5 class="pb-2 border-bottom"><b>Contact Us</b></h5>
+                          <br>
+                          <div class="row row-cols-2 d-flex justify-content-start">
+                              <div class="col-4">
+                                  <p><span class="material-icons inline_icon">phone</span> Phone</p>
+                                  <p><span class="material-icons inline_icon">mail</span> Email</p>
+                              </div>
+                              <div class="col-5">
+                                  <p>+852 0000 0000</p>
+                                  <p>cs@xxxxxxxxx.com</p>
+                              </div>
+                          </div>
+                          <small>Need service or support? Start your request now and we’ll find you a solution.</small>
+                      </form>
+                  </div>
+                  <div class="col d-flex justify-content-center">
+                      <form action="#" class="needs-validation">
+                          <h5 class="pb-2 border-bottom"><b>Subscribe to our newsletter</b></h5>
+                          <br>
+                          <p>Monthly digest of whats new and exciting from us.</p>
+                          <div class="row">
+                              <div class="col">
+                                  <input id="newsletter1" type="email" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
+                              </div>
+                              <div class="col">
+                                  <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit"><span class="material-icons inline_icon">send</span> Subscribe</button>
+                              </div>
+                          </div>
+                          <small>We’ll never share your email address with a third-party. </small>
+                      </form>
+                  </div>
               </div>
-              <div class="col">
-                <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription"
-                  type="submit">Subscribe</button>
+          </div>
+          <div class="footer-bottom theme-bg-color3 theme-color8 footerRadiusBorder addPaddingLeft">
+              <div class="container">
+                  <div class="row g-4 row-cols-2 row-cols-lg-3">
+                      <div class="col">
+                          <h5 class="title">Smart Form</h5>
+                          <ul class="list-unstyled">
+                              <li> <a href="#">Index</a></li>
+                              <li> <a href="#">About Us</a></li>
+                              <li> <a href="#">Contact Us</a></li>
+                          </ul>
+                      </div>
+                      <div class="col">
+                          <h5 class="title">Form</h5>
+                          <ul class="list-unstyled">
+                              <li> <a href="form.html">Overview</a></li>
+                              <li> <a href="#">Create Form</a></li>
+                              <li> <a href="terms_and_conditions.html">Terms and Conditions</a></li>
+                          </ul>
+                      </div>
+                      <div class="col">
+                          <h5 class="title">Account</h5>
+                          <ul class="list-unstyled">
+                              <li> <a href="#">Profile</a></li>
+                              <li> <a href="signin.html">Sign In</a></li>
+                              <li> <a href="signup.html">Sign Up</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <hr>
+                      <small>
+                          <p>
+                              <span class="text-muted">Copyright &copy; <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.</span>
+                              <span class="addPaddingLeft">Privacy Policy - <a href="terms_and_conditions.html">Terms and Conditions</a></span>
+                          </p>
+                      </small>
+                  </div>
               </div>
-            </div>
-          </form>
-        </div>
-      </div>
+          </div>
+      </small>
     </footer>
     <!-- footer end -->
-
 </body>
 </html>
