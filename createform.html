@@ -22,9 +22,10 @@
     <a id="scroll" style="display: none;"><span></span></a>
 
     <!-- nav -->
-    <nav class="navbar fixed-top autohide navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color2 navbarRadiusBorder">
+    <nav
+        class="navbar fixed-top autohide navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color2 navbarRadiusBorder">
         <div class="container-fluid">
-    
+
             <a class="navbar-brand" href="index.html">
                 <div class="row ms-auto">
                     <div class="col"><img src="img/IconsPSD.png" alt="" width="50" height="50" class=""></div>
@@ -32,12 +33,14 @@
             </a>
 
             <div class="col mx-5">
-                <img src="img/published_with_changes_black_24dp.svg" height="20" id="loading" style="margin: 0vw 0vw 0vw 1vw;">
+                <img src="img/published_with_changes_black_24dp.svg" height="20" id="loading"
+                    style="margin: 0vw 0vw 0vw 1vw;">
                 <small style="color: #999; min-width: 23vw;">&nbsp;Auto-save is On</small>
             </div>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon navbar-toggle-icon-leftPadding"></span>
             </button>
 
@@ -57,22 +60,24 @@
                     </li>
                     &nbsp;&nbsp;
                     <li class="nav-item mx-auto">
-                        <a class="nav-link" href="form.html"><span class="material-icons theme-bg-color8 navBarBtn3">dashboard</span></a>
+                        <a class="nav-link" href="form.html"><span
+                                class="material-icons theme-bg-color8 navBarBtn3">dashboard</span></a>
                     </li>
                     &nbsp;&nbsp;
                     <li class="nav-item mx-auto">
-                        <a class="nav-link" href="signin.html"><span class="material-icons theme-bg-color8 navBarBtn3">account_box</span></a>
+                        <a class="nav-link" href="signin.html"><span
+                                class="material-icons theme-bg-color8 navBarBtn3">account_box</span></a>
                     </li>
                     &nbsp;&nbsp;
                 </ul>
             </div>
-    
+
         </div>
     </nav>
     <!-- nav end -->
 
     <div class="addResponsiveHeight"></div>
-    
+
     <!-- main body -->
     <br>
     <div class="wrapper">
@@ -88,12 +93,14 @@
                             <img alt="" class="banner-smartform topRadiusBorder">
                             <h3 class="theme-color2 form-title">
                                 <div class="row">
-                                    <div class="col-3 mobile_width100"><span class="material-icons" style="font-size: 100%; vertical-align: text-bottom;">rate_review</span></div>
+                                    <div class="col-3 mobile_width100"><span class="material-icons"
+                                            style="font-size: 100%; vertical-align: text-bottom;">rate_review</span>
+                                    </div>
                                     <div class="col-8 mobile_width100">Welfare Information</div>
                                 </div>
                             </h3>
                         </div>
-                        
+
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
@@ -101,7 +108,9 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="v0" placeholder="Welfare Name" class="form-control form-bg-color dimmer" onchange="updateConfirmationPgFields(this);" required>
+                                <input type="text" id="v0" placeholder="Welfare Name"
+                                    class="form-control form-bg-color dimmer"
+                                    onchange="updateConfirmationPgFields(this);" required>
                             </div>
                         </div>
                         <br>
@@ -112,8 +121,9 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="v1" placeholder="Summary 50 words" class="form-control form-bg-color dimmer"
-                                    style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
+                                <textarea name="" id="v1" placeholder="Summary 50 words"
+                                    class="form-control form-bg-color dimmer" style="height: 100px; min-height:100px;"
+                                    onchange="updateConfirmationPgFields(this);" required></textarea>
                             </div>
                         </div>
                         <br>
@@ -124,7 +134,8 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="url" id="v2" placeholder="URL" class="form-control form-bg-color dimmer" pattern="https?://.+" onchange="updateConfirmationPgFields(this);" >
+                                <input type="url" id="v2" placeholder="URL" class="form-control form-bg-color dimmer"
+                                    pattern="https?://.+" onchange="updateConfirmationPgFields(this);">
                             </div>
                         </div>
                         <br>
@@ -135,8 +146,9 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="v3" placeholder="Target audience" class="form-control form-bg-color dimmer" onchange="updateConfirmationPgFields(this);"
-                                    required>
+                                <input type="text" id="v3" placeholder="Target audience"
+                                    class="form-control form-bg-color dimmer"
+                                    onchange="updateConfirmationPgFields(this);" required>
                             </div>
                         </div>
                         <br>
@@ -147,21 +159,24 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="number" id="v4" placeholder="Age" class="form-control form-bg-color dimmer" min="0" max="200" onchange="updateConfirmationPgFields(this);">
+                                <input type="number" id="v4" placeholder="Age" class="form-control form-bg-color dimmer"
+                                    min="0" max="200" onchange="updateConfirmationPgFields(this);">
                                 <div class="addPaddingLeft">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault0" id="v5" onchange="updateConfirmationPgCheckboxes(this);">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault0" id="v5"
+                                            onchange="updateConfirmationPgCheckboxes(this);">
                                         <label class="form-check-label" for="flexRadioDefault1">
-                                          or after
+                                            or after
                                         </label>
-                                      </div>
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault0" id="v6" onchange="updateConfirmationPgCheckboxes(this);">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault0" id="v6"
+                                            onchange="updateConfirmationPgCheckboxes(this);">
                                         <label class="form-check-label" for="flexRadioDefault2">
-                                          or under
+                                            or under
                                         </label>
-                                        </div>
-                                      </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <br>
@@ -170,27 +185,36 @@
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Apply Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v7" style="max-width: 12rem; min-width: 12rem;" onchange="updateConfirmationPgFields(this);">
+                                <input type="date" class="form-control form-bg-color dimmer" id="v7"
+                                    style="max-width: 12rem; min-width: 12rem;"
+                                    onchange="updateConfirmationPgFields(this);">
                             </div>
                             <label class="col-form-label addPaddingLeft"><small class="form-color">To</small></label>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Deadline Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v8" style="max-width: 12rem; min-width: 12rem;" onchange="updateConfirmationPgFields(this);">
+                                <input type="date" class="form-control form-bg-color dimmer" id="v8"
+                                    style="max-width: 12rem; min-width: 12rem;"
+                                    onchange="updateConfirmationPgFields(this);">
                             </div>
                         </div>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Distribution Date</label>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Distribution
+                                Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v9" style="max-width: 12rem; min-width: 12rem;" onchange="updateConfirmationPgFields(this);">
+                                <input type="date" class="form-control form-bg-color dimmer" id="v9"
+                                    style="max-width: 12rem; min-width: 12rem;"
+                                    onchange="updateConfirmationPgFields(this);">
                             </div>
                             <label class="col-form-label addPaddingLeft"><small class="form-color">To</small></label>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPaddingLeft">End Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v10" style="max-width: 12rem; min-width: 12rem;" onchange="updateConfirmationPgFields(this);">
+                                <input type="date" class="form-control form-bg-color dimmer" id="v10"
+                                    style="max-width: 12rem; min-width: 12rem;"
+                                    onchange="updateConfirmationPgFields(this);">
                             </div>
                         </div>
                         <br>
@@ -202,7 +226,9 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="number" id="v11" placeholder="HK$" class="form-control form-bg-color dimmer" onchange="updateConfirmationPgFields(this);" >
+                                <input type="number" id="v11" placeholder="HK$"
+                                    class="form-control form-bg-color dimmer"
+                                    onchange="updateConfirmationPgFields(this);">
                             </div>
                         </div>
                         <br>
@@ -214,51 +240,62 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="v12" class="form-control form-bg-color dimmer"
-                                    style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
+                                    style="height: 100px; min-height:100px;"
+                                    onchange="updateConfirmationPgFields(this);" required></textarea>
                             </div>
                         </div>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPaddingLeft">Promotional Corner<br><small>(to Applicant)</small></p>
+                                <p class="text-start form-color addPaddingLeft">Promotional Corner<br><small>(to
+                                        Applicant)</small></p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="v13" placeholder="Welcome, Thank you, etc"
-                                    class="form-control form-bg-color dimmer" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"></textarea>
+                                    class="form-control form-bg-color dimmer" style="height: 100px; min-height:100px;"
+                                    onchange="updateConfirmationPgFields(this);"></textarea>
                             </div>
                         </div>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPaddingLeft">Supplementary Information<br><small>(to SmartForm)</small></p>
+                                <p class="text-start form-color addPaddingLeft">Supplementary Information<br><small>(to
+                                        SmartForm)</small></p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="v14" class="form-control form-bg-color dimmer"
-                                    style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"></textarea>
+                                    style="height: 100px; min-height:100px;"
+                                    onchange="updateConfirmationPgFields(this);"></textarea>
                             </div>
                         </div>
                         <br>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Promotional Material<br>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Promotional
+                                Material<br>
                                 <p class="fw-lighter">Attachment</p>
                             </label>
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
                                     <input type="file" class="form-control form-bg-color fileUpload" id="v15"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
-                                        accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 16.5rem; min-width: 16.5rem; z-index: 0;" onchange="updateConfirmationPgFileInputs(this);">
+                                        accept=".jpg, .jpeg, .png, .tiff, .svg"
+                                        style="max-width: 16.5rem; min-width: 16.5rem; z-index: 0;"
+                                        onchange="updateConfirmationPgFileInputs(this);">
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
-                                <br><br><div class="addPaddingLeft"><small class="form-color"><b>Acceptable file format:</b><br>jpg, jpeg, png, tiff,
-                                    svg<br><b>File size:</b><br>&lt;10MB<br><b>For a Portrait Poster
-                                        Size:</b><br>A4 size in pixels 300dpi: 3508x2480px (without bleed area)<br><b>For a Landscape Banner
-                                        Size:</b><br>3508x1240px (without bleed area)</small></div>
+                                <br><br>
+                                <div class="addPaddingLeft"><small class="form-color"><b>Acceptable file
+                                            format:</b><br>jpg, jpeg, png, tiff,
+                                        svg<br><b>File size:</b><br>&lt;10MB<br><b>For a Portrait Poster
+                                            Size:</b><br>A4 size in pixels 300dpi: 3508x2480px (without bleed
+                                        area)<br><b>For a Landscape Banner
+                                            Size:</b><br>3508x1240px (without bleed area)</small></div>
                             </div>
                             <label class="col-2 col-form-label form-color minWidth addPaddingLeft">*Logo<br>
                                 <p class="fw-lighter">Attachment</p>
@@ -267,12 +304,16 @@
                                 <div class="input-group" style="min-width: 20vw;">
                                     <input type="file" class="form-control form-bg-color fileUpload" id="v16"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
-                                        accept=".jpg, .jpeg, .png, .tiff, .svg" style="max-width: 16.5rem; min-width: 16.5rem; z-index: 0;" onchange="updateConfirmationPgFileInputs(this);" required>
+                                        accept=".jpg, .jpeg, .png, .tiff, .svg"
+                                        style="max-width: 16.5rem; min-width: 16.5rem; z-index: 0;"
+                                        onchange="updateConfirmationPgFileInputs(this);" required>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
-                                <br><br><div class="addPaddingLeft"><small class="form-color"><b>Acceptable file
-                                        format:</b><br>jpg, jpeg, png, tiff, svg<br><b>File
-                                        size:</b><br>&lt;10MB<br><b>Size:</b><br>512x512px / 1024x1024px / 2048x2048px</small></div>
+                                <br><br>
+                                <div class="addPaddingLeft"><small class="form-color"><b>Acceptable file
+                                            format:</b><br>jpg, jpeg, png, tiff, svg<br><b>File
+                                            size:</b><br>&lt;10MB<br><b>Size:</b><br>512x512px / 1024x1024px /
+                                        2048x2048px</small></div>
                             </div>
                         </div>
                         <br>
@@ -294,7 +335,9 @@
                             <img alt="" class="banner-smartform2 topRadiusBorder">
                             <h3 class="theme-color2 form-title">
                                 <div class="row">
-                                    <div class="col-3 mobile_width100"><span class="material-icons" style="font-size: 100%; vertical-align: text-bottom;">settings_applications</span></div>
+                                    <div class="col-3 mobile_width100"><span class="material-icons"
+                                            style="font-size: 100%; vertical-align: text-bottom;">settings_applications</span>
+                                    </div>
                                     <div class="col-7 mobile_width100">Question Setting</div>
                                 </div>
                             </h3>
@@ -302,68 +345,76 @@
                         <div class="recipe">
                             <div class="addSurroundedPadding3">
                                 <div class="badge bg-primary text-wrap text-start">
-                                    <h6>Please set up within 20 questions (multiple choice questions are preferred) to reduce
+                                    <h6>Please set up within 20 questions (multiple choice questions are preferred) to
+                                        reduce
                                         the difficulty of filling in the form for the elderly and low-educated
                                     </h6>
                                 </div>
                                 <br><br>
-                                <p class="fw-lighte form-color">If you select multiple-choice/option, set options as an array. 
-                                    e.g. Living with family, Property with a mortgage, Property without mortgage, Rental apartment, Public housing</p><br>
+                                <p class="fw-lighte form-color">If you select multiple-choice/option, set options as an
+                                    array.
+                                    e.g. Living with family, Property with a mortgage, Property without mortgage, Rental
+                                    apartment, Public housing</p><br>
                             </div>
 
                             <br>
-                                <div class="form-row addPaddingLeft d-flex justify-content-center">
-                                    <table>
-                                        <tr style="height: 2.5rem;">
-                                            <th colspan="3">
-                                                <p class="text-start form-color">Basic Information</p>
-                                            </th>
-                                        </tr>
-                                        <tr style="height: 2.5rem;">
-                                            <td>
-                                                <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b0" onchange="updateConfirmationPgCheckboxes(this);" checked>
+                            <div class="form-row addPaddingLeft d-flex justify-content-center">
+                                <table>
+                                    <tr style="height: 2.5rem;">
+                                        <th colspan="3">
+                                            <p class="text-start form-color">Basic Information</p>
+                                        </th>
+                                    </tr>
+                                    <tr style="height: 2.5rem;">
+                                        <td>
+                                            <label class="form-check-label">
+                                                <input class="form-check-input form-bg-color" type="checkbox" value=""
+                                                    id="b0" onchange="updateConfirmationPgCheckboxes(this);" checked>
                                                 HKID number
-                                                </label>
-                                                <div style="width: 14vw"></div>
-                                            </td>
-                                            <td>
-                                                <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b1" onchange="updateConfirmationPgCheckboxes(this);" checked>
+                                            </label>
+                                            <div style="width: 14vw"></div>
+                                        </td>
+                                        <td>
+                                            <label class="form-check-label">
+                                                <input class="form-check-input form-bg-color" type="checkbox" value=""
+                                                    id="b1" onchange="updateConfirmationPgCheckboxes(this);" checked>
                                                 English name
-                                                </label>
-                                                <div style="width: 14vw"></div>
-                                            </td>
-                                            <td>
-                                                <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b2" onchange="updateConfirmationPgCheckboxes(this);" checked>
+                                            </label>
+                                            <div style="width: 14vw"></div>
+                                        </td>
+                                        <td>
+                                            <label class="form-check-label">
+                                                <input class="form-check-input form-bg-color" type="checkbox" value=""
+                                                    id="b2" onchange="updateConfirmationPgCheckboxes(this);" checked>
                                                 Chinese name
-                                                </label>
-                                                <div style="width: 14vw"></div>
-                                            </td>
-                                        </tr>
-                                        <tr style="height: 2.5rem;">
-                                            <td>
-                                                <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b3" onchange="updateConfirmationPgCheckboxes(this);" checked>
+                                            </label>
+                                            <div style="width: 14vw"></div>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 2.5rem;">
+                                        <td>
+                                            <label class="form-check-label">
+                                                <input class="form-check-input form-bg-color" type="checkbox" value=""
+                                                    id="b3" onchange="updateConfirmationPgCheckboxes(this);" checked>
                                                 Birthday
-                                                </label>
-                                                <div style="width: 14vw"></div>
-                                            </td>
-                                            <td>
-                                                <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b4" onchange="updateConfirmationPgCheckboxes(this);" checked>
+                                            </label>
+                                            <div style="width: 14vw"></div>
+                                        </td>
+                                        <td>
+                                            <label class="form-check-label">
+                                                <input class="form-check-input form-bg-color" type="checkbox" value=""
+                                                    id="b4" onchange="updateConfirmationPgCheckboxes(this);" checked>
                                                 Gender
-                                                </label>
-                                                <div style="width: 14vw"></div>
-                                            </td>
-                                            <td>
-                                                <div style="width: 14vw"></div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            
+                                            </label>
+                                            <div style="width: 14vw"></div>
+                                        </td>
+                                        <td>
+                                            <div style="width: 14vw"></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
                             <br>
                             <br>
                             <div class="d-flex justify-content-center">
@@ -373,10 +424,12 @@
 
                                             <tr id="tr0">
                                                 <td class="drag-handler"></td>
-                                                <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr0"
-                                                         id="arraySelect"
-                                                        onchange="addInput('arraySelect', 'arrayInput', 'tr0'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;"  required>
+                                                <td class="addSurroundedPadding">
+                                                    <select
+                                                        class="form-select form-select-sm form-bg-color dimmer tr0"
+                                                        id="arraySelect"
+                                                        onchange="addInput('arraySelect', 'arrayInput', 'tr0'); updateConfirmationPgFields(this);"
+                                                        style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>*Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -399,29 +452,31 @@
                                                         <option value="18">District</option>
                                                         <option value="19">Checkbox</option>
                                                     </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0" id="textarea" rows="1"
-                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"  required></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0" id="2textarea" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" ></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0"
+                                                        id="textarea" rows="1" placeholder="*Question"
+                                                        style="height: 100px; min-height:100px;"
+                                                        onchange="updateConfirmationPgFields(this);"
+                                                        required></textarea>
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0"
+                                                        id="2textarea" rows="1" placeholder="Description (Optional)"
+                                                        style="height: 100px; min-height:100px;"
+                                                        onchange="updateConfirmationPgFields(this);"></textarea>
                                                     <div id="arrayInput"></div>
-                                                </td>
-                                                <td class="recipe-table__cell">
                                                     <!-- Button trigger modal -->
-                                                    <button class="recipe-table__del-row-btn" type="button" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
+                                                    <button class="recipe-table__del-row-btn" type="button"
+                                                        data-bs-toggle="modal" data-bs-target="#modal0">x</button>
                                                 </td>
                                             </tr>
                                             <tr id="tr1">
                                                 <td class="drag-handler"></td>
-                                                <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr1"
-                                                         id="arraySelect2"
-                                                        onchange="addInput('arraySelect2', 'arrayInput2'); updateConfirmationPgFields(this);"  style="height: 100px; min-height:100px;" required>
+                                                <td class="addSurroundedPadding">
+                                                    <select
+                                                        class="form-select form-select-sm form-bg-color dimmer tr1"
+                                                        id="arraySelect2"
+                                                        onchange="addInput('arraySelect2', 'arrayInput2'); updateConfirmationPgFields(this);"
+                                                        style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>*Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -444,28 +499,32 @@
                                                         <option value="18">District</option>
                                                         <option value="19">Checkbox</option>
                                                     </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm  form-item-focus form-bg-color dimmer tr1" id="textarea2" rows="1"
-                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"  required></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr1" id="2textarea2" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" ></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
+                                                    <textarea
+                                                        class="form-control form-control-sm  form-item-focus form-bg-color dimmer tr1"
+                                                        id="textarea2" rows="1" placeholder="*Question"
+                                                        style="height: 100px; min-height:100px;"
+                                                        onchange="updateConfirmationPgFields(this);"
+                                                        required></textarea>
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr1"
+                                                        id="2textarea2" rows="1" placeholder="Description (Optional)"
+                                                        style="height: 100px; min-height:100px;"
+                                                        onchange="updateConfirmationPgFields(this);"></textarea>
                                                     <div id="arrayInput2"></div>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
+                                                    <!-- Button trigger modal -->
+                                                    <button class="recipe-table__del-row-btn"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal0">x</button>
                                                 </td>
                                             </tr>
                                             <tr id="tr2">
                                                 <td class="drag-handler"></td>
-                                                <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr2"
-                                                         id="arraySelect3"
-                                                        onchange="addInput('arraySelect3', 'arrayInput3'); updateConfirmationPgFields(this);"  style="height: 100px; min-height:100px;" required>
+                                                <td class="addSurroundedPadding">
+                                                    <select
+                                                        class="form-select form-select-sm form-bg-color dimmer tr2"
+                                                        id="arraySelect3"
+                                                        onchange="addInput('arraySelect3', 'arrayInput3'); updateConfirmationPgFields(this);"
+                                                        style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>*Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -488,28 +547,32 @@
                                                         <option value="18">District</option>
                                                         <option value="19">Checkbox</option>
                                                     </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2" id="textarea3" rows="1"
-                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"  required></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2" id="2textarea3" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" ></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2"
+                                                        id="textarea3" rows="1" placeholder="*Question"
+                                                        style="height: 100px; min-height:100px;"
+                                                        onchange="updateConfirmationPgFields(this);"
+                                                        required></textarea>
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2"
+                                                        id="2textarea3" rows="1" placeholder="Description (Optional)"
+                                                        style="height: 100px; min-height:100px;"
+                                                        onchange="updateConfirmationPgFields(this);"></textarea>
                                                     <div id="arrayInput3"></div>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
+                                                    <!-- Button trigger modal -->
+                                                    <button class="recipe-table__del-row-btn"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal0">x</button>
                                                 </td>
                                             </tr>
                                             <tr id="tr3">
                                                 <td class="drag-handler"></td>
-                                                <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr3"
-                                                         id="arraySelect4"
-                                                        onchange="addInput('arraySelect4', 'arrayInput4'); updateConfirmationPgFields(this);"  style="height: 100px; min-height:100px;" required>
+                                                <td class="addSurroundedPadding">
+                                                    <select
+                                                        class="form-select form-select-sm form-bg-color dimmer tr3"
+                                                        id="arraySelect4"
+                                                        onchange="addInput('arraySelect4', 'arrayInput4'); updateConfirmationPgFields(this);"
+                                                        style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>*Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -532,28 +595,32 @@
                                                         <option value="18">District</option>
                                                         <option value="19">Checkbox</option>
                                                     </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3" id="textarea4" rows="1"
-                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"  required></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3" id="2textarea4" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" ></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3"
+                                                        id="textarea4" rows="1" placeholder="*Question"
+                                                        style="height: 100px; min-height:100px;"
+                                                        onchange="updateConfirmationPgFields(this);"
+                                                        required></textarea>
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3"
+                                                        id="2textarea4" rows="1" placeholder="Description (Optional)"
+                                                        style="height: 100px; min-height:100px;"
+                                                        onchange="updateConfirmationPgFields(this);"></textarea>
                                                     <div id="arrayInput4"></div>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
+                                                    <!-- Button trigger modal -->
+                                                    <button class="recipe-table__del-row-btn"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal0">x</button>
                                                 </td>
                                             </tr>
                                             <tr id="tr4">
                                                 <td class="drag-handler"></td>
-                                                <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr4"
-                                                         id="arraySelect5"
-                                                        onchange="addInput('arraySelect5', 'arrayInput5'); updateConfirmationPgFields(this);"  style="height: 100px; min-height:100px;" required>
+                                                <td class="addSurroundedPadding">
+                                                    <select
+                                                        class="form-select form-select-sm form-bg-color dimmer tr4"
+                                                        id="arraySelect5"
+                                                        onchange="addInput('arraySelect5', 'arrayInput5'); updateConfirmationPgFields(this);"
+                                                        style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>*Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -576,28 +643,32 @@
                                                         <option value="18">District</option>
                                                         <option value="19">Checkbox</option>
                                                     </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4" id="textarea5" rows="1"
-                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"  required></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4" id="2textarea5" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" ></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4"
+                                                        id="textarea5" rows="1" placeholder="*Question"
+                                                        style="height: 100px; min-height:100px;"
+                                                        onchange="updateConfirmationPgFields(this);"
+                                                        required></textarea>
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4"
+                                                        id="2textarea5" rows="1" placeholder="Description (Optional)"
+                                                        style="height: 100px; min-height:100px;"
+                                                        onchange="updateConfirmationPgFields(this);"></textarea>
                                                     <div id="arrayInput5"></div>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
+                                                    <!-- Button trigger modal -->
+                                                    <button class="recipe-table__del-row-btn"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal0">x</button>
                                                 </td>
                                             </tr>
                                             <tr id="tr5">
                                                 <td class="drag-handler"></td>
-                                                <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr5"
-                                                         id="arraySelect6"
-                                                        onchange="addInput('arraySelect6', 'arrayInput6'); updateConfirmationPgFields(this);"  style="height: 100px; min-height:100px;" required>
+                                                <td class="addSurroundedPadding">
+                                                    <select
+                                                        class="form-select form-select-sm form-bg-color dimmer tr5"
+                                                        id="arraySelect6"
+                                                        onchange="addInput('arraySelect6', 'arrayInput6'); updateConfirmationPgFields(this);"
+                                                        style="height: 100px; min-height:100px;" required>
                                                         <option value="" selected hidden>*Question Types</option>
                                                         <option value="0">Option</option>
                                                         <option value="1">Yes/No</option>
@@ -620,20 +691,22 @@
                                                         <option value="18">District</option>
                                                         <option value="19">Checkbox</option>
                                                     </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5" id="textarea6" rows="1"
-                                                    placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"  required></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5" id="2textarea6" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" ></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5"
+                                                        id="textarea6" rows="1" placeholder="*Question"
+                                                        style="height: 100px; min-height:100px;"
+                                                        onchange="updateConfirmationPgFields(this);"
+                                                        required></textarea>
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5"
+                                                        id="2textarea6" rows="1" placeholder="Description (Optional)"
+                                                        style="height: 100px; min-height:100px;"
+                                                        onchange="updateConfirmationPgFields(this);"></textarea>
                                                     <div id="arrayInput6"></div>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
+                                                    <!-- Button trigger modal -->
+                                                    <button class="recipe-table__del-row-btn"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal0">x</button>
                                                 </td>
                                             </tr>
 
@@ -664,7 +737,8 @@
                             <img alt="" class="banner-smartform3 topRadiusBorder">
                             <h3 class="theme-color2 form-title">
                                 <div class="row">
-                                    <div class="col-3 mobile_width100"><span class="material-icons" style="font-size: 100%; vertical-align: text-bottom;">check_box</span></div>
+                                    <div class="col-3 mobile_width100"><span class="material-icons"
+                                            style="font-size: 100%; vertical-align: text-bottom;">check_box</span></div>
                                     <div class="col-6 mobile_width100">Confirmation</div>
                                 </div>
                             </h3>
@@ -676,7 +750,8 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="v0_check" placeholder="Welfare Name" class="form-control form-bg-color dimmer" disabled>
+                                <input type="text" id="v0_check" placeholder="Welfare Name"
+                                    class="form-control form-bg-color dimmer" disabled>
                             </div>
                         </div>
                         <br>
@@ -687,8 +762,9 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="v1_check" placeholder="Summary 50 words"  class="form-control form-bg-color dimmer"
-                                    style="height: 100px; min-height:100px;" disabled></textarea>
+                                <textarea name="" id="v1_check" placeholder="Summary 50 words"
+                                    class="form-control form-bg-color dimmer" style="height: 100px; min-height:100px;"
+                                    disabled></textarea>
                             </div>
                         </div>
                         <br>
@@ -699,7 +775,8 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="url" id="v2_check"  placeholder="URL" class="form-control form-bg-color dimmer" pattern="https?://.+" disabled>
+                                <input type="url" id="v2_check" placeholder="URL"
+                                    class="form-control form-bg-color dimmer" pattern="https?://.+" disabled>
                             </div>
                         </div>
                         <br>
@@ -710,8 +787,8 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="text" id="v3_check"  placeholder="Target audience" class="form-control form-bg-color dimmer"
-                                    disabled>
+                                <input type="text" id="v3_check" placeholder="Target audience"
+                                    class="form-control form-bg-color dimmer" disabled>
                             </div>
                         </div>
                         <br>
@@ -722,21 +799,24 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="number" placeholder="Age" id="v4_check" class="form-control form-bg-color dimmer" min="0" max="200" disabled>
+                                <input type="number" placeholder="Age" id="v4_check"
+                                    class="form-control form-bg-color dimmer" min="0" max="200" disabled>
                                 <div class="addPaddingLeft">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="v5_check" disabled>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="v5_check" disabled>
                                         <label class="form-check-label" for="flexRadioDefault1">
-                                          or after
+                                            or after
                                         </label>
-                                      </div>
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="v6_check" disabled>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="v6_check" disabled>
                                         <label class="form-check-label" for="flexRadioDefault2">
-                                          or under
+                                            or under
                                         </label>
-                                        </div>
-                                      </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <br>
@@ -745,31 +825,32 @@
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Apply Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v7_check" style="max-width: 12rem; min-width: 12rem;"
-                                    disabled>
+                                <input type="date" class="form-control form-bg-color dimmer" id="v7_check"
+                                    style="max-width: 12rem; min-width: 12rem;" disabled>
                             </div>
                             <label class="col-form-label"><small class="form-color addPaddingLeft">To</small></label>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Deadline Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v8_check" style="max-width: 12rem; min-width: 12rem;"
-                                    disabled>
+                                <input type="date" class="form-control form-bg-color dimmer" id="v8_check"
+                                    style="max-width: 12rem; min-width: 12rem;" disabled>
                             </div>
                         </div>
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Distribution Date</label>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Distribution
+                                Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v9_check" style="max-width: 12rem; min-width: 12rem;"
-                                    disabled>
+                                <input type="date" class="form-control form-bg-color dimmer" id="v9_check"
+                                    style="max-width: 12rem; min-width: 12rem;" disabled>
                             </div>
                             <label class="col-form-label"><small class="form-color addPaddingLeft">To</small></label>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPaddingLeft">End Date</label>
                             <div class="col-3">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v10_check" style="max-width: 12rem; min-width: 12rem;"
-                                    disabled>
+                                <input type="date" class="form-control form-bg-color dimmer" id="v10_check"
+                                    style="max-width: 12rem; min-width: 12rem;" disabled>
                             </div>
                         </div>
                         <br>
@@ -781,7 +862,8 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="number" id="v11_check" placeholder="HK$" class="form-control form-bg-color dimmer" disabled>
+                                <input type="number" id="v11_check" placeholder="HK$"
+                                    class="form-control form-bg-color dimmer" disabled>
                             </div>
                         </div>
                         <br>
@@ -800,7 +882,8 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPaddingLeft">Promotional Corner<br><small>(to Applicant)</small></p>
+                                <p class="text-start form-color addPaddingLeft">Promotional Corner<br><small>(to
+                                        Applicant)</small></p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -813,7 +896,8 @@
                         <div class="form-row">
                             <div class="col-1"></div>
                             <div class="col-2 minWidth">
-                                <p class="text-start form-color addPaddingLeft">Supplementary Information<br><small>(to SmartForm)</small></p>
+                                <p class="text-start form-color addPaddingLeft">Supplementary Information<br><small>(to
+                                        SmartForm)</small></p>
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
@@ -831,7 +915,8 @@
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
                                     <input type="text" class="form-control form-bg-color dimmer" id="v15_check"
-                                        aria-describedby="inputGroupFileAddon04" aria-label="Upload" style="max-width: 16.5rem; min-width: 16.5rem; z-index: 0;" disabled>
+                                        aria-describedby="inputGroupFileAddon04" aria-label="Upload"
+                                        style="max-width: 16.5rem; min-width: 16.5rem; z-index: 0;" disabled>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
                             </div>
@@ -841,26 +926,28 @@
                             <div class="form-holder">
                                 <div class="input-group" style="min-width: 20vw;">
                                     <input type="text" class="form-control form-bg-color dimmer" id="v16_check"
-                                        aria-describedby="inputGroupFileAddon04" aria-label="Upload" style="max-width: 16.5rem; min-width: 16.5rem; z-index: 0;" disabled>
+                                        aria-describedby="inputGroupFileAddon04" aria-label="Upload"
+                                        style="max-width: 16.5rem; min-width: 16.5rem; z-index: 0;" disabled>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
                                 </div>
                             </div>
                         </div>
                         <br>
-                        
+
                         <div class="addResponsiveHeight3"></div>
                         <!-- Section 3 2nd part -->
                         <div class="form-header">
                             <img alt="" class="banner-smartform2">
                             <h3 class="theme-color2 form-title">
                                 <div class="row">
-                                    <div class="col-3 mobile_width100"><span class="material-icons" style="font-size: 100%; vertical-align: text-top;">check_box</span></div>
+                                    <div class="col-3 mobile_width100"><span class="material-icons"
+                                            style="font-size: 100%; vertical-align: text-top;">check_box</span></div>
                                     <div class="col-6 mobile_width100">Confirmation</div>
                                 </div>
                             </h3>
-                            </div>
-                            <div class="recipe">                        
-                                <br>
+                        </div>
+                        <div class="recipe">
+                            <br>
                             <div class="form-row addPaddingLeft">
                                 <div class="col-3"></div>
                                 <div class="col">
@@ -873,22 +960,25 @@
                                         <tr style="height: 2.5rem;">
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b0_check" checked disabled>
-                                                HKID number
+                                                    <input class="form-check-input form-bg-color" type="checkbox"
+                                                        value="" id="b0_check" checked disabled>
+                                                    HKID number
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b1_check" checked disabled>
-                                                English name
+                                                    <input class="form-check-input form-bg-color" type="checkbox"
+                                                        value="" id="b1_check" checked disabled>
+                                                    English name
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b2_check" checked disabled>
-                                                Chinese name
+                                                    <input class="form-check-input form-bg-color" type="checkbox"
+                                                        value="" id="b2_check" checked disabled>
+                                                    Chinese name
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
@@ -896,15 +986,17 @@
                                         <tr style="height: 2.5rem;">
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b3_check" checked disabled>
-                                                Birthday
+                                                    <input class="form-check-input form-bg-color" type="checkbox"
+                                                        value="" id="b3_check" checked disabled>
+                                                    Birthday
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
                                             <td>
                                                 <label class="form-check-label">
-                                                <input class="form-check-input form-bg-color" type="checkbox" value="" id="b4_check" checked disabled>
-                                                Gender
+                                                    <input class="form-check-input form-bg-color" type="checkbox"
+                                                        value="" id="b4_check" checked disabled>
+                                                    Gender
                                                 </label>
                                                 <div style="width: 14vw"></div>
                                             </td>
@@ -915,16 +1007,17 @@
                                     </table>
                                 </div>
                             </div>
-                        
+
                             <br>
                             <div class="d-flex justify-content-center">
                                 <div class="recipe__ingredients">
                                     <table cellpadding="0" cellspacing="0" class="recipe-table" id="recipeTable">
                                         <tbody id="recipeTableBody2">
                                             <tr id="tr0_check">
-                                                <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr0_check" id="arraySelect_check"
-                                                        onchange=""
+                                                <td class="addSurroundedPadding">
+                                                    <select
+                                                        class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr0_check"
+                                                        id="arraySelect_check" onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
                                                         <option value="" selected hidden>Unselected</option>
                                                         <option value="0">Option</option>
@@ -948,24 +1041,23 @@
                                                         <option value="18">District</option>
                                                         <option value="19">Checkbox</option>
                                                     </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0_check" id="textarea_check" rows="1"
-                                                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0_check" id="2textarea_check" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
-                                                        disabled></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0_check"
+                                                        id="textarea_check" rows="1" placeholder="Question"
+                                                        style="height: 100px; min-height:100px;" disabled></textarea>
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0_check"
+                                                        id="2textarea_check" rows="1"
+                                                        placeholder="Description (Optional)"
+                                                        style="height: 100px; min-height:100px;" disabled></textarea>
                                                     <div id="arrayInput_check"></div>
                                                 </td>
                                             </tr>
                                             <tr id="tr1_check">
-                                                <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr1_check" id="arraySelect2_check"
-                                                        onchange=""
+                                                <td class="addSurroundedPadding">
+                                                    <select
+                                                        class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr1_check"
+                                                        id="arraySelect2_check" onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
                                                         <option value="" selected hidden>Unselected</option>
                                                         <option value="0">Option</option>
@@ -989,24 +1081,23 @@
                                                         <option value="18">District</option>
                                                         <option value="19">Checkbox</option>
                                                     </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm  form-item-focus form-bg-color dimmer tr1_check" id="textarea2_check" rows="1"
-                                                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr1_check" id="2textarea2_check" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
-                                                        disabled></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
+                                                    <textarea
+                                                        class="form-control form-control-sm  form-item-focus form-bg-color dimmer tr1_check"
+                                                        id="textarea2_check" rows="1" placeholder="Question"
+                                                        style="height: 100px; min-height:100px;" disabled></textarea>
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr1_check"
+                                                        id="2textarea2_check" rows="1"
+                                                        placeholder="Description (Optional)"
+                                                        style="height: 100px; min-height:100px;" disabled></textarea>
                                                     <div id="arrayInput2_check"></div>
                                                 </td>
                                             </tr>
                                             <tr id="tr2_check">
-                                                <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr2_check" id="arraySelect3_check"
-                                                        onchange=""
+                                                <td class="addSurroundedPadding">
+                                                    <select
+                                                        class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr2_check"
+                                                        id="arraySelect3_check" onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
                                                         <option value="" selected hidden>Unselected</option>
                                                         <option value="0">Option</option>
@@ -1030,24 +1121,23 @@
                                                         <option value="18">District</option>
                                                         <option value="19">Checkbox</option>
                                                     </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2_check" id="textarea3_check" rows="1"
-                                                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2_check" id="2textarea3_check" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
-                                                        disabled></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2_check"
+                                                        id="textarea3_check" rows="1" placeholder="Question"
+                                                        style="height: 100px; min-height:100px;" disabled></textarea>
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2_check"
+                                                        id="2textarea3_check" rows="1"
+                                                        placeholder="Description (Optional)"
+                                                        style="height: 100px; min-height:100px;" disabled></textarea>
                                                     <div id="arrayInput3_check"></div>
                                                 </td>
                                             </tr>
                                             <tr id="tr3_check">
-                                                <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr3_check" id="arraySelect4_check"
-                                                        onchange=""
+                                                <td class="addSurroundedPadding">
+                                                    <select
+                                                        class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr3_check"
+                                                        id="arraySelect4_check" onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
                                                         <option value="" selected hidden>Unselected</option>
                                                         <option value="0">Option</option>
@@ -1071,24 +1161,23 @@
                                                         <option value="18">District</option>
                                                         <option value="19">Checkbox</option>
                                                     </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3_check" id="textarea4_check" rows="1"
-                                                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3_check" id="2textarea4_check" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
-                                                        disabled></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3_check"
+                                                        id="textarea4_check" rows="1" placeholder="Question"
+                                                        style="height: 100px; min-height:100px;" disabled></textarea>
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3_check"
+                                                        id="2textarea4_check" rows="1"
+                                                        placeholder="Description (Optional)"
+                                                        style="height: 100px; min-height:100px;" disabled></textarea>
                                                     <div id="arrayInput4_check"></div>
                                                 </td>
                                             </tr>
                                             <tr id="tr4_check">
-                                                <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr4_check" id="arraySelect5_check"
-                                                        onchange=""
+                                                <td class="addSurroundedPadding">
+                                                    <select
+                                                        class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr4_check"
+                                                        id="arraySelect5_check" onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
                                                         <option value="" selected hidden>Unselected</option>
                                                         <option value="0">Option</option>
@@ -1112,24 +1201,23 @@
                                                         <option value="18">District</option>
                                                         <option value="19">Checkbox</option>
                                                     </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4_check" id="textarea5_check" rows="1"
-                                                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4_check" id="2textarea5_check" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
-                                                        disabled></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4_check"
+                                                        id="textarea5_check" rows="1" placeholder="Question"
+                                                        style="height: 100px; min-height:100px;" disabled></textarea>
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4_check"
+                                                        id="2textarea5_check" rows="1"
+                                                        placeholder="Description (Optional)"
+                                                        style="height: 100px; min-height:100px;" disabled></textarea>
                                                     <div id="arrayInput5_check"></div>
                                                 </td>
                                             </tr>
                                             <tr id="tr5_check">
-                                                <td class="recipe-table__cell2">
-                                                    <select class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr5_check" id="arraySelect6_check"
-                                                        onchange=""
+                                                <td class="addSurroundedPadding">
+                                                    <select
+                                                        class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr5_check"
+                                                        id="arraySelect6_check" onchange=""
                                                         style="height: 100px; min-height:100px;" disabled>
                                                         <option value="" selected hidden>Unselected</option>
                                                         <option value="0">Option</option>
@@ -1153,150 +1241,242 @@
                                                         <option value="18">District</option>
                                                         <option value="19">Checkbox</option>
                                                     </select>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5_check" id="textarea6_check" rows="1"
-                                                        placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
-                                                    <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5_check" id="2textarea6_check" rows="1"
-                                                        placeholder="Description (Optional)" style="height: 100px; min-height:100px;"
-                                                        disabled></textarea>
-                                                </td>
-                                                <td class="recipe-table__cell">
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5_check"
+                                                        id="textarea6_check" rows="1" placeholder="Question"
+                                                        style="height: 100px; min-height:100px;" disabled></textarea>
+                                                    <textarea
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5_check"
+                                                        id="2textarea6_check" rows="1"
+                                                        placeholder="Description (Optional)"
+                                                        style="height: 100px; min-height:100px;" disabled></textarea>
                                                     <div id="arrayInput6_check"></div>
                                                 </td>
                                             </tr>
-                        
+
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                    </form>
+        </form>
 
-            <div class="addResponsiveHeight2"></div>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col">
-                    <form id="tc_checkbox_form" action="#" method="post" class="needs-validation">
-                        <label class="form-check-label">
-                            <input type="checkbox" for="invalidCheck" id="tc_checkbox" class="checkbox" required>
-                            &nbsp;We agree with the <a href="#" id="tc_popUp">terms and conditions</a>
-                        </label>
-                    </form>
-                                <!-- ========== MODALS ========== -->
-                                <div id="tc_modal-window" class="">
-                                    <span class="tc_modal-close">&#10006;</span>
-                                    <div class="tc_align-content">
-                                        <div class="tc_content">
-                                            <h3 style="text-align: center; width: 100%;"><b>Terms and Conditions</b></h3>
-                                            <br><br>
+        <div class="addResponsiveHeight2"></div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <form id="tc_checkbox_form" action="#" method="post" class="needs-validation">
+                    <label class="form-check-label">
+                        <input type="checkbox" for="invalidCheck" id="tc_checkbox" class="checkbox" required>
+                        &nbsp;We agree with the <a href="#" id="tc_popUp">terms and conditions</a>
+                    </label>
+                </form>
+                <!-- ========== MODALS ========== -->
+                <div id="tc_modal-window" class="">
+                    <span class="tc_modal-close">&#10006;</span>
+                    <div class="tc_align-content">
+                        <div class="tc_content">
+                            <h3 style="text-align: center; width: 100%;"><b>Terms and Conditions</b></h3>
+                            <br><br>
 
-                                            <p>Terms and Conditions Welcome to Smart Form!</p>
-                                            <br>
-                                            <p>These terms and conditions outline the rules and regulations for the use of Company Name's Website, located at xxxxxxxxx.com.</p>
-                                            <br>
-                                            <p>By accessing this Website we assume you accept these terms and conditions. Do not continue to use Smart Form if you do not agree to take all of the terms and conditions stated on this page.</p>
-                                            <br>
-                                            <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: &ldquo;Client&rdquo;, &ldquo;You&rdquo; and &ldquo;Your&rdquo; refers to you, the person log on this Website and compliant to the Company's terms and conditions. &ldquo;The Company&rdquo;, &ldquo;Ourselves&rdquo;, &ldquo;We&rdquo;, &ldquo;Our&rdquo; and &ldquo;Us&rdquo;, refers to our Company. &ldquo;Party&rdquo;, &ldquo;Parties&rdquo;, or &ldquo;Us&rdquo;, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
-                                            <br>
-                                            <p>Cookies We employ the use of cookies. By accessing Smart Form, you agreed to use cookies in agreement with the Company Name's Privacy Policy.</p>
-                                            <br>
-                                            <p>Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our Website to enable the functionality of certain areas to make it easier for people visiting our Website. Some of our affiliate/advertising partners may also use cookies.</p>
-                                            <br>
-                                            <p>License Unless otherwise stated, Company Name and/or its licensors own the intellectual property rights for all material on Smart Form. All intellectual property rights are reserved. You may access this from Smart Form for your own personal use subjected to restrictions set in these terms and conditions.</p>
-                                            <br>
-                                            <p>You must not:</p>
-                                            <br>
-                                            <p>Republish material from Smart Form Sell, rent or sub-license material from Smart Form Reproduce, duplicate or copy material from Smart Form Redistribute content from Smart Form This Agreement shall begin on the date hereof.</p>
-                                            <br>
-                                            <p>Parts of this Website offer an opportunity for users to post and exchange opinions and information in certain areas of the Website. Company Name does not filter, edit, publish or review Comments prior to their presence on the Website. Comments do not reflect the views and opinions of Company Name,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Company Name shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this Website.</p>
-                                            <br>
-                                            <p>Company Name reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
-                                            <br>
-                                            <p>You warrant and represent that:</p>
-                                            <br>
-                                            <p>You are entitled to post the Comments on our Website and have all necessary licenses and consents to do so; The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party; The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity. You hereby grant Company Name a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.</p>
-                                            <br>
-                                            <p>Hyperlinking to our Content The following organizations may link to our Website without prior written approval:</p>
-                                            <br>
-                                            <p>Government agencies; Search engines; News organizations; Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site. These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party's site.</p>
-                                            <br>
-                                            <p>We may consider and approve other link requests from the following types of organizations:</p>
-                                            <br>
-                                            <p>commonly-known consumer and/or business information sources; dot.com community sites; associations or other groups representing charities; online directory distributors; internet portals; accounting, law and consulting firms; and educational institutions and trade associations. We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Company Name; and (d) the link is in the context of general resource information.</p>
-                                            <br>
-                                            <p>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.</p>
-                                            <br>
-                                            <p>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our Website, you must inform us by sending an e-mail to Company Name. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
-                                            <br>
-                                            <p>Approved organizations may hyperlink to our Website as follows:</p>
-                                            <br>
-                                            <p>By use of our corporate name; or By use of the uniform resource locator being linked to; or By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site. No use of Company Name's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
-                                            <br>
-                                            <p>Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.</p>
-                                            <br>
-                                            <p>Content Liability We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
-                                            <br>
-                                            <p>Reservation of Rights We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it's linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.</p>
-                                            <br>
-                                            <p>Removal of links from our Website If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.</p>
-                                            <br>
-                                            <p>We do not ensure that the information on this Website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the Website remains available or that the material on the Website is kept up to date.</p>
-                                            <br>
-                                            <p>Disclaimer To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our Website and the use of this Website. Nothing in this disclaimer will:</p>
-                                            <br>
-                                            <p>limit or exclude our or your liability for death or personal injury; limit or exclude our or your liability for fraud or fraudulent misrepresentation; limit any of our or your liabilities in any way that is not permitted under applicable law; or exclude any of our or your liabilities that may not be excluded under applicable law. The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.</p>
-                                            <br>
-                                            <p>As long as the Website and the information and services on the Website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
-                                            <br><br>
+                            <p>Terms and Conditions Welcome to Smart Form!</p>
+                            <br>
+                            <p>These terms and conditions outline the rules and regulations for the use of Company
+                                Name's Website, located at xxxxxxxxx.com.</p>
+                            <br>
+                            <p>By accessing this Website we assume you accept these terms and conditions. Do not
+                                continue to use Smart Form if you do not agree to take all of the terms and conditions
+                                stated on this page.</p>
+                            <br>
+                            <p>The following terminology applies to these Terms and Conditions, Privacy Statement and
+                                Disclaimer Notice and all Agreements: &ldquo;Client&rdquo;, &ldquo;You&rdquo; and
+                                &ldquo;Your&rdquo; refers to you, the person log on this Website and compliant to the
+                                Company's terms and conditions. &ldquo;The Company&rdquo;, &ldquo;Ourselves&rdquo;,
+                                &ldquo;We&rdquo;, &ldquo;Our&rdquo; and &ldquo;Us&rdquo;, refers to our Company.
+                                &ldquo;Party&rdquo;, &ldquo;Parties&rdquo;, or &ldquo;Us&rdquo;, refers to both the
+                                Client and ourselves. All terms refer to the offer, acceptance and consideration of
+                                payment necessary to undertake the process of our assistance to the Client in the most
+                                appropriate manner for the express purpose of meeting the Client's needs in respect of
+                                provision of the Company's stated services, in accordance with and subject to,
+                                prevailing law of Netherlands. Any use of the above terminology or other words in the
+                                singular, plural, capitalization and/or he/she or they, are taken as interchangeable and
+                                therefore as referring to same.</p>
+                            <br>
+                            <p>Cookies We employ the use of cookies. By accessing Smart Form, you agreed to use cookies
+                                in agreement with the Company Name's Privacy Policy.</p>
+                            <br>
+                            <p>Most interactive websites use cookies to let us retrieve the user's details for each
+                                visit. Cookies are used by our Website to enable the functionality of certain areas to
+                                make it easier for people visiting our Website. Some of our affiliate/advertising
+                                partners may also use cookies.</p>
+                            <br>
+                            <p>License Unless otherwise stated, Company Name and/or its licensors own the intellectual
+                                property rights for all material on Smart Form. All intellectual property rights are
+                                reserved. You may access this from Smart Form for your own personal use subjected to
+                                restrictions set in these terms and conditions.</p>
+                            <br>
+                            <p>You must not:</p>
+                            <br>
+                            <p>Republish material from Smart Form Sell, rent or sub-license material from Smart Form
+                                Reproduce, duplicate or copy material from Smart Form Redistribute content from Smart
+                                Form This Agreement shall begin on the date hereof.</p>
+                            <br>
+                            <p>Parts of this Website offer an opportunity for users to post and exchange opinions and
+                                information in certain areas of the Website. Company Name does not filter, edit, publish
+                                or review Comments prior to their presence on the Website. Comments do not reflect the
+                                views and opinions of Company Name,its agents and/or affiliates. Comments reflect the
+                                views and opinions of the person who post their views and opinions. To the extent
+                                permitted by applicable laws, Company Name shall not be liable for the Comments or for
+                                any liability, damages or expenses caused and/or suffered as a result of any use of
+                                and/or posting of and/or appearance of the Comments on this Website.</p>
+                            <br>
+                            <p>Company Name reserves the right to monitor all Comments and to remove any Comments which
+                                can be considered inappropriate, offensive or causes breach of these Terms and
+                                Conditions.</p>
+                            <br>
+                            <p>You warrant and represent that:</p>
+                            <br>
+                            <p>You are entitled to post the Comments on our Website and have all necessary licenses and
+                                consents to do so; The Comments do not invade any intellectual property right, including
+                                without limitation copyright, patent or trademark of any third party; The Comments do
+                                not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material
+                                which is an invasion of privacy The Comments will not be used to solicit or promote
+                                business or custom or present commercial activities or unlawful activity. You hereby
+                                grant Company Name a non-exclusive license to use, reproduce, edit and authorize others
+                                to use, reproduce and edit any of your Comments in any and all forms, formats or media.
+                            </p>
+                            <br>
+                            <p>Hyperlinking to our Content The following organizations may link to our Website without
+                                prior written approval:</p>
+                            <br>
+                            <p>Government agencies; Search engines; News organizations; Online directory distributors
+                                may link to our Website in the same manner as they hyperlink to the Websites of other
+                                listed businesses; and System wide Accredited Businesses except soliciting non-profit
+                                organizations, charity shopping malls, and charity fundraising groups which may not
+                                hyperlink to our Web site. These organizations may link to our home page, to
+                                publications or to other Website information so long as the link: (a) is not in any way
+                                deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the
+                                linking party and its products and/or services; and (c) fits within the context of the
+                                linking party's site.</p>
+                            <br>
+                            <p>We may consider and approve other link requests from the following types of
+                                organizations:</p>
+                            <br>
+                            <p>commonly-known consumer and/or business information sources; dot.com community sites;
+                                associations or other groups representing charities; online directory distributors;
+                                internet portals; accounting, law and consulting firms; and educational institutions and
+                                trade associations. We will approve link requests from these organizations if we decide
+                                that: (a) the link would not make us look unfavorably to ourselves or to our accredited
+                                businesses; (b) the organization does not have any negative records with us; (c) the
+                                benefit to us from the visibility of the hyperlink compensates the absence of Company
+                                Name; and (d) the link is in the context of general resource information.</p>
+                            <br>
+                            <p>These organizations may link to our home page so long as the link: (a) is not in any way
+                                deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the
+                                linking party and its products or services; and (c) fits within the context of the
+                                linking party's site.</p>
+                            <br>
+                            <p>If you are one of the organizations listed in paragraph 2 above and are interested in
+                                linking to our Website, you must inform us by sending an e-mail to Company Name. Please
+                                include your name, your organization name, contact information as well as the URL of
+                                your site, a list of any URLs from which you intend to link to our Website, and a list
+                                of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.
+                            </p>
+                            <br>
+                            <p>Approved organizations may hyperlink to our Website as follows:</p>
+                            <br>
+                            <p>By use of our corporate name; or By use of the uniform resource locator being linked to;
+                                or By use of any other description of our Website being linked to that makes sense
+                                within the context and format of content on the linking party's site. No use of Company
+                                Name's logo or other artwork will be allowed for linking absent a trademark license
+                                agreement.</p>
+                            <br>
+                            <p>Without prior approval and written permission, you may not create frames around our
+                                Webpages that alter in any way the visual presentation or appearance of our Website.</p>
+                            <br>
+                            <p>Content Liability We shall not be hold responsible for any content that appears on your
+                                Website. You agree to protect and defend us against all claims that is rising on your
+                                Website. No link(s) should appear on any Website that may be interpreted as libelous,
+                                obscene or criminal, or which infringes, otherwise violates, or advocates the
+                                infringement or other violation of, any third party rights.</p>
+                            <br>
+                            <p>Reservation of Rights We reserve the right to request that you remove all links or any
+                                particular link to our Website. You approve to immediately remove all links to our
+                                Website upon request. We also reserve the right to amen these terms and conditions and
+                                it's linking policy at any time. By continuously linking to our Website, you agree to be
+                                bound to and follow these linking terms and conditions.</p>
+                            <br>
+                            <p>Removal of links from our Website If you find any link on our Website that is offensive
+                                for any reason, you are free to contact and inform us any moment. We will consider
+                                requests to remove links but we are not obligated to or so or to respond to you
+                                directly.</p>
+                            <br>
+                            <p>We do not ensure that the information on this Website is correct, we do not warrant its
+                                completeness or accuracy; nor do we promise to ensure that the Website remains available
+                                or that the material on the Website is kept up to date.</p>
+                            <br>
+                            <p>Disclaimer To the maximum extent permitted by applicable law, we exclude all
+                                representations, warranties and conditions relating to our Website and the use of this
+                                Website. Nothing in this disclaimer will:</p>
+                            <br>
+                            <p>limit or exclude our or your liability for death or personal injury; limit or exclude our
+                                or your liability for fraud or fraudulent misrepresentation; limit any of our or your
+                                liabilities in any way that is not permitted under applicable law; or exclude any of our
+                                or your liabilities that may not be excluded under applicable law. The limitations and
+                                prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are
+                                subject to the preceding paragraph; and (b) govern all liabilities arising under the
+                                disclaimer, including liabilities arising in contract, in tort and for breach of
+                                statutory duty.</p>
+                            <br>
+                            <p>As long as the Website and the information and services on the Website are provided free
+                                of charge, we will not be liable for any loss or damage of any nature.</p>
+                            <br><br>
 
-                                            <button type="" class="btn-smartform2 addShadow btnCenter" id="agreeAndReturn">&nbsp;Agree and Return&nbsp;</button>
-                                            <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ========== END MODALS ========== -->
-                                <script>
-                                    //
-                                    //
-                                    // popUpModal
-                                    //
-                                    //
-                                    $(document).ready(function() {
-                                        var requiredInputXY = 0;
-
-                                        $('#tc_popUp').click(function() {
-                                            $('#tc_modal-window').addClass('active');
-                                        });
-                                        $('.tc_modal-close').click(function() {
-                                            requiredInputXY = $("#tc_checkbox").offset();
-                                            window.scrollTo(requiredInputXY.left, requiredInputXY.top);
-
-                                            $(this).parent().removeClass('active');
-                                        });
-                                        $('#agreeAndReturn').click(function() {
-                                            document.getElementById("tc_checkbox").checked = true;
-
-                                            requiredInputXY = $("#tc_checkbox").offset();
-                                            window.scrollTo(requiredInputXY.left, requiredInputXY.top);
-
-                                            $('.tc_modal-close').parent().removeClass('active');
-                                        });
-                                    });
-                                </script>
+                            <button type="" class="btn-smartform2 addShadow btnCenter" id="agreeAndReturn">&nbsp;Agree
+                                and Return&nbsp;</button>
+                            <br>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-1"></div>
-            </div>
+                <!-- ========== END MODALS ========== -->
+                <script>
+                    //
+                    //
+                    // popUpModal
+                    //
+                    //
+                    $(document).ready(function () {
+                        var requiredInputXY = 0;
 
-            <div class="addResponsiveHeight2"></div>
-            </div>
-            </div>
-            </section>
+                        $('#tc_popUp').click(function () {
+                            $('#tc_modal-window').addClass('active');
+                        });
+                        $('.tc_modal-close').click(function () {
+                            requiredInputXY = $("#tc_checkbox").offset();
+                            window.scrollTo(requiredInputXY.left, requiredInputXY.top);
 
-            <!-- SECTION 4 -->
-            <!-- <h2></h2>
+                            $(this).parent().removeClass('active');
+                        });
+                        $('#agreeAndReturn').click(function () {
+                            document.getElementById("tc_checkbox").checked = true;
+
+                            requiredInputXY = $("#tc_checkbox").offset();
+                            window.scrollTo(requiredInputXY.left, requiredInputXY.top);
+
+                            $('.tc_modal-close').parent().removeClass('active');
+                        });
+                    });
+                </script>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="addResponsiveHeight2"></div>
+    </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <!-- <h2></h2>
             <br>
             <section>
                 <div class="inner theme-bg-color8">
@@ -1309,129 +1489,142 @@
     <br>
     <!-- main body end -->
 
-<!-- footer -->
-<footer class="theme-bg-color8 theme-color6 footerRadiusBorder addShadow">
-    <small>
-        <div class="container px-4 py-3">
-            <div class="row g-4 py-4 row-cols-1 row-cols-lg-2">
-                <div class="col">
-                    <form>
-                        <h5 class="pb-2 border-bottom"><b>Contact Us</b></h5>
-                        <br>
-                        <div class="row row-cols-2 d-flex justify-content-start">
-                            <div class="col-4">
-                                <p><span class="material-icons inline_icon" style="vertical-align: top;">phone</span> Phone</p>
-                                <p><span class="material-icons inline_icon" style="vertical-align: top;">mail</span> Email</p>
+    <!-- footer -->
+    <footer class="theme-bg-color8 theme-color6 footerRadiusBorder addShadow">
+        <small>
+            <div class="container px-4 py-3">
+                <div class="row g-4 py-4 row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                        <form>
+                            <h5 class="pb-2 border-bottom"><b>Contact Us</b></h5>
+                            <br>
+                            <div class="row row-cols-2 d-flex justify-content-start">
+                                <div class="col-4">
+                                    <p><span class="material-icons inline_icon"
+                                            style="vertical-align: top;">phone</span> Phone</p>
+                                    <p><span class="material-icons inline_icon" style="vertical-align: top;">mail</span>
+                                        Email</p>
+                                </div>
+                                <div class="col-5">
+                                    <p>+852 0000 0000</p>
+                                    <p>cs@xxxxxxxxx.com</p>
+                                </div>
                             </div>
-                            <div class="col-5">
-                                <p>+852 0000 0000</p>
-                                <p>cs@xxxxxxxxx.com</p>
+                            <small>Need service or support? Start your request now and we’ll find you a
+                                solution.</small>
+                        </form>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <form action="#" class="needs-validation">
+                            <h5 class="pb-2 border-bottom"><b>Subscribe to our newsletter</b></h5>
+                            <br>
+                            <p>Monthly digest of whats new and exciting from us.</p>
+                            <div class="row">
+                                <div class="col">
+                                    <input id="newsletter1" type="email" class="form-control dimmer"
+                                        style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address"
+                                        required>
+                                </div>
+                                <div class="col">
+                                    <button id="emailSubcribeBtn"
+                                        class="btn btn-primary btn-smartform3 showSubscription" type="submit"><span
+                                            class="material-icons inline_icon">send</span> Subscribe</button>
+                                </div>
                             </div>
-                        </div>
-                        <small>Need service or support? Start your request now and we’ll find you a solution.</small>
-                    </form>
-                </div>
-                <div class="col d-flex justify-content-center">
-                    <form action="#" class="needs-validation">
-                        <h5 class="pb-2 border-bottom"><b>Subscribe to our newsletter</b></h5>
-                        <br>
-                        <p>Monthly digest of whats new and exciting from us.</p>
-                        <div class="row">
-                            <div class="col">
-                                <input id="newsletter1" type="email" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
-                            </div>
-                            <div class="col">
-                                <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit"><span class="material-icons inline_icon">send</span> Subscribe</button>
-                            </div>
-                        </div>
-                        <small>We’ll never share your email address with a third-party. </small>
-                    </form>
+                            <small>We’ll never share your email address with a third-party. </small>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom theme-bg-color3 theme-color8 footerRadiusBorder addPaddingLeft">
-            <div class="container">
-                <div class="row g-4 row-cols-2 row-cols-lg-3">
-                    <div class="col">
-                        <h5 class="title">Smart Form</h5>
-                        <br>
-                        <ul class="list-unstyled">
-                            <li> <a href="#">Index</a></li>
-                            <li> <a href="#">About Us</a></li>
-                            <li> <a href="#">Contact Us</a></li>
-                        </ul>
+            <div class="footer-bottom theme-bg-color3 theme-color8 footerRadiusBorder addPaddingLeft">
+                <div class="container">
+                    <div class="row g-4 row-cols-2 row-cols-lg-3">
+                        <div class="col">
+                            <h5 class="title">Smart Form</h5>
+                            <br>
+                            <ul class="list-unstyled">
+                                <li> <a href="#">Index</a></li>
+                                <li> <a href="#">About Us</a></li>
+                                <li> <a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5 class="title">Form</h5>
+                            <br>
+                            <ul class="list-unstyled">
+                                <li> <a href="form.html">Overview</a></li>
+                                <li> <a href="#">Create Form</a></li>
+                                <li> <a href="terms_and_conditions.html">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5 class="title">Account</h5>
+                            <br>
+                            <ul class="list-unstyled">
+                                <li> <a href="#">Profile</a></li>
+                                <li> <a href="signin.html">Sign In</a></li>
+                                <li> <a href="signup.html">Sign Up</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col">
-                        <h5 class="title">Form</h5>
-                        <br>
-                        <ul class="list-unstyled">
-                            <li> <a href="form.html">Overview</a></li>
-                            <li> <a href="#">Create Form</a></li>
-                            <li> <a href="terms_and_conditions.html">Terms and Conditions</a></li>
-                        </ul>
+                    <br>
+                    <div class="row">
+                        <hr>
+                        <small>
+                            <p>
+                                <span class="text-muted">Copyright &copy;
+                                    <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All
+                                    rights reserved.
+                                </span>
+                                <span class="addPaddingLeft">Privacy Policy - <a href="terms_and_conditions.html">Terms
+                                        and Conditions</a></span>
+                            </p>
+                        </small>
                     </div>
-                    <div class="col">
-                        <h5 class="title">Account</h5>
-                        <br>
-                        <ul class="list-unstyled">
-                            <li> <a href="#">Profile</a></li>
-                            <li> <a href="signin.html">Sign In</a></li>
-                            <li> <a href="signup.html">Sign Up</a></li>
-                        </ul>
-                    </div>
+                    <br>
                 </div>
-                <br>
-                <div class="row">
-                    <hr>
-                    <small>
-                        <p>
-                            <span class="text-muted">Copyright &copy; <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.</span>
-                            <span class="addPaddingLeft">Privacy Policy - <a href="terms_and_conditions.html">Terms and Conditions</a></span>
-                        </p>
-                    </small>
-                </div>
-                <br>
             </div>
-        </div>
-    </small>
-</footer>
-<!-- footer end -->
+        </small>
+    </footer>
+    <!-- footer end -->
 
-<!-- Modal -->
-<div class="modal fade" id="modal0" tabindex="-1" aria-labelledby="modal0Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal0Label">Warning</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal -->
+    <div class="modal fade" id="modal0" tabindex="-1" aria-labelledby="modal0Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal0Label">Warning</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    You cannot undo this action.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary recipe-table__del-row-btn2"
+                        style="background-color: red;" data-bs-dismiss="modal">Delete</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-            You cannot undo this action.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary recipe-table__del-row-btn2" style="background-color: red;" data-bs-dismiss="modal">Delete</button>
-        </div>
-      </div>
     </div>
-</div>
-<!-- Modal 2 -->
-<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal1Label">Warm Reminder</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Warm Reminder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    All required field(s) must be filled in.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" style="background-color: green;"
+                        data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-            All required field(s) must be filled in.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" style="background-color: green;" data-bs-dismiss="modal">OK</button>
-        </div>
-      </div>
     </div>
-</div>
 
 </body>
 
@@ -1439,7 +1632,7 @@
 <script id="rowTemplate" type="text/template">
     <tr id="{newRowID}">
         <td class="drag-handler"></td>
-        <td class="recipe-table__cell2">
+        <td class="addSurroundedPadding">
             <select class="form-select form-select-sm form-item-focus form-bg-color dimmer {newRowID}"
                  id="{arraySelectID}"
                 onchange="addInput('{arraySelectID}', '{arrayInputID}'); updateConfirmationPgFields(this);" style="height: 100px; min-height:100px;" required>
@@ -1465,27 +1658,20 @@
                 <option value="18">District</option>
                 <option value="19">Checkbox</option>
             </select>
-        </td>
-        <td class="recipe-table__cell">
             <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer {newRowID}" id="{n}" rows="1"
             placeholder="*Question" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);" required></textarea>
-        </td>
-        <td class="recipe-table__cell">
             <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer {newRowID}" id="{m}" rows="1"
                 placeholder="Description (Optional)" style="height: 100px; min-height:100px;" onchange="updateConfirmationPgFields(this);"></textarea>
-        </td>
-        <td class="recipe-table__cell">
             <div id="{arrayInputID}"></div>
-        </td>
-        <td class="recipe-table__cell">
-            <button class="recipe-table__del-row-btn" style="height: 100px; min-height:100px;" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
+            <!-- Button trigger modal -->
+            <button class="recipe-table__del-row-btn" data-bs-toggle="modal" data-bs-target="#modal0">x</button>
         </td>
     </tr>
 </script>
 <!-- addRow_check -->
 <script id="rowTemplate2" type="text/template">
     <tr id="{newRowID_check}">
-        <td class="recipe-table__cell2">
+        <td class="addSurroundedPadding">
             <select class="form-select form-select-sm form-item-focus form-bg-color dimmer {newRowID_check}"
                  id="{arraySelectID_check}"
                 onchange="" style="height: 100px; min-height:100px;" disabled>
@@ -1511,16 +1697,10 @@
                 <option value="18">District</option>
                 <option value="19">Checkbox</option>
             </select>
-        </td>
-        <td class="recipe-table__cell">
             <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer {newRowID_check}" id="{n_check}" rows="1"
             placeholder="Question" style="height: 100px; min-height:100px;" disabled></textarea>
-        </td>
-        <td class="recipe-table__cell">
             <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer {newRowID_check}" id="{m_check}" rows="1"
                 placeholder="Description (Optional)" style="height: 100px; min-height:100px;" disabled></textarea>
-        </td>
-        <td class="recipe-table__cell">
             <div id="{arrayInputID_check}" disabled></div>
         </td>
     </tr>
