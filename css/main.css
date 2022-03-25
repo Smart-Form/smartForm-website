@@ -507,21 +507,37 @@ bgImageAnimation {
 .profile-image {
   animation: loadProfileImage 1s ease-in-out 0.5s;
   animation-fill-mode: both;
-  width: 30vw;
-  height: 40vw;
+  width: 30rem;
+  height: 40rem;
   z-index: -9999;
   content: "";
   position: absolute;
-  background-color: #ff2256;
+  background-color: #8a5122;
   border-radius: 1rem;
 }
 @keyframes loadProfileImage {
   from {
-    transform: translateX(20vw) translateY(25vw);;
+    transform: translateX(10vw) translateY(15vw);;
     opacity: 0;
   }
  to {
-    transform: translateX(20vw) translateY(5vw);;
-    opacity: 0.5;
+    transform: translateX(10vw) translateY(10vw);;
+    opacity: 0.25;
+  }
+}
+@media only screen and (max-aspect-ratio: 3/2) {
+  .profile-image {
+    width: 15rem;
+    height: 25rem;
+  }
+  @keyframes loadProfileImage {
+    from {
+      transform: translateX(22.5vw) translateY(30vw);;
+      opacity: 0;
+    }
+   to {
+      transform: translateX(22.5vw) translateY(25vw);;
+      opacity: 0.25;
+    }
   }
 }
