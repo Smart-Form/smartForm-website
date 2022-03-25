@@ -3,7 +3,6 @@
   /* font-family: Arial; */
   font-family: Roboto;
 }
-
 /* To avoid overflow right side blank caused by Bootstrap */
 html,body {
   margin:0;
@@ -11,27 +10,40 @@ html,body {
   overflow-x:hidden;
 }
 
+a { 
+  text-decoration: none; 
+  color: #E7D5BF;
+}
+
+/* Ivory */
 .theme-color{
   color: #E7E2DE;
 }
+/* Heather */
 .theme-color2{
   color: #9F9CAD;
 }
+/* Comet */
 .theme-color3{
   color: #B7A5A5;
 }
+/* Sugarcane */
 .theme-color4{
   color: #E7D5BF;
 }
+/* Sandal */
 .theme-color5{
   color: #C39C7F;
 }
+/* Firefly */
 .theme-color6{
-  color: #9F9CAD;
+  color: #313C3E;
 }
+/* Mushroom */
 .theme-color7{
   color: #AD9D72;
 }
+/* Pure white */
 .theme-color8{
   color: #ffffff;
 }
@@ -51,7 +63,7 @@ html,body {
   background-color: #C39C7F;
 }
 .theme-bg-color6{
-  background-color: #9F9CAD;
+  background-color: #313C3E;
 }
 .theme-bg-color7{
   background-color: #AD9D72;
@@ -59,6 +71,7 @@ html,body {
 .theme-bg-color8{
   background-color: #ffffff;
 }
+
 
 footer {
   min-height: 40vh;
@@ -316,9 +329,6 @@ footer {
 .addSurroundedPadding3{
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
-.textAlignCenter{
-  text-align: center;
-}
 /* Dim the screen when focusing */
 .dimmer:focus {
   box-shadow: 0px 0px 0px 9999px rgb(0 0 0 / 0.15);
@@ -448,4 +458,12 @@ popUpModal
   -webkit-border-radius: 2rem 2rem 0rem 0rem;
   -moz-border-radius: 2rem 2rem 0rem 0rem;
   border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.inline_icon {
+  vertical-align: bottom;
+}
+
+.overflowAuto{
+  overflow: auto;
 }
