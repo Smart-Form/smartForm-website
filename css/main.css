@@ -432,3 +432,20 @@ popUpModal
 .scrolled-up{
   transform:translateY(0); transition: all 0.3s ease-in-out;
 }
+
+/* Border */
+.addRadiusBorder{
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+.navbarRadiusBorder{
+  -webkit-border-radius: 0rem 0rem 2rem 2rem;
+  -moz-border-radius: 0rem 0rem 2rem 2rem;
+  border-radius: 0rem 0rem 2rem 2rem;
+}
+.footerRadiusBorder{
+  -webkit-border-radius: 2rem 2rem 0rem 0rem;
+  -moz-border-radius: 2rem 2rem 0rem 0rem;
+  border-radius: 2rem 2rem 0rem 0rem;
+}
