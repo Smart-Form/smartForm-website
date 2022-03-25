@@ -142,7 +142,9 @@ footer {
   margin: 4px 2px;
   cursor: pointer;
   background-color: #9F9CAD;
-  border-radius: 13px;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
 }
 .btn-smartform:hover {
   background-color: #C39C7F;
@@ -159,9 +161,11 @@ footer {
   font-family: Arial Black;
   cursor: pointer;
   background-color: #9F9CAD;
-  border-radius: 13px;
   width: 55vw;
   min-width: 18rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
 }
 .btn-smartform2:hover {
   color: white;
@@ -171,6 +175,9 @@ footer {
 .btn-smartform3 {
   background-color: #987468;
   border-color: #987468;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
 }
 .btn-smartform3:hover {
   background-color: #8a5122;
@@ -307,7 +314,8 @@ footer {
   }
 }
 
-@media only screen and (max-aspect-ratio: 3/2) {
+/* For mobile screen only */
+@media only screen and (max-aspect-ratio: 1/2) {
   .typing-smartform {
     font-size: 0.75rem;
   }
@@ -430,6 +438,12 @@ popUpModal
 .addResponsiveHeight{
   height: 4.75rem;
 }
+.addResponsiveHeight2{
+  height: 10rem;
+}
+.addResponsiveHeight3{
+  height: 15rem;
+}
 
 .addWidth{
   width: 2vw;
@@ -459,6 +473,11 @@ popUpModal
   -moz-border-radius: 2rem 2rem 0rem 0rem;
   border-radius: 2rem 2rem 0rem 0rem;
 }
+.topRadiusBorder{
+  -webkit-border-radius: 1rem 1rem 0rem 0rem;
+  -moz-border-radius: 1rem 1rem 0rem 0rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
 
 .inline_icon {
   vertical-align: bottom;
@@ -482,4 +501,27 @@ bgImageAnimation {
   33% { background-image: url('../img/5d0179702500004e12df2b4e.jpeg'); }
   66% { background-image: url('../img/iStock-1188864563.jpeg'); }
   100% { background-image: url('../img/v911-a-01-b.jpg'); }
+}
+
+/* Profile image */
+.profile-image {
+  animation: loadProfileImage 1s ease-in-out 0.5s;
+  animation-fill-mode: both;
+  width: 30vw;
+  height: 40vw;
+  z-index: -9999;
+  content: "";
+  position: absolute;
+  background-color: #ff2256;
+  border-radius: 1rem;
+}
+@keyframes loadProfileImage {
+  from {
+    transform: translateX(20vw) translateY(25vw);;
+    opacity: 0;
+  }
+ to {
+    transform: translateX(20vw) translateY(5vw);;
+    opacity: 0.5;
+  }
 }

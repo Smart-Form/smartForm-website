@@ -248,6 +248,9 @@ h3 {
   cursor: pointer;
   position: relative;
   padding-left: 28px;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
 }
 .actions li a:before {
   content: "\f301";
