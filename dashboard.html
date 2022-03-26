@@ -16,13 +16,173 @@
     <link href="plugins/material-design-icons-3.0.1/iconfont/material-icons.css" rel="stylesheet">
 </head>
 
-<body class="theme-bg-color4">
+<style>
+    /* 
+    
+    workplace animation
+
+    */
+    svg {
+        position: absolute;
+        width: 82%;
+        height: auto;
+        top: 50%;
+        left: 9%;
+        transform: translateY(-50%);
+    }
+
+    .windows {
+        transform: translateX(17px);
+    }
+
+    .light {
+        -webkit-animation: colorfade .5s 1s ease-in;
+        animation: colorfade .5s 1s ease-in;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .screen-image {
+        -webkit-animation: fadein .5s 2s ease-in;
+        animation: fadein .5s 2s ease-in;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .desk-top {
+        -webkit-animation: top-updown 8s 3s ease-in-out alternate infinite;
+        animation: top-updown 8s 3s ease-in-out alternate infinite;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .desk-middle {
+        -webkit-animation: middle-updown 8s 3s ease-in-out alternate infinite;
+        animation: middle-updown 8s 3s ease-in-out alternate infinite;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    @-webkit-keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes colorfade {
+        0% {
+            fill: rgba(255, 255, 255, 0);
+        }
+
+        100% {
+            fill: rgba(255, 255, 255, 255);
+        }
+    }
+
+    @keyframes colorfade {
+        0% {
+            fill: rgba(255, 255, 255, 0);
+        }
+
+        100% {
+            fill: rgba(255, 255, 255, 255);
+        }
+    }
+
+    @-webkit-keyframes top-updown {
+        0% {
+            transform: translateY(20px);
+        }
+
+        20% {
+            transform: translateY(20px);
+        }
+
+        80% {
+            transform: translateY(-160px);
+        }
+
+        100% {
+            transform: translateY(-160px);
+        }
+    }
+
+    @keyframes top-updown {
+        0% {
+            transform: translateY(20px);
+        }
+
+        20% {
+            transform: translateY(20px);
+        }
+
+        80% {
+            transform: translateY(-160px);
+        }
+
+        100% {
+            transform: translateY(-160px);
+        }
+    }
+
+    @-webkit-keyframes middle-updown {
+        0% {
+            transform: translateY(10px);
+        }
+
+        20% {
+            transform: translateY(10px);
+        }
+
+        80% {
+            transform: translateY(-80px);
+        }
+
+        100% {
+            transform: translateY(-80px);
+        }
+    }
+
+    @keyframes middle-updown {
+        0% {
+            transform: translateY(10px);
+        }
+
+        20% {
+            transform: translateY(10px);
+        }
+
+        80% {
+            transform: translateY(-80px);
+        }
+
+        100% {
+            transform: translateY(-80px);
+        }
+    }
+</style>
+
+<body class="theme-bg-color">
 
     <a id="scroll" style="display: none;"><span></span></a>
 
     <!-- nav -->
     <nav
-        class="navbar fixed-top autohide navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color2 navbarRadiusBorder">
+        class="navbar autohide navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color2 navbarRadiusBorder">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="index.html">
@@ -69,102 +229,1062 @@
     </nav>
     <!-- nav end -->
 
+    <nav>
+        <div class="nav nav-tabs theme-bg-color8" id="nav-tab" role="tablist">
+            <button class="nav-link active theme-color6" id="nav-dashboard-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-dashboard" type="button" role="tab" aria-controls="nav-dashboard"
+                aria-selected="false">Dashboard</button>
+            <button class="nav-link theme-color6" id="nav-application-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-application" type="button" role="tab" aria-controls="nav-application"
+                aria-selected="true">Application</button>
+            <button class="nav-link theme-color6" id="nav-form-tab" data-bs-toggle="tab" data-bs-target="#nav-form"
+                type="button" role="tab" aria-controls="nav-form" aria-selected="false">Form</button>
+        </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+
+        <div class="tab-pane fade show active" id="nav-dashboard" role="tabpanel" aria-labelledby="nav-dashboard-tab">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+                <g fill="none" fill-rule="evenodd">
+                    <g>
+                        <g class="windows" fill="#FFF" opacity=".2">
+                            <path id="Rectangle-50-Copy-4" d="M700 322.538h218.764V571H700z" />
+                            <path id="Rectangle-50" d="M700 57h104.255v119.535H700z" />
+                            <path id="Rectangle-50-Copy" d="M814.51 57h104.254v119.535H814.51z" />
+                            <path id="Rectangle-50-Copy-3" d="M700 185.927h104.255v119.535H700z" />
+                            <path id="Rectangle-50-Copy-2" d="M814.51 185.927h104.254v119.535H814.51z" />
+                            <path d="M998.236 322.538H1217V571H998.236z" />
+                            <path d="M998.236 57h104.255v119.535H998.237z" />
+                            <path d="M1112.745 57H1217v119.535h-104.255z" />
+                            <path d="M998.236 185.927h104.255v119.535H998.237z" />
+                            <path d="M1112.745 185.927H1217v119.535h-104.255z" />
+                        </g>
+                        <g>
+                            <path id="Rectangle-60" fill="#CCC"
+                                d="M266 771.312l4.946 1.05-4.9 23.05 5.6 22.458-10.953 2.73-3.677 17.3-35.466-7.54-27.528 6.864-7.257-29.11 7.11-1.772-9.225-18.91 6.35-3.097v-31.768l-9.596-2.392 10.886-43.664 20.25 5.05 33.252-7.067 2.717 12.784 29.206-7.262-3.417 43.847-8.3 4.223v13.227z" />
+                            <path fill="#4D3535" d="M285 714l-11.18 131h-90.64L172 714h113z" />
+                        </g>
+                        <g>
+                            <path fill="#FFF"
+                                d="M398 847.596v-.588c0-1.105-.896-2.008-2-2.008h-44c-1.105 0-2 .9-2 2.008V853h48v-5.404z" />
+                            <path fill="#FFF"
+                                d="M1050 847.596v-.588c0-1.105-.896-2.008-2-2.008h-44c-1.105 0-2 .9-2 2.008V853h48v-5.404z" />
+                            <path id="Rectangle-2-Copy-2" fill="#FFF" d="M360 565h28v280h-28z" />
+                            <path fill="#FFF" d="M1012 565h28v280h-28z" />
+                        </g>
+                        <g class="desk-middle">
+                            <path id="Rectangle-2-Copy" fill="#FFF" d="M355 575h38v220h-38z" />
+                            <path fill="#FFF" d="M1007 575h38v220h-38z" />
+                            <path fill="#000" fill-opacity=".1" d="M360 795h28v4h-28z" />
+                            <path fill="#000" fill-opacity=".1" d="M1012 795h28v4h-28z" />
+                        </g>
+                        <g class="desk-top">
+                            <g>
+                                <path id="Rectangle-2" fill="#FFF" d="M350 525h48v220h-48z" />
+                                <path fill="#000" fill-opacity=".1" d="M350 525h48v16h-48z" />
+                                <path fill="#FFF" d="M1002 525h48v220h-48z" />
+                                <path fill="#000" fill-opacity=".1" d="M1002 525h48v16h-48z" />
+                                <path fill="#000" fill-opacity=".1" d="M355 745h38v4h-38z" />
+                                <path fill="#000" fill-opacity=".1" d="M1007 745h38v4h-38z" />
+                            </g>
+                            <rect width="760" height="10" x="320" y="515" fill="#FFF" rx="2" />
+                            <g transform="translate(989 519)">
+                                <rect width="40" height="15.833" fill="#797979" rx="3" />
+                                <path fill="#000"
+                                    d="M11.637 4.4l.095-.115h.898l.095.114-6.442 7.683h-.7l-.138-.298.45-.535h12.573l.45.535-.14.298h-.7L11.64 4.4zm.544-.65l6.987 8.333H5.195L12.18 3.75z"
+                                    opacity=".498" />
+                                <path fill="#000"
+                                    d="M27.275 11.435l.095.114h.898l.095-.115L21.92 3.75h-.698l-.14.3.45.534h12.574l.45-.535-.14-.3h-.7l-6.44 7.685zm.544.65l6.985-8.334H20.833l6.986 8.334z"
+                                    opacity=".498" />
+                            </g>
+                            <g>
+                                <path fill="#C3BDC5" d="M678 443h44v68h-44z" />
+                                <path fill="#000" d="M694.914 443H722v38.294l-44 11.79v-45.552L694.914 443z"
+                                    opacity=".1" />
+                                <path fill="#1B1919" d="M560 314h280v158H560z" />
+                                <path class="screen-image" fill="#8FA56A" d="M570 324h260v138H570z" />
+                                <path fill="#1B1919" d="M630 507h140v8H630z" />
+                                <path fill="#FFF" d="M762 324h56l-71.74 138.23h-140.5L762 324z" opacity=".104" />
+                            </g>
+                            <g transform="matrix(-1 0 0 1 520 325)">
+                                <path fill="#60AEA6"
+                                    d="M62.035 183H62v7h82v-7h-.036c-.242-1.693-1.7-3-3.46-3H65.496c-1.762 0-3.22 1.304-3.462 3z" />
+                                <circle cx="102.98" cy="182" r="7" fill="#60AEA6" />
+                                <g fill="#60AEA6" transform="rotate(-4 84.692 91.808) translate(20.692 4.308)">
+                                    <g>
+                                        <path
+                                            d="M1.19 32.255C1.757 15.015 17.875 1.19 37.676 1.19c20.16 0 36.5 14.328 36.5 32v.012h-.167v7.053h-73v-8h.183z" />
+                                        <path
+                                            d="M71.007 37.292c-.28-3.343 0-12.17 0-12.17l15.666 5.624v8.375h-17s1.394-1.114 1.334-1.828z" />
+                                    </g>
+                                    <path id="Rectangle-32" d="M84.613 32.443l35.853 44.29-3.885 3.144-35.852-44.29z" />
+                                    <path d="M75.022 172.822L116.9 83.128l4.53 2.115-41.878 89.694z" />
+                                    <circle cx="120.364" cy="81.079" r="7" />
+                                </g>
+                                <path class="light" fill="#FFF"
+                                    d="M18.654 48.987L91.5 44.01l46.53 145.496H.345l18.308-140.52z" opacity=".098" />
+                            </g>
+                            <g>
+                                <g>
+                                    <path id="Rectangle-39" fill="#981616"
+                                        d="M970.07 453.765l3.58-1.824 29.28 57.47-3.578 1.823z" />
+                                    <path id="Rectangle-39-Copy" fill="#1C1919"
+                                        d="M970.582 453.504l2.044-1.042 29.283 57.468-2.046 1.042z" />
+                                    <path id="Triangle-1" fill="#CAB794" d="M967.785 444.857l5.864 7.084-3.58 1.824z" />
+                                    <path id="Triangle-1-Copy" fill="#4A4A4A"
+                                        d="M969.25 446.628l-1.465-1.77.572 2.226.894-.456z" />
+                                </g>
+                                <g>
+                                    <path fill="#981616" d="M1012.064 444.46l3.8 1.31-21.026 61.016-3.8-1.31z" />
+                                    <path fill="#1C1919" d="M1013.15 444.836l.543.187-21.026 61.015-.543-.187z" />
+                                    <path fill="#1C1919" d="M1014.78 445.397l1.085.374-21.027 61.016-1.086-.374z" />
+                                    <path fill="#CAB794" d="M1016.89 436.627l-1.026 9.143-3.8-1.31" />
+                                    <path fill="#4A4A4A" d="M1016.633 438.913l.257-2.286-1.206 1.958.95.328z" />
+                                </g>
+                                <g>
+                                    <path fill="#D8D8D8"
+                                        d="M991.987 506.395c-.49 13.638-2.997 3.776-3.972.488-3.792-10.8-6.135-49.933-6.135-49.933l3.972-.488s6.137 36.674 6.135 49.933z" />
+                                    <path fill="#1C1919"
+                                        d="M986.126 453.548c-.04-.188-.083-.375-.124-.56-1.754-4.668-4.636-3.92-5.107.627-.067 8.385 1.733 18.795 1.733 18.795l6.242-.767s-.882-8.816-2.393-16.41l.938-.115 1.743 14.185 1.135-.14-1.847-15.036-.105-.85-2.214.27z" />
+                                </g>
+                                <g transform="translate(980 485)">
+                                    <path fill="#574230" d="M1 1h26v28H1z" />
+                                    <path fill="#CAC694" d="M8 11h19v8H8z" />
+                                    <path fill="#CAC694" d="M1 25V5c5.523 0 10 4.477 10 10S6.523 25 1 25z" />
+                                    <path fill="#1C1919" d="M1 22V8c3.866 0 7 3.134 7 7s-3.134 7-7 7z" />
+                                    <rect width="28" height="2" fill="#E1DBAF" rx="2" />
+                                    <rect width="28" height="2" y="28" fill="#E1DBAF" rx="2" />
+                                </g>
+                            </g>
+                            <g transform="translate(897 467)">
+                                <rect width="40.987" height="48" fill="#E3E3E3" rx="2" />
+                                <path fill="#E3E3E3"
+                                    d="M35.51 40C45.17 40 53 37.325 53 24.348 53 11.37 45.17 8.696 35.51 8.696c-9.66 0-17.49 7.007-17.49 15.652C18.02 32.992 25.85 40 35.51 40zm.177-3.478c7.22 0 13.073-2.05 13.073-12s-5.853-12-13.073-12c-7.22 0-13.074 5.372-13.074 12 0 6.627 5.853 12 13.074 12z" />
+                                <path fill="#0B95B3"
+                                    d="M20.426 24.44l-10.388-6.018 10.323-5.95 10.39 6.02-10.324 5.948zm11.12 6.85l-10.18 5.868V25.496l10.18-5.87V31.29zM9.44 19.626v4.917l5.895 3.398v6.746l4.285 2.47V25.496l-10.18-5.87zm0 11.58l4.285 2.47v-5.023l-4.285-2.47v5.024z" />
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <div class="tab-pane fade" id="nav-application" role="tabpanel" aria-labelledby="nav-application-tab">
+            <ol class="list-group list-group-numbered">
+
+                <header>
+                    <div class="bg-warning py-2 d-flex justify-content-start">
+                        <div class="fw-bold ms-2"><span class="badge bg-primary rounded-pill"
+                                id="numberOfNewApplication">#</span> New applications found</div>
+                    </div>
+
+                    <nav id="navbar_top"
+                        class="navbar navbar-expand-lg theme-bg-color6 theme-color8 d-flex justify-content-between">
+                        <div class="ms-2">
+                            <h5>Applicant Snapshots</h4>
+                        </div>
+                        <div class="mx-2">
+                            <h5>Submission Date</h4>
+                        </div>
+                    </nav>
+                </header>
+
+                <div id="applicationList">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
+                                    Applicant</span></div>
+                            <br>
+                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Date</span>
+                    </li>
+                </div>
+
+            </ol>
+        </div>
+
+        <div class="tab-pane fade d-flex justify-content-center" id="nav-form" role="tabpanel"
+            aria-labelledby="nav-form-tab">
+            <h2></h2>
+            <section>
+                <div class="inner addRadiusBorder">
+                    <div class="form-content">
+                        <div class="form-header">
+                            <img alt="" class="banner-smartform3 topRadiusBorder">
+                            <h3 class="theme-color2 form-title">
+                                <div class="row">
+                                    <div class="col-3 mobile_width100"><span class="material-icons"
+                                            style="font-size: 100%; vertical-align: text-bottom;">visibility</span>
+                                    </div>
+                                    <div class="col-6 mobile_width100">Welfare Information</div>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPaddingLeft">*Name</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="text" id="v0_check" placeholder="Welfare Name"
+                                    class="form-control form-bg-color dimmer" disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPaddingLeft">Introduction</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="v1_check" placeholder="Summary 50 words"
+                                    style="min-height: 100px;" class="form-control form-bg-color dimmer"
+                                    disabled></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPaddingLeft">Welfare Website</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="url" id="v2_check" placeholder="URL"
+                                    class="form-control form-bg-color dimmer" pattern="https?://.+" disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPaddingLeft">Welfare Requirements</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="text" id="v3_check" placeholder="Target audience"
+                                    class="form-control form-bg-color dimmer" disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPaddingLeft">Age Limit</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="number" placeholder="Age" id="v4_check"
+                                    class="form-control form-bg-color dimmer" min="0" max="200" disabled>
+                                <div class="addPaddingLeft">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="v5_check" disabled>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            or after
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="v6_check" disabled>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            or under
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Apply Date</label>
+                            <div class="col-2">
+                                <input type="date" class="form-control form-bg-color dimmer" id="v7_check"
+                                    style="max-width: 10.5rem; min-width: 10.5rem;" disabled>
+                            </div>
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Deadline Date</label>
+                            <div class="col-2">
+                                <input type="date" class="form-control form-bg-color dimmer" id="v8_check"
+                                    style="max-width: 10.5rem; min-width: 10.5rem;" disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Distribution
+                                Date</label>
+                            <div class="col-2">
+                                <input type="date" class="form-control form-bg-color dimmer" id="v9_check"
+                                    style="max-width: 10.5rem; min-width: 10.5rem;" disabled>
+                            </div>
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">End Date</label>
+                            <div class="col-2">
+                                <input type="date" class="form-control form-bg-color dimmer" id="v10_check"
+                                    style="max-width: 10.5rem; min-width: 10.5rem;" disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPaddingLeft">The amount involved</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <input type="number" id="v11_check" placeholder="HK$"
+                                    class="form-control form-bg-color dimmer" disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPaddingLeft">*Privacy Policy & Disclaimer</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="v12_check" class="form-control form-bg-color dimmer"
+                                    style="min-height: 100px;" disabled></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPaddingLeft">Promotional Corner<br><small>(to
+                                        Applicant)</small></p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="v13_check" placeholder="Welcome, Thank you, etc"
+                                    class="form-control form-bg-color dimmer" style="min-height: 100px;"
+                                    disabled></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <div class="col-2 minWidth">
+                                <p class="text-start form-color addPaddingLeft">Supplementary Information<br><small>(to
+                                        SmartForm)</small></p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-holder">
+                                <textarea name="" id="v14_check" class="form-control form-bg-color dimmer"
+                                    style="min-height: 100px;" disabled></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-1"></div>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Attachment<br>
+                                <p class="fw-lighter">Promotional Materials</p>
+                            </label>
+                            <div class="form-holder">
+                                <div class="input-group" style="min-width: 20vw;">
+                                    <input type="text" class="form-control form-bg-color dimmer" id="v15_check"
+                                        aria-describedby="inputGroupFileAddon04" aria-label="Upload"
+                                        style="max-width: 15.5rem; min-width: 15.5rem; z-index: 0;" disabled>
+                                    <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
+                                </div>
+                            </div>
+                            <label class="col-2 col-form-label form-color minWidth addPaddingLeft">*Attachment<br>
+                                <p class="fw-lighter">Logo</p>
+                            </label>
+                            <div class="form-holder">
+                                <div class="input-group" style="min-width: 20vw;">
+                                    <input type="text" class="form-control form-bg-color dimmer" id="v16_check"
+                                        aria-describedby="inputGroupFileAddon04" aria-label="Upload"
+                                        style="max-width: 15.5rem; min-width: 15.5rem; z-index: 0;" disabled>
+                                    <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="addResponsiveHeight3"></div>
+                        <!-- Section 3 2nd part -->
+                        <div class="form-header">
+                            <img alt="" class="banner-smartform2">
+                            <h3 class="theme-color2 form-title">
+                                <div class="row">
+                                    <div class="col-3 mobile_width100"><span class="material-icons"
+                                            style="font-size: 100%; vertical-align: text-top;">visibility</span></div>
+                                    <div class="col-6 mobile_width100">Question Setting</div>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="recipe">
+                            <br>
+                            <div class="form-row addPaddingLeft">
+                                <div class="col-3"></div>
+                                <div class="col">
+                                    <table>
+                                        <tr style="height: 2.5rem;">
+                                            <th colspan="3">
+                                                <p class="text-start form-color">Basic Information</p>
+                                            </th>
+                                        </tr>
+                                        <tr style="height: 2.5rem;">
+                                            <td>
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input form-bg-color" type="checkbox"
+                                                        value="" id="b0_check" checked disabled>
+                                                    HKID number
+                                                </label>
+                                                <div style="width: 14vw"></div>
+                                            </td>
+                                            <td>
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input form-bg-color" type="checkbox"
+                                                        value="" id="b1_check" checked disabled>
+                                                    English name
+                                                </label>
+                                                <div style="width: 14vw"></div>
+                                            </td>
+                                            <td>
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input form-bg-color" type="checkbox"
+                                                        value="" id="b2_check" checked disabled>
+                                                    Chinese name
+                                                </label>
+                                                <div style="width: 14vw"></div>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 2.5rem;">
+                                            <td>
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input form-bg-color" type="checkbox"
+                                                        value="" id="b3_check" checked disabled>
+                                                    Birthday
+                                                </label>
+                                                <div style="width: 14vw"></div>
+                                            </td>
+                                            <td>
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input form-bg-color" type="checkbox"
+                                                        value="" id="b4_check" checked disabled>
+                                                    Gender
+                                                </label>
+                                                <div style="width: 14vw"></div>
+                                            </td>
+                                            <td>
+                                                <div style="width: 14vw"></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="d-flex justify-content-center">
+                                <div class="recipe__ingredients">
+                                    <table cellpadding="0" cellspacing="0" class="recipe-table" id="recipeTable">
+                                        <tbody id="recipeTableBody2">
+                                            <tr id="tr0_check">
+                                                <td class="addSurroundedPadding">
+                                                    <span>
+                                                        <select
+                                                            class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr0_check input_minHeight"
+                                                            id="arraySelect_check" onchange="" disabled>
+                                                            <option value="" selected hidden>Unselected</option>
+                                                            <option value="0">Option</option>
+                                                            <option value="1">Yes/No</option>
+                                                            <option value="2">Short Answer</option>
+                                                            <option value="3">Multiple Choice</option>
+                                                            <option value="4">Correspondence Address</option>
+                                                            <option value="5">Email Address</option>
+                                                            <option value="6">Phone Number</option>
+                                                            <option value="7">Name</option>
+                                                            <option value="8">Nationality</option>
+                                                            <option value="9">Birthday</option>
+                                                            <option value="10">HKID/Passport Number</option>
+                                                            <option value="11">Employment</option>
+                                                            <option value="12">Marriage</option>
+                                                            <option value="13">Amount</option>
+                                                            <option value="14">Gender</option>
+                                                            <option value="15">Signature</option>
+                                                            <option value="16">Date</option>
+                                                            <option value="17">Number</option>
+                                                            <option value="18">District</option>
+                                                            <option value="19">Checkbox</option>
+                                                        </select>
+                                                    </span>
+                                                    <span>
+                                                        <textarea
+                                                            class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0_check input_minHeight"
+                                                            id="textarea_check" rows="1" placeholder="Question"
+                                                            disabled></textarea>
+                                                    </span>
+                                                    <span>
+                                                        <textarea
+                                                            class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0_check input_minHeight"
+                                                            id="2textarea_check" rows="1"
+                                                            placeholder="Description (Optional)" disabled></textarea>
+                                                    </span>
+                                                    <span>
+                                                        <div id="arrayInput_check"></div>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr id="tr1_check">
+                                                <td class="addSurroundedPadding">
+                                                    <span>
+                                                        <select
+                                                            class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr1_check input_minHeight"
+                                                            id="arraySelect2_check" onchange="" disabled>
+                                                            <option value="" selected hidden>Unselected</option>
+                                                            <option value="0">Option</option>
+                                                            <option value="1">Yes/No</option>
+                                                            <option value="2">Short Answer</option>
+                                                            <option value="3">Multiple Choice</option>
+                                                            <option value="4">Correspondence Address</option>
+                                                            <option value="5">Email Address</option>
+                                                            <option value="6">Phone Number</option>
+                                                            <option value="7">Name</option>
+                                                            <option value="8">Nationality</option>
+                                                            <option value="9">Birthday</option>
+                                                            <option value="10">HKID/Passport Number</option>
+                                                            <option value="11">Employment</option>
+                                                            <option value="12">Marriage</option>
+                                                            <option value="13">Amount</option>
+                                                            <option value="14">Gender</option>
+                                                            <option value="15">Signature</option>
+                                                            <option value="16">Date</option>
+                                                            <option value="17">Number</option>
+                                                            <option value="18">District</option>
+                                                            <option value="19">Checkbox</option>
+                                                        </select>
+                                                    </span>
+                                                    <span>
+                                                        <textarea
+                                                            class="form-control form-control-sm  form-item-focus form-bg-color dimmer tr1_check input_minHeight"
+                                                            id="textarea2_check" rows="1" placeholder="Question"
+                                                            disabled></textarea>
+                                                    </span>
+                                                    <span>
+                                                        <textarea
+                                                            class="form-control form-control-sm form-item-focus form-bg-color dimmer tr1_check input_minHeight"
+                                                            id="2textarea2_check" rows="1"
+                                                            placeholder="Description (Optional)" disabled></textarea>
+                                                    </span>
+                                                    <span>
+                                                        <div id="arrayInput2_check"></div>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr id="tr2_check">
+                                                <td class="addSurroundedPadding">
+                                                    <span>
+                                                        <select
+                                                            class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr2_check input_minHeight"
+                                                            id="arraySelect3_check" onchange="" disabled>
+                                                            <option value="" selected hidden>Unselected</option>
+                                                            <option value="0">Option</option>
+                                                            <option value="1">Yes/No</option>
+                                                            <option value="2">Short Answer</option>
+                                                            <option value="3">Multiple Choice</option>
+                                                            <option value="4">Correspondence Address</option>
+                                                            <option value="5">Email Address</option>
+                                                            <option value="6">Phone Number</option>
+                                                            <option value="7">Name</option>
+                                                            <option value="8">Nationality</option>
+                                                            <option value="9">Birthday</option>
+                                                            <option value="10">HKID/Passport Number</option>
+                                                            <option value="11">Employment</option>
+                                                            <option value="12">Marriage</option>
+                                                            <option value="13">Amount</option>
+                                                            <option value="14">Gender</option>
+                                                            <option value="15">Signature</option>
+                                                            <option value="16">Date</option>
+                                                            <option value="17">Number</option>
+                                                            <option value="18">District</option>
+                                                            <option value="19">Checkbox</option>
+                                                        </select>
+                                                    </span>
+                                                    <span>
+                                                        <textarea
+                                                            class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2_check input_minHeight"
+                                                            id="textarea3_check" rows="1" placeholder="Question"
+                                                            disabled></textarea>
+                                                    </span>
+                                                    <span>
+                                                        <textarea
+                                                            class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2_check input_minHeight"
+                                                            id="2textarea3_check" rows="1"
+                                                            placeholder="Description (Optional)" disabled></textarea>
+                                                    </span>
+                                                    <span>
+                                                        <div id="arrayInput3_check"></div>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr id="tr3_check">
+                                                <td class="addSurroundedPadding">
+                                                    <span>
+                                                        <select
+                                                            class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr3_check input_minHeight"
+                                                            id="arraySelect4_check" onchange="" disabled>
+                                                            <option value="" selected hidden>Unselected</option>
+                                                            <option value="0">Option</option>
+                                                            <option value="1">Yes/No</option>
+                                                            <option value="2">Short Answer</option>
+                                                            <option value="3">Multiple Choice</option>
+                                                            <option value="4">Correspondence Address</option>
+                                                            <option value="5">Email Address</option>
+                                                            <option value="6">Phone Number</option>
+                                                            <option value="7">Name</option>
+                                                            <option value="8">Nationality</option>
+                                                            <option value="9">Birthday</option>
+                                                            <option value="10">HKID/Passport Number</option>
+                                                            <option value="11">Employment</option>
+                                                            <option value="12">Marriage</option>
+                                                            <option value="13">Amount</option>
+                                                            <option value="14">Gender</option>
+                                                            <option value="15">Signature</option>
+                                                            <option value="16">Date</option>
+                                                            <option value="17">Number</option>
+                                                            <option value="18">District</option>
+                                                            <option value="19">Checkbox</option>
+                                                        </select>
+                                                    </span>
+                                                    <span>
+                                                        <textarea
+                                                            class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3_check input_minHeight"
+                                                            id="textarea4_check" rows="1" placeholder="Question"
+                                                            disabled></textarea>
+                                                    </span>
+                                                    <span>
+                                                        <textarea
+                                                            class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3_check input_minHeight"
+                                                            id="2textarea4_check" rows="1"
+                                                            placeholder="Description (Optional)" disabled></textarea>
+                                                    </span>
+                                                    <span>
+                                                        <div id="arrayInput4_check"></div>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr id="tr4_check">
+                                                <td class="addSurroundedPadding">
+                                                    <span>
+                                                        <select
+                                                            class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr4_check input_minHeight"
+                                                            id="arraySelect5_check" onchange="" disabled>
+                                                            <option value="" selected hidden>Unselected</option>
+                                                            <option value="0">Option</option>
+                                                            <option value="1">Yes/No</option>
+                                                            <option value="2">Short Answer</option>
+                                                            <option value="3">Multiple Choice</option>
+                                                            <option value="4">Correspondence Address</option>
+                                                            <option value="5">Email Address</option>
+                                                            <option value="6">Phone Number</option>
+                                                            <option value="7">Name</option>
+                                                            <option value="8">Nationality</option>
+                                                            <option value="9">Birthday</option>
+                                                            <option value="10">HKID/Passport Number</option>
+                                                            <option value="11">Employment</option>
+                                                            <option value="12">Marriage</option>
+                                                            <option value="13">Amount</option>
+                                                            <option value="14">Gender</option>
+                                                            <option value="15">Signature</option>
+                                                            <option value="16">Date</option>
+                                                            <option value="17">Number</option>
+                                                            <option value="18">District</option>
+                                                            <option value="19">Checkbox</option>
+                                                        </select>
+                                                    </span>
+                                                    <span>
+                                                        <textarea
+                                                            class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4_check input_minHeight"
+                                                            id="textarea5_check" rows="1" placeholder="Question"
+                                                            disabled></textarea>
+                                                    </span>
+                                                    <span>
+                                                        <textarea
+                                                            class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4_check input_minHeight"
+                                                            id="2textarea5_check" rows="1"
+                                                            placeholder="Description (Optional)" disabled></textarea>
+                                                    </span>
+                                                    <span>
+                                                        <div id="arrayInput5_check"></div>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr id="tr5_check">
+                                                <td class="addSurroundedPadding">
+                                                    <span>
+                                                        <select
+                                                            class="form-select form-select-sm form-item-focus2 form-bg-color dimmer tr5_check input_minHeight"
+                                                            id="arraySelect6_check" onchange="" disabled>
+                                                            <option value="" selected hidden>Unselected</option>
+                                                            <option value="0">Option</option>
+                                                            <option value="1">Yes/No</option>
+                                                            <option value="2">Short Answer</option>
+                                                            <option value="3">Multiple Choice</option>
+                                                            <option value="4">Correspondence Address</option>
+                                                            <option value="5">Email Address</option>
+                                                            <option value="6">Phone Number</option>
+                                                            <option value="7">Name</option>
+                                                            <option value="8">Nationality</option>
+                                                            <option value="9">Birthday</option>
+                                                            <option value="10">HKID/Passport Number</option>
+                                                            <option value="11">Employment</option>
+                                                            <option value="12">Marriage</option>
+                                                            <option value="13">Amount</option>
+                                                            <option value="14">Gender</option>
+                                                            <option value="15">Signature</option>
+                                                            <option value="16">Date</option>
+                                                            <option value="17">Number</option>
+                                                            <option value="18">District</option>
+                                                            <option value="19">Checkbox</option>
+                                                        </select>
+                                                    </span>
+                                                    <span>
+                                                        <textarea
+                                                            class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5_check input_minHeight"
+                                                            id="textarea6_check" rows="1" placeholder="Question"
+                                                            disabled></textarea>
+                                                    </span>
+                                                    <span>
+                                                        <textarea
+                                                            class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5_check input_minHeight"
+                                                            id="2textarea6_check" rows="1"
+                                                            placeholder="Description (Optional)" disabled></textarea>
+                                                    </span>
+                                                    <span>
+                                                        <div id="arrayInput6_check"></div>
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="addResponsiveHeight"></div>
     <div class="addResponsiveHeight"></div>
 
-        <!-- footer -->
-        <div class="theme-bg-color8 theme-color6 footerRadiusBorder addShadow">
-            <small>
+    <!-- footer -->
+    <div class="theme-bg-color8 theme-color6 footerRadiusBorder addShadow">
+        <small>
+            <div class="px-4 py-3">
+                <div class="row g-4 py-4 row-cols-1 row-cols-lg-2">
+                    <div class="col d-flex justify-content-center">
+                        <form>
+                            <h5 class="pb-2 border-bottom"><b>Contact Us</b></h5>
+                            <br>
+                            <div class="row row-cols-2 d-flex justify-content-start">
+                                <div class="col-4">
+                                    <p><span class="material-icons inline_icon"
+                                            style="vertical-align: top;">phone</span> Phone</p>
+                                    <p><span class="material-icons inline_icon" style="vertical-align: top;">mail</span>
+                                        Email</p>
+                                </div>
+                                <div class="col-5">
+                                    <p>+852 0000 0000</p>
+                                    <p>cs@xxxxxxxxx.com</p>
+                                </div>
+                            </div>
+                            <small>Need service or support? Start your request now and we’ll find you a
+                                solution.</small>
+                        </form>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <form action="#" class="needs-validation">
+                            <h5 class="pb-2 border-bottom"><b>Subscribe to our newsletter</b></h5>
+                            <br>
+                            <p>Monthly digest of whats new and exciting from us.</p>
+                            <div class="row">
+                                <div class="col">
+                                    <input id="newsletter1" type="email" class="form-control dimmer"
+                                        style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address"
+                                        required>
+                                </div>
+                                <div class="col">
+                                    <button id="emailSubcribeBtn"
+                                        class="btn btn-primary btn-smartform3 showSubscription" type="submit"><span
+                                            class="material-icons inline_icon">send</span> Subscribe</button>
+                                </div>
+                            </div>
+                            <small>We’ll never share your email address with a third-party. </small>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom theme-bg-color3 theme-color8 footerRadiusBorder addPaddingLeft">
                 <div class="px-4 py-3">
-                    <div class="row g-4 py-4 row-cols-1 row-cols-lg-2">
-                        <div class="col d-flex justify-content-center">
-                            <form>
-                                <h5 class="pb-2 border-bottom"><b>Contact Us</b></h5>
-                                <br>
-                                <div class="row row-cols-2 d-flex justify-content-start">
-                                    <div class="col-4">
-                                        <p><span class="material-icons inline_icon" style="vertical-align: top;">phone</span> Phone</p>
-                                        <p><span class="material-icons inline_icon" style="vertical-align: top;">mail</span> Email</p>
-                                    </div>
-                                    <div class="col-5">
-                                        <p>+852 0000 0000</p>
-                                        <p>cs@xxxxxxxxx.com</p>
-                                    </div>
-                                </div>
-                                <small>Need service or support? Start your request now and we’ll find you a solution.</small>
-                            </form>
+                    <div class="row g-4 py-4 row-cols-2 row-cols-lg-3">
+                        <div class="col">
+                            <h5 class="title d-flex justify-content-center">Smart Form</h5>
+                            <div class="py-4 d-flex justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li> <a href="index.html">Index</a></li>
+                                    <li> <a href="#">About Us</a></li>
+                                    <li> <a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col d-flex justify-content-center">
-                            <form action="#" class="needs-validation">
-                                <h5 class="pb-2 border-bottom"><b>Subscribe to our newsletter</b></h5>
-                                <br>
-                                <p>Monthly digest of whats new and exciting from us.</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <input id="newsletter1" type="email" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
-                                    </div>
-                                    <div class="col">
-                                        <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit"><span class="material-icons inline_icon">send</span> Subscribe</button>
-                                    </div>
-                                </div>
-                                <small>We’ll never share your email address with a third-party. </small>
-                            </form>
+                        <div class="col">
+                            <h5 class="title d-flex justify-content-center">Form</h5>
+                            <div class="py-4 d-flex justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li> <a href="overview.html">Overview</a></li>
+                                    <li> <a href="#">Create Form</a></li>
+                                    <li> <a href="#">Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h5 class="title d-flex justify-content-center">Account</h5>
+                            <div class="py-4 d-flex justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li> <a href="#">Profile</a></li>
+                                    <li> <a href="signin.html">Sign In</a></li>
+                                    <li> <a href="signup.html">Sign Up</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="footer-bottom theme-bg-color3 theme-color8 footerRadiusBorder addPaddingLeft">
-                    <div class="px-4 py-3">
-                        <div class="row g-4 py-4 row-cols-2 row-cols-lg-3">
-                            <div class="col">
-                                <h5 class="title d-flex justify-content-center">Smart Form</h5>
-                                <div class="py-4 d-flex justify-content-center">
-                                    <ul class="list-unstyled">
-                                        <li> <a href="index.html">Index</a></li>
-                                        <li> <a href="#">About Us</a></li>
-                                        <li> <a href="#">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <h5 class="title d-flex justify-content-center">Form</h5>
-                                <div class="py-4 d-flex justify-content-center">
-                                    <ul class="list-unstyled">
-                                        <li> <a href="overview.html">Overview</a></li>
-                                        <li> <a href="#">Create Form</a></li>
-                                        <li> <a href="#">Guide</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <h5 class="title d-flex justify-content-center">Account</h5>
-                                <div class="py-4 d-flex justify-content-center">
-                                    <ul class="list-unstyled">
-                                        <li> <a href="#">Profile</a></li>
-                                        <li> <a href="signin.html">Sign In</a></li>
-                                        <li> <a href="signup.html">Sign Up</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <hr>
-                            <small>
-                                <p>
-                                    <span class="text-muted">Copyright &copy; <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.</span>
-                                    <span class="addPaddingLeft">Privacy Policy - <a href="#" onclick="openNewWindow_tc();">Terms and Conditions</a></span>
-                                </p>
-                            </small>
-                        </div>
+                    <div class="row">
+                        <hr>
+                        <small>
+                            <p>
+                                <span class="text-muted">Copyright &copy;
+                                    <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All
+                                    rights reserved.
+                                </span>
+                                <span class="addPaddingLeft">Privacy Policy - <a href="#"
+                                        onclick="openNewWindow_tc();">Terms and Conditions</a></span>
+                            </p>
+                        </small>
                     </div>
                 </div>
-            </small>
-        </div>
-        <!-- footer end -->
+            </div>
+        </small>
+    </div>
+    <!-- footer end -->
 </body>
 
 <script>
     function openNewWindow_tc() {
         window.open("terms_and_conditions.html");
     }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 200) {
+                document.getElementById('navbar_top').classList.add('fixed-top');
+                // add padding top to show content behind navbar
+                navbar_height = document.querySelector('.navbar').offsetHeight;
+                document.body.style.paddingTop = navbar_height + 'px';
+            } else {
+                document.getElementById('navbar_top').classList.remove('fixed-top');
+                // remove padding top from body
+                document.body.style.paddingTop = '0';
+            }
+        });
+    });
+  // DOMContentLoaded  end
+</script>
+
+<script>
+    $(document).ready(function () {
+        function updateApplicationListCountForIndexing() {
+            document.getElementById('numberOfNewApplication').innerHTML = document.getElementById('applicationList').getElementsByTagName('li').length;
+        };
+        updateApplicationListCountForIndexing();
+    });
 </script>
 
 <link rel="stylesheet" href="plugins/material-design-iconic-font/css/material-design-iconic-font.css">
