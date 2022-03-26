@@ -531,6 +531,5 @@ question system
   min-width: 23vh;
 }
 .input_minHeight{
-  height: 4rem;
-  min-height: 4rem;
+  height: 50px;
 }
