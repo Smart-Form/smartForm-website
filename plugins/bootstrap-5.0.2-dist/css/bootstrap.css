@@ -4074,7 +4074,8 @@ textarea.form-control-lg {
     display: none;
   }
 }
-@media (min-width: 1092px) {
+/* modified by Cryus: from @media (min-width: 992px) { to @media (min-width: 1092px) {, for iPad Pro layout */
+@media (min-width: 1092px) { 
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
