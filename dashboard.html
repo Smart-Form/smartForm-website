@@ -5,85 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Form - Form ID</title>
+    <title>Smart Form - Dashboard</title>
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
     <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
     <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <link href="plugins/material-design-icons-3.0.1/iconfont/material-icons.css" rel="stylesheet">
 </head>
 
 <body class="theme-bg-color4">
-    <bgImageAnimation>
-        <a id="scroll" style="display: none;"><span></span></a>
 
-            <!-- nav -->
-            <nav class="navbar fixed-top autohide navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color2 navbarRadiusBorder">
-                <div class="container-fluid">
+    <a id="scroll" style="display: none;"><span></span></a>
 
-                    <a class="navbar-brand" href="index.html">
-                        <div class="row ms-auto">
-                            <div class="col"><img src="img/IconsPSD.png" alt="" width="50" height="50" class=""></div>
-                        </div>
-                    </a>
+    <!-- nav -->
+    <nav
+        class="navbar fixed-top autohide navbar-expand-lg navbar-light shadow-sm theme-bg-color8 theme-color2 navbarRadiusBorder">
+        <div class="container-fluid">
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon navbar-toggle-icon-leftPadding"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            &nbsp;&nbsp;
-                            <li class="nav-item mx-auto" style="line-height: 200%;">
-                                <a class="nav-link navBarBtn" href="#"><small>Eng</small></a>
-                            </li>
-                            &nbsp;&nbsp;
-                            <li class="nav-item mx-auto" style="line-height: 200%;">
-                                <a class="nav-link navBarBtn" href="#"><small>繁</small></a>
-                            </li>
-                            &nbsp;&nbsp;
-                            <li class="nav-item mx-auto" style="line-height: 200%;">
-                                <a class="nav-link navBarBtn" href="#"><small>简</small></a>
-                            </li>
-                            &nbsp;&nbsp;
-                            <li class="nav-item mx-auto">
-                            <a class="nav-link" href="overview.html"><span class="material-icons theme-bg-color8 navBarBtn3">dashboard</span></a>
-                            </li>
-                            &nbsp;&nbsp;
-                            <li class="nav-item mx-auto">
-                                <a class="nav-link" href="signin.html"><span class="material-icons theme-bg-color8 navBarBtn3">account_box</span></a>
-                            </li>
-                            &nbsp;&nbsp;
-                        </ul>
-                    </div>
-
+            <a class="navbar-brand" href="index.html">
+                <div class="row ms-auto">
+                    <div class="col"><img src="img/IconsPSD.png" alt="" width="50" height="50" class=""></div>
                 </div>
-            </nav>
-            <!-- nav end -->
+            </a>
 
-            <div class="addResponsiveHeight"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar-toggle-icon-leftPadding"></span>
+            </button>
 
-        <div class="addResponsiveHeight2"></div>
-        <form action="action.php" method="post" class="form2 theme-bg-color8 theme-color2 addShadow">
-            <div class="addSurroundedPadding text-center">
-                <h5 style="font-size:200%" class="d-flex justify-content-center">Your Form ID number</h5>
-                <p class="d-flex justify-content-center">
-                    <span style="font-size:90%">Please save the Form ID number for reference.</span>
-                </p>
-                <p class="d-flex justify-content-center">
-                    <b><span style="font-size:200%" class="theme-color5">OALA</span></b>
-                </p>
-        
-                <p class="d-flex justify-content-center">
-                    <button type="submit" class="btn-smartform2 addShadow">&nbsp;Confirm&nbsp;</button>
-                    <br>
-                    <br>
-                </p>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    &nbsp;&nbsp;
+                    <li class="nav-item mx-auto" style="line-height: 200%;">
+                        <a class="nav-link navBarBtn" href="#"><small>Eng</small></a>
+                    </li>
+                    &nbsp;&nbsp;
+                    <li class="nav-item mx-auto" style="line-height: 200%;">
+                        <a class="nav-link navBarBtn" href="#"><small>繁</small></a>
+                    </li>
+                    &nbsp;&nbsp;
+                    <li class="nav-item mx-auto" style="line-height: 200%;">
+                        <a class="nav-link navBarBtn" href="#"><small>简</small></a>
+                    </li>
+                    &nbsp;&nbsp;
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="overview.html"><span
+                                class="material-icons theme-bg-color8 navBarBtn3">dashboard</span></a>
+                    </li>
+                    &nbsp;&nbsp;
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="signin.html"><span
+                                class="material-icons theme-bg-color8 navBarBtn3">account_box</span></a>
+                    </li>
+                    &nbsp;&nbsp;
+                </ul>
             </div>
-        </form>
-        <div class="addResponsiveHeight2"></div>
+
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <div class="addResponsiveHeight"></div>
 
         <!-- footer -->
         <div class="theme-bg-color8 theme-color6 footerRadiusBorder addShadow">
@@ -173,8 +159,10 @@
             </small>
         </div>
         <!-- footer end -->
-    </bgImageAnimation>
 </body>
-<link rel="stylesheet" href="css/main.css">
-<script src="js/main.js"></script>
+
+<link rel="stylesheet" href="plugins/material-design-iconic-font/css/material-design-iconic-font.css">
+<link rel="stylesheet" href="css/createform_form.css">
+<script src="js/Sortable.js"></script>
+
 </html>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Form - Form</title>
+  <title>Smart Form - Overview</title>
   <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
   <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
   <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
@@ -61,7 +61,7 @@
                   </li>
                   &nbsp;&nbsp;
                   <li class="nav-item mx-auto">
-                    <a class="nav-link" href="form.html"><span class="material-icons theme-bg-color8 navBarBtn3">dashboard</span></a>
+                    <a class="nav-link" href="overview.html"><span class="material-icons theme-bg-color8 navBarBtn3">dashboard</span></a>
                   </li>
                   &nbsp;&nbsp;
                   <li class="nav-item mx-auto">
@@ -81,7 +81,7 @@
     <br>
     <main>
       <div class="center theme-color8">
-        <div class="container">
+        <div class="px-4 py-3">
           <div class="row">
             <div class="col">
               <br><p style="font-size: 300%;"><b>Get started</b></p>
@@ -99,51 +99,61 @@
           </div>
         </div>
 
-        <div class="col-3 col-md-2 mb-5"></div>
+        <div class="addResponsiveHeight"></div>
 
         <div class="album py-5 bg-light" style="border-radius: 25px;">
-          <div class="container">
+          <div class="px-4 py-3">
 
-            <!-- thumbnail -->
+            <!-- thumbnail row -->
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
-              <div class="col">
+
+              <div class="col thumbnail">
                 <div class="card shadow-sm addRadiusBorder">
                   <a href="#" class="column col-xs-6" id="sepia">
-                    <img src="img/oldAgeLivingAllowance.png" alt="" class="thumbnail">
+                    <img src="img/oldAgeLivingAllowance.png" alt="" class="">
                   </a>
                   <div class="card-body">
                     <p class="card-text">Old Age Living Allowance</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <form id="" action="dashboard.html" method="post">
+                          <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                        </form>
+                        <form id="" action="createform.html" method="post">
+                          <button type="submit" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </form>
                       </div>
-                      <small class="text-muted">Last modified by Cyrus on DEC 2</small>
+                      <small class="text-muted">Last modified by admin on DEC 2</small>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- thumbnail -->
-              <div class="col">
+              <div class="col thumbnail">
                 <div class="card shadow-sm addRadiusBorder">
                   <a href="#" class="column col-xs-6" id="sepia">
-                    <img src="img/010531200095mkopyABED.jpeg" alt="" class="thumbnail">
+                    <img src="img/010531200095mkopyABED.jpeg" alt="" class="">
                   </a>
                   <div class="card-body">
                     <p class="card-text">Senior Citizen Card</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <form id="" action="dashboard.html" method="post">
+                          <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                        </form>
+                        <form id="" action="createform.html" method="post">
+                          <button type="submit" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </form>
                       </div>
-                      <small class="text-muted">Last modified by Cyrus on DEC 2</small>
+                      <small class="text-muted">Last modified by admin on DEC 2</small>
                     </div>
                   </div>
                 </div>
               </div>
 
             </div>
+            <!-- thumbnail row end -->
+            
           </div>
         </div>
 
@@ -209,7 +219,7 @@
                               <h5 class="title d-flex justify-content-center">Form</h5>
                               <div class="py-4 d-flex justify-content-center">
                                   <ul class="list-unstyled">
-                                      <li> <a href="form.html">Overview</a></li>
+                                      <li> <a href="overview.html">Overview</a></li>
                                       <li> <a href="#">Create Form</a></li>
                                       <li> <a href="#">Guide</a></li>
                                   </ul>

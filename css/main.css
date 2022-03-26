@@ -279,9 +279,12 @@ footer {
 }
 
 .thumbnail{
-  width: 33vw;
+  width: 32.5vw;
   min-width: 10rem;
-  padding: 10px 0px 10px 10px;
+}
+.thumbnail img{
+  width: 95%;
+  padding: 1rem 0rem 0rem 1rem;
 }
 
 @media only screen and (max-aspect-ratio: 3/2) {
@@ -293,7 +296,6 @@ footer {
   }
   .thumbnail{
     width: 60vw; 
-    padding: 10px 0px 10px 10px;
   }
   .navBarBtn3{
     width: 24rem;
