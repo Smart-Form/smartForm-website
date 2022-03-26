@@ -196,7 +196,7 @@
                             <small>
                                 <p>
                                     <span class="text-muted">Copyright &copy; <script>document.write(new Date().getFullYear())</script> XXXXX XXXX Limited. All rights reserved.</span>
-                                    <span class="addPaddingLeft">Privacy Policy - <a href="terms_and_conditions.html">Terms and Conditions</a></span>
+                                    <span class="addPaddingLeft">Privacy Policy - <a href="#" onclick="openNewWindow_tc();">Terms and Conditions</a></span>
                                 </p>
                             </small>
                         </div>
@@ -250,6 +250,12 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function openNewWindow_tc() {
+        window.open("terms_and_conditions.html");
+    }
+</script>
 
 <link rel="stylesheet" href="css/createform_form.css">
 <link rel="stylesheet" href="css/main.css">
