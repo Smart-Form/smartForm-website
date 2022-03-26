@@ -16,166 +16,6 @@
     <link href="plugins/material-design-icons-3.0.1/iconfont/material-icons.css" rel="stylesheet">
 </head>
 
-<style>
-    /* 
-    
-    workplace animation
-
-    */
-    svg {
-        position: absolute;
-        width: 82%;
-        height: auto;
-        top: 50%;
-        left: 9%;
-        transform: translateY(-50%);
-    }
-
-    .windows {
-        transform: translateX(17px);
-    }
-
-    .light {
-        -webkit-animation: colorfade .5s 1s ease-in;
-        animation: colorfade .5s 1s ease-in;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-    }
-
-    .screen-image {
-        -webkit-animation: fadein .5s 2s ease-in;
-        animation: fadein .5s 2s ease-in;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-    }
-
-    .desk-top {
-        -webkit-animation: top-updown 8s 3s ease-in-out alternate infinite;
-        animation: top-updown 8s 3s ease-in-out alternate infinite;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-    }
-
-    .desk-middle {
-        -webkit-animation: middle-updown 8s 3s ease-in-out alternate infinite;
-        animation: middle-updown 8s 3s ease-in-out alternate infinite;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-    }
-
-    @-webkit-keyframes fadein {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fadein {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @-webkit-keyframes colorfade {
-        0% {
-            fill: rgba(255, 255, 255, 0);
-        }
-
-        100% {
-            fill: rgba(255, 255, 255, 255);
-        }
-    }
-
-    @keyframes colorfade {
-        0% {
-            fill: rgba(255, 255, 255, 0);
-        }
-
-        100% {
-            fill: rgba(255, 255, 255, 255);
-        }
-    }
-
-    @-webkit-keyframes top-updown {
-        0% {
-            transform: translateY(20px);
-        }
-
-        20% {
-            transform: translateY(20px);
-        }
-
-        80% {
-            transform: translateY(-160px);
-        }
-
-        100% {
-            transform: translateY(-160px);
-        }
-    }
-
-    @keyframes top-updown {
-        0% {
-            transform: translateY(20px);
-        }
-
-        20% {
-            transform: translateY(20px);
-        }
-
-        80% {
-            transform: translateY(-160px);
-        }
-
-        100% {
-            transform: translateY(-160px);
-        }
-    }
-
-    @-webkit-keyframes middle-updown {
-        0% {
-            transform: translateY(10px);
-        }
-
-        20% {
-            transform: translateY(10px);
-        }
-
-        80% {
-            transform: translateY(-80px);
-        }
-
-        100% {
-            transform: translateY(-80px);
-        }
-    }
-
-    @keyframes middle-updown {
-        0% {
-            transform: translateY(10px);
-        }
-
-        20% {
-            transform: translateY(10px);
-        }
-
-        80% {
-            transform: translateY(-80px);
-        }
-
-        100% {
-            transform: translateY(-80px);
-        }
-    }
-</style>
-
 <body class="theme-bg-color">
 
     <a id="scroll" style="display: none;"><span></span></a>
@@ -233,142 +73,358 @@
         <div class="nav nav-tabs theme-bg-color8" id="nav-tab" role="tablist">
             <button class="nav-link active theme-color6" id="nav-dashboard-tab" data-bs-toggle="tab"
                 data-bs-target="#nav-dashboard" type="button" role="tab" aria-controls="nav-dashboard"
-                aria-selected="false">Dashboard</button>
+                aria-selected="false"><span class="material-icons inline_icon">dashboard</span> Dashboard</button>
             <button class="nav-link theme-color6" id="nav-application-tab" data-bs-toggle="tab"
                 data-bs-target="#nav-application" type="button" role="tab" aria-controls="nav-application"
-                aria-selected="true">Application</button>
-            <button class="nav-link theme-color6" id="nav-form-tab" data-bs-toggle="tab" data-bs-target="#nav-form"
-                type="button" role="tab" aria-controls="nav-form" aria-selected="false">Form</button>
+                aria-selected="true"><span class="material-icons inline_icon">search</span> Application</button>
+            <button class="nav-link theme-color6" id="nav-view-tab" data-bs-toggle="tab" data-bs-target="#nav-view"
+                type="button" role="tab" aria-controls="nav-view" aria-selected="false"><span class="material-icons inline_icon">view_list</span> View</button>
         </div>
     </nav>
 
     <div class="tab-content" id="nav-tabContent">
 
         <div class="tab-pane fade show active" id="nav-dashboard" role="tabpanel" aria-labelledby="nav-dashboard-tab">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
-                <g fill="none" fill-rule="evenodd">
-                    <g>
-                        <g class="windows" fill="#FFF" opacity=".2">
-                            <path id="Rectangle-50-Copy-4" d="M700 322.538h218.764V571H700z" />
-                            <path id="Rectangle-50" d="M700 57h104.255v119.535H700z" />
-                            <path id="Rectangle-50-Copy" d="M814.51 57h104.254v119.535H814.51z" />
-                            <path id="Rectangle-50-Copy-3" d="M700 185.927h104.255v119.535H700z" />
-                            <path id="Rectangle-50-Copy-2" d="M814.51 185.927h104.254v119.535H814.51z" />
-                            <path d="M998.236 322.538H1217V571H998.236z" />
-                            <path d="M998.236 57h104.255v119.535H998.237z" />
-                            <path d="M1112.745 57H1217v119.535h-104.255z" />
-                            <path d="M998.236 185.927h104.255v119.535H998.237z" />
-                            <path d="M1112.745 185.927H1217v119.535h-104.255z" />
-                        </g>
-                        <g>
-                            <path id="Rectangle-60" fill="#CCC"
-                                d="M266 771.312l4.946 1.05-4.9 23.05 5.6 22.458-10.953 2.73-3.677 17.3-35.466-7.54-27.528 6.864-7.257-29.11 7.11-1.772-9.225-18.91 6.35-3.097v-31.768l-9.596-2.392 10.886-43.664 20.25 5.05 33.252-7.067 2.717 12.784 29.206-7.262-3.417 43.847-8.3 4.223v13.227z" />
-                            <path fill="#4D3535" d="M285 714l-11.18 131h-90.64L172 714h113z" />
-                        </g>
-                        <g>
-                            <path fill="#FFF"
-                                d="M398 847.596v-.588c0-1.105-.896-2.008-2-2.008h-44c-1.105 0-2 .9-2 2.008V853h48v-5.404z" />
-                            <path fill="#FFF"
-                                d="M1050 847.596v-.588c0-1.105-.896-2.008-2-2.008h-44c-1.105 0-2 .9-2 2.008V853h48v-5.404z" />
-                            <path id="Rectangle-2-Copy-2" fill="#FFF" d="M360 565h28v280h-28z" />
-                            <path fill="#FFF" d="M1012 565h28v280h-28z" />
-                        </g>
-                        <g class="desk-middle">
-                            <path id="Rectangle-2-Copy" fill="#FFF" d="M355 575h38v220h-38z" />
-                            <path fill="#FFF" d="M1007 575h38v220h-38z" />
-                            <path fill="#000" fill-opacity=".1" d="M360 795h28v4h-28z" />
-                            <path fill="#000" fill-opacity=".1" d="M1012 795h28v4h-28z" />
-                        </g>
-                        <g class="desk-top">
-                            <g>
-                                <path id="Rectangle-2" fill="#FFF" d="M350 525h48v220h-48z" />
-                                <path fill="#000" fill-opacity=".1" d="M350 525h48v16h-48z" />
-                                <path fill="#FFF" d="M1002 525h48v220h-48z" />
-                                <path fill="#000" fill-opacity=".1" d="M1002 525h48v16h-48z" />
-                                <path fill="#000" fill-opacity=".1" d="M355 745h38v4h-38z" />
-                                <path fill="#000" fill-opacity=".1" d="M1007 745h38v4h-38z" />
-                            </g>
-                            <rect width="760" height="10" x="320" y="515" fill="#FFF" rx="2" />
-                            <g transform="translate(989 519)">
-                                <rect width="40" height="15.833" fill="#797979" rx="3" />
-                                <path fill="#000"
-                                    d="M11.637 4.4l.095-.115h.898l.095.114-6.442 7.683h-.7l-.138-.298.45-.535h12.573l.45.535-.14.298h-.7L11.64 4.4zm.544-.65l6.987 8.333H5.195L12.18 3.75z"
-                                    opacity=".498" />
-                                <path fill="#000"
-                                    d="M27.275 11.435l.095.114h.898l.095-.115L21.92 3.75h-.698l-.14.3.45.534h12.574l.45-.535-.14-.3h-.7l-6.44 7.685zm.544.65l6.985-8.334H20.833l6.986 8.334z"
-                                    opacity=".498" />
-                            </g>
-                            <g>
-                                <path fill="#C3BDC5" d="M678 443h44v68h-44z" />
-                                <path fill="#000" d="M694.914 443H722v38.294l-44 11.79v-45.552L694.914 443z"
-                                    opacity=".1" />
-                                <path fill="#1B1919" d="M560 314h280v158H560z" />
-                                <path class="screen-image" fill="#8FA56A" d="M570 324h260v138H570z" />
-                                <path fill="#1B1919" d="M630 507h140v8H630z" />
-                                <path fill="#FFF" d="M762 324h56l-71.74 138.23h-140.5L762 324z" opacity=".104" />
-                            </g>
-                            <g transform="matrix(-1 0 0 1 520 325)">
-                                <path fill="#60AEA6"
-                                    d="M62.035 183H62v7h82v-7h-.036c-.242-1.693-1.7-3-3.46-3H65.496c-1.762 0-3.22 1.304-3.462 3z" />
-                                <circle cx="102.98" cy="182" r="7" fill="#60AEA6" />
-                                <g fill="#60AEA6" transform="rotate(-4 84.692 91.808) translate(20.692 4.308)">
-                                    <g>
-                                        <path
-                                            d="M1.19 32.255C1.757 15.015 17.875 1.19 37.676 1.19c20.16 0 36.5 14.328 36.5 32v.012h-.167v7.053h-73v-8h.183z" />
-                                        <path
-                                            d="M71.007 37.292c-.28-3.343 0-12.17 0-12.17l15.666 5.624v8.375h-17s1.394-1.114 1.334-1.828z" />
-                                    </g>
-                                    <path id="Rectangle-32" d="M84.613 32.443l35.853 44.29-3.885 3.144-35.852-44.29z" />
-                                    <path d="M75.022 172.822L116.9 83.128l4.53 2.115-41.878 89.694z" />
-                                    <circle cx="120.364" cy="81.079" r="7" />
-                                </g>
-                                <path class="light" fill="#FFF"
-                                    d="M18.654 48.987L91.5 44.01l46.53 145.496H.345l18.308-140.52z" opacity=".098" />
-                            </g>
-                            <g>
-                                <g>
-                                    <path id="Rectangle-39" fill="#981616"
-                                        d="M970.07 453.765l3.58-1.824 29.28 57.47-3.578 1.823z" />
-                                    <path id="Rectangle-39-Copy" fill="#1C1919"
-                                        d="M970.582 453.504l2.044-1.042 29.283 57.468-2.046 1.042z" />
-                                    <path id="Triangle-1" fill="#CAB794" d="M967.785 444.857l5.864 7.084-3.58 1.824z" />
-                                    <path id="Triangle-1-Copy" fill="#4A4A4A"
-                                        d="M969.25 446.628l-1.465-1.77.572 2.226.894-.456z" />
-                                </g>
-                                <g>
-                                    <path fill="#981616" d="M1012.064 444.46l3.8 1.31-21.026 61.016-3.8-1.31z" />
-                                    <path fill="#1C1919" d="M1013.15 444.836l.543.187-21.026 61.015-.543-.187z" />
-                                    <path fill="#1C1919" d="M1014.78 445.397l1.085.374-21.027 61.016-1.086-.374z" />
-                                    <path fill="#CAB794" d="M1016.89 436.627l-1.026 9.143-3.8-1.31" />
-                                    <path fill="#4A4A4A" d="M1016.633 438.913l.257-2.286-1.206 1.958.95.328z" />
-                                </g>
-                                <g>
-                                    <path fill="#D8D8D8"
-                                        d="M991.987 506.395c-.49 13.638-2.997 3.776-3.972.488-3.792-10.8-6.135-49.933-6.135-49.933l3.972-.488s6.137 36.674 6.135 49.933z" />
-                                    <path fill="#1C1919"
-                                        d="M986.126 453.548c-.04-.188-.083-.375-.124-.56-1.754-4.668-4.636-3.92-5.107.627-.067 8.385 1.733 18.795 1.733 18.795l6.242-.767s-.882-8.816-2.393-16.41l.938-.115 1.743 14.185 1.135-.14-1.847-15.036-.105-.85-2.214.27z" />
-                                </g>
-                                <g transform="translate(980 485)">
-                                    <path fill="#574230" d="M1 1h26v28H1z" />
-                                    <path fill="#CAC694" d="M8 11h19v8H8z" />
-                                    <path fill="#CAC694" d="M1 25V5c5.523 0 10 4.477 10 10S6.523 25 1 25z" />
-                                    <path fill="#1C1919" d="M1 22V8c3.866 0 7 3.134 7 7s-3.134 7-7 7z" />
-                                    <rect width="28" height="2" fill="#E1DBAF" rx="2" />
-                                    <rect width="28" height="2" y="28" fill="#E1DBAF" rx="2" />
-                                </g>
-                            </g>
-                            <g transform="translate(897 467)">
-                                <rect width="40.987" height="48" fill="#E3E3E3" rx="2" />
-                                <path fill="#E3E3E3"
-                                    d="M35.51 40C45.17 40 53 37.325 53 24.348 53 11.37 45.17 8.696 35.51 8.696c-9.66 0-17.49 7.007-17.49 15.652C18.02 32.992 25.85 40 35.51 40zm.177-3.478c7.22 0 13.073-2.05 13.073-12s-5.853-12-13.073-12c-7.22 0-13.074 5.372-13.074 12 0 6.627 5.853 12 13.074 12z" />
-                                <path fill="#0B95B3"
-                                    d="M20.426 24.44l-10.388-6.018 10.323-5.95 10.39 6.02-10.324 5.948zm11.12 6.85l-10.18 5.868V25.496l10.18-5.87V31.29zM9.44 19.626v4.917l5.895 3.398v6.746l4.285 2.47V25.496l-10.18-5.87zm0 11.58l4.285 2.47v-5.023l-4.285-2.47v5.024z" />
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </svg>
+
+            <main class="main-content border-radius-lg ">
+                <div class="container-fluid py-4">
+
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                            <div class="card">
+                                <div class="card-body p-3">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="numbers">
+                                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Money
+                                                </p>
+                                                <h5 class="font-weight-bolder">
+                                                    $53,000
+                                                </h5>
+                                                <p class="mb-0">
+                                                    <span class="text-success text-sm font-weight-bolder">+55%</span>
+                                                    since yesterday
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-end">
+                                            <div>
+                                                <span class="material-icons">attach_money</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                            <div class="card">
+                                <div class="card-body p-3">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="numbers">
+                                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Users
+                                                </p>
+                                                <h5 class="font-weight-bolder">
+                                                    2,300
+                                                </h5>
+                                                <p class="mb-0">
+                                                    <span class="text-success text-sm font-weight-bolder">+3%</span>
+                                                    since last week
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-end">
+                                            <div>
+                                                <span class="material-icons">people</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                            <div class="card">
+                                <div class="card-body p-3">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="numbers">
+                                                <p class="text-sm mb-0 text-uppercase font-weight-bold">New Clients</p>
+                                                <h5 class="font-weight-bolder">
+                                                    +3,462
+                                                </h5>
+                                                <p class="mb-0">
+                                                    <span class="text-danger text-sm font-weight-bolder">-2%</span>
+                                                    since last quarter
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-end">
+                                            <div
+                                                class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
+                                                <i class="ni ni-paper-diploma text-lg opacity-10"
+                                                    aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-3">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="numbers">
+                                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Sales</p>
+                                                <h5 class="font-weight-bolder">
+                                                    $103,430
+                                                </h5>
+                                                <p class="mb-0">
+                                                    <span class="text-success text-sm font-weight-bolder">+5%</span>
+                                                    than last month
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-end">
+                                            <div
+                                                class="icon icon-shape bg-gradient-warning shadow-warning text-center rounded-circle">
+                                                <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-lg-7 mb-lg-0 mb-4">
+                            <div class="card z-index-2 h-100">
+                                <div class="card-header pb-0 pt-3 bg-transparent">
+                                    <h6 class="text-capitalize">Sales overview</h6>
+                                    <p class="text-sm mb-0">
+                                        <i class="fa fa-arrow-up text-success"></i>
+                                        <span class="font-weight-bold">4% more</span> in 2021
+                                    </p>
+                                </div>
+                                <div class="card-body p-3">
+                                    <div class="chart">
+                                        <canvas id="chart-line" class="chart-canvas" height="300"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="card card-carousel overflow-hidden h-100 p-0">
+                                <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
+
+                                    <div class="carousel-inner border-radius-lg h-100">
+                                        <div class="carousel-item h-100 active" style="background-image: url('./assets/img/carousel-1.jpg');
+              background-size: cover;">
+                                            <div
+                                                class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
+                                                <div
+                                                    class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
+                                                    <i class="ni ni-camera-compact text-dark opacity-10"></i>
+                                                </div>
+                                                <h5 class="text-white mb-1">Get started with Argon</h5>
+                                                <p>There’s nothing I really wanted to do in life that I wasn’t able to
+                                                    get good at.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item h-100" style="background-image: url('./assets/img/carousel-2.jpg');
+              background-size: cover;">
+                                            <div
+                                                class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
+                                                <div
+                                                    class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
+                                                    <i class="ni ni-bulb-61 text-dark opacity-10"></i>
+                                                </div>
+                                                <h5 class="text-white mb-1">Faster way to create web pages</h5>
+                                                <p>That’s my skill. I’m not really specifically talented at anything
+                                                    except for the ability to
+                                                    learn.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item h-100" style="background-image: url('./assets/img/carousel-3.jpg');
+              background-size: cover;">
+                                            <div
+                                                class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
+                                                <div
+                                                    class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
+                                                    <i class="ni ni-trophy text-dark opacity-10"></i>
+                                                </div>
+                                                <h5 class="text-white mb-1">Share with us your design tips!</h5>
+                                                <p>Don’t be afraid to be wrong because you can’t learn anything from a
+                                                    compliment.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="carousel-control-prev w-5 me-3" type="button"
+                                        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next w-5 me-3" type="button"
+                                        data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-lg-7 mb-lg-0 mb-4">
+                            <div class="card ">
+                                <div class="card-header pb-0 p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="mb-2">Sales by Country</h6>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table align-items-center ">
+                                        <tbody>
+                                            <tr>
+                                                <td class="w-30">
+                                                    <div class="d-flex px-2 py-1 align-items-center">
+                                                        <div>
+                                                            <img src="./assets/img/icons/flags/US.png"
+                                                                alt="Country flag">
+                                                        </div>
+                                                        <div class="ms-4">
+                                                            <p class="text-xs font-weight-bold mb-0">Country:</p>
+                                                            <h6 class="text-sm mb-0">United States</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text-center">
+                                                        <p class="text-xs font-weight-bold mb-0">Sales:</p>
+                                                        <h6 class="text-sm mb-0">2500</h6>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text-center">
+                                                        <p class="text-xs font-weight-bold mb-0">Value:</p>
+                                                        <h6 class="text-sm mb-0">$230,900</h6>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle text-sm">
+                                                    <div class="col text-center">
+                                                        <p class="text-xs font-weight-bold mb-0">Bounce:</p>
+                                                        <h6 class="text-sm mb-0">29.9%</h6>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="w-30">
+                                                    <div class="d-flex px-2 py-1 align-items-center">
+                                                        <div>
+                                                            <img src="./assets/img/icons/flags/DE.png"
+                                                                alt="Country flag">
+                                                        </div>
+                                                        <div class="ms-4">
+                                                            <p class="text-xs font-weight-bold mb-0">Country:</p>
+                                                            <h6 class="text-sm mb-0">Germany</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text-center">
+                                                        <p class="text-xs font-weight-bold mb-0">Sales:</p>
+                                                        <h6 class="text-sm mb-0">3.900</h6>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text-center">
+                                                        <p class="text-xs font-weight-bold mb-0">Value:</p>
+                                                        <h6 class="text-sm mb-0">$440,000</h6>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle text-sm">
+                                                    <div class="col text-center">
+                                                        <p class="text-xs font-weight-bold mb-0">Bounce:</p>
+                                                        <h6 class="text-sm mb-0">40.22%</h6>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="card">
+                                <div class="card-header pb-0 p-3">
+                                    <h6 class="mb-0">Categories</h6>
+                                </div>
+                                <div class="card-body p-3">
+                                    <ul class="list-group">
+
+                                        <li
+                                            class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+                                            <div class="d-flex align-items-center">
+                                                <div
+                                                    class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                                                    <i class="ni ni-mobile-button text-white opacity-10"></i>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <h6 class="mb-1 text-dark text-sm">Devices</h6>
+                                                    <span class="text-xs">250 in stock, <span
+                                                            class="font-weight-bold">346+ sold</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <button
+                                                    class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i
+                                                        class="ni ni-bold-right" aria-hidden="true"></i></button>
+                                            </div>
+                                        </li>
+
+                                        <li
+                                            class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+                                            <div class="d-flex align-items-center">
+                                                <div
+                                                    class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                                                    <i class="ni ni-tag text-white opacity-10"></i>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <h6 class="mb-1 text-dark text-sm">Tickets</h6>
+                                                    <span class="text-xs">123 closed, <span class="font-weight-bold">15
+                                                            open</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <button
+                                                    class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i
+                                                        class="ni ni-bold-right" aria-hidden="true"></i></button>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+
         </div>
 
         <div class="tab-pane fade" id="nav-application" role="tabpanel" aria-labelledby="nav-application-tab">
@@ -391,194 +447,14 @@
                     </nav>
                 </header>
 
-                <div id="applicationList">
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold">Applicant Name <span class="badge bg-primary rounded-pill">New
-                                    Applicant</span></div>
-                            <br>
-                            <a href="#" class="list-group-item list-group-item-action">Application Name</a>
-                        </div>
-                        <span class="badge bg-primary rounded-pill">Date</span>
-                    </li>
-                </div>
+                <!-- Add application row -->
+                <div id="applicationList"></div>
 
             </ol>
         </div>
 
-        <div class="tab-pane fade d-flex justify-content-center" id="nav-form" role="tabpanel"
-            aria-labelledby="nav-form-tab">
+        <div class="tab-pane fade d-flex justify-content-center" id="nav-view" role="tabpanel"
+            aria-labelledby="nav-view-tab">
             <h2></h2>
             <section>
                 <div class="inner addRadiusBorder">
@@ -588,7 +464,7 @@
                             <h3 class="theme-color2 form-title">
                                 <div class="row">
                                     <div class="col-3 mobile_width100"><span class="material-icons"
-                                            style="font-size: 100%; vertical-align: text-bottom;">visibility</span>
+                                            style="font-size: 100%; vertical-align: text-bottom;">view_list</span>
                                     </div>
                                     <div class="col-6 mobile_width100">Welfare Information</div>
                                 </div>
@@ -790,7 +666,7 @@
                             <h3 class="theme-color2 form-title">
                                 <div class="row">
                                     <div class="col-3 mobile_width100"><span class="material-icons"
-                                            style="font-size: 100%; vertical-align: text-top;">visibility</span></div>
+                                            style="font-size: 100%; vertical-align: text-top;">view_list</span></div>
                                     <div class="col-6 mobile_width100">Question Setting</div>
                                 </div>
                             </h3>
@@ -1278,8 +1154,71 @@
   // DOMContentLoaded  end
 </script>
 
+<!-- Add application row -->
+<script id="addApplicationRow" type="text/template">
+    <li class="list-group-item d-flex justify-content-between justify-content-start">
+        <div class="ms-2 me-auto">
+            <table>
+                <tr>
+                    <td>
+                        <div class="fw-bold">
+                            Applicant Name <span class="badge bg-primary rounded-pill">New Applicant</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <span class="badge bg-secondary rounded-pill">Date</span>
+        </div>
+    </li>
+    <li class="list-group-item d-flex justify-content-between justify-content-start">
+        <div class="ms-2 me-auto">
+            <table>
+                <tr>
+                    <td>
+                        <div class="fw-bold">
+                            Applicant Name <span class="badge bg-warning rounded-pill">Old Applicant</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="list-group-item list-group-item-action">Application Name</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <span class="badge bg-secondary rounded-pill">Date</span>
+        </div>
+    </li>
+</script>
 <script>
     $(document).ready(function () {
+        // Add application row
+        var htmlString = $('#addApplicationRow').html();
+        var times = 20;
+        for (let i = 0; i < times; i++){
+            $('#applicationList').append(htmlString);
+        }
+
+        // Update application list count for indexing
         function updateApplicationListCountForIndexing() {
             document.getElementById('numberOfNewApplication').innerHTML = document.getElementById('applicationList').getElementsByTagName('li').length;
         };
