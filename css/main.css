@@ -503,8 +503,29 @@ bgImageAnimation {
   background-repeat: no-repeat;
   background-image: url('../img/iStock-1188864563.jpeg');
   animation: animateBackground infinite ease-in-out 20s;
+  -webkit-animation: animateBackground infinite ease-in-out 20s;
+  -o-animation: animateBackground infinite ease-in-out 20s;
+  -moz-animation: animateBackground infinite ease-in-out 20s;
 }
 @keyframes animateBackground {
+  0% { background-image: url('../img/v911-a-01-b.jpg'); }
+  33% { background-image: url('../img/5d0179702500004e12df2b4e.jpeg'); }
+  66% { background-image: url('../img/iStock-1188864563.jpeg'); }
+  100% { background-image: url('../img/v911-a-01-b.jpg'); }
+}
+@-webkit-keyframes animateBackground {
+  0% { background-image: url('../img/v911-a-01-b.jpg'); }
+  33% { background-image: url('../img/5d0179702500004e12df2b4e.jpeg'); }
+  66% { background-image: url('../img/iStock-1188864563.jpeg'); }
+  100% { background-image: url('../img/v911-a-01-b.jpg'); }
+}
+@-o-keyframes animateBackground {
+  0% { background-image: url('../img/v911-a-01-b.jpg'); }
+  33% { background-image: url('../img/5d0179702500004e12df2b4e.jpeg'); }
+  66% { background-image: url('../img/iStock-1188864563.jpeg'); }
+  100% { background-image: url('../img/v911-a-01-b.jpg'); }
+}
+@-moz-keyframes animateBackground {
   0% { background-image: url('../img/v911-a-01-b.jpg'); }
   33% { background-image: url('../img/5d0179702500004e12df2b4e.jpeg'); }
   66% { background-image: url('../img/iStock-1188864563.jpeg'); }
