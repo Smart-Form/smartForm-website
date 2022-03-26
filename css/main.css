@@ -298,11 +298,11 @@ footer {
     width: 60vw; 
   }
   .navBarBtn3{
-    width: 24rem;
+    width: 23rem;
     text-align-last: center;
   }
   .navBarBtn{
-    width: 24rem;
+    width: 23rem;
     text-align-last: center;
     background-color: #fff;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
@@ -556,8 +556,8 @@ bgImageAnimation {
 }
 @media only screen and (max-aspect-ratio: 3/2) {
   .profile-image {
-    width: 15rem;
-    height: 25rem;
+    width: 70%;
+    height: 40%;
   }
   @keyframes loadProfileImage {
     from {

@@ -19,6 +19,16 @@ $(document).ready(function(){
 
 //
 //
+// Avoid rotate
+//
+//
+$(document).ready(function () {
+  // Blocking device rotation on mobile web pages
+  screen.orientation.lock('portrait');
+});
+
+//
+//
 //  form-validation
 //
 //
