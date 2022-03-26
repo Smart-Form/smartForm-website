@@ -75,7 +75,7 @@
                         <p>
                             <label for="uid" class="theme-color2">ID</label>
                             <input type="text" name="uid" class="form-control dimmer" required>
-                            <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot
+                            <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#forgotUID_modal">Forgot
                                     ID?</a></label>
                         </p>
                         <br>
@@ -83,7 +83,7 @@
                         <p>
                             <label for="pw" class="theme-color2">Password</label>
                             <input type="password" name="pw" class="form-control dimmer" required>
-                            <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;">Forgot
+                            <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#forgotPW_modal">Forgot
                                     password?</a></label>
                         </p>
                         <br>
@@ -192,7 +192,50 @@
         <!-- footer end -->
     </bgImageAnimation>
     <!-- BG image animation end -->
+
 </body>
+
+<!-- Modal -->
+<div class="modal fade" id="forgotUID_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel_forgotUID" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel_forgotUID">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="forgotUID" class="theme-color2">Please enter your organisation email:</label>
+            <input type="text" name="forgotUID" class="form-control dimmer" required>
+            <p></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-smartform3" style="background-color: #ccc;" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-smartform3">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="forgotPW_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel_forgotPW" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel_forgotPW">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="forgotPW" class="theme-color2">Please enter your organisation email:</label>
+            <input type="text" name="forgotPW" class="form-control dimmer" required>
+            <p></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-smartform3" style="background-color: #ccc;" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-smartform3">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <link rel="stylesheet" href="css/createform_form.css">
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js"></script>

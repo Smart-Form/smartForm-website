@@ -242,6 +242,7 @@ $(document).ready(function () {
     $(document).on('click', '.recipe-table__del-row-btn2', function (){
         $targetDelRow.remove();
         $('#' + $targetDelRow[0].id + '_check').remove();
+        updateTableBodyTrCountForIndexing();
     });
     
 
