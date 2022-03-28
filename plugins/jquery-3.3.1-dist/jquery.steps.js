@@ -792,7 +792,7 @@ function paginationClickHandler(event)
         }
     }
     function validateForm2() {
-        const pg0_requiredInputsID = ["v0", "v1", "v3", "v12", "v16"];
+        const pg0_requiredInputsID = ['v0', 'v1', 'v3', 'v7', 'v12', 'v16'];
         for (let i = 0; i < pg0_requiredInputsID.length; i++){
             let v = document.forms["wizard"][pg0_requiredInputsID[i]].value;
             if ( v == null || v == "") {
