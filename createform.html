@@ -108,7 +108,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <input type="text" id="v0" placeholder="Welfare Name"
-                                    class="form-control form-bg-color dimmer"
+                                    class="form-control form-bg-color dimmer" pattern="(?=.*[a-z])(?=.*[A-Z]).{3,}"
                                     onchange="updateConfirmationPgFields(this);" required>
                             </div>
                         </div>
@@ -186,7 +186,7 @@
                             <div class="col-2">
                                 <input type="date" class="form-control form-bg-color dimmer" id="v7"
                                     style="max-width: 12rem; min-width: 12rem;"
-                                    onchange="updateConfirmationPgFields(this);">
+                                    onchange="updateConfirmationPgFields(this);" required>
                             </div>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color minWidth addPaddingLeft">Deadline Date</label>
@@ -1525,8 +1525,8 @@
                                 of charge, we will not be liable for any loss or damage of any nature.</p>
                             <br><br>
 
-                            <button type="" class="btn-smartform2 addShadow btnCenter" id="agreeAndReturn">&nbsp;Agree
-                                and Return&nbsp;</button>
+                            <a class="btn-smartform2 addShadow btnCenter" id="agreeAndReturn">&nbsp;Agree
+                                and Return&nbsp;</a>
                             <br>
                         </div>
                     </div>
@@ -1553,10 +1553,10 @@
                         $('#agreeAndReturn').click(function () {
                             document.getElementById("tc_checkbox").checked = true;
 
+                            $('.tc_modal-close').parent().removeClass('active');
+
                             requiredInputXY = $("#tc_checkbox").offset();
                             window.scrollTo(requiredInputXY.left, requiredInputXY.top);
-
-                            $('.tc_modal-close').parent().removeClass('active');
                         });
                     });
                 </script>

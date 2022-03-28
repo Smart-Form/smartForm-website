@@ -378,3 +378,17 @@ function updateConfirmationPgFileInputs(thisObj) {
 //         }
 //     }
 // }
+
+//
+//
+// Avoid user submit the form/ delete table row accidentally by pressing "Enter" on the keyboard
+//
+//
+$(document).ready(function() {
+    $(window).keydown(function(event){
+        if(event.keyCode == 13) {
+            event.preventDefault();
+            return false;
+        }
+    });
+});
