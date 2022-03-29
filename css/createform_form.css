@@ -296,97 +296,6 @@ h3 {
 
 /* 
 
-form system – mobile layout
-
-*/
-@media only screen and (max-aspect-ratio: 3/2) {
-
-  h3 {
-    font-size: 7vw;
-    color: #8a5122;
-    background-color: #fff;
-    /* text-transform: uppercase; */
-    letter-spacing: 7px;
-    padding: 10px 30px;
-    display: inline-block;
-    border: 1px solid #dad8e4;
-    margin-top: -2vw;
-    margin-bottom: 4vw;
-  }
-
-  .form-row-h{
-    min-height: 20vh;
-  }
-
-  .inner {
-    display: block;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -ms-box-shadow: none;
-    -o-box-shadow: none;
-  }
-  
-   /* form canvas */
-  /* .form-content {
-    height: 2700px;
-  } */
-  /* .wizard > .content {
-    height: 2750px;
-  } */
-
-  .form-row {
-    display: block;
-  }
-  .form-row .form-holder,
-  .form-row .select {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 18px;
-  }
-
-  .checkbox-circle {
-    width: 100%;
-  }
-
-  .wizard {
-    height: 100%;
-    width: 95vw;
-  }
-  .wizard > .content {
-    padding: 0vh 0vh 30vh 0vh;
-  }
-  
-  /* stepper border */
-  .wizard > .steps {
-    right: 50%;
-    width: 94vw;
-    min-height: 30px;
-    padding: 0.5vw 0vw 0vw 0vw;
-
-  }
-  .wizard > .steps li a {
-    width: 17.5vw;
-    min-height: 10px;
-  }
-  /* stepper line */
-  .wizard > .steps li a:after {
-    min-height: 3px;
-    top: 0.4vh;
-  }
-  .actions {
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 3%;
-  }
-
-  .form-title {
-    width: 100%;
-  }
-}
-
-/* 
-
 question system
 
 */
@@ -518,18 +427,111 @@ question system
   text-align: center;
 }
 
-@media only screen and (max-aspect-ratio: 3/2) {
+.minWidth{
+  min-width: 23vh;
+}
+.input_minHeight{
+  height: 50px;
+}
+
+/* 
+
+form system – mobile layout
+
+*/
+@media only screen and (max-aspect-ratio: 1/1) {
+
+  h3 {
+    font-size: 7vw;
+    color: #8a5122;
+    background-color: #fff;
+    /* text-transform: uppercase; */
+    letter-spacing: 7px;
+    padding: 10px 30px;
+    display: inline-block;
+    border: 1px solid #dad8e4;
+    margin-top: -2vw;
+    margin-bottom: 4vw;
+  }
+
+  .form-row-h{
+    min-height: 20vh;
+  }
+
+  .inner {
+    display: block;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+  }
+  
+   /* form canvas */
+  /* .form-content {
+    height: 2700px;
+  } */
+  /* .wizard > .content {
+    height: 2750px;
+  } */
+
+  .form-row {
+    display: block;
+  }
+  .form-row .form-holder,
+  .form-row .select {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+
+  .checkbox-circle {
+    width: 100%;
+  }
+
+  .wizard {
+    height: 100%;
+    width: 95vw;
+  }
+  .wizard > .content {
+    padding: 0vh 0vh 30vh 0vh;
+  }
+  
+  /* stepper border */
+  .wizard > .steps {
+    right: 50%;
+    width: 94vw;
+    min-height: 30px;
+    padding: 0.5vw 0vw 0vw 0vw;
+
+  }
+  .wizard > .steps li a {
+    width: 17.5vw;
+    min-height: 10px;
+  }
+  /* stepper line */
+  .wizard > .steps li a:after {
+    min-height: 3px;
+    top: 0.4vh;
+  }
+  .actions {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 3%;
+  }
+
+  .form-title {
+    width: 100%;
+  }
+
   .recipe-table__cell {
     padding: 60px 5px 60px 0px;
   }
   .recipe-table__cell2 {
     padding: 60px 5px 60px 0px;
   }
-}
 
-.minWidth{
-  min-width: 23vh;
-}
-.input_minHeight{
-  height: 50px;
+  .minWidth{
+    min-width: 27.5vh;
+  }
 }

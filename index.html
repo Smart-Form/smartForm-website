@@ -93,7 +93,7 @@
             position: absolute;
             top: 7.5%; left: 7.5%; width: 70%; height: 100%;
         }
-        @media only screen and (max-aspect-ratio: 3/2) {
+        @media only screen and (max-aspect-ratio: 1/1) {
             .burnsbox_mobileLayout{
                 width: 100vw;
             }
@@ -172,7 +172,7 @@
 
             <div class="col col-min-width">
                 <br><br><br>
-                <span style="font-size:90%; letter-spacing: 4px;"><img src="img/smartform_logo.png" alt="" width="25" height="25" class=""> Smart Form</span>
+                <span style="font-size:90%; letter-spacing: 4px;"><img src="img/smartform_logo.png" alt="" width="25" height="25" class="addShadow"> Smart Form</span>
                 <br><br>
                 <div class="wrapperTyping typing-smartform theme-color6">
                     <div class="typing-demo">
@@ -319,7 +319,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <h5 class="title d-flex justify-content-center">Form</h5>
+                                <h5 class="title d-flex justify-content-center">Your Form</h5>
                                 <div class="py-4 d-flex justify-content-center">
                                     <ul class="list-unstyled">
                                         <li> <a href="overview.html">Overview</a></li>
@@ -377,7 +377,7 @@
     if (CSSRule.WEBKIT_KEYFRAMES_RULE) { prefix = "-webkit-"; }
     else if (CSSRule.MOZ_KEYFRAMES_RULE) { prefix = "-moz-"; }
 
-    var count = 2;
+    var count = 1;
     window.onload = function () {
         for (let i = 0; i < count; i++){
             sheet = document.createElement('style');
@@ -391,12 +391,6 @@
             monae.style.mozAnimationName = 'burnseffect' + i;
             monae.style.animationName = 'burnseffect' + i;
         }
-    }
-</script>
-
-<script>
-    function openNewWindow_tc() {
-        window.open("terms_and_conditions.html");
     }
 </script>
 

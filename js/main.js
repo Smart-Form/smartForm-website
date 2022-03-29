@@ -106,4 +106,12 @@ document.addEventListener("DOMContentLoaded", function(){
   // if
 
 }); 
-// DOMContentLoaded  end
+
+//
+//
+//  Open new window
+//
+//
+function openNewWindow_tc() {
+    window.open("terms_and_conditions.html");
+}
