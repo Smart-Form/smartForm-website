@@ -426,10 +426,6 @@ question system
   vertical-align: top;
   text-align: center;
 }
-
-.minWidth{
-  min-width: 23vh;
-}
 .input_minHeight{
   height: 50px;
 }
@@ -529,9 +525,5 @@ form system – mobile layout
   }
   .recipe-table__cell2 {
     padding: 60px 5px 60px 0px;
-  }
-
-  .minWidth{
-    min-width: 27.5vh;
   }
 }
