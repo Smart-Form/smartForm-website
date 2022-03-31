@@ -277,8 +277,8 @@ footer {
   min-width: 10rem;
 }
 .thumbnail img {
-  width: 95%;
-  padding: 1rem 0rem 0rem 1rem;
+  width: 97.5%;
+  padding: 1rem 0rem 0rem 0.5rem;
 }
 
 .addPaddingLeft {
@@ -585,7 +585,7 @@ bgImageAnimation {
   }
 
   .thumbnail {
-    width: 60vw;
+    width: 70vw;
   }
 
   .navBarBtn3 {

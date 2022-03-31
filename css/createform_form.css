@@ -204,8 +204,8 @@ h3 {
 
 /* add properties beside Boostrap */
 .form-control {
-  /* height: 37px; */
-  /* border: none; */
+  height: 37px;
+  border: none;
   border-bottom: 2px solid #e6e6e6;
   color: #666;
 }
