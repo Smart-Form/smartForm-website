@@ -241,8 +241,8 @@ h3 {
   height: 41px;
   width: 135px;
   align-items: center;
-  background: #e9e0cf;
-  color: #666;
+  background: #AD9D72;
+  color: #fff;
   cursor: pointer;
   position: relative;
   padding-left: 28px;
@@ -253,7 +253,7 @@ h3 {
 .actions li a:before {
   content: "\f301";
   position: absolute;
-  top: 14px;
+  top: 10px;
   right: 28px;
   font-family: Material-Design-Iconic-Font;
 }
@@ -263,12 +263,14 @@ h3 {
 .actions li:first-child a {
   width: 144px;
   padding-left: 48px;
+  background: #e7e2de;
+  color: #666;
 }
 .actions li:first-child a:before {
   content: "\f2ff";
   position: absolute;
-  top: 14px;
-  left: 26px;
+  top: 10px;
+  left: 28px;
   font-family: Material-Design-Iconic-Font;
 }
 .actions li:nth-child(2) a,
@@ -278,7 +280,7 @@ h3 {
 .actions li:last-child a:before {
   content: "\f26b";
   position: absolute;
-  top: 13px;
+  top: 10px;
   right: 28px;
   font-family: Material-Design-Iconic-Font;
 }
