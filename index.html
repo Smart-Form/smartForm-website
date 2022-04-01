@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <link href="plugins/material-design-icons-3.0.1/iconfont/material-icons.css" rel="stylesheet">
+    <!-- Lottie -->
+    <script src="plugins/ajax/libs/bodymovin/5.9.1/lottie.min.js"></script>
     <style>
         /* BG Animations */
         @-webkit-keyframes bg-scrolling-reverse {
@@ -93,9 +95,18 @@
             position: absolute;
             top: 7.5%; left: 7.5%; width: 70%; height: 100%;
         }
+
+        /* Lottie */
+        /* #content-moderation {
+            position: absolute;
+            right: -15%;
+            bottom: 0%;
+            width: 45vw;
+        } */
+
         /* 
         "max-aspect-ratio: 1/1" = If the screen aspect ratio w:h is less than (1/1):1 [for tablet and mobile], 
-        "max-aspect-ratio: 1/2" = If the screen aspect ratio w:h is less than (1/2):1 [for mobile] 
+        "max-aspect-ratio: 1/2" = If the screen aspect ratio w:h is less than (2/3):1 [for mobile] 
         */
         @media only screen and (max-aspect-ratio: 1/1) {
             .burnsbox_mobileLayout{
@@ -202,7 +213,7 @@
                 </div>
                 <br><br><br>
                 
-                <div class="theme-bg-color8 addShadow addSurroundedPadding2" style="border-radius: 2rem 2rem 2rem 2rem;">
+                <div class="theme-bg-color8 addShadow addSurroundedPadding2 addRadiusBorder2">
                     <b style="font-size: 125%;" class="theme-color2">About Our Team</b>
                     <br><br>
 
@@ -254,20 +265,38 @@
 
         </div>
     </div>
+
     <div class="addResponsiveHeight"></div>
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-        <div class="col-md-6 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 fw-normal">Tailor-made & Auto-fill</h1><br>
-            <p class="lead fw-normal">
-                Automatically find welfares that suit them based on their age. It will be easier for them to seek help. <br><br>
-                It can be automatically filled in based on the documents they provide, without having to look up and fill in complicated words.
-            </p>
-            <a class="btn btn-outline-secondary btn-smartform" href="#">Coming soon</a>
+    <div class="theme-bg-color4 theme-color8 addRadiusBorder2 addShadow">
+        <div class="px-4 py-3">
+            <div class="row g-4 py-4 row-cols-1 row-cols-lg-3">
+                <div class="col">
+                    <div class="py-4 d-flex justify-content-center text-center">
+                        <!-- Add sth here -->
+                    </div>
+                </div>
+                <div class="col addRadiusBorder2 addShadow theme-bg-color8 theme-color2">
+                    <div class="py-4 text-center">
+                        <h1 class="display-4 fw-normal theme-color6">Tailor-made & Auto-fill</h1><br>
+                        <p class="lead fw-normal">
+                            Automatically find welfares that suit them based on their age. It will be easier for them to seek help. <br><br>
+                            It can be automatically filled in based on the documents they provide, without having to look up and fill in complicated words.
+                        </p>
+                        <a class="btn btn-outline-secondary btn-smartform" href="#">Coming soon</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="py-4 d-flex justify-content-center">
+                        <!-- Lottie -->
+                        <div id="content-moderation" class="content-moderation"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
+
+    <div class="addResponsiveHeight"></div>
 
         <!-- footer -->
         <div class="theme-bg-color8 theme-color6 footerRadiusBorder addShadow">
@@ -396,6 +425,17 @@
             monae.style.animationName = 'burnseffect' + i;
         }
     }
+</script>
+
+<!-- Lottie -->
+<script>
+    var animation = bodymovin.loadAnimation({
+        container: document.getElementById('content-moderation'), // Required
+        path: 'https://assets8.lottiefiles.com/packages/lf20_mvtrlxvi.json', // Required, or run on locally by a live server and replace the link 'lottie/content-moderation-4308327.json'
+        renderer: 'svg', // Required
+        loop: true, // Optional
+        autoplay: true // Optional
+    })
 </script>
 
 <link rel="stylesheet" href="css/main.css">

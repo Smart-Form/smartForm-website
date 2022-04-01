@@ -421,6 +421,9 @@ Modals
   -moz-border-radius: 1rem;
   border-radius: 1rem;
 }
+.addRadiusBorder2 {
+  border-radius: 2rem 2rem 2rem 2rem;
+}
 .navbarRadiusBorder {
   -webkit-border-radius: 0rem 0rem 2rem 2rem;
   -moz-border-radius: 0rem 0rem 2rem 2rem;
@@ -537,34 +540,6 @@ bgImageAnimation {
   }
 }
 
-.product-device {
-  position: absolute;
-  right: 10%;
-  bottom: -30%;
-  width: 300px;
-  height: 540px;
-  background-color: #333;
-  border-radius: 21px;
-  transform: rotate(30deg);
-}
-.product-device::before {
-  position: absolute;
-  top: 5%;
-  right: 10px;
-  bottom: 5%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-}
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
-}
-
 .nowrap {
   white-space: nowrap ;
 }
@@ -594,7 +569,7 @@ bgImageAnimation {
 
 /* 
 "max-aspect-ratio: 1/1" = If the screen aspect ratio w:h is less than (1/1):1 [for tablet and mobile], 
-"max-aspect-ratio: 1/2" = If the screen aspect ratio w:h is less than (1/2):1 [for mobile] 
+"max-aspect-ratio: 1/2" = If the screen aspect ratio w:h is less than (2/3):1 [for mobile] 
 */
 @media only screen and (max-aspect-ratio: 1/1) {
   .form2 {

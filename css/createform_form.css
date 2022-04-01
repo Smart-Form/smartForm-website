@@ -417,6 +417,10 @@ question system
 form system – mobile layout
 
 */
+/* 
+"max-aspect-ratio: 1/1" = If the screen aspect ratio w:h is less than (1/1):1 [for tablet and mobile], 
+"max-aspect-ratio: 1/2" = If the screen aspect ratio w:h is less than (2/3):1 [for mobile] 
+*/
 @media only screen and (max-aspect-ratio: 1/1) {
 
   h3 {
