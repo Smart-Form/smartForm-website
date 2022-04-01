@@ -13,6 +13,23 @@
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.css">
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <link href="plugins/material-design-icons-3.0.1/iconfont/material-icons.css" rel="stylesheet">
+    <!-- Lottie for Web -->
+    <script src="plugins/ajax/libs/bodymovin/5.9.1/lottie.min.js"></script>
+    <script>
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('content-moderation'), // Required
+            path: 'lottie/content-moderation-4308327.json', // Required
+            renderer: 'svg/canvas/html', // Required
+            loop: true, // Optional
+            autoplay: true // Optional
+        })
+    </script>
+    <style>
+        #content-moderation {
+            max-width: 500px;
+            margin-top: 0 auto;
+        }
+    </style>
 </head>
 
 <body class="theme-bg-color4">
@@ -64,9 +81,11 @@
         </nav>
         <!-- nav end -->
 
+        <div id="content-moderation"></div>
+
         <div class="addResponsiveHeight"></div>
 
-        <form action="overview.html" method="post" class="form2 needs-validation theme-bg-color8 was-validated">
+        <form action="overview.html" method="post" class="form2 needs-validation theme-bg-color8 will-validated addShadow">
             <div class="container addSurroundedPadding">
                 <div class="row">
                     <div class="col">
@@ -75,7 +94,7 @@
 
                         <p>
                             <label for="uid" class="theme-color2">ID</label>
-                            <input type="text" name="uid" class="form-control dimmer" required>
+                            <input type="text" name="uid" class="form-control dimmer addShadow" required>
                             <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#forgotUID_modal">Forgot
                                     ID?</a></label>
                         </p>
@@ -83,14 +102,14 @@
 
                         <p>
                             <label for="pw" class="theme-color2">Password</label>
-                            <input type="password" name="pw" class="form-control dimmer" required>
+                            <input type="password" name="pw" class="form-control dimmer addShadow" required>
                             <label style="font-size:80%; color:#2715FF;"><a href="#" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#forgotPW_modal">Forgot
                                     password?</a></label>
                         </p>
                         <br>
 
                         <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn-smartform2 addShadow">&nbsp;Sign In&nbsp;</button>
+                            <button type="submit" class="btn-smartform2 addShadow" onclick="ifTheFormIsInvalidate();">&nbsp;Sign In&nbsp;</button>
                         </div>
                         <br><hr><br>
 
@@ -103,16 +122,6 @@
             </div>
         </form>
 
-        <div class="addResponsiveHeight"></div>
-        <div class="addResponsiveHeight"></div>
-        <div class="addResponsiveHeight"></div>
-        <div class="addResponsiveHeight"></div>
-        <div class="addResponsiveHeight"></div>
-        <div class="addResponsiveHeight"></div>
-        <div class="addResponsiveHeight"></div>
-        <div class="addResponsiveHeight"></div>
-        <div class="addResponsiveHeight"></div>
-        <div class="addResponsiveHeight"></div>
         <div class="addResponsiveHeight"></div>
         <div class="addResponsiveHeight"></div>
         <div class="addResponsiveHeight"></div>
@@ -146,7 +155,7 @@
                                 <p>Monthly digest of whats new and exciting from us.</p>
                                 <div class="row">
                                     <div class="col">
-                                        <input id="newsletter1" type="email" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
+                                        <input id="newsletter1" type="email" class="form-control dimmer addShadow" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
                                     </div>
                                     <div class="col">
                                         <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit"><span class="material-icons inline_icon">send</span> Subscribe</button>
@@ -220,7 +229,7 @@
         </div>
         <div class="modal-body">
             <label for="forgotUID" class="theme-color2">Please enter your organisation email:</label>
-            <input type="text" name="forgotUID" class="form-control dimmer" required>
+            <input type="text" name="forgotUID" class="form-control dimmer addShadow" required>
             <p></p>
         </div>
         <div class="modal-footer">
@@ -240,7 +249,7 @@
         </div>
         <div class="modal-body">
             <label for="forgotPW" class="theme-color2">Please enter your organisation email:</label>
-            <input type="text" name="forgotPW" class="form-control dimmer" required>
+            <input type="text" name="forgotPW" class="form-control dimmer addShadow" required>
             <p></p>
         </div>
         <div class="modal-footer">
@@ -254,4 +263,5 @@
 <link rel="stylesheet" href="css/createform_form.css">
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js"></script>
+
 </html>

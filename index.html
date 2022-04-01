@@ -93,6 +93,10 @@
             position: absolute;
             top: 7.5%; left: 7.5%; width: 70%; height: 100%;
         }
+        /* 
+        "max-aspect-ratio: 1/1" = If the screen aspect ratio w:h is less than (1/1):1 [for tablet and mobile], 
+        "max-aspect-ratio: 1/2" = If the screen aspect ratio w:h is less than (1/2):1 [for mobile] 
+        */
         @media only screen and (max-aspect-ratio: 1/1) {
             .burnsbox_mobileLayout{
                 width: 100vw;
@@ -294,7 +298,7 @@
                                 <p>Monthly digest of whats new and exciting from us.</p>
                                 <div class="row">
                                     <div class="col">
-                                        <input id="newsletter1" type="email" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
+                                        <input id="newsletter1" type="email" class="form-control dimmer addShadow" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
                                     </div>
                                     <div class="col">
                                         <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit"><span class="material-icons inline_icon">send</span> Subscribe</button>

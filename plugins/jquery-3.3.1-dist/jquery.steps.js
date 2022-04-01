@@ -777,6 +777,9 @@ function paginationClick(wizard, options, state, index)
  * @event click
  * @param event {Object} An event object
  */
+
+var theCurrentIndexThatWasInvalidate = 0;
+
 function paginationClickHandler(event)
 {
     event.preventDefault(); // The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
@@ -828,6 +831,32 @@ function paginationClickHandler(event)
     let validation = validateForm();
     let validation2 = validateForm2();
     let validation3 = validateForm3();
+
+    function ifTheFormIsInvalidate2() {
+        var forms = document.querySelectorAll('.will-validated');
+    
+        for(let i = 0; i < forms.length; i++){
+            if (forms[i].classList.contains('was-validated') == false) {
+                forms[i].classList.add('was-validated');
+            }
+            forms[i].classList.remove('will-validated');
+        }
+    }
+    function ifTheFormIsValidate() {
+        var forms = document.querySelectorAll('.was-validated');
+    
+        for(let i = 0; i < forms.length; i++){
+            if (forms[i].classList.contains('will-validated') == false) {
+                forms[i].classList.add('will-validated');
+            }
+            forms[i].classList.remove('was-validated');
+        }
+    }
+    // Save the current index page if it was invalidate, to prevent removal of current index page's "was-validated".
+    function invalidateCurrentIndex(index) {
+        theCurrentIndexThatWasInvalidate = parseInt(index);
+        // console.log(theCurrentIndexThatWasInvalidate);
+    }
 
     var anchor = $(this),
         wizard = anchor.parent().parent().parent().parent(),
@@ -908,10 +937,12 @@ function paginationClickHandler(event)
             //submit the form
             //submit the form
             //action, button, finish, submit, form, next, ok...
-            if (validation == true && validation3 == true) {
+            if (validation == true && validation2 == true && validation3 == true) {
                 document.getElementById("wizard").submit();
             }
             document.forms['tc_checkbox_form'].reportValidity();
+            ifTheFormIsInvalidate2();
+            invalidateCurrentIndex(state.currentIndex);
             //submit the form
             //submit the form
             //submit the form
@@ -982,21 +1013,43 @@ function paginationClickHandler(event)
             // console.log(state.currentIndex);
             if (state.currentIndex == 0) {
                 if (validation2 == true) {
+                    var nextPg = state.currentIndex + 1;
+                    if (nextPg != theCurrentIndexThatWasInvalidate) { // If next page is not invalidated
+                        ifTheFormIsValidate();
+                    } else if (nextPg == theCurrentIndexThatWasInvalidate) {
+                        ifTheFormIsInvalidate2();
+                    }
+
                     goToNextStep(wizard, options, state);
                 } else {
+                    ifTheFormIsInvalidate2();
+                    invalidateCurrentIndex(state.currentIndex);
+
                     // console.log(requiredInputXY);
                     window.scrollTo(requiredInputXY.left, requiredInputXY.top - 200);
                 }
             } else if (state.currentIndex == 1) {
                 if (validation3 == true) {
+                    var nextPg = state.currentIndex + 1;
+                    if (nextPg != theCurrentIndexThatWasInvalidate) {
+                        ifTheFormIsValidate();
+                    } else if (nextPg == theCurrentIndexThatWasInvalidate) {
+                        ifTheFormIsInvalidate2();
+                    }
+
                     goToNextStep(wizard, options, state);
                 } else {
+                    ifTheFormIsInvalidate2();
+                    invalidateCurrentIndex(state.currentIndex);
+
                     window.scrollTo(requiredInputXY.left, requiredInputXY.top - 200);
                 }
             }
             break;
 
         case "previous":
+            ifTheFormIsValidate();
+
             goToPreviousStep(wizard, options, state);
             break;
     }

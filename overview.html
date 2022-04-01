@@ -10,8 +10,6 @@
   <script src="plugins/jquery-3.3.1-dist/jquery.min.js"></script>
   <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="js/main.js"></script>
   <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
   <link href="plugins/material-design-icons-3.0.1/iconfont/material-icons.css" rel="stylesheet">
   <style>
@@ -19,7 +17,11 @@
       height: 20vw;
     }
   
-    @media only screen and (max-aspect-ratio: 3/2) {
+    /* 
+    "max-aspect-ratio: 1/1" = If the screen aspect ratio w:h is less than (1/1):1 [for tablet and mobile], 
+    "max-aspect-ratio: 1/2" = If the screen aspect ratio w:h is less than (1/2):1 [for mobile] 
+    */
+    @media only screen and (max-aspect-ratio: 1/1) {
       .typewriter-h {
         height: 55vw;
       }
@@ -89,7 +91,7 @@
               <p class="fs-5 col-md-8">Quickly and easily get started with Smart Form.</p>
               <br>
               <div class="mb-5">
-                <a href="createform.html" class="btn btn-primary btn-lg px-4 btn-smartform3 addShadow nowrap">Create Your Welfare</a>
+                <a href="createform.html" class="btn-primary btn-lg px-4 btn-smartform3 addShadow nowrap">Create Your Welfare</a>
               </div>
             </div>
             <div class="col d-flex justify-content-center">
@@ -116,7 +118,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="submit" class="btn btn-sm btn-outline-secondary addRadiusBorder" onclick="location.href='dashboard.html';">View</button>
-                        <button type="submit" class="btn btn-sm btn-outline-secondary addRadiusBorder" onclick="location.href='createform.html';">Edit</button>
+                        <button type="submit" class="btn btn-sm btn-outline-secondary addRadiusBorder" onclick="location.href='form_update.html';">Edit</button>
                       </div>
                       <small class="text-muted">Last modified by admin on DEC 2</small>
                     </div>
@@ -134,7 +136,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                           <button type="submit" class="btn btn-sm btn-outline-secondary addRadiusBorder" onclick="location.href='dashboard.html';">View</button>
-                          <button type="submit" class="btn btn-sm btn-outline-secondary addRadiusBorder" onclick="location.href='createform.html';">Edit</button>
+                          <button type="submit" class="btn btn-sm btn-outline-secondary addRadiusBorder" onclick="location.href='form_update.html';">Edit</button>
                       </div>
                       <small class="text-muted">Last modified by admin on DEC 2</small>
                     </div>
@@ -184,7 +186,7 @@
                               <p>Monthly digest of whats new and exciting from us.</p>
                               <div class="row">
                                   <div class="col">
-                                      <input id="newsletter1" type="email" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
+                                      <input id="newsletter1" type="email" class="form-control dimmer addShadow" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
                                   </div>
                                   <div class="col">
                                       <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit"><span class="material-icons inline_icon">send</span> Subscribe</button>
@@ -244,5 +246,8 @@
         </div>
       <!-- footer end -->
 </body>
+
+<link rel="stylesheet" href="css/main.css">
+<script src="js/main.js"></script>
 
 </html>

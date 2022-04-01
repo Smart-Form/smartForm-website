@@ -109,9 +109,23 @@ document.addEventListener("DOMContentLoaded", function(){
 
 //
 //
-//  Open new window
+// Open new window
 //
 //
 function openNewWindow_tc() {
     window.open("terms_and_conditions.html");
+}
+
+//
+//
+// ifTheFormIsInvalidate
+//
+//
+function ifTheFormIsInvalidate() {
+  var forms = document.querySelectorAll('.will-validated');
+
+  for(let i = 0; i < forms.length; i++){
+    forms[i].classList.add('was-validated');
+    forms[i].classList.remove('will-validated');
+  }
 }

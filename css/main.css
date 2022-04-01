@@ -168,14 +168,14 @@ footer {
 }
 .btn-smartform3 {
   background-color: #987468;
-  border-color: #987468;
+  border-color: unset;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   border-radius: 1rem;
 }
 .btn-smartform3:hover {
   background-color: #8a5122;
-  border-color: white;
+  border-color: #8a5122;
 }
 .form-color {
   color: #9f9cad;
@@ -567,6 +567,29 @@ bgImageAnimation {
 
 .nowrap {
   white-space: nowrap ;
+}
+
+/* add properties beside Boostrap */
+.form-control {
+  height: 37px;
+  border: none;
+  border-bottom: 2px solid #e6e6e6;
+  color: #666;
+}
+.form-control:focus {
+  border-color: #e9e0cf;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.form-control::-moz-placeholder {
+  color: #999;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-control:-moz-placeholder {
+  color: #999;
 }
 
 /* 

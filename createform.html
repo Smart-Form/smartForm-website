@@ -81,7 +81,7 @@
     <br>
     <div class="wrapper">
         <!-- Submit action created in jquery.steps.js line 863 -->
-        <form id="wizard" action="form_id.html" method="post" class="was-validated needs-validation">
+        <form id="wizard" action="form_id.html" method="post" class="will-validated needs-validation">
             <!-- SECTION 1 -->
             <h2></h2>
             <br>
@@ -108,7 +108,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <input type="text" id="v0" placeholder="Welfare Name"
-                                    class="form-control form-bg-color dimmer" pattern="(?=.*[a-z])(?=.*[A-Z]).{3,}"
+                                    class="form-control form-bg-color dimmer addShadow" pattern="(?=.*[a-z])(?=.*[A-Z]).{3,}"
                                     onchange="updateConfirmationPgFields(this);" required>
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="v1" placeholder="Summary 50 words"
-                                    style="min-height: 100px;" class="form-control form-bg-color dimmer" 
+                                    style="min-height: 100px;" class="form-control form-bg-color dimmer addShadow" 
                                     onchange="updateConfirmationPgFields(this);" required></textarea>
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="url" id="v2" placeholder="URL" class="form-control form-bg-color dimmer"
+                                <input type="url" id="v2" placeholder="URL" class="form-control form-bg-color dimmer addShadow"
                                     pattern="https?://.+" onchange="updateConfirmationPgFields(this);">
                             </div>
                         </div>
@@ -146,7 +146,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <input type="text" id="v3" placeholder="Target audience"
-                                    class="form-control form-bg-color dimmer"
+                                    class="form-control form-bg-color dimmer addShadow"
                                     onchange="updateConfirmationPgFields(this);" required>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <input type="number" id="v4" placeholder="Age" class="form-control form-bg-color dimmer"
+                                <input type="number" id="v4" placeholder="Age" class="form-control form-bg-color dimmer addShadow"
                                     min="0" max="200" onchange="updateConfirmationPgFields(this);">
                                 <div class="addPaddingLeft">
                                     <div class="form-check">
@@ -182,16 +182,16 @@
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color addPaddingLeft nowrap">Apply Date</label>
+                            <label class="col-2 col-form-label form-color addPaddingLeft nowrap">*Apply Date</label>
                             <div class="col-2">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v7"
+                                <input type="date" class="form-control form-bg-color dimmer addShadow" id="v7"
                                     style="max-width: 12rem; min-width: 12rem;"
                                     onchange="updateConfirmationPgFields(this);" required>
                             </div>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color addPaddingLeft nowrap">Deadline Date</label>
                             <div class="col-2">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v8"
+                                <input type="date" class="form-control form-bg-color dimmer addShadow" id="v8"
                                     style="max-width: 12rem; min-width: 12rem;"
                                     onchange="updateConfirmationPgFields(this);">
                             </div>
@@ -202,14 +202,14 @@
                             <label class="col-2 col-form-label form-color addPaddingLeft nowrap">Distribution
                                 Date</label>
                             <div class="col-2">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v9"
+                                <input type="date" class="form-control form-bg-color dimmer addShadow" id="v9"
                                     style="max-width: 12rem; min-width: 12rem;"
                                     onchange="updateConfirmationPgFields(this);">
                             </div>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color addPaddingLeft nowrap">End Date</label>
                             <div class="col-2">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v10"
+                                <input type="date" class="form-control form-bg-color dimmer addShadow" id="v10"
                                     style="max-width: 12rem; min-width: 12rem;"
                                     onchange="updateConfirmationPgFields(this);">
                             </div>
@@ -224,7 +224,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <input type="number" id="v11" placeholder="HK$"
-                                    class="form-control form-bg-color dimmer"
+                                    class="form-control form-bg-color dimmer addShadow"
                                     onchange="updateConfirmationPgFields(this);">
                             </div>
                         </div>
@@ -236,7 +236,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="v12" class="form-control form-bg-color dimmer"
+                                <textarea name="" id="v12" class="form-control form-bg-color dimmer addShadow"
                                     style="min-height: 100px;"
                                     onchange="updateConfirmationPgFields(this);" required></textarea>
                             </div>
@@ -251,7 +251,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="v13" placeholder="Welcome, Thank you, etc"
-                                    style="min-height: 100px;"class="form-control form-bg-color dimmer" 
+                                    style="min-height: 100px;"class="form-control form-bg-color dimmer addShadow" 
                                     onchange="updateConfirmationPgFields(this);"></textarea>
                             </div>
                         </div>
@@ -264,7 +264,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="v14" class="form-control form-bg-color dimmer"
+                                <textarea name="" id="v14" class="form-control form-bg-color dimmer addShadow"
                                     style="min-height: 100px;"
                                     onchange="updateConfirmationPgFields(this);"></textarea>
                             </div>
@@ -273,12 +273,12 @@
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color addPaddingLeft nowrap">Banner<br>
+                            <label class="col-2 col-form-label form-color addPaddingLeft nowrap">Poster/Banner<br>
                                 <p class="fw-lighter">Attachment</p>
                             </label>
                             <div class="form-holder">
                                 <div class="" style="min-width: 20vw;">
-                                    <input type="file" class="form-control form-bg-color fileUpload" id="v15"
+                                    <input type="file" class="form-control form-bg-color fileUpload addShadow" id="v15"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
                                         accept=".jpg, .jpeg, .png, .tiff, .svg"
                                         style="max-width: 16rem; min-width: 16rem; z-index: 0;"
@@ -298,7 +298,7 @@
                             </label>
                             <div class="form-holder">
                                 <div class="" style="min-width: 20vw;">
-                                    <input type="file" class="form-control form-bg-color fileUpload" id="v16"
+                                    <input type="file" class="form-control form-bg-color fileUpload addShadow" id="v16"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
                                         accept=".jpg, .jpeg, .png, .tiff, .svg"
                                         style="max-width: 16rem; min-width: 16rem; z-index: 0;"
@@ -440,16 +440,16 @@
                                                 </span>
                                                 <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0 input_minHeight"
-                                                        id="textarea" rows="1" placeholder="*Question"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr0 input_minHeight"
+                                                        id="textarea" rows="1" placeholder="Question "
                                                         style="min-height: 50px;"
                                                         onchange="updateConfirmationPgFields(this);"
                                                         ></textarea>
                                                     </span>
                                                     <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0 input_minHeight"
-                                                        id="2textarea" rows="1" placeholder="Description (Optional)"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr0 input_minHeight"
+                                                        id="2textarea" rows="1" placeholder="Description "
                                                         style="min-height: 50px;"
                                                         onchange="updateConfirmationPgFields(this);"></textarea>
                                                     </span>
@@ -495,16 +495,16 @@
                                                 </span>
                                                 <span>
                                                     <textarea
-                                                        class="form-control form-control-sm  form-item-focus form-bg-color dimmer tr1 input_minHeight"
-                                                        id="textarea2" rows="1" placeholder="*Question"
+                                                        class="form-control form-control-sm  form-item-focus form-bg-color dimmer  tr1 input_minHeight"
+                                                        id="textarea2" rows="1" placeholder="Question "
                                                         style="min-height: 50px;"
                                                         onchange="updateConfirmationPgFields(this);"
                                                         ></textarea>
                                                     </span>
                                                     <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr1 input_minHeight"
-                                                        id="2textarea2" rows="1" placeholder="Description (Optional)"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr1 input_minHeight"
+                                                        id="2textarea2" rows="1" placeholder="Description "
                                                         style="min-height: 50px;"
                                                         onchange="updateConfirmationPgFields(this);"></textarea>
                                                     </span>
@@ -551,16 +551,16 @@
                                                 </span>
                                                 <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2 input_minHeight"
-                                                        id="textarea3" rows="1" placeholder="*Question"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr2 input_minHeight"
+                                                        id="textarea3" rows="1" placeholder="Question "
                                                         style="min-height: 50px;"
                                                         onchange="updateConfirmationPgFields(this);"
                                                         ></textarea>
                                                     </span>
                                                     <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2 input_minHeight"
-                                                        id="2textarea3" rows="1" placeholder="Description (Optional)"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr2 input_minHeight"
+                                                        id="2textarea3" rows="1" placeholder="Description "
                                                         style="min-height: 50px;"
                                                         onchange="updateConfirmationPgFields(this);"></textarea>
                                                     </span>
@@ -606,16 +606,16 @@
                                                     </select>
                                                     <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3 input_minHeight"
-                                                        id="textarea4" rows="1" placeholder="*Question"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr3 input_minHeight"
+                                                        id="textarea4" rows="1" placeholder="Question "
                                                         style="min-height: 50px;"
                                                         onchange="updateConfirmationPgFields(this);"
                                                         ></textarea>
                                                     </span>
                                                     <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3 input_minHeight"
-                                                        id="2textarea4" rows="1" placeholder="Description (Optional)"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr3 input_minHeight"
+                                                        id="2textarea4" rows="1" placeholder="Description "
                                                         style="min-height: 50px;"
                                                         onchange="updateConfirmationPgFields(this);"></textarea>
                                                         </span>
@@ -662,16 +662,16 @@
                                                 </span>
                                                 <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4 input_minHeight"
-                                                        id="textarea5" rows="1" placeholder="*Question"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr4 input_minHeight"
+                                                        id="textarea5" rows="1" placeholder="Question "
                                                         style="min-height: 50px;"
                                                         onchange="updateConfirmationPgFields(this);"
                                                         ></textarea>
                                                     </span>
                                                     <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4 input_minHeight"
-                                                        id="2textarea5" rows="1" placeholder="Description (Optional)"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr4 input_minHeight"
+                                                        id="2textarea5" rows="1" placeholder="Description "
                                                         style="min-height: 50px;"
                                                         onchange="updateConfirmationPgFields(this);"></textarea>
                                                     </span>
@@ -718,16 +718,16 @@
                                                 </span>
                                                 <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5 input_minHeight"
-                                                        id="textarea6" rows="1" placeholder="*Question"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr5 input_minHeight"
+                                                        id="textarea6" rows="1" placeholder="Question "
                                                         style="min-height: 50px;"
                                                         onchange="updateConfirmationPgFields(this);"
                                                         ></textarea>
                                                     </span>
                                                     <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5 input_minHeight"
-                                                        id="2textarea6" rows="1" placeholder="Description (Optional)"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr5 input_minHeight"
+                                                        id="2textarea6" rows="1" placeholder="Description "
                                                         style="min-height: 50px;"
                                                         onchange="updateConfirmationPgFields(this);"></textarea>
                                                     </span>
@@ -782,7 +782,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <input type="text" id="v0_check" placeholder="Welfare Name"
-                                    class="form-control form-bg-color dimmer" disabled>
+                                    class="form-control form-bg-color dimmer addShadow" disabled>
                             </div>
                         </div>
                         <br>
@@ -794,7 +794,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="v1_check" placeholder="Summary 50 words"
-                                    style="min-height: 100px;" class="form-control form-bg-color dimmer" 
+                                    style="min-height: 100px;" class="form-control form-bg-color dimmer addShadow" 
                                     disabled></textarea>
                             </div>
                         </div>
@@ -807,7 +807,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <input type="url" id="v2_check" placeholder="URL"
-                                    class="form-control form-bg-color dimmer" pattern="https?://.+" disabled>
+                                    class="form-control form-bg-color dimmer addShadow" pattern="https?://.+" disabled>
                             </div>
                         </div>
                         <br>
@@ -819,7 +819,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <input type="text" id="v3_check" placeholder="Target audience"
-                                    class="form-control form-bg-color dimmer" disabled>
+                                    class="form-control form-bg-color dimmer addShadow" disabled>
                             </div>
                         </div>
                         <br>
@@ -831,7 +831,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <input type="number" placeholder="Age" id="v4_check"
-                                    class="form-control form-bg-color dimmer" min="0" max="200" disabled>
+                                    class="form-control form-bg-color dimmer addShadow" min="0" max="200" disabled>
                                 <div class="addPaddingLeft">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault"
@@ -854,15 +854,15 @@
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color  addPaddingLeft nowrap">Apply Date</label>
+                            <label class="col-2 col-form-label form-color  addPaddingLeft nowrap">*Apply Date</label>
                             <div class="col-2">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v7_check"
+                                <input type="date" class="form-control form-bg-color dimmer addShadow" id="v7_check"
                                     style="max-width: 10.5rem; min-width: 10.5rem;" disabled>
                             </div>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color  addPaddingLeft nowrap">Deadline Date</label>
                             <div class="col-2">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v8_check"
+                                <input type="date" class="form-control form-bg-color dimmer addShadow" id="v8_check"
                                     style="max-width: 10.5rem; min-width: 10.5rem;" disabled>
                             </div>
                         </div>
@@ -872,13 +872,13 @@
                             <label class="col-2 col-form-label form-color  addPaddingLeft nowrap">Distribution
                                 Date</label>
                             <div class="col-2">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v9_check"
+                                <input type="date" class="form-control form-bg-color dimmer addShadow" id="v9_check"
                                     style="max-width: 10.5rem; min-width: 10.5rem;" disabled>
                             </div>
                             <div class="col-1"></div>
                             <label class="col-2 col-form-label form-color  addPaddingLeft nowrap">End Date</label>
                             <div class="col-2">
-                                <input type="date" class="form-control form-bg-color dimmer" id="v10_check"
+                                <input type="date" class="form-control form-bg-color dimmer addShadow" id="v10_check"
                                     style="max-width: 10.5rem; min-width: 10.5rem;" disabled>
                             </div>
                         </div>
@@ -892,7 +892,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <input type="number" id="v11_check" placeholder="HK$"
-                                    class="form-control form-bg-color dimmer" disabled>
+                                    class="form-control form-bg-color dimmer addShadow" disabled>
                             </div>
                         </div>
                         <br>
@@ -903,7 +903,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="v12_check" class="form-control form-bg-color dimmer"
+                                <textarea name="" id="v12_check" class="form-control form-bg-color dimmer addShadow"
                                     style="min-height: 100px;"
                                     disabled></textarea>
                             </div>
@@ -918,7 +918,7 @@
                             <div class="col-1"></div>
                             <div class="form-holder">
                                 <textarea name="" id="v13_check" placeholder="Welcome, Thank you, etc"
-                                    class="form-control form-bg-color dimmer" 
+                                    class="form-control form-bg-color dimmer addShadow" 
                                     style="min-height: 100px;"
                                     disabled></textarea>
                             </div>
@@ -932,7 +932,7 @@
                             </div>
                             <div class="col-1"></div>
                             <div class="form-holder">
-                                <textarea name="" id="v14_check" class="form-control form-bg-color dimmer"
+                                <textarea name="" id="v14_check" class="form-control form-bg-color dimmer addShadow"
                                     style="min-height: 100px;"
                                     disabled></textarea>
                             </div>
@@ -941,12 +941,12 @@
                         <br>
                         <div class="form-row">
                             <div class="col-1"></div>
-                            <label class="col-2 col-form-label form-color addPaddingLeft nowrap">Banner<br>
+                            <label class="col-2 col-form-label form-color addPaddingLeft nowrap">Poster/Banner<br>
                                 <p class="fw-lighter">Attachment</p>
                             </label>
                             <div class="form-holder">
                                 <div class="" style="min-width: 20vw;">
-                                    <input type="text" class="form-control form-bg-color dimmer" id="v15_check"
+                                    <input type="text" class="form-control form-bg-color dimmer addShadow" id="v15_check"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
                                         style="max-width: 15.5rem; min-width: 15.5rem; z-index: 0;" disabled>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
@@ -957,7 +957,7 @@
                             </label>
                             <div class="form-holder">
                                 <div class="" style="min-width: 20vw;">
-                                    <input type="text" class="form-control form-bg-color dimmer" id="v16_check"
+                                    <input type="text" class="form-control form-bg-color dimmer addShadow" id="v16_check"
                                         aria-describedby="inputGroupFileAddon04" aria-label="Upload"
                                         style="max-width: 15.5rem; min-width: 15.5rem; z-index: 0;" disabled>
                                     <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
@@ -1062,15 +1062,15 @@
                                                 </span>
                                             <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0_check input_minHeight"
-                                                        id="textarea_check" rows="1" placeholder="Question"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr0_check input_minHeight"
+                                                        id="textarea_check" rows="1" placeholder="Question "
                                                          disabled></textarea>
                                                     </span>
                                                 <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr0_check input_minHeight"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr0_check input_minHeight"
                                                         id="2textarea_check" rows="1"
-                                                        placeholder="Description (Optional)"
+                                                        placeholder="Description "
                                                          disabled></textarea>
                                                     </span>
                                                 <span>
@@ -1110,15 +1110,15 @@
                                                 </span>
                                             <span>
                                                     <textarea
-                                                        class="form-control form-control-sm  form-item-focus form-bg-color dimmer tr1_check input_minHeight"
-                                                        id="textarea2_check" rows="1" placeholder="Question"
+                                                        class="form-control form-control-sm  form-item-focus form-bg-color dimmer  tr1_check input_minHeight"
+                                                        id="textarea2_check" rows="1" placeholder="Question "
                                                          disabled></textarea>
                                                     </span>
                                                 <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr1_check input_minHeight"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr1_check input_minHeight"
                                                         id="2textarea2_check" rows="1"
-                                                        placeholder="Description (Optional)"
+                                                        placeholder="Description "
                                                          disabled></textarea>
                                                     </span>
                                                 <span>
@@ -1158,15 +1158,15 @@
                                                 </span>
                                             <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2_check input_minHeight"
-                                                        id="textarea3_check" rows="1" placeholder="Question"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr2_check input_minHeight"
+                                                        id="textarea3_check" rows="1" placeholder="Question "
                                                          disabled></textarea>
                                                     </span>
                                                 <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr2_check input_minHeight"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr2_check input_minHeight"
                                                         id="2textarea3_check" rows="1"
-                                                        placeholder="Description (Optional)"
+                                                        placeholder="Description "
                                                          disabled></textarea>
                                                     </span>
                                                 <span>
@@ -1206,15 +1206,15 @@
                                                 </span>
                                             <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3_check input_minHeight"
-                                                        id="textarea4_check" rows="1" placeholder="Question"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr3_check input_minHeight"
+                                                        id="textarea4_check" rows="1" placeholder="Question "
                                                          disabled></textarea>
                                                     </span>
                                                 <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr3_check input_minHeight"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr3_check input_minHeight"
                                                         id="2textarea4_check" rows="1"
-                                                        placeholder="Description (Optional)"
+                                                        placeholder="Description "
                                                          disabled></textarea>
                                                     </span>
                                                 <span>
@@ -1254,15 +1254,15 @@
                                                 </span>
                                             <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4_check input_minHeight"
-                                                        id="textarea5_check" rows="1" placeholder="Question"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr4_check input_minHeight"
+                                                        id="textarea5_check" rows="1" placeholder="Question "
                                                          disabled></textarea>
                                                     </span>
                                                 <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr4_check input_minHeight"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr4_check input_minHeight"
                                                         id="2textarea5_check" rows="1"
-                                                        placeholder="Description (Optional)"
+                                                        placeholder="Description "
                                                          disabled></textarea>
                                                     </span>
                                                 <span>
@@ -1302,15 +1302,15 @@
                                                 </span>
                                             <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5_check input_minHeight"
-                                                        id="textarea6_check" rows="1" placeholder="Question"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr5_check input_minHeight"
+                                                        id="textarea6_check" rows="1" placeholder="Question "
                                                          disabled></textarea>
                                                     </span>
                                                 <span>
                                                     <textarea
-                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer tr5_check input_minHeight"
+                                                        class="form-control form-control-sm form-item-focus form-bg-color dimmer  tr5_check input_minHeight"
                                                         id="2textarea6_check" rows="1"
-                                                        placeholder="Description (Optional)"
+                                                        placeholder="Description "
                                                          disabled></textarea>
                                                     </span>
                                                 <span>
@@ -1584,7 +1584,7 @@
                                 <p>Monthly digest of whats new and exciting from us.</p>
                                 <div class="row">
                                     <div class="col">
-                                        <input id="newsletter1" type="email" class="form-control dimmer" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
+                                        <input id="newsletter1" type="email" class="form-control dimmer addShadow" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
                                     </div>
                                     <div class="col">
                                         <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit"><span class="material-icons inline_icon">send</span> Subscribe</button>
@@ -1719,12 +1719,12 @@
         <span>
             <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer {newRowID} input_minHeight" id="{n}" rows="1"
             style="min-height: 50px;"
-            placeholder="*Question"  onchange="updateConfirmationPgFields(this);" ></textarea>
+            placeholder="Question "  onchange="updateConfirmationPgFields(this);" ></textarea>
         </span>
         <span>
             <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer {newRowID} input_minHeight" id="{m}" rows="1"
             style="min-height: 50px;"
-            placeholder="Description (Optional)"  onchange="updateConfirmationPgFields(this);"></textarea>
+            placeholder="Description "  onchange="updateConfirmationPgFields(this);"></textarea>
         </span>
         <span>
             <div id="{arrayInputID}"></div>
@@ -1767,11 +1767,11 @@
         </span>
         <span>
             <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer {newRowID_check} input_minHeight" id="{n_check}" rows="1"
-            placeholder="Question"  disabled></textarea>
+            placeholder="Question "  disabled></textarea>
         </span>
         <span>
             <textarea class="form-control form-control-sm form-item-focus form-bg-color dimmer {newRowID_check} input_minHeight" id="{m_check}" rows="1"
-                placeholder="Description (Optional)"  disabled></textarea>
+                placeholder="Description "  disabled></textarea>
         </span>
         <span>
             <div id="{arrayInputID_check}" disabled></div>
@@ -1783,7 +1783,7 @@
 <script id="addInput" type="text/template">
         <input class="form-control form-control-sm form-item-focus form-bg-color dimmer {tr} input_minHeight" list="datalistOptions"
         style="min-height: 50px;"
-        id="{arrayInputChild}" placeholder="Array"  onchange="updateConfirmationPgFields(this);" required>
+        id="{arrayInputChild}" placeholder="*Array"  onchange="updateConfirmationPgFields(this);" required>
         <datalist id="datalistOptions">
         <option value="New Array"></option>
         <option value="Living with family, Property with mortgage, Property without
@@ -1795,7 +1795,7 @@
 <!-- addInput_check-->
 <script id="addInput2" type="text/template">
     <input class="form-control form-control-sm form-item-focus form-bg-color dimmer {tr_check} input_minHeight" list="datalistOptions"
-    id="{arrayInputChild_check}" placeholder="Array"  onchange="" disabled>
+    id="{arrayInputChild_check}" placeholder="*Array"  onchange="" disabled>
     <datalist id="datalistOptions">
     <option value="New Array"></option>
     <option value="Living with family, Property with mortgage, Property without

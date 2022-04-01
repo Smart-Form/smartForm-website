@@ -202,29 +202,6 @@ h3 {
   font-size: 17px;
 }
 
-/* add properties beside Boostrap */
-.form-control {
-  height: 37px;
-  border: none;
-  border-bottom: 2px solid #e6e6e6;
-  color: #666;
-}
-.form-control:focus {
-  border-color: #e9e0cf;
-}
-.form-control::-webkit-input-placeholder {
-  color: #999;
-}
-.form-control::-moz-placeholder {
-  color: #999;
-}
-.form-control:-ms-input-placeholder {
-  color: #999;
-}
-.form-control:-moz-placeholder {
-  color: #999;
-}
-
 /* button */
 .actions {
   position: absolute;
@@ -258,7 +235,7 @@ h3 {
   font-family: Material-Design-Iconic-Font;
 }
 .actions li a:hover {
-  background: #cfc7b8;
+  background: #936D56;
 }
 .actions li:first-child a {
   width: 144px;
@@ -272,6 +249,9 @@ h3 {
   top: 10px;
   left: 28px;
   font-family: Material-Design-Iconic-Font;
+}
+.actions li:first-child a:hover {
+  background: #b7a5a5;
 }
 .actions li:nth-child(2) a,
 .actions li:last-child a {
