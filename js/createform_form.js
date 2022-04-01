@@ -150,6 +150,8 @@ $(document).ready(function () {
         $('#tr' + i).animate({ opacity: '0.1' });
         $('#tr' + i).animate({ opacity: '1' });
 
+        updateTableBodyTrCountForIndexing();
+
         // Old method
         // // If within specific width
         // $(function() {      
@@ -244,7 +246,6 @@ $(document).ready(function () {
         $('#' + $targetDelRow[0].id + '_check').remove();
         updateTableBodyTrCountForIndexing();
     });
-    
 
     Sortable.create(
         $tableBody[0],
@@ -252,7 +253,7 @@ $(document).ready(function () {
             animation: 150,
             scroll: true,
             handle: '.drag-handler',
-            onEnd: function () {
+            onEnd: function () {    // If table body changed
                 console.log('tableBody changed');
                 updateCheckTableBody($tableBody[0]);
                 updateTableBodyTrCountForIndexing();
@@ -275,7 +276,7 @@ $(document).ready(function () {
             };
         };
     };
-    updateTableBodyTrCountForIndexing();
+    updateTableBodyTrCountForIndexing();    // Initial indexing
 
 });
 
