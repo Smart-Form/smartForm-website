@@ -96,6 +96,24 @@
             top: 7.5%; left: 7.5%; width: 70%; height: 100%;
         }
 
+        /* Linear gradient BG animation */
+        #LinearGradientBGAnimation {
+            background: linear-gradient(-45deg, #e7d5bf, #ad9d72, #e7d5bf, #987468);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
         /* 
         "max-aspect-ratio: 1/1" = If the screen aspect ratio w:h is less than (1/1):1 [for tablet and mobile], 
         "max-aspect-ratio: 1/2" = If the screen aspect ratio w:h is less than (2/3):1 [for mobile] 
@@ -196,11 +214,11 @@
                 <br><br>
                 <div class="d-flex justify-content-end">
                     <form action="signin.html">
-                        <button class="btn-smartform addShadow" style="margin-left: 1rem;">Manage Form</button>
+                        <button class="btn-smartform addShadow" style="margin-left: 1rem;"><span class="material-icons inline_icon">settings_applications</span> Manage Form</button>
                     </form>
                     <div class="addWidth"></div>
                     <form action="signup.html">
-                        <button class="btn-smartform addShadow">Join Us!</button>
+                        <button class="btn-smartform addShadow"><span class="material-icons inline_icon">person_add</span> Join Us!</button>
                     </form>
                 </div>
                 <br><br><br>
@@ -260,12 +278,12 @@
 
     <div class="addResponsiveHeight"></div>
 
-    <div class="theme-bg-color4 theme-color8 addRadiusBorder2 addShadow addLeftAndRightMargins">
+    <div id="LinearGradientBGAnimation" class="theme-color8 addRadiusBorder2 addShadow addLeftAndRightMargins">
         <div class="px-4 py-3">
             <div class="row g-4 py-4 row-cols-1 row-cols-lg-3 d-flex justify-content-evenly">
                 <div class="col">
                     <div class="py-4 text-center">
-                        <h1 class="display-4 fw-normal"><b>Tailor-made & Auto-fill <span class="material-icons theme-color8" style="font-size: 100%;">auto_fix_normal</span></b></h1><br>
+                        <h1 class="display-4 fw-normal"><b>Tailor-made <span class="material-icons" style="font-size: 100%;">square_foot</span><br>&<br> Auto-fill <span class="material-icons" style="font-size: 100%;">auto_fix_normal</span></b></h1><br>
                         <p class="lead fw-normal">
                             Automatically find welfares that suit them based on their age. It will be easier for them to seek help. <br><br>
                             It can be automatically filled in based on the documents they provide, without having to look up and fill in complicated words.
