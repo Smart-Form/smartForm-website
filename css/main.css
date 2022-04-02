@@ -594,6 +594,16 @@ bgImageAnimation {
   opacity: 1;
 }
 
+.willAppearWhenSrollTo{
+  visibility: hidden;
+	opacity: 0;
+	transition: 1500ms;
+}
+.willAppearWhenSrollTo.is-show {
+	visibility: visible;
+	opacity: 1;
+}
+
 /* 
 "max-aspect-ratio: 1/1" = If the screen aspect ratio w:h is less than (1/1):1 [for tablet and mobile], 
 "max-aspect-ratio: 3/5" = If the screen aspect ratio w:h is less than (3/5):1 [for mobile],

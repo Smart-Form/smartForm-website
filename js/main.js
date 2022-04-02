@@ -122,10 +122,33 @@ function openNewWindow_tc() {
 //
 //
 function ifTheFormIsInvalidate() {
-  var forms = document.querySelectorAll('.will-validated');
+  var forms = document.querySelectorAll('.willBeValidated');
 
   for(let i = 0; i < forms.length; i++){
     forms[i].classList.add('was-validated');
-    forms[i].classList.remove('will-validated');
+    forms[i].classList.remove('willBeValidated');
   }
+}
+
+//
+//
+//  willAppearWhenSrollTo
+//
+//
+$(window).on('load scroll', function() {
+  for (let i = 0; i < $('.willAppearWhenSrollTo').length; i++) {
+    add_class_in_scrolling($('.willAppearWhenSrollTo').eq(i));
+  }
+});
+function add_class_in_scrolling(thisObj) {
+	var winScroll = $(window).scrollTop();
+	var winHeight = $(window).height();
+	var scrollPos = winScroll + winHeight - 100;
+
+	if(thisObj.offset().top < scrollPos) {
+		thisObj.addClass('is-show');
+	}
+  if(thisObj.offset().top > scrollPos) {
+		thisObj.removeClass('is-show');
+	}
 }

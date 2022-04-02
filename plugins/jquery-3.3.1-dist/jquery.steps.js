@@ -833,21 +833,21 @@ function paginationClickHandler(event)
     let validation3 = validateForm3();
 
     function ifTheFormIsInvalidate2() {
-        var forms = document.querySelectorAll('.will-validated');
+        var forms = document.querySelectorAll('.willBeValidated');
     
         for(let i = 0; i < forms.length; i++){
             if (forms[i].classList.contains('was-validated') == false) {
                 forms[i].classList.add('was-validated');
             }
-            forms[i].classList.remove('will-validated');
+            forms[i].classList.remove('willBeValidated');
         }
     }
     function ifTheFormIsValidate() {
         var forms = document.querySelectorAll('.was-validated');
     
         for(let i = 0; i < forms.length; i++){
-            if (forms[i].classList.contains('will-validated') == false) {
-                forms[i].classList.add('will-validated');
+            if (forms[i].classList.contains('willBeValidated') == false) {
+                forms[i].classList.add('willBeValidated');
             }
             forms[i].classList.remove('was-validated');
         }
