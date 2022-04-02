@@ -49,6 +49,10 @@ a {
 .theme-color8 {
   color: #ffffff;
 }
+/* btn-smartform3 color */
+.theme-color9{
+  color: #987468;
+}
 .theme-bg-color {
   background-color: #e7e2de;
 }
@@ -72,6 +76,10 @@ a {
 }
 .theme-bg-color8 {
   background-color: #ffffff;
+}
+/* btn-smartform3 color */
+.theme-bg-color9{
+  background-color: #987468;
 }
 
 footer {
@@ -292,6 +300,9 @@ footer {
 }
 .addSurroundedPadding3 {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+.addLeftAndRightMargins{
+  margin: 0rem 1rem 0rem 1rem;
 }
 
 /* Dim the screen when focusing */
@@ -542,6 +553,9 @@ bgImageAnimation {
 
 .nowrap {
   white-space: nowrap ;
+}
+.noBorder{
+  border: unset;
 }
 
 /* add properties beside Boostrap */

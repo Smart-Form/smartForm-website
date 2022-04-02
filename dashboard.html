@@ -16,7 +16,7 @@
     <link href="plugins/material-design-icons-3.0.1/iconfont/material-icons.css" rel="stylesheet">
 </head>
 
-<body class="theme-bg-color">
+<body class="theme-bg-color4">
 
     <a id="scroll" style="display: none;"><span></span></a>
 
@@ -70,37 +70,49 @@
     <!-- nav end -->
 
     <nav>
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom ms-4 mx-4">
-            <h1 class="h2 theme-color6">Welfare Name</h1>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ms-4 mx-4">
+            <h1 class="h2 theme-color5 theme-bg-color8 addShadow addRadiusBorder2 addSurroundedPadding3">Welfare Name</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group me-2">
-                <button type="button" class="btn btn-sm btn-outline-secondary addRadiusBorder" onclick="location.href='form_update.html';">Edit</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary addRadiusBorder">Export</button>
-              </div>
-              <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle addRadiusBorder">
-                <span class="material-icons inline_icon">date_range</span>
-                This week
-              </button>
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary addRadiusBorder noBorder theme-color8 btn-smartform3" onclick="location.href='form_update.html';">
+                        <span class="material-icons inline_icon">edit</span>
+                        Edit
+                    </button>
+                    
+                    <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle addRadiusBorder noBorder theme-color8 btn-smartform3" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons inline_icon">date_range</span>
+                        Export
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item active" href="#">This week</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">This month</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">This fiscal year</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">All the time</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
+        </div>
 
-        <div class="nav nav-tabs theme-bg-color8 addRadiusBorder" id="nav-tab" role="tablist">
-            <button class="nav-link active theme-color6" id="nav-dashboard-tab" data-bs-toggle="tab"
+        <div class="nav nav-tabs theme-bg-color8 footerRadiusBorder d-flex justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active theme-color6" style="border-radius: 1rem 1rem 0rem 0rem;" id="nav-dashboard-tab" data-bs-toggle="tab"
                 data-bs-target="#nav-dashboard" type="button" role="tab" aria-controls="nav-dashboard"
                 aria-selected="false" onfocus="navTabsNowFocus(this);"><span class="material-icons inline_icon">dashboard</span> Dashboard</button>
-            <button class="nav-link theme-color6" id="nav-application-tab" data-bs-toggle="tab"
+            <button class="nav-link theme-color6" style="border-radius: 1rem 1rem 0rem 0rem;" id="nav-application-tab" data-bs-toggle="tab"
                 data-bs-target="#nav-application" type="button" role="tab" aria-controls="nav-application"
                 aria-selected="true" onfocus="navTabsNowFocus(this);"><span class="material-icons inline_icon">search</span> Application</button>
-            <button class="nav-link theme-color6" id="nav-view-tab" data-bs-toggle="tab" data-bs-target="#nav-view"
+            <button class="nav-link theme-color6" style="border-radius: 1rem 1rem 0rem 0rem;" id="nav-view-tab" data-bs-toggle="tab" data-bs-target="#nav-view"
                 type="button" role="tab" aria-controls="nav-view" aria-selected="false" onfocus="navTabsNowFocus(this);"><span class="material-icons inline_icon">view_list</span> View</button>
         </div>
     </nav>
 
-    <div class="tab-content theme-bg-color4 theme-color6 navbarRadiusBorder" id="nav-tabContent">
+    <div class="tab-content theme-bg-color8 theme-color6 navbarRadiusBorder addShadow" id="nav-tabContent">
 
         <div class="tab-pane fade show active" id="nav-dashboard" role="tabpanel" aria-labelledby="nav-dashboard-tab">
 
-            <main class="main-content addShadow">
+            <main class="main-content">
                 <div class="container-fluid py-4">
 
                     <div class="row">
@@ -315,9 +327,9 @@
                     </div>
 
                     <div class="row mt-4">
-                        <div class="col-lg-11 mb-lg-0 mb-4">
+                        <div class="col">
                             <div class="card ">
-                                <div class="card-header pb-0 p-3">
+                                <div class="card-header">
                                     <div class="d-flex justify-content-between">
                                         <h6 class="mb-2"><span class="material-icons inline_icon">info</span> Other Information</h6>
                                     </div>
@@ -463,8 +475,7 @@
                                 id="numberOfNewApplication">#</span> New applications found</div>
                     </div>
 
-                    <nav id="navbar_top"
-                        class="navbar navbar-expand-lg theme-bg-color6 theme-color8 d-flex justify-content-between">
+                    <nav id="navbar_top" class="navbar navbar-expand-lg theme-bg-color9 theme-color8 d-flex justify-content-between">
                         <div class="ms-2">
                             <h5>Applicant Snapshots</h4>
                         </div>
@@ -475,7 +486,7 @@
                 </header>
 
                 <!-- Add application row -->
-                <div id="applicationList"></div>
+                <ul><div id="applicationList"></div></ul>
 
             </ol>
         </div>
@@ -594,7 +605,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         window.addEventListener('scroll', function () {
-            if (window.scrollY > 200) {
+            if (window.scrollY > 275) {
                 document.getElementById('navbar_top').classList.add('fixed-top');
                 // add padding top to show content behind navbar
                 navbar_height = document.querySelector('.navbar').offsetHeight;
@@ -611,57 +622,61 @@
 
 <!-- Add application row -->
 <script id="addApplicationRow" type="text/template">
-    <li class="list-group-item d-flex justify-content-between justify-content-start">
-        <div class="ms-2 me-auto">
-            <table>
-                <tr>
-                    <td>
-                        <div class="fw-bold">
-                            Applicant Name <span class="badge bg-primary rounded-pill">New Applicant</span>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#" class="list-group-item list-group-item-action">View this application</a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <span class="badge bg-secondary rounded-pill">Date</span>
-        </div>
+    <li class="list-group-item">
+        <a class="dropdown-item d-flex justify-content-between justify-content-start" href="#">
+            <div class="ms-2 me-auto">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="fw-bold">
+                                Applicant Name <span class="badge bg-primary rounded-pill">New Applicant</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="list-group-item list-group-item-action">View this application</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <span class="badge bg-secondary rounded-pill">Date</span>
+            </div>
+        </a>
     </li>
     <li class="list-group-item d-flex justify-content-between justify-content-start">
-        <div class="ms-2 me-auto">
-            <table>
-                <tr>
-                    <td>
-                        <div class="fw-bold">
-                            Applicant Name <span class="badge bg-warning rounded-pill">Old Applicant</span>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#" class="list-group-item list-group-item-action">View this application</a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <span class="badge bg-secondary rounded-pill">Date</span>
-        </div>
+        <a class="dropdown-item d-flex justify-content-between justify-content-start" href="#">
+            <div class="ms-2 me-auto">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="fw-bold">
+                                Applicant Name <span class="badge theme-bg-color9 rounded-pill">Old Applicant</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="list-group-item list-group-item-action">View this application</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <span class="badge bg-secondary rounded-pill">Date</span>
+            </div>
+        </a>
     </li>
 </script>
 
@@ -673,7 +688,7 @@
                 <div class="inner addRadiusBorder">
                     <div class="form-content">
                         <div class="form-header">
-                            <img alt="" class="banner-smartform3 topRadiusBorder">
+                            <img alt="" class="banner-smartform3">
                             <h3 class="theme-color2 form-title">
                                 <div class="row">
                                     <div class="col-3 mobile_width100"><span class="material-icons"
@@ -879,7 +894,7 @@
                             <h3 class="theme-color2 form-title">
                                 <div class="row">
                                     <div class="col-3 mobile_width100"><span class="material-icons"
-                                            style="font-size: 100%; vertical-align: text-top;">view_list</span></div>
+                                            style="font-size: 100%; vertical-align: text-bottom;">view_list</span></div>
                                     <div class="col-6 mobile_width100">Question Setting</div>
                                 </div>
                             </h3>
@@ -1280,5 +1295,8 @@
 <link rel="stylesheet" href="plugins/material-design-iconic-font/css/material-design-iconic-font.css">
 <link rel="stylesheet" href="css/createform_form.css">
 <script src="js/Sortable.js"></script>
+
+<!-- Add bootstrap.bundle.min.js to enable dropdown -->
+<script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
