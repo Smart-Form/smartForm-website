@@ -163,8 +163,8 @@ footer {
   font-family: Arial Black;
   cursor: pointer;
   background-color: #9f9cad;
-  width: 55vw;
-  min-width: 18rem;
+  width: 90vh;
+  min-width: 12rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   border-radius: 1rem;
