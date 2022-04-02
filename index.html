@@ -114,6 +114,19 @@
             }
         }
 
+        /* The index BG upon footer */
+        #theIndexBGUponFooter {
+            background-image: url("img/lionRock/Bloomberg/e2054cfa-97bc-11e9-b82d-cb52a89d5dff_image_hires_115105.jpg");
+            height: 100vmin;
+            margin-bottom: -10%;
+            background-color: #cccccc;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+            z-index: -9999;
+            box-shadow: 0 10rem 5rem -5rem white inset;
+        }
+
         /* 
         "max-aspect-ratio: 1/1" = If the screen aspect ratio w:h is less than (1/1):1 [for tablet and mobile], 
         "max-aspect-ratio: 1/2" = If the screen aspect ratio w:h is less than (2/3):1 [for mobile] 
@@ -302,7 +315,7 @@
         </div>
     </div>
 
-    <div class="addResponsiveHeight"></div>
+    <div id="theIndexBGUponFooter"></div>
 
         <!-- footer -->
         <div class="theme-bg-color8 theme-color6 footerRadiusBorder addShadow">

@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
   <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
   <link href="plugins/material-design-icons-3.0.1/iconfont/material-icons.css" rel="stylesheet">
+  <!-- Lottie -->
+  <script src="plugins/ajax/libs/bodymovin/5.9.1/lottie.min.js"></script>
   <style>
-    .typewriter-h {
+    #typewriter-h {
       height: 20vw;
     }
   
@@ -22,12 +24,12 @@
     "max-aspect-ratio: 1/2" = If the screen aspect ratio w:h is less than (2/3):1 [for mobile] 
     */
     @media only screen and (max-aspect-ratio: 1/1) {
-      .typewriter-h {
+      #typewriter-h {
         height: 45vw;
       }
     }
     @media only screen and (max-aspect-ratio: 2/3) {
-      .typewriter-h {
+      #typewriter-h {
         height: 55vw;
       }
     }
@@ -89,7 +91,7 @@
     <main>
       <div class="center theme-color8">
         <div class="py-3">
-          <div class="row">
+          <div class="row row-cols-1 row-cols-lg-2">
             <div class="col">
               <br>
               <p class="h1"><b>Get started</b></p>
@@ -101,7 +103,9 @@
               </div>
             </div>
             <div class="col d-flex justify-content-center">
-              <img src="img/typewriter.svg" alt="" class="typewriter-h">
+              <!-- <img src="img/typewriter.svg" alt="" id="typewriter-h"> -->
+              <!-- Lottie -->
+              <div id="typewriter-h"></div>
             </div>
           </div>
         </div>
@@ -252,6 +256,17 @@
         </div>
       <!-- footer end -->
 </body>
+
+<!-- Lottie -->
+<script>
+  var animation = bodymovin.loadAnimation({
+      container: document.getElementById('typewriter-h'), // Required
+      path: 'https://assets6.lottiefiles.com/packages/lf20_jozsnbrf.json', // Required, or run on locally by a live server and replace the link 'lottie/typewriter.json'
+      renderer: 'svg', // Required
+      loop: false, // Optional
+      autoplay: true // Optional
+  })
+</script>
 
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js"></script>
