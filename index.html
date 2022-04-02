@@ -129,7 +129,8 @@
 
         /* 
         "max-aspect-ratio: 1/1" = If the screen aspect ratio w:h is less than (1/1):1 [for tablet and mobile], 
-        "max-aspect-ratio: 1/2" = If the screen aspect ratio w:h is less than (2/3):1 [for mobile] 
+        "max-aspect-ratio: 3/5" = If the screen aspect ratio w:h is less than (3/5):1 [for mobile],
+        "max-aspect-ratio: 9/20" = If the screen aspect ratio w:h is less than (9/20):1 [for Galaxy Fold]
         */
         @media only screen and (max-aspect-ratio: 1/1) {
             .burnsbox_mobileLayout{
@@ -140,6 +141,19 @@
             }
             figure#burnsbox0 img {
                 top: 7.5%; left: 12.5%; width: 70%; height: 100%;
+            }
+            #theIndexBGUponFooter{
+                height: 125vmin;
+            }
+        }
+        @media only screen and (max-aspect-ratio: 3/5) {
+            #theIndexBGUponFooter{
+                height: 225vmin;
+            }
+        }
+        @media only screen and (max-aspect-ratio: 9/20) {
+            #theIndexBGUponFooter{
+                height: 400vmin;
             }
         }
     </style>
@@ -292,10 +306,10 @@
     <div class="addResponsiveHeight"></div>
 
     <div id="LinearGradientBGAnimation" class="theme-color8 addRadiusBorder2 addShadow addLeftAndRightMargins">
-        <div class="px-4 py-3">
-            <div class="row g-4 py-4 row-cols-1 row-cols-lg-3 d-flex justify-content-evenly">
+        <div class="px-4">
+            <div class="row g-2 py-4 row-cols-1 row-cols-lg-3 d-flex justify-content-evenly">
                 <div class="col">
-                    <div class="py-4 text-center">
+                    <div class="text-center">
                         <h1 class="display-4 fw-normal"><b>Tailor-made <span class="material-icons" style="font-size: 100%;">square_foot</span><br>&<br> Auto-fill <span class="material-icons" style="font-size: 100%;">auto_fix_normal</span></b></h1><br>
                         <p class="lead fw-normal">
                             Automatically find welfares that suit them based on their age. It will be easier for them to seek help. <br><br>
@@ -306,7 +320,7 @@
                 </div>
 
                 <div class="col theme-bg-color8 addRadiusBorder2 addShadow">
-                    <div class="py-4">
+                    <div class="">
                         <!-- Lottie -->
                         <div id="content-moderation"></div>
                     </div>
@@ -315,7 +329,18 @@
         </div>
     </div>
 
-    <div id="theIndexBGUponFooter"></div>
+    <div id="theIndexBGUponFooter">
+        <div class="py-5">
+            <div class="row py-5 row-cols-1">
+                <div class="col-1 col-lg-3"></div>
+                <div class="col-10 col-lg-6 py-1 py-lg-5 g-1 g-lg-5 text-center theme-color8 lead addRadiusBorder2" style="background-color: #98746850;">
+                    <p><b><mark>Smart Form</mark></b> is a technology start-up in Hong Kong, which operates one of the social welfare agency systems – Smart Form. We strive to improve people’s lives by reinventing welfare services through game-changing technology. We put our people first, whether it’s our users or our team. </p>
+                    <p>As a homegrown Hong Kong technology start-up, we aim to reinvent and redefine the welfare experience by building a social welfare agency system we love. </p>
+                    <p>Now you have the opportunity to join us on our journey to achieve our vision and be part of building a better future of wellbeing for everyone. </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
         <!-- footer -->
         <div class="theme-bg-color8 theme-color6 footerRadiusBorder addShadow">

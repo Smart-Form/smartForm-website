@@ -21,14 +21,15 @@
   
     /* 
     "max-aspect-ratio: 1/1" = If the screen aspect ratio w:h is less than (1/1):1 [for tablet and mobile], 
-    "max-aspect-ratio: 1/2" = If the screen aspect ratio w:h is less than (2/3):1 [for mobile] 
+    "max-aspect-ratio: 3/5" = If the screen aspect ratio w:h is less than (3/5):1 [for mobile],
+    "max-aspect-ratio: 9/20" = If the screen aspect ratio w:h is less than (9/20):1 [for Galaxy Fold]
     */
     @media only screen and (max-aspect-ratio: 1/1) {
       #typewriter-h {
         height: 45vw;
       }
     }
-    @media only screen and (max-aspect-ratio: 2/3) {
+    @media only screen and (max-aspect-ratio: 3/5) {
       #typewriter-h {
         height: 55vw;
       }
