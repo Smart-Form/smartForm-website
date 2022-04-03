@@ -665,4 +665,8 @@ bgImageAnimation {
   .typing-smartform {
     font-size: 2.75vw;
   }
+
+  .optionFocus:focus{
+    font-size: 125%;
+  }
 }
