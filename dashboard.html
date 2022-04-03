@@ -71,7 +71,7 @@
 
     <nav>
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ms-4 mx-4">
-            <h1 class="h2 theme-color5 theme-bg-color8 addShadow addRadiusBorder2 addSurroundedPadding3">Old Age Living Allowance</h1>
+            <h1 class="h2 theme-color9 theme-bg-color8 addRadiusBorder2 addSurroundedPadding3">Old Age Living Allowance</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
                 <div class="btn-group me-2">
                     <button type="button" class="btn btn-sm btn-outline-secondary addRadiusBorder noBorder theme-color8 btn-smartform3" onclick="location.href='form_update.html';">
@@ -84,7 +84,7 @@
                         Export
                     </button>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                        <li><a class="dropdown-item active" href="#">This week</a></li>
+                        <li><a class="dropdown-item" href="#">This week</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">This month</a></li>
                         <li><hr class="dropdown-divider"></li>
@@ -476,11 +476,11 @@
                     </div>
 
                     <nav id="navbar_top" class="navbar navbar-expand-lg theme-bg-color9 theme-color8 d-flex justify-content-between">
-                        <div class="col-sm-2 px-4 nowrap">
-                            <h5>Applicant Snapshots</h5>
+                        <div class="col-sm-2 px-4 me-auto">
+                            <h6>Applicant Snapshots</h6>
                         </div>
-                        <div class="col-sm-2 px-4 nowrap">
-                            <h5>Submission Date</h5>
+                        <div class="col-sm-2 ms-auto">
+                            <h6 class="text-end px-4">Submission Date</h6>
                         </div>
                     </nav>
                 </header>
@@ -622,7 +622,7 @@
 
 <!-- Add application row -->
 <script id="addApplicationRow" type="text/template">
-    <li class="list-group-item">
+    <li class="list-group-item willAppearWhenSrollTo">
         <a class="dropdown-item d-flex justify-content-between justify-content-start">
             <div>
                 <table>
@@ -650,7 +650,7 @@
             </div>
         </a>
     </li>
-    <li class="list-group-item">
+    <li class="list-group-item willAppearWhenSrollTo">
         <a class="dropdown-item d-flex justify-content-between justify-content-start">
             <div>
                 <table>
