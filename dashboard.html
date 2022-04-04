@@ -98,7 +98,7 @@
             </div>
         </div>
 
-        <div class="nav nav-tabs theme-bg-color8 footerRadiusBorder d-flex justify-content-center" id="nav-tab" role="tablist">
+        <div class="nav nav-tabs theme-bg-color8 footerRadiusBorder d-flex justify-content-center" id="nav-dashboard-tab" role="tablist">
             <button class="nav-link active theme-color6" style="border-radius: 1rem 1rem 0rem 0rem;" id="nav-dashboard-tab" data-bs-toggle="tab"
                 data-bs-target="#nav-dashboard" type="button" role="tab" aria-controls="nav-dashboard"
                 aria-selected="false" onfocus="navTabsNowFocus(this);"><span class="material-icons inline_icon">dashboard</span> Dashboard</button>
@@ -1263,7 +1263,7 @@
         window.addEventListener('scroll', function () {
                 if ($('#nav-application-tab').is(':focus')) {
                     thisFormViewIsFocusing = true;
-                } else {
+                } else if ($('#nav-view-tab').is(':focus') || $('#nav-dashboard-tab').is(':focus')) {
                     thisFormViewIsFocusing = false;
                 }
             if (window.scrollY > 265 && thisFormViewIsFocusing == true) {
