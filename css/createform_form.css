@@ -239,7 +239,7 @@ h3 {
 .actions li:first-child a {
   width: 144px;
   padding-left: 48px;
-  background: #e7e2de;
+  background: #ffffff;
   color: #666;
 }
 .actions li:first-child a:before {
@@ -250,7 +250,7 @@ h3 {
   font-family: Material-Design-Iconic-Font;
 }
 .actions li:first-child a:hover {
-  background: #b7a5a5;
+  background: #ccc;
 }
 .actions li:nth-child(2) a,
 .actions li:last-child a {
