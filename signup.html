@@ -75,26 +75,26 @@
 
                         <p>
                             <label for="uname">*Organization Name</label>
-                            <input type="text" name="uname" class="form-control dimmer addShadow" placeholder="e.g. Social Welfare Department"
+                            <input type="text" name="uname" pattern="(?=.*[a-z])(?=.*[A-Z]).{3,}" class="form-control dimmer addShadow" placeholder="e.g. Social Welfare Department"
                                 required>
                         </p>
                         <br><br>
 
                         <p>
                             <label for="pnum">*Phone Number</label>
-                            <input type="number" name="pnum" class="form-control dimmer addShadow" placeholder="e.g. 23432255" required>
+                            <input type="number" name="pnum" pattern="[789][0-9]{8}" class="form-control dimmer addShadow" placeholder="e.g. 23432255" required>
                         </p>
                         <br><br>
 
                         <p>
                             <label for="email">*Email Address</label>
-                            <input type="email" pname="email" class="form-control dimmer addShadow" placeholder="e.g. swdenq@swd.gov.hk" required>
+                            <input type="email" pname="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control dimmer addShadow" placeholder="e.g. swdenq@swd.gov.hk" required>
                         </p>
                         <br><br>
 
                         <p>
                             <label for="fnum">Fax Number</label>
-                            <input type="number" name="fnum" class="form-control dimmer addShadow" placeholder="e.g. 28380125">
+                            <input type="number" name="fnum" pattern="[789][0-9]{8}" class="form-control dimmer addShadow" placeholder="e.g. 28380125">
                         </p>
                         <br><br>
 
@@ -280,7 +280,7 @@
                                 <p>Monthly digest of whats new and exciting from us.</p>
                                 <div class="row">
                                     <div class="col">
-                                        <input id="newsletter1" type="email" class="form-control dimmer addShadow" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
+                                        <input id="newsletter1" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control dimmer addShadow" style="border-color: #d3ac9c; min-width: 20vw;" placeholder="Email address" required>
                                     </div>
                                     <div class="col">
                                         <button id="emailSubcribeBtn" class="btn btn-primary btn-smartform3 showSubscription" type="submit"><span class="material-icons inline_icon">send</span> Subscribe</button>
@@ -301,6 +301,7 @@
                                         <li> <a href="index.html">Index</a></li>
                                         <li> <a href="#">About Us</a></li>
                                         <li> <a href="#">Contact Us</a></li>
+                                        <li> <a href="credits.html">Credits</a></li>
                                     </ul>
                                 </div>
                             </div>
