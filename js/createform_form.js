@@ -335,7 +335,7 @@ function updateCheckTableBody(thisTableBody) { // !!!!Temporary approach: modify
 
 // 
 // 
-// Get form data and show on "Confirmation" page
+// Get form basic information and show on "Confirmation" page
 // 
 // 
 function updateConfirmationPgFields(thisObj) {
