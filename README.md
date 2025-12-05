@@ -2,7 +2,7 @@
 
 [![Deploy static content to Pages](https://github.com/Smart-Form/smartForm-website/actions/workflows/static.yml/badge.svg)](https://github.com/Smart-Form/smartForm-website/actions/workflows/static.yml)
 
-Our team project name for this competition and final year project is called "Smart Form". 
+Our team's project name for this competition and final year project is called "Smart Form". 
 
 I was designed as a lead UI/UX designer and lead front-end programmer on the Final Year Project. And I have a better understanding of the CI/CD workflow of making an Android-based kiosk and a website that LWL software engineering & HKDI design students are doing since our group comes from two disciplines.
 
@@ -17,10 +17,8 @@ The Website aims to support non-profit organizations and companies to promote th
 ![SmartForm3](SmartForm3.png)
 ![SmartForm](SmartForm.png)
 
-Demo: https://www.behance.net/gallery/147620921/Smart-Form-A-System-with-Android-Kiosk-and-Web-Panel
-
-Complete Website:
-https://github.com/Smart-Form/smartForm-website
+Demo Video: 
+https://www.youtube.com/watch?v=kBMR9jlvl2I
 
 Complete Kiosk Android App:
 https://github.com/Smart-Form/smartForm-android
