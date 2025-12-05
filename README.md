@@ -20,7 +20,7 @@ The Website aims to support non-profit organizations and companies to promote th
 Demo Video: 
 https://www.youtube.com/watch?v=kBMR9jlvl2I
 
-Complete Kiosk Android App:
+Complete Kiosk Android App Source Code:
 https://github.com/Smart-Form/smartForm-android
 
 Static Website (no backend connection):
